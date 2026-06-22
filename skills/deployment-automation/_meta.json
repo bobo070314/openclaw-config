@@ -1,0 +1,8 @@
+﻿{
+    "version":  "0.2.0",
+    "name":  "deployment-automation",
+    "implementedAt":  "2026-06-22T23:15:00+08:00",
+    "description":  "DevSecOps部署自动化，链式调用security-audit做自检闭环",
+    "category":  "devsecops",
+    "status":  "implemented"
+}

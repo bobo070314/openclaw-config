@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  gbrain-api:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - GBRAIN_ROOT=/data/gbrain
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

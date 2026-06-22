@@ -1,0 +1,28 @@
+﻿{
+    "name":  "agent-testing",
+    "version":  "0.2.0",
+    "status":  "implemented",
+    "category":  "dev",
+    "description":  "Multi-framework test runner 鈥?auto-detects pytest/vitest/jest/cargo/go",
+    "implementedAt":  "2026-06-22T23:15:00+08:00",
+    "args":  [
+                 {
+                     "name":  "projectDir",
+                     "type":  "string",
+                     "required":  true,
+                     "description":  "Project directory to test"
+                 },
+                 {
+                     "name":  "testPattern",
+                     "type":  "string",
+                     "required":  false,
+                     "description":  "Optional test name pattern filter"
+                 },
+                 {
+                     "name":  "framework",
+                     "type":  "string",
+                     "required":  false,
+                     "description":  "Override: pytest, vitest, jest, cargo, go"
+                 }
+             ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "gbrain-vscode",
+  "displayName": "gbrain 知识库",
+  "description": "在 VS Code 中直接搜索和索引 gbrain 知识库",
+  "version": "0.1.0",
+  "publisher": "gbrain",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:gbrain.search",
+    "onCommand:gbrain.indexFile",
+    "onCommand:gbrain.indexProject",
+    "onView:gbrainView"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gbrain.search",
+        "title": "搜索 gbrain 知识库"
+      },
+      {
+        "command": "gbrain.indexFile",
+        "title": "gbrain: 索引当前文件"
+      },
+      {
+        "command": "gbrain.indexProject",
+        "title": "gbrain: 索引整个项目"
+      },
+      {
+        "command": "gbrain.sandboxRun",
+        "title": "gbrain: 在沙箱中运行"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "gbrain.search",
+        "key": "ctrl+shift+g",
+        "when": "editorTextFocus"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "gbrain-sidebar",
+          "title": "gbrain 知识库",
+          "icon": "icon-brain.svg"
+        }
+      ]
+    },
+    "views": {
+      "gbrain-sidebar": [
+        {
+          "id": "gbrainView",
+          "name": "知识库"
+        }
+      ]
+    },
+    "menus": {
+      "editor/context": [
+        {
+          "command": "gbrain.indexFile",
+          "group": "gbrain"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "gbrain.indexProject",
+          "group": "gbrain"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "gbrain",
+      "properties": {
+        "gbrain.path": {
+          "type": "string",
+          "default": "D:\\bobo\\openclaw-foreign\\skills\\gbrain",
+          "description": "gbrain 知识库根路径"
+        }
+      }
+    }
+  }
+}

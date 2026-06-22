@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文排版"
+  short_description: "Format and check a graduation thesis for Word submission."
+  default_prompt: "Use $thesis-word-formatter to check and organize my graduation thesis Word formatting."

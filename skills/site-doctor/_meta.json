@@ -1,0 +1,8 @@
+﻿{
+    "version":  "0.2.0",
+    "name":  "site-doctor",
+    "implementedAt":  "2026-06-22T23:15:00+08:00",
+    "description":  "网站健康诊断，检查端口占用/依赖版本/配置完整性",
+    "category":  "dev",
+    "status":  "implemented"
+}

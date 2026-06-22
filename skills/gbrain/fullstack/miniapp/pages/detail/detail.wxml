@@ -1,0 +1,18 @@
+<!-- gbrain 文档详情页 -->
+<view class="container">
+  <view class="doc-header">
+    <text class="doc-title">{{doc.title || '(无标题)'}}</text>
+    <view class="doc-meta">
+      <text class="doc-type">{{doc.type || 'text'}}</text>
+      <text class="doc-score" wx:if="{{doc.score}}">匹配度: {{doc.score}}</text>
+    </view>
+  </view>
+
+  <view class="doc-tags" wx:if="{{doc.tags && doc.tags.length > 0}}">
+    <text class="tag" wx:for="{{doc.tags}}" wx:key="*this">{{item}}</text>
+  </view>
+
+  <view class="doc-content">
+    <text>{{doc.content}}</text>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧠 gbrain 知识库管理后台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>🧠 gbrain <span class="subtitle">全球知识大脑</span></h1>
+    </div>
+    <div class="header-status" id="header-status">
+      <span class="status-dot"></span> 加载中...
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="panel">
+      <h2>📚 知识库列表</h2>
+      <div id="kb-list" class="kb-grid">
+        <div class="empty-state">加载中...</div>
+      </div>
+    </div>
+
+    <div id="search-panel" class="panel">
+      <h2>🔍 搜索</h2>
+      <div class="empty-state">加载中...</div>
+    </div>
+
+    <div id="add-panel" class="panel">
+      <h2>📝 添加文档</h2>
+      <div class="empty-state">加载中...</div>
+    </div>
+
+    <div id="stats-panel" class="panel">
+      <h2>📊 统计</h2>
+      <div class="empty-state">选择知识库查看统计</div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- gbrain 首页：知识库列表 + 搜索 -->
+<view class="container">
+  <view class="header">
+    <text class="title">🧠 gbrain</text>
+    <text class="subtitle">全球知识大脑</text>
+  </view>
+
+  <view class="search-box">
+    <input class="search-input" placeholder="搜索知识库..." bindinput="onSearchInput" bindconfirm="onSearch" />
+    <button class="search-btn" bindtap="onSearch">搜索</button>
+  </view>
+
+  <view class="kb-selector" wx:if="{{kbList.length > 0}}">
+    <picker mode="selector" range="{{kbNames}}" value="{{selectedKBIndex}}" bindchange="onKBChange">
+      <view class="picker">
+        当前知识库: {{kbNames[selectedKBIndex] || '请选择'}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="results" wx:if="{{results.length > 0}}">
+    <view class="result-item" wx:for="{{results}}" wx:key="id" bindtap="goDetail" data-id="{{item.id}}">
+      <text class="result-title">{{item.title || '(无标题)'}}</text>
+      <text class="result-content">{{item.content}}</text>
+      <view class="result-meta">
+        <text class="score">匹配度: {{item.score}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="empty" wx:if="{{!loading && results.length === 0 && searched}}">
+    <text>没有找到结果</text>
+  </view>
+
+  <view class="loading" wx:if="{{loading}}">
+    <text>加载中...</text>
+  </view>
+</view>

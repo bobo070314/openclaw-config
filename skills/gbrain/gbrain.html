@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gbrain 知识库</title>
+  <style>
+    :root {
+      --bg: #1a1a1a;
+      --text: #e0e0e0;
+      --accent: #6c63ff;
+      --card-bg: #2d2d2d;
+      --border: #444;
+      --input-bg: #333;
+      --button-bg: #555;
+      --button-hover: #666;
+      --error: #f44336;
+      --success: #4caf50;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f0f0f0;
+        --text: #333;
+        --card-bg: #ffffff;
+        --border: #ccc;
+        --input-bg: #f5f5f5;
+        --button-bg: #e0e0e0;
+        --button-hover: #d0d0d0;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: var(--accent);
+      text-shadow: 0 2px 4px rgba(108, 99, 255, 0.3);
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      opacity: 0.8;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border-radius: 4px 4px 0 0;
+      margin-right: 5px;
+      background-color: var(--card-bg);
+      color: var(--text);
+    }
+
+    .tab.active {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    .tab:hover:not(.active) {
+      background-color: var(--button-bg);
+    }
+
+    .tab-content {
+      display: none;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 0 0 4px 4px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .search-box {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 1.1em;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background-color: var(--input-bg);
+      color: var(--text);
+      transition: all 0.3s ease;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+    }
+
+    .search-box button {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: var(--button-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .search-box button:hover {
+      background-color: var(--button-hover);
+    }
+
+    .results {
+      margin-top: 20px;
+    }
+
+    .result-item {
+      margin-bottom: 15px;
+      padding: 15px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background-color: var(--card-bg);
+      transition: all 0.3s ease;
+    }
+
+    .result-item:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .result-title {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--accent);
+    }
+
+    .result-score {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-bottom: 5px;
+    }
+
+    .result-content {
+      font-size: 0.9em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .result-source {
+      font-size: 0.8em;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    .note-form {
+      margin-bottom: 20px;
+    }
+
+    .note-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    .note-form input,
+    .note-form textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background-color: var(--input-bg);
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .note-form button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .note-form button:hover {
+      background-color: #5b53d8;
+    }
+
+    .graph-form {
+      margin-bottom: 20px;
+    }
+
+    .graph-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    .graph-form input,
+    .graph-form select {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background-color: var(--input-bg);
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .graph-form button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .graph-form button:hover {
+      background-color: #5b53d8;
+    }
+
+    .graph-list {
+      margin-top: 20px;
+    }
+
+    .graph-item {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background-color: var(--card-bg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .graph-item span {
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .graph-item small {
+      color: #aaa;
+      font-size: 0.8em;
+    }
+
+    .status {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .error {
+      color: var(--error);
+    }
+
+    .success {
+      color: var(--success);
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: var(--button-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      background-color: var(--button-hover);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .modal-title {
+      font-size: 1.3em;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .close {
+      background: none;
+      border: none;
+      font-size: 1.5em;
+      color: var(--text);
+      cursor: pointer;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .close:hover {
+      background-color: var(--button-hover);
+    }
+
+    .modal-body {
+      margin-bottom: 15px;
+    }
+
+    .modal-footer {
+      text-align: right;
+    }
+
+    .modal-footer button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-size: 0.9em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 10px;
+    }
+
+    .modal-footer button:hover {
+      background-color: #5b53d8;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .tabs {
+        flex-direction: column;
+      }
+
+      .tab {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+
+      .search-box input {
+        font-size: 1em;
+      }
+
+      .note-form input,
+      .note-form textarea {
+        font-size: 0.9em;
+      }
+
+      .graph-form input,
+      .graph-form select {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 gbrain 知识库</h1>
+      <p class="subtitle">全本地运行的超级智能体知识大脑</p>
+    </header>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="search">🔍 搜索</div>
+      <div class="tab" data-tab="notes">📝 笔记</div>
+      <div class="tab" data-tab="graph">🌐 图谱</div>
+    </div>
+
+    <div id="search" class="tab-content active">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="输入关键词搜索知识...">
+        <button id="searchBtn">搜索</button>
+      </div>
+      <div class="results" id="searchResults">
+        <!-- Results will be inserted here -->
+      </div>
+      <div class="status" id="searchStatus"></div>
+    </div>
+
+    <div id="notes" class="tab-content">
+      <div class="note-form">
+        <label for="noteTitle">标题</label>
+        <input type="text" id="noteTitle" placeholder="输入笔记标题">
+        <label for="noteContent">内容</label>
+        <textarea id="noteContent" rows="5" placeholder="输入笔记内容"></textarea>
+        <button id="addNoteBtn">添加笔记</button>
+      </div>
+      <div class="status" id="noteStatus"></div>
+      <div class="results" id="notesList">
+        <!-- Notes will be inserted here -->
+      </div>
+    </div>
+
+    <div id="graph" class="tab-content">
+      <div class="graph-form">
+        <label for="fromNode">起点</label>
+        <input type="text" id="fromNode" placeholder="例如：AI">
+        <label for="toNode">终点</label>
+        <input type="text" id="toNode" placeholder="例如：gbrain">
+        <label for="relationLabel">关系</label>
+        <input type="text" id="relationLabel" placeholder="例如：是知识库系统">
+        <button id="addRelationBtn">添加关系</button>
+      </div>
+      <div class="status" id="graphStatus"></div>
+      <div class="graph-list" id="graphList">
+        <!-- Relations will be inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <button class="theme-toggle" id="themeToggle">🌙</button>
+
+  <script>
+    // State management
+    const state = {
+      notes: [],
+      relations: [],
+      searchHistory: []
+    };
+
+    // DOM Elements
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const searchResults = document.getElementById('searchResults');
+    const searchStatus = document.getElementById('searchStatus');
+    const addNoteBtn = document.getElementById('addNoteBtn');
+    const noteTitle = document.getElementById('noteTitle');
+    const noteContent = document.getElementById('noteContent');
+    const noteStatus = document.getElementById('noteStatus');
+    const notesList = document.getElementById('notesList');
+    const addRelationBtn = document.getElementById('addRelationBtn');
+    const fromNode = document.getElementById('fromNode');
+    const toNode = document.getElementById('toNode');
+    const relationLabel = document.getElementById('relationLabel');
+    const graphStatus = document.getElementById('graphStatus');
+    const graphList = document.getElementById('graphList');
+    const themeToggle = document.getElementById('themeToggle');
+
+    // Tab switching
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabId = tab.getAttribute('data-tab');
+        
+        // Update active tab
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        // Show corresponding content
+        tabContents.forEach(content => content.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    // Search functionality
+    function performSearch(query) {
+      if (!query.trim()) {
+        searchStatus.textContent = '请输入关键词';
+        searchStatus.className = 'status error';
+        return;
+      }
+      
+      searchStatus.textContent = '正在搜索...';
+      searchStatus.className = 'status';
+      
+      // Simulate API call with local data
+      setTimeout(() => {
+        const results = [];
+        
+        // Search in notes
+        const noteResults = state.notes.filter(note => 
+          note.title.toLowerCase().includes(query.toLowerCase()) || 
+          note.content.toLowerCase().includes(query.toLowerCase())
+        );
+        
+        // Search in relations
+        const relationResults = state.relations.filter(relation => 
+          relation.from.toLowerCase().includes(query.toLowerCase()) || 
+          relation.to.toLowerCase().includes(query.toLowerCase()) || 
+          relation.label.toLowerCase().includes(query.toLowerCase())
+        );
+        
+        // Combine and sort by relevance
+        const allResults = [...noteResults.map(r => ({
+          type: 'note',
+          title: r.title,
+          content: r.content,
+          source: `file://${r.id}.md`,
+          score: 0.7 + Math.random() * 0.3
+        })), ...relationResults.map(r => ({
+          type: 'relation',
+          title: `${r.from} → ${r.to}`,
+          content: r.label,
+          source: `relation:${r.id}`,
+          score: 0.5 + Math.random() * 0.5
+        }))].sort((a, b) => b.score - a.score);
+        
+        // Display results
+        searchResults.innerHTML = '';
+        if (allResults.length === 0) {
+          searchResults.innerHTML = '<p class="no-results">未找到相关结果</p>';
+        } else {
+          allResults.forEach(result => {
+            const resultEl = document.createElement('div');
+            resultEl.className = 'result-item';
+            
+            const titleEl = document.createElement('div');
+            titleEl.className = 'result-title';
+            titleEl.textContent = result.title;
+            
+            const scoreEl = document.createElement('div');
+            scoreEl.className = 'result-score';
+            scoreEl.textContent = `相似度: ${(result.score * 100).toFixed(1)}%`;
+            
+            const contentEl = document.createElement('div');
+            contentEl.className = 'result-content';
+            contentEl.textContent = result.content;
+            
+            const sourceEl = document.createElement('div');
+            sourceEl.className = 'result-source';
+            sourceEl.textContent = result.source;
+            
+            resultEl.appendChild(titleEl);
+            resultEl.appendChild(scoreEl);
+            resultEl.appendChild(contentEl);
+            resultEl.appendChild(sourceEl);
+            
+            searchResults.appendChild(resultEl);
+          });
+        }
+        
+        searchStatus.textContent = `找到 ${allResults.length} 个结果`; 
+        searchStatus.className = 'status success';
+      }, 500);
+    }
+
+    // Event listeners
+    searchBtn.addEventListener('click', () => {
+      performSearch(searchInput.value);
+    });
+
+    searchInput.addEventListener('keypress', e => {
+      if (e.key === 'Enter') {
+        performSearch(searchInput.value);
+      }
+    });
+
+    // Note functionality
+    function addNote() {
+      const title = noteTitle.value.trim();
+      const content = noteContent.value.trim();
+      
+      if (!title || !content) {
+        noteStatus.textContent = '标题和内容不能为空';
+        noteStatus.className = 'status error';
+        return;
+      }
+      
+      const newNote = {
+        id: `note:${Date.now()}`,
+        title,
+        content,
+        timestamp: new Date().toISOString()
+      };
+      
+      state.notes.push(newNote);
+      noteTitle.value = '';
+      noteContent.value = '';
+      
+      noteStatus.textContent = '笔记已添加';
+      noteStatus.className = 'status success';
+      
+      renderNotes();
+    }
+
+    function renderNotes() {
+      notesList.innerHTML = '';
+      if (state.notes.length === 0) {
+        notesList.innerHTML = '<p class="no-results">暂无笔记</p>';
+        return;
+      }
+      
+      state.notes.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+      
+      state.notes.forEach(note => {
+        const noteEl = document.createElement('div');
+        noteEl.className = 'result-item';
+        
+        const titleEl = document.createElement('div');
+        titleEl.className = 'result-title';
+        titleEl.textContent = note.title;
+        
+        const dateEl = document.createElement('div');
+        dateEl.className = 'result-score';
+        dateEl.textContent = new Date(note.timestamp).toLocaleString();
+        
+        const contentEl = document.createElement('div');
+        contentEl.className = 'result-content';
+        contentEl.textContent = note.content;
+        
+        const actionsEl = document.createElement('div');
+        actionsEl.className = 'result-actions';
+        
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = '🗑️';
+        deleteBtn.style.marginLeft = '10px';
+        deleteBtn.onclick = () => {
+          state.notes = state.notes.filter(n => n.id !== note.id);
+          renderNotes();
+        };
+        
+        actionsEl.appendChild(deleteBtn);
+        
+        noteEl.appendChild(titleEl);
+        noteEl.appendChild(dateEl);
+        noteEl.appendChild(contentEl);
+        noteEl.appendChild(actionsEl);
+        
+        notesList.appendChild(noteEl);
+      });
+    }
+
+    addNoteBtn.addEventListener('click', addNote);
+
+    // Relation functionality
+    function addRelation() {
+      const from = fromNode.value.trim();
+      const to = toNode.value.trim();
+      const label = relationLabel.value.trim();
+      
+      if (!from || !to || !label) {
+        graphStatus.textContent = '所有字段都不能为空';
+        graphStatus.className = 'status error';
+        return;
+      }
+      
+      const newRelation = {
+        id: `rel:${Date.now()}`,
+        from,
+        to,
+        label,
+        timestamp: new Date().toISOString()
+      };
+      
+      state.relations.push(newRelation);
+      fromNode.value = '';
+      toNode.value = '';
+      relationLabel.value = '';
+      
+      graphStatus.textContent = '关系已添加';
+      graphStatus.className = 'status success';
+      
+      renderRelations();
+    }
+
+    function renderRelations() {
+      graphList.innerHTML = '';
+      if (state.relations.length === 0) {
+        graphList.innerHTML = '<p class="no-results">暂无关系</p>';
+        return;
+      }
+      
+      state.relations.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+      
+      state.relations.forEach(relation => {
+        const relationEl = document.createElement('div');
+        relationEl.className = 'graph-item';
+        
+        const fromSpan = document.createElement('span');
+        fromSpan.textContent = relation.from;
+        
+        const arrowSpan = document.createElement('span');
+        arrowSpan.textContent = '→';
+        
+        const toSpan = document.createElement('span');
+        toSpan.textContent = relation.to;
+        
+        const labelSpan = document.createElement('span');
+        labelSpan.textContent = relation.label;
+        
+        const dateSmall = document.createElement('small');
+        dateSmall.textContent = new Date(relation.timestamp).toLocaleString();
+        
+        relationEl.appendChild(fromSpan);
+        relationEl.appendChild(arrowSpan);
+        relationEl.appendChild(toSpan);
+        relationEl.appendChild(labelSpan);
+        relationEl.appendChild(dateSmall);
+        
+        graphList.appendChild(relationEl);
+      });
+    }
+
+    addRelationBtn.addEventListener('click', addRelation);
+
+    // Theme toggle
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.body.classList.contains('dark-mode');
+      if (isDark) {
+        document.body.classList.remove('dark-mode');
+        themeToggle.textContent = '🌙';
+      } else {
+        document.body.classList.add('dark-mode');
+        themeToggle.textContent = '☀️';
+      }
+    });
+
+    // Initialize
+    function init() {
+      // Load saved data from localStorage
+      try {
+        const savedData = JSON.parse(localStorage.getItem('gbrainState'));
+        if (savedData) {
+          state.notes = savedData.notes || [];
+          state.relations = savedData.relations || [];
+        }
+      } catch (e) {
+        console.error('Failed to load saved data:', e);
+      }
+      
+      // Render initial state
+      renderNotes();
+      renderRelations();
+      
+      // Check system preference
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (prefersDark) {
+        document.body.classList.add('dark-mode');
+        themeToggle.textContent = '☀️';
+      }
+      
+      // Save state periodically
+      setInterval(() => {
+        try {
+          localStorage.setItem('gbrainState', JSON.stringify(state));
+        } catch (e) {
+          console.error('Failed to save state:', e);
+        }
+      }, 30000);
+    }
+
+    // Start the app
+    init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿{
+    "name":  "code-navigator",
+    "version":  "0.2.0",
+    "status":  "implemented",
+    "category":  "dev",
+    "description":  "Symbolic code navigation 鈥?find functions, classes, interfaces, imports, exports",
+    "implementedAt":  "2026-06-22T23:15:00+08:00",
+    "args":  [
+                 {
+                     "name":  "projectDir",
+                     "type":  "string",
+                     "required":  true,
+                     "description":  "Source tree to search"
+                 },
+                 {
+                     "name":  "symbol",
+                     "type":  "string",
+                     "required":  false,
+                     "description":  "Symbol name to find"
+                 },
+                 {
+                     "name":  "type",
+                     "type":  "string",
+                     "required":  false,
+                     "description":  "Filter: func, class, interface, type, enum, import, export, all"
+                 },
+                 {
+                     "name":  "fuzzy",
+                     "type":  "bool",
+                     "required":  false,
+                     "description":  "Fuzzy regex match"
+                 },
+                 {
+                     "name":  "json",
+                     "type":  "bool",
+                     "required":  false,
+                     "description":  "Output as JSON"
+                 }
+             ]
+}

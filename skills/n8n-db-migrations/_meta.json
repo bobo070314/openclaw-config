@@ -1,0 +1,9 @@
+﻿{
+    "version":  "1.0.0",
+    "name":  "n8n-db-migrations",
+    "source":  "gh-enterprise-baseline",
+    "description":  "数据库迁移规范（n8n项目，46KB）",
+    "implementedAt":  "2026-06-22T23:20:00+08:00",
+    "category":  "dev",
+    "status":  "implemented"
+}

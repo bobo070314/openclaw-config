@@ -1,0 +1,8 @@
+﻿{
+    "version":  "1.0.0",
+    "name":  "qclaw-cron-skill",
+    "implementedAt":  "2026-06-22T23:26:00+08:00",
+    "description":  "Skill: qclaw-cron-skill",
+    "category":  "tools",
+    "status":  "implemented"
+}

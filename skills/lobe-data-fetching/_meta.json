@@ -1,0 +1,9 @@
+﻿{
+    "version":  "1.0.0",
+    "name":  "lobe-data-fetching",
+    "source":  "gh-enterprise-baseline",
+    "description":  "前端数据获取架构（lobe-chat项目，18KB）",
+    "implementedAt":  "2026-06-22T23:20:00+08:00",
+    "category":  "dev",
+    "status":  "implemented"
+}

@@ -1,0 +1,8 @@
+﻿{
+    "version":  "0.2.0",
+    "name":  "backend-code-review",
+    "implementedAt":  "2026-06-22T23:15:00+08:00",
+    "description":  "10规则后端代码审查，覆盖安全漏洞/性能/复杂度/错误处理",
+    "category":  "dev",
+    "status":  "implemented"
+}

@@ -1,0 +1,8 @@
+﻿{
+    "version":  "1.0.0",
+    "name":  "car-maintenance-mgr",
+    "implementedAt":  "2026-06-22T23:26:00+08:00",
+    "description":  "汽车保养记录与提醒",
+    "category":  "tools",
+    "status":  "implemented"
+}
