@@ -1,5 +1,4 @@
 #!/bin/bash
-# Auto-generated run script for frontend-code-review
-echo "Running skill: frontend-code-review"
-echo "Input received: $1"
-echo "Placeholder - implement actual logic later"
+# frontend-code-review v0.2.0 — delegates to Python
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+exec python "$SCRIPT_DIR/code_review.py" "$@"

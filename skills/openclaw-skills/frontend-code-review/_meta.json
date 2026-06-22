@@ -1,6 +1,37 @@
 {
   "name": "frontend-code-review",
-  "version": "0.1.0",
-  "entrypoint": "./run.sh",
-  "status": "stub"
+  "version": "0.2.0",
+  "entrypoint": "./run.bat",
+  "status": "implemented",
+  "type": "script",
+  "args": [
+    {
+      "name": "file",
+      "type": "string",
+      "description": "Single file to review (quick scan)",
+      "required": false
+    },
+    {
+      "name": "src",
+      "type": "string",
+      "description": "Source directory for deep scan",
+      "required": false
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "description": "Output format: text, json, markdown",
+      "required": false
+    },
+    {
+      "name": "projectDir",
+      "type": "string",
+      "description": "Project root directory (for config detection)",
+      "required": false
+    }
+  ],
+  "output": {
+    "success": "Human-readable review report with fix suggestions, symbol references, and quality score",
+    "failure": "Exit code 1 if errors found or ESLint unavailable"
+  }
 }
