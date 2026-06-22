@@ -1,5 +1,4 @@
 #!/bin/bash
-# Auto-generated run script for backend-code-review
-echo "Running skill: backend-code-review"
-echo "Input received: $1"
-echo "Placeholder - implement actual logic later"
+# backend-code-review v0.2.0 — delegates to Python
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+exec python "$SCRIPT_DIR/backend_review.py" "$@"

@@ -1,0 +1,31 @@
+{
+  "name": "security-audit",
+  "version": "0.2.0",
+  "entrypoint": "./run.bat",
+  "status": "implemented",
+  "type": "script",
+  "args": [
+    {
+      "name": "projectDir",
+      "type": "string",
+      "description": "Project root directory to audit",
+      "required": true
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "description": "Output format: markdown, text, json",
+      "required": false
+    },
+    {
+      "name": "noGit",
+      "type": "bool",
+      "description": "Skip .gitignore checks",
+      "required": false
+    }
+  ],
+  "output": {
+    "success": "0 findings or CRITICAL=0 → exit 0",
+    "failure": "Exit code 1 if CRITICAL findings detected"
+  }
+}

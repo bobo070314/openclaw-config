@@ -1,6 +1,43 @@
 {
   "name": "backend-code-review",
-  "version": "0.1.0",
-  "entrypoint": "./run.sh",
-  "status": "stub"
+  "version": "0.2.0",
+  "entrypoint": "./run.bat",
+  "status": "implemented",
+  "type": "script",
+  "args": [
+    {
+      "name": "src",
+      "type": "string",
+      "description": "Source directory to scan",
+      "required": false
+    },
+    {
+      "name": "file",
+      "type": "string",
+      "description": "Single Python file to review",
+      "required": false
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "description": "Output format: markdown, text, json",
+      "required": false
+    },
+    {
+      "name": "projectDir",
+      "type": "string",
+      "description": "Project root directory (for config detection)",
+      "required": false
+    },
+    {
+      "name": "noLinter",
+      "type": "bool",
+      "description": "Skip pylint/flake8 — AST + security only",
+      "required": false
+    }
+  ],
+  "output": {
+    "success": "Markdown audit report with risk levels, framework patterns, and fix examples",
+    "failure": "Exit code 1 if HIGH severity findings detected"
+  }
 }
