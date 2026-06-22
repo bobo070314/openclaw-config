@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "create-community-node-lint-rule",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: create-community-node-lint-rule"
+}

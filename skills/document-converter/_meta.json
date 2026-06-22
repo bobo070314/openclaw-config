@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "document-converter",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: document-converter"
+}

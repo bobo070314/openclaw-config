@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "imap-smtp-email",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: imap-smtp-email"
+}

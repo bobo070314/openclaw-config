@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "bdpan-storage",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: bdpan-storage"
+}

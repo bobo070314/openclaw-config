@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "create-pr",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: create-pr"
+}

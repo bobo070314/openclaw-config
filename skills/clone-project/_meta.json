@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "clone-project",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: clone-project"
+}

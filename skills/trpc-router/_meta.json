@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "trpc-router",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: trpc-router"
+}

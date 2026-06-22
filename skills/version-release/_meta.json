@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "version-release",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: version-release"
+}

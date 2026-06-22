@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "protect-endpoints",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: protect-endpoints"
+}

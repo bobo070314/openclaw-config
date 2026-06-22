@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "agent-signal",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: agent-signal"
+}

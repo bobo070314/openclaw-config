@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "response-compliance",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: response-compliance"
+}

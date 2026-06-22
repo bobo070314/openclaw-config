@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "debug-package",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: debug-package"
+}

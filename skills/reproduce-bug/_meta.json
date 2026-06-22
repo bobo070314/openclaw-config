@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "reproduce-bug",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: reproduce-bug"
+}

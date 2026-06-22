@@ -1,0 +1,7 @@
+{
+    "status":  "active",
+    "category":  "devsecops",
+    "name":  "agent-tracing",
+    "version":  "1.0.0",
+    "description":  "OpenClaw skill: agent-tracing"
+}
