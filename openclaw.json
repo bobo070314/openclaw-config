@@ -1,0 +1,747 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "deepseek/deepseek-v4-pro",
+        "fallbacks": [
+          "deepseek/deepseek-v4-flash",
+          "siliconflow/deepseek-ai/DeepSeek-V4-Pro",
+          "siliconflow/deepseek-ai/DeepSeek-V4-Flash",
+          "moonshot/kimi-k2.6",
+          "moonshot/kimi-k2.7-code",
+          "doubao/doubao-seed-2-0-pro-260215",
+          "doubao/doubao-seed-2-0-lite-260428",
+          "zhipu/glm-4-flash",
+          "dashscope/qwen-flash",
+          "dashscope/qwen3.7-max-2026-06-08",
+          "siliconflow/Qwen/Qwen3-8B",
+          "noFallback"
+        ]
+      },
+      "workspace": "D:\\bobo\\openclaw-foreign\\workspace",
+      "maxConcurrent": 3,
+      "timeoutSeconds": 72000,
+      "thinkingDefault": "off",
+      "memorySearch": {
+        "provider": "dashscope",
+        "model": "text-embedding-v3"
+      }
+    },
+    "list": [
+      {
+        "id": "assistant",
+        "name": "猫抓助手",
+        "default": true,
+        "skills": [],
+        "identity": {
+          "name": "猫抓助手"
+        },
+        "model": {
+          "primary": "deepseek/deepseek-v4-pro"
+        }
+      }
+    ]
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com/v1",
+        "apiKey": "sk-49f9170dc71648499300e2c193cb983e",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-v4-pro",
+            "name": "[PAID 3/6] DeepSeek V4 Pro"
+          },
+          {
+            "id": "deepseek-v4-flash",
+            "name": "[PAID 1/4] DeepSeek V4 Flash"
+          }
+        ]
+      },
+      "moonshot": {
+        "baseUrl": "https://api.moonshot.cn/v1",
+        "apiKey": "sk-vNbL5U6G2NcZb0jJ1jxq9fU2J3bb0Qy29tIbeVyPKR4pkyAF",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "kimi-k2.7-code",
+            "name": "[PAID 6.5/27] Kimi K2.7 Code"
+          },
+          {
+            "id": "kimi-k2.6",
+            "name": "[PAID 6.5/27] Kimi K2.6"
+          },
+          {
+            "id": "kimi-k2.5",
+            "name": "[PAID] Kimi K2.5"
+          },
+          {
+            "id": "moonshot-v1-8k",
+            "name": "[PAID 2/10] Moonshot V1 8K"
+          },
+          {
+            "id": "moonshot-v1-32k",
+            "name": "[PAID 5/20] Moonshot V1 32K"
+          },
+          {
+            "id": "moonshot-v1-128k",
+            "name": "[PAID 10/30] Moonshot V1 128K"
+          }
+        ]
+      },
+      "zhipu": {
+        "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+        "apiKey": "2ccddfa85ba047918ba42cef3b1a9d72.fCnRkscAz5Q3Otg8",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-4-flash",
+            "name": "[FREE] GLM-4 Flash 128K"
+          },
+          {
+            "id": "glm-4v-flash",
+            "name": "[FREE] GLM-4V Flash Vision"
+          },
+          {
+            "id": "glm-z1-flash",
+            "name": "[FREE] GLM-Z1 Flash Reasoning"
+          },
+          {
+            "id": "glm-4.5-air",
+            "name": "[FREE] GLM-4.5 Air Fast"
+          },
+          {
+            "id": "cogview-3-flash",
+            "name": "[FREE] CogView-3 Image"
+          },
+          {
+            "id": "glm-5.2",
+            "name": "[PAID 10/30] GLM-5.2"
+          },
+          {
+            "id": "glm-5.1",
+            "name": "[PAID 8/24] GLM-5.1"
+          },
+          {
+            "id": "glm-4.7",
+            "name": "[PAID 5/5] GLM-4.7"
+          }
+        ]
+      },
+      "siliconflow": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "apiKey": "sk-bmckwztikojmyjotkaxhoekftgjobkoxyaofstxuujmgrmzv",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-ai/DeepSeek-V4-Pro",
+            "name": "[PAID 3/6] DS V4 Pro"
+          },
+          {
+            "id": "deepseek-ai/DeepSeek-V4-Flash",
+            "name": "[PAID 1/2] DS V4 Flash"
+          },
+          {
+            "id": "moonshotai/Kimi-K2.6",
+            "name": "[PAID 6.5/27] Kimi K2.6"
+          },
+          {
+            "id": "Qwen/Qwen3-Coder-32B",
+            "name": "[PAID] Qwen3 Coder 32B"
+          },
+          {
+            "id": "Qwen/Qwen3-8B",
+            "name": "[FREE] Qwen3 8B"
+          },
+          {
+            "id": "Qwen/Qwen2.5-7B-Instruct",
+            "name": "[FREE] Qwen2.5 7B"
+          },
+          {
+            "id": "THUDM/glm-4-9b-chat",
+            "name": "[FREE] GLM-4 9B"
+          },
+          {
+            "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+            "name": "[FREE] DS R1 7B"
+          }
+        ]
+      },
+      "dashscope": {
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "apiKey": "sk-f08b824d2fc84aad9796e5edb95460d1",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen-flash",
+            "name": "[FREE 7000w] Qwen Flash"
+          },
+          {
+            "id": "qwen-turbo",
+            "name": "[FREE] Qwen Turbo"
+          },
+          {
+            "id": "qwen3-coder-flash",
+            "name": "[FREE] Qwen3 Coder Flash"
+          },
+          {
+            "id": "qwen-mt-flash",
+            "name": "[FREE] Qwen MT Flash"
+          },
+          {
+            "id": "qwen-mt-lite",
+            "name": "[FREE] Qwen MT Lite"
+          },
+          {
+            "id": "qwen3.7-max-2026-06-08",
+            "name": "[PAID 10/36] Qwen3.7 Max"
+          },
+          {
+            "id": "qwen3.7-plus-2026-05-26",
+            "name": "[PAID 3/12] Qwen3.7 Plus"
+          },
+          {
+            "id": "qwen-max",
+            "name": "[PAID 2.5/10] Qwen Max"
+          }
+        ]
+      },
+      "doubao": {
+        "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+        "apiKey": "ark-8811d227-97e0-4856-b1b8-c72b38895860-bc08d",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "doubao-seed-2-0-lite-260428",
+            "name": "[FREE 50w] Seed 2.0 Lite"
+          },
+          {
+            "id": "doubao-seed-2-0-mini-260428",
+            "name": "[FREE 50w] Seed 2.0 Mini"
+          },
+          {
+            "id": "doubao-seed-2-0-pro-260215",
+            "name": "[PAID 3.2/16] Seed 2.0 Pro"
+          },
+          {
+            "id": "doubao-seed-1-6-251015",
+            "name": "[PAID 3.2/16] Seed 1.6"
+          }
+        ]
+      }
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true
+      }
+    }
+  },
+  "browser": {
+    "enabled": true
+  },
+  "gateway": {
+    "port": 18791,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "none",
+      "token": "e58113b4f30980623d0a7855e1dc9c1fd725b7eb2b690f7b"
+    },
+    "nodes": {},
+    "controlUi": {
+      "allowedOrigins": [
+        "null",
+        "file://"
+      ]
+    }
+  },
+  "plugins": {
+    "enabled": true,
+    "allow": [
+      "lossless-claw",
+      "deepseek",
+      "browser",
+      "memory-core"
+    ],
+    "slots": {
+      "contextEngine": "lossless-claw"
+    },
+    "load": {
+      "paths": [
+        "D:\\bobo\\openclaw-foreign\\plugins\\lossless-claw"
+      ]
+    },
+    "entries": {
+      "lossless-claw": {
+        "enabled": true,
+        "config": {
+          "dbPath": "D:\\bobo\\openclaw-foreign\\state\\lcm.db",
+          "contextThreshold": 0.6,
+          "freshTailCount": 32,
+          "freshTailMaxTokens": 32000,
+          "incrementalMaxDepth": 3,
+          "ignoreSessionPatterns": [
+            "agent:*:cron:**",
+            "**:heartbeat"
+          ],
+          "statelessSessionPatterns": [
+            "agent:*:subagent:**"
+          ],
+          "skipStatelessSessions": true
+        }
+      },
+      "deepseek": {
+        "enabled": true
+      },
+      "browser": {
+        "enabled": true
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.21-5",
+    "lastTouchedAt": "2026-06-22T11:01:10.557Z"
+  },
+  "skills": {
+    "limits": {
+      "maxSkillsPromptChars": 20000
+    },
+    "load": {
+      "extraDirs": [
+        "D:\\bobo\\openclaw-foreign\\skills"
+      ]
+    },
+    "entries": {
+      "aippt": {
+        "enabled": true
+      },
+      "another_them": {
+        "enabled": true
+      },
+      "cloud-upload-backup": {
+        "enabled": true
+      },
+      "docx": {
+        "enabled": true
+      },
+      "email-skill": {
+        "enabled": true
+      },
+      "figma": {
+        "enabled": true
+      },
+      "find-skills": {
+        "enabled": true
+      },
+      "kdocs": {
+        "enabled": true
+      },
+      "pdf": {
+        "enabled": true
+      },
+      "persona-switch": {
+        "enabled": true
+      },
+      "qclaw-cron-skill": {
+        "enabled": true
+      },
+      "qclaw-env": {
+        "enabled": true
+      },
+      "qclaw-rules": {
+        "enabled": true
+      },
+      "qclaw-skill-creator": {
+        "enabled": true
+      },
+      "xbrowser": {
+        "enabled": true
+      },
+      "xlsx": {
+        "enabled": true
+      },
+      "youdaonote": {
+        "enabled": true
+      },
+      "wecomcli-contact": {
+        "enabled": true,
+        "config": {}
+      },
+      "wecomcli-doc": {
+        "enabled": true,
+        "config": {}
+      },
+      "wecomcli-meeting": {
+        "enabled": true,
+        "config": {}
+      },
+      "wecomcli-msg": {
+        "enabled": true,
+        "config": {}
+      },
+      "wecomcli-schedule": {
+        "enabled": true,
+        "config": {}
+      },
+      "wecomcli-todo": {
+        "enabled": true,
+        "config": {}
+      },
+      "tencent-docs": {
+        "enabled": true
+      },
+      "tencent-meeting-mcp": {
+        "enabled": true
+      },
+      "imap-smtp-email": {
+        "enabled": true
+      },
+      "notion": {
+        "enabled": true
+      },
+      "weather-advisor": {
+        "enabled": true
+      },
+      "tech-news-digest": {
+        "enabled": true
+      },
+      "document-converter": {
+        "enabled": true
+      },
+      "knowledge-loop": {
+        "enabled": true
+      },
+      "wecomcli-setup": {
+        "enabled": true
+      },
+      "weiyun": {
+        "enabled": true
+      },
+      "wendao-partner-qclaw-skill": {
+        "enabled": true
+      },
+      "bdpan-storage": {
+        "enabled": true
+      },
+      "lark-setup": {
+        "enabled": true
+      },
+      "advertising-creative-strategist": {
+        "enabled": true
+      },
+      "agent-email": {
+        "enabled": true
+      },
+      "baidu-ai-map": {
+        "enabled": true
+      },
+      "cantian-bazi": {
+        "enabled": true
+      },
+      "car-maintenance-mgr": {
+        "enabled": true
+      },
+      "contract-review-expert": {
+        "enabled": true
+      },
+      "data-compliance-doc-expert": {
+        "enabled": true
+      },
+      "douyin-strategist": {
+        "enabled": true
+      },
+      "ebay-seller-toolkit": {
+        "enabled": true
+      },
+      "elite-longterm-memory": {
+        "enabled": true
+      },
+      "fbs_bookwriter": {
+        "enabled": true
+      },
+      "growth-hacker": {
+        "enabled": true
+      },
+      "lexiang-knowledge-base": {
+        "enabled": true
+      },
+      "meituan-travel": {
+        "enabled": true
+      },
+      "mtunion-product-ai-guide": {
+        "enabled": true
+      },
+      "personal-mail-skill": {
+        "enabled": true
+      },
+      "ppc-strategy-specialist": {
+        "enabled": true
+      },
+      "presales-engineer": {
+        "enabled": true
+      },
+      "private-domain-operator": {
+        "enabled": true
+      },
+      "prompt-engineer": {
+        "enabled": true
+      },
+      "qcc-company": {
+        "enabled": true
+      },
+      "tencent-esign-contract": {
+        "enabled": true
+      },
+      "thesis-word-formatter": {
+        "enabled": true
+      },
+      "tongdaxin-mcp": {
+        "enabled": true
+      },
+      "wechat-draft-writer": {
+        "enabled": true
+      },
+      "wechat-style-profiler": {
+        "enabled": true
+      },
+      "wechat-title-generator": {
+        "enabled": true
+      },
+      "wechat-topic-outline-planner": {
+        "enabled": true
+      },
+      "wecom-weisheng-scrm": {
+        "enabled": true
+      },
+      "weread-skills": {
+        "enabled": true
+      },
+      "yuandian": {
+        "enabled": true
+      },
+      "zhihu-strategist": {
+        "enabled": true
+      },
+      "\"mtunion-product-ai-guide\"": {
+        "enabled": true
+      },
+      "add-provider-doc": {
+        "enabled": true
+      },
+      "add-setting-env": {
+        "enabled": true
+      },
+      "agent-runtime-hooks": {
+        "enabled": true
+      },
+      "agent-signal": {
+        "enabled": true
+      },
+      "agent-testing": {
+        "enabled": true
+      },
+      "agent-tracing": {
+        "enabled": true
+      },
+      "backend-code-review": {
+        "enabled": true
+      },
+      "builtin-tool": {
+        "enabled": true
+      },
+      "chat-sdk": {
+        "enabled": true
+      },
+      "cli": {
+        "enabled": true
+      },
+      "clone-project": {
+        "enabled": true
+      },
+      "community-pr-readiness-check": {
+        "enabled": true
+      },
+      "content-design": {
+        "enabled": true
+      },
+      "conventions": {
+        "enabled": true
+      },
+      "create-community-node-lint-rule": {
+        "enabled": true
+      },
+      "create-issue": {
+        "enabled": true
+      },
+      "create-pr": {
+        "enabled": true
+      },
+      "create-skill": {
+        "enabled": true
+      },
+      "data-fetching-architecture": {
+        "enabled": true
+      },
+      "db-migrations": {
+        "enabled": true
+      },
+      "debug-package": {
+        "enabled": true
+      },
+      "design-system": {
+        "enabled": true
+      },
+      "desktop": {
+        "enabled": true
+      },
+      "docs-changelog": {
+        "enabled": true
+      },
+      "drizzle": {
+        "enabled": true
+      },
+      "e2e-cucumber-playwright": {
+        "enabled": true
+      },
+      "experiments": {
+        "enabled": true
+      },
+      "frontend-code-review": {
+        "enabled": true
+      },
+      "frontend-testing": {
+        "enabled": true
+      },
+      "gbrain": {
+        "enabled": true
+      },
+      "heterogeneous-agent": {
+        "enabled": true
+      },
+      "hotkey": {
+        "enabled": true
+      },
+      "how-to-write-component": {
+        "enabled": true
+      },
+      "human-like-code-review": {
+        "enabled": true
+      },
+      "i18n": {
+        "enabled": true
+      },
+      "karpathy-guidelines": {
+        "enabled": true
+      },
+      "linear": {
+        "enabled": true
+      },
+      "linear-issue": {
+        "enabled": true
+      },
+      "loom-transcript": {
+        "enabled": true
+      },
+      "microcopy": {
+        "enabled": true
+      },
+      "modal": {
+        "enabled": true
+      },
+      "model-bank-metadata": {
+        "enabled": true
+      },
+      "model-selection-rules": {
+        "enabled": true
+      },
+      "node-add-oauth": {
+        "enabled": true
+      },
+      "pr": {
+        "enabled": true
+      },
+      "project-overview": {
+        "enabled": true
+      },
+      "protect-endpoints": {
+        "enabled": true
+      },
+      "react": {
+        "enabled": true
+      },
+      "reasoning-framework": {
+        "enabled": true
+      },
+      "reproduce-bug": {
+        "enabled": true
+      },
+      "response-compliance": {
+        "enabled": true
+      },
+      "review-checklist": {
+        "enabled": true
+      },
+      "skills-audit": {
+        "enabled": true
+      },
+      "spa-routes": {
+        "enabled": true
+      },
+      "spec-driven-development": {
+        "enabled": true
+      },
+      "store-data-structures": {
+        "enabled": true
+      },
+      "testing": {
+        "enabled": true
+      },
+      "trpc-router": {
+        "enabled": true
+      },
+      "typescript": {
+        "enabled": true
+      },
+      "upstash-workflow": {
+        "enabled": true
+      },
+      "ux": {
+        "enabled": true
+      },
+      "version-release": {
+        "enabled": true
+      },
+      "zustand": {
+        "enabled": true
+      }
+    }
+  },
+  "mcp": {
+    "servers": {
+      "sequential-think": {
+        "command": "D:\\\\Program Files\\\\nodejs\\\\node.exe",
+        "args": [
+          "D:\\\\Program Files\\\\nodejs\\\\node_modules\\\\npm\\\\bin\\\\npx-cli.js",
+          "-y",
+          "mcp-sequentialthinking-tools"
+        ],
+        "disabled": false,
+        "toolFilter": {
+          "include": [
+            "*"
+          ]
+        }
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-06-22T07:57:23.672Z",
+    "lastRunVersion": "2026.4.21-5",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  }
+}

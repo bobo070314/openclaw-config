@@ -1,0 +1,21 @@
+---
+name: add-provider-doc
+description: "Add Provider Doc — auto-generated stub. Replace with when-to-use cues."
+---
+
+# add-provider-doc
+
+---
+
+## Input
+- query: string
+
+## Output
+- result: string
+
+## Example
+```python
+# 示例代码
+print("Hello from add-provider-doc")
+```
+

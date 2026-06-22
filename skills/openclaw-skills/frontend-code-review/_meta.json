@@ -1,0 +1,6 @@
+{
+  "name": "frontend-code-review",
+  "version": "0.1.0",
+  "entrypoint": "./run.sh",
+  "status": "stub"
+}

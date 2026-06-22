@@ -1,0 +1,31 @@
+{
+  "name": "agent-testing",
+  "version": "0.2.0",
+  "entrypoint": "./run.bat",
+  "status": "implemented",
+  "type": "script",
+  "args": [
+    {
+      "name": "projectDir",
+      "type": "string",
+      "description": "Path to the project directory to test",
+      "required": true
+    },
+    {
+      "name": "testPattern",
+      "type": "string",
+      "description": "Optional test name pattern to filter (e.g. test_auth)",
+      "required": false
+    },
+    {
+      "name": "framework",
+      "type": "string",
+      "description": "Optional override: pytest, vitest, jest, cargo, go",
+      "required": false
+    }
+  ],
+  "output": {
+    "success": "Test results with pass/fail/skip counts and timing",
+    "failure": "Test failures or framework not found"
+  }
+}

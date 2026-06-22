@@ -1,0 +1,7 @@
+{
+  "name": "clone-project",
+  "version": "0.1.0",
+  "entrypoint": "./run.sh",
+  "status": "stub",
+  "description": "Clones a git repo into workspace and runs npm install"
+}

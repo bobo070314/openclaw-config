@@ -1,0 +1,31 @@
+{
+  "name": "create-skill",
+  "version": "0.2.0",
+  "entrypoint": "./run.bat",
+  "status": "implemented",
+  "type": "script",
+  "args": [
+    {
+      "name": "skillName",
+      "type": "string",
+      "description": "Name of the new skill (lowercase, kebab-case)",
+      "required": true
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Brief description of what the skill does (used for workspace search)",
+      "required": true
+    },
+    {
+      "name": "targetDir",
+      "type": "string",
+      "description": "Optional. Directory to create the skill in",
+      "required": false
+    }
+  ],
+  "output": {
+    "success": "Creates run.sh, run.bat, _meta.json, SKILL.md with context snapshot in target dir",
+    "failure": "Existing skill name warning (exits 0 — idempotent)"
+  }
+}
