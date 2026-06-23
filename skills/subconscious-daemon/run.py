@@ -24,6 +24,10 @@ LOG_DIR = SKILLS_DIR / ".daemon" / "logs"
 STATE_FILE = SKILLS_DIR / ".daemon" / "state.json"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
+# V5.0: Rate-limiting state
+_last_screenshot_ts = 0.0
+SCREENSHOT_COOLDOWN_S = 60  # max 1 screenshot per minute
+
 
 def check_cpu(threshold_pct=85):
     try:
@@ -148,8 +152,15 @@ def check_prompts():
 
 # ══════════════════ V4.2 VISION MODULE ══════════════════
 def capture_and_analyze_screen():
-    """Screenshot + Owl-Vision analysis. Triggers causal-reasoner on anomaly."""
+    """Screenshot + Owl-Vision analysis.
+    V5.0: Rate-limited to 1 call per 60s to prevent resource exhaustion attacks. Triggers causal-reasoner on anomaly."""
     try:
+        global _last_screenshot_ts
+        now = time.time()
+        if now - _last_screenshot_ts < SCREENSHOT_COOLDOWN_S:
+            return {"type": "vision", "value": 0, "alert": False, "message": "rate-limited; try again later"}
+        _last_screenshot_ts = now
+
         import io
         import pyautogui
         from PIL import Image
