@@ -22,7 +22,6 @@ state/
 # Skills auto-generated stubs (not source-controlled)
 skills/*/run.bat
 skills/*/run.sh
-skills/*/run.py
 skills/*/.deploy/
 skills/*/evaluator/
 skills/__audit_batch*.json
