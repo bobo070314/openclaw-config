@@ -238,6 +238,11 @@
       "search": {
         "enabled": true
       }
+    },
+    "exec": {
+      "pathPrepend": [
+        "D:/bobo/openclaw-foreign/workspace"
+      ]
     }
   },
   "browser": {
@@ -472,9 +477,6 @@
       "meituan-travel": {
         "enabled": true
       },
-      "mtunion-product-ai-guide": {
-        "enabled": true
-      },
       "personal-mail-skill": {
         "enabled": true
       },
@@ -524,9 +526,6 @@
         "enabled": true
       },
       "zhihu-strategist": {
-        "enabled": true
-      },
-      "\"mtunion-product-ai-guide\"": {
         "enabled": true
       },
       "add-provider-doc": {

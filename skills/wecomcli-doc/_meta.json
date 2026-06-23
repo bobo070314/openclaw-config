@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "wecomcli-doc",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: wecomcli-doc"
+  "status": "active",
+  "category": "enterprise",
+  "name": "wecomcli-doc",
+  "version": "1.0.0",
+  "description": "企业微信文档操作 - 创建/编辑/删除在线文档和表格，支持权限管理和协作编辑",
+  "tags": [
+    "wecom",
+    "documents",
+    "enterprise"
+  ]
 }

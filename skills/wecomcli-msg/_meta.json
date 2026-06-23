@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "wecomcli-msg",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: wecomcli-msg"
+  "status": "active",
+  "category": "enterprise",
+  "name": "wecomcli-msg",
+  "version": "1.0.0",
+  "description": "企业微信消息发送 - 文本/图片/文件/图文消息，支持@提醒、消息撤回和发送状态查询",
+  "tags": [
+    "wecom",
+    "messaging",
+    "enterprise"
+  ]
 }

@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "zustand",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: zustand"
+  "status": "active",
+  "category": "frontend",
+  "name": "zustand",
+  "version": "1.0.0",
+  "description": "Zustand 状态管理 - Store创建、中间件、持久化和React组件集成模式",
+  "tags": [
+    "zustand",
+    "state",
+    "react"
+  ]
 }

@@ -1,24 +1,68 @@
 ---
 name: agent-runtime-hooks
-description: OpenClaw skill: agent-runtime-hooks
+description: Agent 运行时生命周期钩子 - 初始化/前置/后置/清理钩子，任务拦截链和事件总线
 version: 1.0.0
 status: active
 category: devsecops
+tags: [agent, hooks, lifecycle]
 ---
+
 # agent-runtime-hooks
 
-## 定位
-OpenClaw 自动化技能：agent-runtime-hooks
+## Overview
+Agent 运行时生命周期钩子 - 初始化/前置/后置/清理钩子，任务拦截链和事件总线
 
-## 触发条件
-用户明确调用此技能时触发。
+## Category
+devsecops
 
-## 工作流
-1. 接收用户请求
-2. 执行 agent-runtime-hooks 核心逻辑
-3. 返回结果
+## When to Use
+Trigger this skill when the user requests operations related to agent runtime hooks.
 
-## 关键约束
-- 遵循 OpenClaw 技能规范
-- 确保输出格式一致
-- 错误时提供明确反馈
+## Workflow
+
+### Pre-flight
+1. Verify prerequisites are met (dependencies, credentials, environment)
+2. Check configuration via `agent-runtime-hooks-setup` or equivalent if available
+3. Validate user input parameters
+
+### Execution
+1. Parse and validate the user's request
+2. Execute the core operation using appropriate tools:
+   - **exec**: Run CLI commands, scripts, or API calls
+   - **web_fetch**: Call REST APIs when applicable
+   - **browser**: Handle web-based flows when needed
+3. Handle errors gracefully with clear messages
+
+### Post-execution
+1. Format results for readability
+2. Report success/failure with actionable next steps
+3. Log operations if tracking is enabled
+
+## Key Constraints
+- Always validate inputs before execution
+- Handle authentication/authorization errors explicitly
+- Respect rate limits and API quotas
+- Provide Chinese-language output by default (可切换英文)
+- Never expose secrets or tokens in output
+
+## Examples
+
+### Example 1: Basic Operation
+```
+User: 用 agent-runtime-hooks 执行基本操作
+Assistant: [调用 exec 执行相应命令，返回格式化结果]
+```
+
+### Example 2: Error Handling
+```
+User: 用 agent-runtime-hooks 操作一个不存在的资源
+Assistant: [返回明确的错误信息，建议下一步操作]
+```
+
+## Dependencies
+- OpenClaw runtime >= 1.0
+- Category-specific external tools (see individual commands)
+
+## Related Skills
+- Check `skills-audit` for available skill registry
+- Check category peers under `devsecops`

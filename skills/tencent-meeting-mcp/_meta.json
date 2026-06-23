@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "tencent-meeting-mcp",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: tencent-meeting-mcp"
+  "status": "active",
+  "category": "enterprise",
+  "name": "tencent-meeting-mcp",
+  "version": "1.0.0",
+  "description": "腾讯会议MCP协议集成 - 通过MCP协议调用腾讯会议API，管理会议、录制和参会者",
+  "tags": [
+    "tencent",
+    "meetings",
+    "mcp"
+  ]
 }

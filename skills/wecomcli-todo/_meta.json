@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "wecomcli-todo",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: wecomcli-todo"
+  "status": "active",
+  "category": "enterprise",
+  "name": "wecomcli-todo",
+  "version": "1.0.0",
+  "description": "企业微信待办事项 - 创建/完成/删除待办，支持优先级、截止日期和指派",
+  "tags": [
+    "wecom",
+    "todos",
+    "enterprise"
+  ]
 }

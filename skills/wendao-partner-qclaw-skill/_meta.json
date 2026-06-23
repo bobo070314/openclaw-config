@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "wendao-partner-qclaw-skill",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: wendao-partner-qclaw-skill"
+  "status": "active",
+  "category": "enterprise",
+  "name": "wendao-partner-qclaw-skill",
+  "version": "1.0.0",
+  "description": "问道合作伙伴 QClaw 技能 - 问道平台合作伙伴的专属技能集成和API调用",
+  "tags": [
+    "wendao",
+    "partner",
+    "qclaw"
+  ]
 }

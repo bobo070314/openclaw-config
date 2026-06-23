@@ -1,24 +1,47 @@
 ---
 name: wendao-partner-qclaw-skill
-description: OpenClaw skill: wendao-partner-qclaw-skill
+description: 问道合作伙伴 QClaw 技能 - 问道平台合作伙伴的专属技能集成和API调用
 version: 1.0.0
 status: active
-category: devsecops
+category: enterprise
+tags: [wendao, partner, qclaw]
 ---
+
 # wendao-partner-qclaw-skill
 
-## 定位
-OpenClaw 自动化技能：wendao-partner-qclaw-skill
+## Overview
+问道合作伙伴 QClaw 技能 - 问道平台合作伙伴的专属技能集成和API调用
 
-## 触发条件
-用户明确调用此技能时触发。
+## Category
+enterprise
 
-## 工作流
-1. 接收用户请求
-2. 执行 wendao-partner-qclaw-skill 核心逻辑
-3. 返回结果
+## When to Use
+Trigger when user needs help with wendao partner qclaw skill tasks or concepts.
 
-## 关键约束
-- 遵循 OpenClaw 技能规范
-- 确保输出格式一致
-- 错误时提供明确反馈
+## Workflow
+
+### 1. Understand
+- Parse what the user is asking about wendao partner qclaw skill
+- Identify specific sub-tasks or questions
+
+### 2. Execute
+- Use appropriate tools (exec, web_fetch, browser, read/write) to complete the task
+- Reference best practices and patterns from this skill's knowledge domain
+
+### 3. Deliver
+- Format output clearly with code examples where helpful
+- Provide rationale and alternatives when applicable
+- Default output language: Chinese (可切换英文)
+
+## Constraints
+- Follow OpenClaw skill conventions
+- Handle errors with actionable feedback
+- Never expose sensitive data in output
+
+## Dependencies
+- OpenClaw runtime >= 1.0
+- Category-specific tools as needed
+
+## Related Skills
+- Browse other skills under `enterprise` category
+- Use `skills-audit` to discover available skills

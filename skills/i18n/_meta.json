@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "i18n",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: i18n"
+  "status": "active",
+  "category": "frontend",
+  "name": "i18n",
+  "version": "1.0.0",
+  "description": "国际化(i18n)方案 - 多语言支持、翻译工作流、RTL布局和本地化最佳实践",
+  "tags": [
+    "i18n",
+    "localization",
+    "translation"
+  ]
 }

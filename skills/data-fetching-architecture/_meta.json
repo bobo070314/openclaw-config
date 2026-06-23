@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "data-fetching-architecture",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: data-fetching-architecture"
+  "status": "active",
+  "category": "frontend",
+  "name": "data-fetching-architecture",
+  "version": "1.0.0",
+  "description": "前端数据获取架构 - SWR/React Query模式、缓存策略、乐观更新和错误处理",
+  "tags": [
+    "data-fetching",
+    "react",
+    "architecture"
+  ]
 }

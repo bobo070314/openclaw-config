@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "tencent-docs",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: tencent-docs"
+  "status": "active",
+  "category": "productivity",
+  "name": "tencent-docs",
+  "version": "1.0.0",
+  "description": "腾讯文档集成 - 创建/编辑/导出在线文档、表格、幻灯片，支持协作和权限管理",
+  "tags": [
+    "tencent",
+    "documents",
+    "collaboration"
+  ]
 }

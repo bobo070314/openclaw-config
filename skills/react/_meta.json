@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "react",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: react"
+  "status": "active",
+  "category": "frontend",
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React 开发规范 - 组件设计、Hooks使用、性能优化和项目结构最佳实践",
+  "tags": [
+    "react",
+    "frontend",
+    "best-practices"
+  ]
 }

@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "hotkey",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: hotkey"
+  "status": "active",
+  "category": "frontend",
+  "name": "hotkey",
+  "version": "1.0.0",
+  "description": "快捷键管理 - 全局/局部快捷键注册、冲突检测和跨平台键位映射",
+  "tags": [
+    "hotkey",
+    "keyboard",
+    "shortcuts"
+  ]
 }

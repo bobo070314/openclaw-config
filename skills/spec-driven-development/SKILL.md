@@ -1,24 +1,47 @@
 ---
 name: spec-driven-development
-description: OpenClaw skill: spec-driven-development
+description: 规格驱动开发 - 基于Spec文档的开发流程，OpenAPI/AsyncAPI规范和契约测试
 version: 1.0.0
 status: active
 category: devsecops
+tags: [spec, api, contracts]
 ---
+
 # spec-driven-development
 
-## 定位
-OpenClaw 自动化技能：spec-driven-development
+## Overview
+规格驱动开发 - 基于Spec文档的开发流程，OpenAPI/AsyncAPI规范和契约测试
 
-## 触发条件
-用户明确调用此技能时触发。
+## Category
+devsecops
 
-## 工作流
-1. 接收用户请求
-2. 执行 spec-driven-development 核心逻辑
-3. 返回结果
+## When to Use
+Trigger when user needs help with spec driven development tasks or concepts.
 
-## 关键约束
-- 遵循 OpenClaw 技能规范
-- 确保输出格式一致
-- 错误时提供明确反馈
+## Workflow
+
+### 1. Understand
+- Parse what the user is asking about spec driven development
+- Identify specific sub-tasks or questions
+
+### 2. Execute
+- Use appropriate tools (exec, web_fetch, browser, read/write) to complete the task
+- Reference best practices and patterns from this skill's knowledge domain
+
+### 3. Deliver
+- Format output clearly with code examples where helpful
+- Provide rationale and alternatives when applicable
+- Default output language: Chinese (可切换英文)
+
+## Constraints
+- Follow OpenClaw skill conventions
+- Handle errors with actionable feedback
+- Never expose sensitive data in output
+
+## Dependencies
+- OpenClaw runtime >= 1.0
+- Category-specific tools as needed
+
+## Related Skills
+- Browse other skills under `devsecops` category
+- Use `skills-audit` to discover available skills

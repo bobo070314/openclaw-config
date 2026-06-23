@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "spec-driven-development",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: spec-driven-development"
+  "status": "active",
+  "category": "devsecops",
+  "name": "spec-driven-development",
+  "version": "1.0.0",
+  "description": "规格驱动开发 - 基于Spec文档的开发流程，OpenAPI/AsyncAPI规范和契约测试",
+  "tags": [
+    "spec",
+    "api",
+    "contracts"
+  ]
 }

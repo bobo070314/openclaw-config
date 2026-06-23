@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "lark-setup",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: lark-setup"
+  "status": "active",
+  "category": "enterprise",
+  "name": "lark-setup",
+  "version": "1.0.0",
+  "description": "飞书(Lark)应用配置 - 创建飞书应用、配置权限、获取凭证、Webhook 设置",
+  "tags": [
+    "lark",
+    "feishu",
+    "setup"
+  ]
 }

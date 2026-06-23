@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "upstash-workflow",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: upstash-workflow"
+  "status": "active",
+  "category": "devsecops",
+  "name": "upstash-workflow",
+  "version": "1.0.0",
+  "description": "Upstash Workflow 集成 - 基于Redis的持久化工作流，QStash消息队列和定时任务",
+  "tags": [
+    "upstash",
+    "workflow",
+    "redis"
+  ]
 }

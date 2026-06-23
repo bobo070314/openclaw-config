@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "debug-package",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: debug-package"
+  "status": "active",
+  "category": "devsecops",
+  "name": "debug-package",
+  "version": "1.0.0",
+  "description": "Node.js 包调试工具 - 快速定位 node_modules 问题，符号链接修复、版本冲突检测",
+  "tags": [
+    "debugging",
+    "npm",
+    "node_modules"
+  ]
 }

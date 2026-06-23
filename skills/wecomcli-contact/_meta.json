@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "wecomcli-contact",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: wecomcli-contact"
+  "status": "active",
+  "category": "enterprise",
+  "name": "wecomcli-contact",
+  "version": "1.0.0",
+  "description": "企业微信通讯录管理 - 查询、添加、更新、删除企业微信联系人，支持部门遍历和批量导入",
+  "tags": [
+    "wecom",
+    "contacts",
+    "enterprise"
+  ]
 }

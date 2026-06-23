@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "experiments",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: experiments"
+  "status": "active",
+  "category": "devsecops",
+  "name": "experiments",
+  "version": "1.0.0",
+  "description": "A/B 实验管理 - 特性开关、实验分流、数据采集和结果分析",
+  "tags": [
+    "experiments",
+    "ab-testing",
+    "feature-flags"
+  ]
 }

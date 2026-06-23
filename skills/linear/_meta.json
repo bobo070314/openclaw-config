@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "linear",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: linear"
+  "status": "active",
+  "category": "productivity",
+  "name": "linear",
+  "version": "1.0.0",
+  "description": "Linear 项目管理集成 - Issue/Project/Cycle 管理，工作流自动化和团队协作",
+  "tags": [
+    "linear",
+    "project-management",
+    "issues"
+  ]
 }

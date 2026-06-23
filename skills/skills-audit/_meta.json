@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "skills-audit",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: skills-audit"
+  "status": "active",
+  "category": "devsecops",
+  "name": "skills-audit",
+  "version": "1.0.0",
+  "description": "技能审计工具 - 扫描已安装技能、检查版本一致性、发现冗余和冲突",
+  "tags": [
+    "skills",
+    "audit",
+    "maintenance"
+  ]
 }

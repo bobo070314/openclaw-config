@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "linear-issue",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: linear-issue"
+  "status": "active",
+  "category": "productivity",
+  "name": "linear-issue",
+  "version": "1.0.0",
+  "description": "Linear Issue 操作 - 创建/更新/搜索 Issue，关联PR和状态流转",
+  "tags": [
+    "linear",
+    "issues",
+    "tracking"
+  ]
 }

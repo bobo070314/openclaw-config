@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "agent-signal",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: agent-signal"
+  "status": "active",
+  "category": "devsecops",
+  "name": "agent-signal",
+  "version": "1.0.0",
+  "description": "Agent 信号处理 - 进程间信号发送/接收，优雅关闭、重载配置和健康检查",
+  "tags": [
+    "agent",
+    "signals",
+    "ipc"
+  ]
 }

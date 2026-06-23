@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "frontend-testing",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: frontend-testing"
+  "status": "active",
+  "category": "testing",
+  "name": "frontend-testing",
+  "version": "1.0.0",
+  "description": "前端测试策略 - Vitest/Jest 单元测试、组件测试和集成测试最佳实践",
+  "tags": [
+    "testing",
+    "frontend",
+    "vitest"
+  ]
 }

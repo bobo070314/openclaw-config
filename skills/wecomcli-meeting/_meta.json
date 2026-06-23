@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "wecomcli-meeting",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: wecomcli-meeting"
+  "status": "active",
+  "category": "enterprise",
+  "name": "wecomcli-meeting",
+  "version": "1.0.0",
+  "description": "企业微信会议管理 - 创建/取消/查询会议，管理参会人员和会议录制",
+  "tags": [
+    "wecom",
+    "meetings",
+    "enterprise"
+  ]
 }

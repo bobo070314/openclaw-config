@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "weiyun",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: weiyun"
+  "status": "active",
+  "category": "productivity",
+  "name": "weiyun",
+  "version": "1.0.0",
+  "description": "腾讯微云存储集成 - 文件上传/下载/分享、相册备份和存储空间管理",
+  "tags": [
+    "weiyun",
+    "cloud",
+    "storage"
+  ]
 }

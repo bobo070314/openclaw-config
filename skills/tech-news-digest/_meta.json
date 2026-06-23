@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "tech-news-digest",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: tech-news-digest"
+  "status": "active",
+  "category": "productivity",
+  "name": "tech-news-digest",
+  "version": "1.0.0",
+  "description": "技术新闻摘要 - 聚合HackerNews/DevTo/GitHub Trending等，生成每日技术简报",
+  "tags": [
+    "news",
+    "tech",
+    "digest"
+  ]
 }

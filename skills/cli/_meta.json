@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "cli",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: cli"
+  "status": "active",
+  "category": "devsecops",
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "OpenClaw CLI 工具接口 - 包装 openclaw 命令行，支持 session 管理、配置查询和技能调用",
+  "tags": [
+    "cli",
+    "openclaw",
+    "infrastructure"
+  ]
 }

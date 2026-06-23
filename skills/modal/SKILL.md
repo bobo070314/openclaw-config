@@ -1,24 +1,47 @@
 ---
 name: modal
-description: OpenClaw skill: modal
+description: 模态框组件设计 - Modal/Dialog 的交互模式、无障碍实现和状态管理
 version: 1.0.0
 status: active
-category: devsecops
+category: frontend
+tags: [modal, dialog, ui]
 ---
+
 # modal
 
-## 定位
-OpenClaw 自动化技能：modal
+## Overview
+模态框组件设计 - Modal/Dialog 的交互模式、无障碍实现和状态管理
 
-## 触发条件
-用户明确调用此技能时触发。
+## Category
+frontend
 
-## 工作流
-1. 接收用户请求
-2. 执行 modal 核心逻辑
-3. 返回结果
+## When to Use
+Trigger when user needs help with modal tasks or concepts.
 
-## 关键约束
-- 遵循 OpenClaw 技能规范
-- 确保输出格式一致
-- 错误时提供明确反馈
+## Workflow
+
+### 1. Understand
+- Parse what the user is asking about modal
+- Identify specific sub-tasks or questions
+
+### 2. Execute
+- Use appropriate tools (exec, web_fetch, browser, read/write) to complete the task
+- Reference best practices and patterns from this skill's knowledge domain
+
+### 3. Deliver
+- Format output clearly with code examples where helpful
+- Provide rationale and alternatives when applicable
+- Default output language: Chinese (可切换英文)
+
+## Constraints
+- Follow OpenClaw skill conventions
+- Handle errors with actionable feedback
+- Never expose sensitive data in output
+
+## Dependencies
+- OpenClaw runtime >= 1.0
+- Category-specific tools as needed
+
+## Related Skills
+- Browse other skills under `frontend` category
+- Use `skills-audit` to discover available skills

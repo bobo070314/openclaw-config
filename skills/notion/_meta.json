@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "notion",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: notion"
+  "status": "active",
+  "category": "productivity",
+  "name": "notion",
+  "version": "1.0.0",
+  "description": "Notion 工作区集成 - 页面创建/查询/更新，数据库操作，Block 级别内容管理",
+  "tags": [
+    "notion",
+    "documents",
+    "knowledge"
+  ]
 }

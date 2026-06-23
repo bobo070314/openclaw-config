@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "imap-smtp-email",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: imap-smtp-email"
+  "status": "active",
+  "category": "productivity",
+  "name": "imap-smtp-email",
+  "version": "1.0.0",
+  "description": "IMAP/SMTP 邮件收发 - 邮件读取/发送/搜索、附件处理和文件夹管理",
+  "tags": [
+    "email",
+    "imap",
+    "smtp"
+  ]
 }

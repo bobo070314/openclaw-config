@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "builtin-tool",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: builtin-tool"
+  "status": "active",
+  "category": "devsecops",
+  "name": "builtin-tool",
+  "version": "1.0.0",
+  "description": "内置工具注册与管理 - 动态注册/注销工具函数，工具发现、参数校验和调用日志",
+  "tags": [
+    "tools",
+    "registry",
+    "infrastructure"
+  ]
 }

@@ -1,7 +1,13 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "e2e-cucumber-playwright",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: e2e-cucumber-playwright"
+  "status": "active",
+  "category": "testing",
+  "name": "e2e-cucumber-playwright",
+  "version": "1.0.0",
+  "description": "E2E BDD 测试 - Cucumber + Playwright 端到端测试，Gherkin语法和CI集成",
+  "tags": [
+    "e2e",
+    "cucumber",
+    "playwright",
+    "bdd"
+  ]
 }

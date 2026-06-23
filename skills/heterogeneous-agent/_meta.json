@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "heterogeneous-agent",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: heterogeneous-agent"
+  "status": "active",
+  "category": "devsecops",
+  "name": "heterogeneous-agent",
+  "version": "1.0.0",
+  "description": "异构Agent协作 - 多Agent系统编排、任务分配、消息路由和结果聚合",
+  "tags": [
+    "agent",
+    "multi-agent",
+    "orchestration"
+  ]
 }

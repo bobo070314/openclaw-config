@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "create-issue",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: create-issue"
+  "status": "active",
+  "category": "devsecops",
+  "name": "create-issue",
+  "version": "1.0.0",
+  "description": "GitHub Issue 创建 - 结构化Issue模板、自动标签、项目看板关联和通知",
+  "tags": [
+    "github",
+    "issues",
+    "tracking"
+  ]
 }

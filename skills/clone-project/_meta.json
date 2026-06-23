@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "clone-project",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: clone-project"
+  "status": "active",
+  "category": "devsecops",
+  "name": "clone-project",
+  "version": "1.0.0",
+  "description": "Git 项目克隆与初始化 - 克隆仓库、初始化工作区、安装依赖、配置开发环境",
+  "tags": [
+    "git",
+    "clone",
+    "setup"
+  ]
 }

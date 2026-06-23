@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "wecomcli-schedule",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: wecomcli-schedule"
+  "status": "active",
+  "category": "enterprise",
+  "name": "wecomcli-schedule",
+  "version": "1.0.0",
+  "description": "企业微信日程管理 - 创建/查询/更新/取消日程，支持重复日程和提醒设置",
+  "tags": [
+    "wecom",
+    "calendar",
+    "enterprise"
+  ]
 }

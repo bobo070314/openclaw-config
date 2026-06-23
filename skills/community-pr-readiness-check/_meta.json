@@ -1,7 +1,12 @@
 {
-    "status":  "active",
-    "category":  "devsecops",
-    "name":  "community-pr-readiness-check",
-    "version":  "1.0.0",
-    "description":  "OpenClaw skill: community-pr-readiness-check"
+  "status": "active",
+  "category": "devsecops",
+  "name": "community-pr-readiness-check",
+  "version": "1.0.0",
+  "description": "社区PR就绪检查 - 自动检查PR是否符合社区贡献规范、CLA签署和代码风格",
+  "tags": [
+    "github",
+    "community",
+    "pr"
+  ]
 }
