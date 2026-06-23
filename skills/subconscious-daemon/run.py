@@ -129,6 +129,52 @@ def check_logs(max_lines: int = 50) -> dict:
     }
 
 
+def check_tokens() -> dict:
+    """Check token vault health: existence, validity, gh auth status."""
+    vault_path = Path.home() / ".openclaw" / "api_tokens.json"
+    problems = []
+    populated = 0
+    total = 0
+
+    # Check vault file exists + JSON valid
+    if not vault_path.exists():
+        problems.append("Vault file missing")
+    else:
+        try:
+            tokens = json.loads(vault_path.read_text(encoding="utf-8"))
+            total = len(tokens)
+            populated = sum(1 for v in tokens.values() if v)
+            if populated == 0:
+                problems.append("No tokens configured in vault")
+        except (json.JSONDecodeError, OSError) as e:
+            problems.append(f"Vault corrupt: {e}")
+
+    # Check GitHub token validity via gh CLI
+    if not problems:
+        try:
+            r = subprocess.run(
+                ["gh", "auth", "status"],
+                capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=10,
+            )
+            if r.returncode != 0:
+                problems.append(f"gh auth status failed: {r.stderr.strip()[:120]}")
+        except FileNotFoundError:
+            problems.append("gh CLI not installed")
+        except Exception as e:
+            problems.append(f"gh auth check error: {e}")
+
+    alert = len(problems) > 0
+    return {
+        "type": "tokens",
+        "value": populated,
+        "total": total,
+        "threshold": 1,
+        "alert": alert,
+        "message": "; ".join(problems) if alert else f"Vault OK ({populated} tokens populated)",
+        "details": problems,
+    }
+
+
 def check_git() -> dict:
     """Check for uncommitted changes or sensitive files."""
     alerts = []
@@ -260,6 +306,7 @@ def arm_response(alerts: list[dict], dry_run: bool = False) -> dict:
 def run_checks(dry_run: bool = False) -> dict:
     """Run all monitors."""
     checks = [
+        check_tokens(),
         check_cpu(),
         check_memory(),
         check_disk(),
