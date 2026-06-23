@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-06-23T14:04:34.965947+00:00",
+  "checks": [
+    {
+      "type": "cpu",
+      "value": 10.9,
+      "threshold": 85,
+      "alert": false,
+      "message": "CPU normal: 10.9%"
+    },
+    {
+      "type": "memory",
+      "value": 46.8,
+      "threshold": 90,
+      "alert": false,
+      "message": "Memory OK: 46.8%"
+    },
+    {
+      "type": "disk",
+      "value": 63.2,
+      "threshold": 95,
+      "alert": false,
+      "message": "Disk OK: 63.2%"
+    },
+    {
+      "type": "logs",
+      "value": 0,
+      "threshold": 0,
+      "alert": false,
+      "message": "Logs clean",
+      "details": []
+    },
+    {
+      "type": "git",
+      "value": 6,
+      "threshold": 0,
+      "alert": false,
+      "message": "Git repository clean"
+    },
+    {
+      "type": "prompts",
+      "value": 0,
+      "threshold": 0,
+      "alert": false,
+      "message": "No adversarial patterns",
+      "details": []
+    }
+  ],
+  "alerts": 0,
+  "status": "OK",
+  "dry_run": false
+}
