@@ -19,7 +19,7 @@ state/
 *.last-good
 *.BROKEN
 
-# Skills auto-generated stubs (not source-controlled)
+# Skills auto-generated stubs (not source-controlled — only batch-generated boilerplate)
 skills/*/run.bat
 skills/*/run.sh
 skills/*/.deploy/
