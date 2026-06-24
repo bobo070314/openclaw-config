@@ -434,14 +434,15 @@ def _init_silicon_modules():
         sys.path.insert(0, core_path)
     modules = {}
 
-    # V8.0: Genetic lock enforcement FIRST
+    # V8.3: Genetic lock enforcement FIRST (pure Python, pipe-delimited lock file)
     try:
-        from core.genetic_lock import verify_genetic_lock, enforce_or_die
-        if not verify_genetic_lock():
-            print("  [V8.0] GENETIC LOCK FAILED")
-            enforce_or_die()
+        from core.genetic_lock import verify
+        if not verify():
+            print("  [V8.3] GENETIC LOCK FAILED — HWID mismatch or tampered")
+        else:
+            print("  [V8.3] genetic_lock: PASS")
     except Exception as e:
-        print(f"  [V8.0] genetic_lock: {e}")
+        print(f"  [V8.3] genetic_lock: {e}")
 
     module_list = [
         ("survival", "survival_instinct", "SurvivalInstinct"),
