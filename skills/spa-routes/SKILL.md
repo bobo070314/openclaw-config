@@ -1,7 +1,7 @@
 ---
 name: spa-routes
 description: SPA 路由设计 - React Router/Next.js 路由架构、懒加载和权限路由
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [routing, spa, react]

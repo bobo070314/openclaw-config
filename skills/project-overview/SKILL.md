@@ -1,7 +1,7 @@
 ---
 name: project-overview
 description: 项目概览生成 - 自动分析代码库生成项目架构图、技术栈和模块依赖
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [project, overview, architecture]

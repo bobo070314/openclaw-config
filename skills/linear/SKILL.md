@@ -1,7 +1,7 @@
 ---
 name: linear
 description: Linear 项目管理集成 - Issue/Project/Cycle 管理，工作流自动化和团队协作
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [linear, project-management, issues]

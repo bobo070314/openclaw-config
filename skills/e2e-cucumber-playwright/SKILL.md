@@ -1,7 +1,7 @@
 ---
 name: e2e-cucumber-playwright
 description: E2E BDD 测试 - Cucumber + Playwright 端到端测试，Gherkin语法和CI集成
-version: 1.0.0
+version: 0.2.0
 status: active
 category: testing
 tags: [e2e, cucumber, playwright, bdd]

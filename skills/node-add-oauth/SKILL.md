@@ -1,7 +1,7 @@
 ---
 name: node-add-oauth
 description: Node.js OAuth 集成 - OAuth2.0 客户端实现、Token管理和多Provider支持
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [oauth, auth, node]

@@ -1,7 +1,7 @@
 ---
 name: tech-news-digest
 description: 技术新闻摘要 - 聚合HackerNews/DevTo/GitHub Trending等，生成每日技术简报
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [news, tech, digest]

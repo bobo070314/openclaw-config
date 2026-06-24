@@ -1,7 +1,7 @@
 ---
 name: create-issue
 description: GitHub Issue 创建 - 结构化Issue模板、自动标签、项目看板关联和通知
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [github, issues, tracking]

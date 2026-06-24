@@ -1,7 +1,7 @@
 ---
 name: cli
 description: OpenClaw CLI 工具接口 - 包装 openclaw 命令行，支持 session 管理、配置查询和技能调用
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [cli, openclaw, infrastructure]

@@ -1,7 +1,7 @@
 ---
 name: weiyun
 description: 腾讯微云存储集成 - 文件上传/下载/分享、相册备份和存储空间管理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [weiyun, cloud, storage]

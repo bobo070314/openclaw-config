@@ -1,7 +1,7 @@
 ---
 name: linear-issue
 description: Linear Issue 操作 - 创建/更新/搜索 Issue，关联PR和状态流转
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [linear, issues, tracking]

@@ -1,7 +1,7 @@
 ---
 name: wendao-partner-qclaw-skill
 description: 问道合作伙伴 QClaw 技能 - 问道平台合作伙伴的专属技能集成和API调用
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [wendao, partner, qclaw]

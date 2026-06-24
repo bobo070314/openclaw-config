@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-23T14:56:52.876259+00:00",
+  "timestamp": "2026-06-24T02:22:29.733491+00:00",
   "checks": [
     {
       "type": "tokens",
@@ -12,24 +12,24 @@
     },
     {
       "type": "cpu",
-      "value": 11.9,
+      "value": 5.6,
       "threshold": 85,
       "alert": false,
-      "message": "CPU normal: 11.9%"
+      "message": "CPU normal: 5.6%"
     },
     {
       "type": "memory",
-      "value": 48.3,
+      "value": 66.7,
       "threshold": 90,
       "alert": false,
-      "message": "Memory OK: 48.3%"
+      "message": "Memory OK: 66.7%"
     },
     {
       "type": "disk",
-      "value": 63.2,
+      "value": 63.5,
       "threshold": 95,
       "alert": false,
-      "message": "Disk OK: 63.2%"
+      "message": "Disk OK: 63.5%"
     },
     {
       "type": "logs",
@@ -41,7 +41,7 @@
     },
     {
       "type": "git",
-      "value": 4,
+      "value": 44,
       "threshold": 0,
       "alert": false,
       "message": "Git clean"
@@ -55,17 +55,12 @@
       "details": []
     },
     {
-      "type": "profit",
-      "value": 69158,
+      "type": "vision",
+      "value": 0,
+      "threshold": 0,
       "alert": false,
-      "message": "Valuation: SUPREME = 69158",
-      "details": {
-        "plate": "SUPREME",
-        "market_value": 69158,
-        "damage_detected": false,
-        "confidence": 0.92,
-        "timestamp": "auto"
-      }
+      "message": "Vision: screen normal",
+      "details": ""
     }
   ],
   "alerts": 0,

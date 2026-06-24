@@ -1,7 +1,7 @@
 ---
 name: imap-smtp-email
 description: IMAP/SMTP 邮件收发 - 邮件读取/发送/搜索、附件处理和文件夹管理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [email, imap, smtp]

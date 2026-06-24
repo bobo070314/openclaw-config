@@ -1,7 +1,7 @@
 ---
 name: wecomcli-todo
 description: 企业微信待办事项 - 创建/完成/删除待办，支持优先级、截止日期和指派
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [wecom, todos, enterprise]

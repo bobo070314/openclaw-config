@@ -1,7 +1,7 @@
 ---
 name: self-coder
 description: AI self-modification engine — reads skill code, generates improved drafts
-version: 0.1.0
+version: 0.2.0
 category: evolution
 enabled: true
 ---

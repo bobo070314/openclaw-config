@@ -1,7 +1,7 @@
 ---
 name: skills-audit
 description: 技能审计工具 - 扫描已安装技能、检查版本一致性、发现冗余和冲突
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [skills, audit, maintenance]

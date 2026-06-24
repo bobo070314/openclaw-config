@@ -1,7 +1,7 @@
 ---
 name: wecomcli-contact
 description: 企业微信通讯录管理 - 查询、添加、更新、删除企业微信联系人，支持部门遍历和批量导入
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [wecom, contacts, enterprise]

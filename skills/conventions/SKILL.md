@@ -1,7 +1,7 @@
 ---
 name: conventions
 description: 代码规范约定 - 项目级命名约定、目录结构、Git提交规范和代码风格指南
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [conventions, code-style, standards]

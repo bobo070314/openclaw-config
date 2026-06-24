@@ -1,7 +1,7 @@
 ---
 name: create-pr
 description: GitHub Pull Request 创建 - 自动生成PR描述、关联Issue、添加Reviewer和标签
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [github, pr, git]

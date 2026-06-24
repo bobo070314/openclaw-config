@@ -1,7 +1,7 @@
 ---
 name: tongdaxin-mcp
 description: 通达信连接器，查询全球股票行情数据、研究报告、公告资讯和宏观信息。支持通达信指标、条件选股、个股基本面分析、同行业对比和智能选股筛查。
-version: 1.0.4
+version: 0.2.0
 metadata:
   openclaw:
     requires:

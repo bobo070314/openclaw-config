@@ -1,7 +1,7 @@
 ---
 name: weather-advisor
 description: 天气咨询助手 - 查询实时天气/预报、穿衣建议、出行提醒和极端天气预警
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [weather, forecast, advisory]

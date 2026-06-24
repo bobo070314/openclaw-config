@@ -1,7 +1,7 @@
 ---
 name: wecomcli-msg
 description: 企业微信消息发送 - 文本/图片/文件/图文消息，支持@提醒、消息撤回和发送状态查询
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [wecom, messaging, enterprise]

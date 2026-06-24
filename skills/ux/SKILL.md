@@ -1,7 +1,7 @@
 ---
 name: ux
 description: UX 设计规范 - 用户体验原则、交互模式、可用性测试和设计评审流程
-version: 1.0.0
+version: 0.2.0
 status: active
 category: design
 tags: [ux, design, usability]

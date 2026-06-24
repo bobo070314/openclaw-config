@@ -1,7 +1,7 @@
 ---
 name: agent-signal
 description: Agent 信号处理 - 进程间信号发送/接收，优雅关闭、重载配置和健康检查
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [agent, signals, ipc]

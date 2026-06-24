@@ -1,7 +1,7 @@
 ---
 name: experiments
 description: A/B 实验管理 - 特性开关、实验分流、数据采集和结果分析
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [experiments, ab-testing, feature-flags]

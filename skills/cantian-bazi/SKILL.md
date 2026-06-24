@@ -1,6 +1,8 @@
 ---
+
 name: cantian-bazi
-description: 八字排盘与农历/干支日期查询技能。用于用户请求“算八字”“四柱排盘”“阳历/农历时间转八字”“查询某天农历或干支日期”“查黄历/宜忌”等场景；关键词包括：八字、四柱、命理、阳历转八字、农历转八字、黄历、宜忌、干支日期、农历日期。 / Bazi charting and Chinese calendar conversion skill. Use for requests like “calculate my Bazi”, “Four Pillars chart”, “convert solar/lunar datetime to Bazi”, “check Chinese almanac (huangli)”, or “check auspicious/inauspicious activities (yi-ji) for a date”; keywords include: Bazi, Four Pillars, solar-to-Bazi, lunar-to-Bazi, Chinese calendar, Chinese almanac (huangli), yi-ji, heavenly stems and earthly branches.
+description: "八字排盘与农历/干支日期查询技能。用于用户请求“算八字”“四柱排盘”“阳历/农历时间转八字”“查询某天农历或干支日期”“查黄历/宜忌”等场景；关键词包括：八字、四柱、命理、阳历转八字、农历转八字、黄历、宜忌、干支日期、农历日期。 / Bazi charting and Chinese calendar conversion skill. Use for requests like “calculate my Bazi”, “Four Pillars chart”, “convert solar/lunar datetime to Bazi”, “check Chinese almanac (huangli)”, or “check auspicious/inauspicious activities (yi-ji) for a date”; keywords include: Bazi, Four Pillars, solar-to-Bazi, lunar-to-Bazi, Chinese calendar, Chinese almanac (huangli), yi-ji, heavenly stems and earthly branches."
+
 ---
 
 # 八字排盘与农历日期查询 (Bazi & Chinese Calendar)

@@ -1,7 +1,7 @@
 ---
 name: notion
 description: Notion 工作区集成 - 页面创建/查询/更新，数据库操作，Block 级别内容管理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [notion, documents, knowledge]

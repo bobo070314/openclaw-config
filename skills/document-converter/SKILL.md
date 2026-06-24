@@ -1,7 +1,7 @@
 ---
 name: document-converter
 description: 文档格式转换 - PDF/Word/Markdown/HTML 互相转换，支持批量处理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [documents, conversion, pdf]

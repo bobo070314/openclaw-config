@@ -1,7 +1,7 @@
 ---
 name: drizzle
 description: Drizzle ORM 操作 - Schema定义、迁移生成、查询构建和关系管理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [drizzle, orm, database]

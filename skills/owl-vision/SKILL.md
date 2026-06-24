@@ -1,3 +1,11 @@
+---
+name: owl-vision
+version: 1.0.0
+author: OpenClaw-Foreign
+description: Owl Vision
+permissions: []
+---
+
 # Owl Vision
 
 Local vision model for screen understanding. Runs fully offline via Moondream 2B.

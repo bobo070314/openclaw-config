@@ -1,7 +1,7 @@
 ---
 name: typescript
 description: TypeScript 最佳实践 - 类型体操、泛型模式、类型推导和严格模式配置
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [typescript, types, best-practices]

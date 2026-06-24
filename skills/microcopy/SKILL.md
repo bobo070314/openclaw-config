@@ -1,7 +1,7 @@
 ---
 name: microcopy
 description: 微文案指南 - 按钮、表单、提示等微观文案的写作规范和用户心理学
-version: 1.0.0
+version: 0.2.0
 status: active
 category: design
 tags: [ux-writing, microcopy, design]

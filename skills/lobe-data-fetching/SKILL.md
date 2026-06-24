@@ -1,3 +1,11 @@
+---
+name: lobe-data-fetching
+version: 0.2.0
+author: OpenClaw-Foreign
+description: ﻿---
+permissions: []
+---
+
 ﻿---
 name: lobe-data-fetching
 description: Lobe Chat 前端数据获取架构设计：Zustand、SWR、缓存策略最佳实践

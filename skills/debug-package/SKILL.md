@@ -1,7 +1,7 @@
 ---
 name: debug-package
 description: Node.js 包调试工具 - 快速定位 node_modules 问题，符号链接修复、版本冲突检测
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [debugging, npm, node_modules]

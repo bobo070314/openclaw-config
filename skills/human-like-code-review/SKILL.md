@@ -1,7 +1,7 @@
 ---
 name: human-like-code-review
 description: 类人代码审查 - AI模拟人类审查风格，关注逻辑、可读性和架构而非格式
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [code-review, ai, quality]

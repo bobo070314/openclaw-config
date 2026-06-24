@@ -1,7 +1,7 @@
 ---
 name: community-pr-readiness-check
 description: 社区PR就绪检查 - 自动检查PR是否符合社区贡献规范、CLA签署和代码风格
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [github, community, pr]

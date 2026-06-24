@@ -1,7 +1,7 @@
 ---
 name: hotkey
 description: 快捷键管理 - 全局/局部快捷键注册、冲突检测和跨平台键位映射
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [hotkey, keyboard, shortcuts]

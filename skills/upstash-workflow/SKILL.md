@@ -1,7 +1,7 @@
 ---
 name: upstash-workflow
 description: Upstash Workflow 集成 - 基于Redis的持久化工作流，QStash消息队列和定时任务
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [upstash, workflow, redis]

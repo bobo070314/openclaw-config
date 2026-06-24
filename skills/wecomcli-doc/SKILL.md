@@ -1,7 +1,7 @@
 ---
 name: wecomcli-doc
 description: 企业微信文档操作 - 创建/编辑/删除在线文档和表格，支持权限管理和协作编辑
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [wecom, documents, enterprise]

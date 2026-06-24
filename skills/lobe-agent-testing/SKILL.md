@@ -1,3 +1,11 @@
+---
+name: lobe-agent-testing
+version: 0.2.0
+author: OpenClaw-Foreign
+description: ﻿---
+permissions: []
+---
+
 ﻿---
 name: lobe-agent-testing
 description: Lobe Chat Agent 端到端测试框架：测试计划、用例编写、自动化断言

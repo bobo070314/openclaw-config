@@ -1,7 +1,7 @@
 ---
 name: wecomcli-setup
 description: 企业微信CLI环境配置 - 安装wecomcli、配置corpid/secret、验证连接、环境诊断
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [wecom, setup, enterprise]

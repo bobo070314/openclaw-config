@@ -1,3 +1,11 @@
+---
+name: n8n-db-migrations
+version: 0.2.0
+author: OpenClaw-Foreign
+description: ﻿---
+permissions: []
+---
+
 ﻿---
 name: n8n-db-migrations
 description: n8n 数据库迁移规范与实践，涵盖 TypeORM、PostgreSQL、数据一致性

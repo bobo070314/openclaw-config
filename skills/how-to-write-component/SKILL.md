@@ -1,7 +1,7 @@
 ---
 name: how-to-write-component
 description: 组件编写指南 - React 组件设计模式、Props类型、状态管理和可复用性
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [react, components, patterns]

@@ -1,7 +1,7 @@
 ---
 name: github-actions-generator
 description: Generate GitHub Actions workflow YAML from natural language descriptions. Supports CI/CD pipelines, scheduled tasks, and deployment workflows.
-version: 0.1.0
+version: 0.2.0
 category: devops
 ---
 

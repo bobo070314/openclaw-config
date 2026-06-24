@@ -246,7 +246,11 @@
     }
   },
   "browser": {
-    "enabled": true
+    "enabled": true,
+    "ssrfPolicy": {
+      "dangerouslyAllowPrivateNetwork": true,
+      "allowedHostnames": ["127.0.0.1", "localhost"]
+    }
   },
   "gateway": {
     "port": 18791,

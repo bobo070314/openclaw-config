@@ -1,7 +1,7 @@
 ---
 name: data-fetching-architecture
 description: 前端数据获取架构 - SWR/React Query模式、缓存策略、乐观更新和错误处理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [data-fetching, react, architecture]

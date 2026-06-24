@@ -1,7 +1,7 @@
 ---
 name: karpathy-guidelines
 description: Karpathy 编程哲学 - 遵循Andrej Karpathy的软件工程原则和最佳实践
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [guidelines, engineering, philosophy]

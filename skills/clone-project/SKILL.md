@@ -1,7 +1,7 @@
 ---
 name: clone-project
 description: Git 项目克隆与初始化 - 克隆仓库、初始化工作区、安装依赖、配置开发环境
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [git, clone, setup]

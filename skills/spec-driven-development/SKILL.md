@@ -1,7 +1,7 @@
 ---
 name: spec-driven-development
 description: 规格驱动开发 - 基于Spec文档的开发流程，OpenAPI/AsyncAPI规范和契约测试
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [spec, api, contracts]

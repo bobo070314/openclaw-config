@@ -1,7 +1,7 @@
 ---
 name: token-saver
 description: Command output smart compressor — saves 60-90% tokens on long output
-version: 0.1.0
+version: 0.2.0
 category: optimization
 enabled: true
 ---

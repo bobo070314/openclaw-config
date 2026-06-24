@@ -1,7 +1,7 @@
 ---
 name: lark-setup
 description: 飞书(Lark)应用配置 - 创建飞书应用、配置权限、获取凭证、Webhook 设置
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [lark, feishu, setup]

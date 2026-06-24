@@ -1,7 +1,7 @@
 ---
 name: desktop
 description: 桌面端适配 - Electron/Tauri 桌面应用开发、原生API和窗口管理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [desktop, electron, tauri]

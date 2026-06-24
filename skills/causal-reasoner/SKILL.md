@@ -1,6 +1,6 @@
 ---
 name: causal-reasoner
-version: "0.2.0"
+version: 0.2.0
 description: "Causal DAG engine — infers root cause from observed effects using Bayesian-weighted evidence chains"
 enabled: true
 category: intelligence

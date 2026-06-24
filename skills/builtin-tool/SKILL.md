@@ -1,7 +1,7 @@
 ---
 name: builtin-tool
 description: 内置工具注册与管理 - 动态注册/注销工具函数，工具发现、参数校验和调用日志
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [tools, registry, infrastructure]

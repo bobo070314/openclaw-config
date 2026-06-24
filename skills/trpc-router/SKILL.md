@@ -1,7 +1,7 @@
 ---
 name: trpc-router
 description: tRPC 路由设计 - tRPC Router/Procedure 模式、中间件链和类型安全API
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [trpc, api, typescript]

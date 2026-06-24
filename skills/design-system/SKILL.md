@@ -1,7 +1,7 @@
 ---
 name: design-system
 description: 设计系统指南 - 组件库、设计Token、主题系统和可访问性标准
-version: 1.0.0
+version: 0.2.0
 status: active
 category: design
 tags: [design-system, components, a11y]

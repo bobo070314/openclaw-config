@@ -1,7 +1,7 @@
 ---
 name: wecomcli-meeting
 description: 企业微信会议管理 - 创建/取消/查询会议，管理参会人员和会议录制
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [wecom, meetings, enterprise]

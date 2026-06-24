@@ -1,7 +1,7 @@
 ---
 name: tencent-meeting-mcp
 description: 腾讯会议MCP协议集成 - 通过MCP协议调用腾讯会议API，管理会议、录制和参会者
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [tencent, meetings, mcp]

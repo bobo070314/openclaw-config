@@ -1,7 +1,7 @@
 ---
 name: web-deploy-github
 description: Deploy static sites and web apps to GitHub Pages. Handles build, asset optimization, and deployment with a single command.
-version: 0.1.0
+version: 0.2.0
 category: devops
 ---
 

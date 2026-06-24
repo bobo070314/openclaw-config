@@ -1,7 +1,7 @@
 ---
 name: zustand
 description: Zustand 状态管理 - Store创建、中间件、持久化和React组件集成模式
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [zustand, state, react]

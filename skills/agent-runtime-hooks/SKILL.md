@@ -1,7 +1,7 @@
 ---
 name: agent-runtime-hooks
 description: Agent 运行时生命周期钩子 - 初始化/前置/后置/清理钩子，任务拦截链和事件总线
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [agent, hooks, lifecycle]

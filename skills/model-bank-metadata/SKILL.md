@@ -1,7 +1,7 @@
 ---
 name: model-bank-metadata
 description: 模型库元数据管理 - AI模型元数据注册、版本跟踪、性能基准和配置管理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [models, metadata, ai]

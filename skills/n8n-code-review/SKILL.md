@@ -1,3 +1,11 @@
+---
+name: n8n-code-review
+version: 0.2.0
+author: OpenClaw-Foreign
+description: ﻿---
+permissions: []
+---
+
 ﻿---
 name: n8n-code-review
 description: 人性化 Code Review 规范：流程、检查清单、评审技巧与沟通模板

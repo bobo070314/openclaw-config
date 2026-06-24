@@ -1,7 +1,7 @@
 ---
 name: protect-endpoints
 description: API 端点安全防护 - 速率限制、输入验证、CSRF防护和认证中间件
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [security, api, endpoints]

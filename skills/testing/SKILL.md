@@ -1,7 +1,7 @@
 ---
 name: testing
 description: 通用测试策略 - 测试金字塔、TDD/BDD方法、Mock策略和测试覆盖率标准
-version: 1.0.0
+version: 0.2.0
 status: active
 category: testing
 tags: [testing, tdd, quality]

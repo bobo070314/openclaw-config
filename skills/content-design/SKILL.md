@@ -1,7 +1,7 @@
 ---
 name: content-design
 description: 内容设计指南 - UI文案、错误提示、通知消息的内容规范和最佳实践
-version: 1.0.0
+version: 0.2.0
 status: active
 category: design
 tags: [content, ux-writing, design]

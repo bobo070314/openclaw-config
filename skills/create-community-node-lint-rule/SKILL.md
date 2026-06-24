@@ -1,7 +1,7 @@
 ---
 name: create-community-node-lint-rule
 description: ESLint 社区规则创建 - 编写/测试/发布自定义ESLint规则到社区
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [eslint, lint, community]

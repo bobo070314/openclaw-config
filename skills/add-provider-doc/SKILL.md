@@ -1,7 +1,7 @@
 ---
 name: add-provider-doc
 description: AI Provider 接入文档生成 - 为新的AI模型供应商生成标准化的接入配置文档
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [provider, docs, ai]

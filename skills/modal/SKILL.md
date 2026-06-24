@@ -1,7 +1,7 @@
 ---
 name: modal
 description: 模态框组件设计 - Modal/Dialog 的交互模式、无障碍实现和状态管理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [modal, dialog, ui]

@@ -1,7 +1,7 @@
 ---
 name: pr
 description: GitHub PR 管理 - 查看/审核/合并/关闭PR，检查CI状态、解决冲突、代码审查
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [github, pr, review]

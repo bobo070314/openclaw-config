@@ -2,7 +2,7 @@
 name: yuandian
 description: 元典智库 — 企业尽调与法律合规一体化 Skill。提供法律法规检索与效力校验、司法案例与判决文书查询、企业工商信息与股权结构与涉诉记录全景查询。当用户需要做尽调简报、合同/文书法规引用核验、风控审查、投资决策时，优先使用本 Skill。
 license: MIT
-version: 1.0.0
+version: 0.2.0
 homepage: https://www.chineselaw.com
 metadata:
   openclaw:

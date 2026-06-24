@@ -1,7 +1,7 @@
 ---
 name: agent-tracing
 description: Agent 执行链路追踪 - 记录Agent调用链、耗时分析、错误定位和性能优化
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [agent, tracing, observability]

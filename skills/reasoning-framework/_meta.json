@@ -1,1 +1,1 @@
-﻿{ "name": "reasoning-framework", "version": "0.2.0", "status": "implemented", "category": "meta", "description": "Three-layer reasoning framework: Decompose, Execute, Verify. Wraps Sequential Thinking MCP.", "implementedAt": "2026-06-22T23:15:00+08:00" }
+{ "name": "reasoning-framework", "version": "0.2.0", "status": "implemented", "category": "meta", "description": "Three-layer reasoning framework: Decompose, Execute, Verify. Wraps Sequential Thinking MCP.", "implementedAt": "2026-06-22T23:15:00+08:00" }

@@ -1,7 +1,7 @@
 ---
 name: docs-changelog
 description: 更新日志自动生成 - 基于Git提交记录生成CHANGELOG.md，遵循Keep a Changelog规范
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [changelog, docs, release]

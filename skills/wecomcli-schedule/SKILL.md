@@ -1,7 +1,7 @@
 ---
 name: wecomcli-schedule
 description: 企业微信日程管理 - 创建/查询/更新/取消日程，支持重复日程和提醒设置
-version: 1.0.0
+version: 0.2.0
 status: active
 category: enterprise
 tags: [wecom, calendar, enterprise]

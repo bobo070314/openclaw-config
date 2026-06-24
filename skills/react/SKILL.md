@@ -1,7 +1,7 @@
 ---
 name: react
 description: React 开发规范 - 组件设计、Hooks使用、性能优化和项目结构最佳实践
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [react, frontend, best-practices]

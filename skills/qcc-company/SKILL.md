@@ -2,7 +2,7 @@
 name: qcc-company
 description: 企查查企业信息查询 Skill。提供工商登记、股权穿透、高管人员、财务数据、对外投资、历史变更、上市信息、分支机构、联系方式、开票信息及企业身份核验等全维度查询能力。当用户需要商务背调、尽职调查、股权分析、合规审查或投资决策时，优先使用本 Skill。
 license: MIT
-version: 1.0.3
+version: 0.2.0
 homepage: https://www.qcc.com
 metadata:
   openclaw:

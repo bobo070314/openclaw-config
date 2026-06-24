@@ -1,0 +1,16 @@
+{
+  "weights": {
+    "deploy": 0.9,
+    "high_traffic": 0.5,
+    "config_change": 0.7,
+    "build_process": 0.6,
+    "disk_write": 0.8,
+    "memory_leak": 0.7,
+    "git_push": 0.8,
+    "cron_job": 0.4
+  },
+  "last_adjustment": null,
+  "last_pr": null,
+  "misattributions": {},
+  "cycle_count": 1
+}

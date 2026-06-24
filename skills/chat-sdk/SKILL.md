@@ -1,7 +1,7 @@
 ---
 name: chat-sdk
 description: 聊天SDK集成 - 统一消息接口，支持多平台消息收发（企微/飞书/钉钉）和会话管理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [chat, sdk, messaging]

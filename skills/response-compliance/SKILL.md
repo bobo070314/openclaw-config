@@ -1,7 +1,7 @@
 ---
 name: response-compliance
 description: AI 响应合规检查 - 确保AI输出符合安全、隐私和内容政策要求
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [compliance, safety, ai]

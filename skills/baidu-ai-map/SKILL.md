@@ -2,7 +2,7 @@
 name: baidu-ai-map
 description: 百度地图 Agent Plan ，无需成为百度地图开发者，立即接入百度地图为 Agent 场景原生设计的地图能力，例如 AI 地点检索、AI 路线规划、地理编码与逆地理编码、天气查询、地图展示等开箱即用的工具。
 license: MIT
-version: 1.0.0
+version: 0.2.0
 homepage: https://lbs.baidu.com
 repository: https://github.com/baidu-maps/map-skills
 metadata:

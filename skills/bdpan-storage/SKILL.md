@@ -1,7 +1,7 @@
 ---
 name: bdpan-storage
 description: 百度网盘存储集成 - 文件上传/下载/分享，目录管理和空间查询
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [baidu, storage, cloud]

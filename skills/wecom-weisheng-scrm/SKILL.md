@@ -3,7 +3,7 @@ name: wecom-weisheng-scrm
 description: "当用户需要查询或管理微盛企微管家（企业微信） SCRM 中的客户信息、客户标签、客户群、营销素材、活码、群发、跟进记录、聊天记录、联系人、商机、汇报、抽奖、客户日程等相关业务能力时触发。即使用户未明确提到 SCRM、企微管家、开放接口或 API，也应在这些企业微信客户运营与管理场景下触发。"
 description_zh: "微盛AI·企微管家提供的技能，帮助用户查询和管理企业微信 SCRM 中的客户、客户群、标签、活码、群发、跟进、聊天记录内容等业务数据，可询问AI当前支持的能力清单。"
 description_en: "Built for WeCom customer operations, helping teams review customer and group activity, prepare campaign assets, and move follow-up, messaging, and opportunity workflows forward."
-version: 1.0.3
+version: 0.2.0
 ---
 
 # 微盛企微管家SCRM

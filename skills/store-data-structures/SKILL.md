@@ -1,7 +1,7 @@
 ---
 name: store-data-structures
 description: 状态管理数据结构 - Zustand/Redux Store设计、数据规范化和持久化策略
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [state, zustand, redux]

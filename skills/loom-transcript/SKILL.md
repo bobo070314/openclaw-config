@@ -1,7 +1,7 @@
 ---
 name: loom-transcript
 description: Loom 视频转录 - 提取Loom视频字幕/转录文本，生成摘要和时间戳标注
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [loom, transcript, video]

@@ -1,7 +1,7 @@
 ---
 name: tencent-docs
 description: 腾讯文档集成 - 创建/编辑/导出在线文档、表格、幻灯片，支持协作和权限管理
-version: 1.0.0
+version: 0.2.0
 status: active
 category: productivity
 tags: [tencent, documents, collaboration]

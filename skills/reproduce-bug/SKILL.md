@@ -1,7 +1,7 @@
 ---
 name: reproduce-bug
 description: Bug 复现流程 - 系统化Bug报告分析、环境复现、最小复现用例和根因定位
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [debugging, bugs, troubleshooting]

@@ -1,7 +1,7 @@
 ---
 name: heterogeneous-agent
 description: 异构Agent协作 - 多Agent系统编排、任务分配、消息路由和结果聚合
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [agent, multi-agent, orchestration]

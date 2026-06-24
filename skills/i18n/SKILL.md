@@ -1,7 +1,7 @@
 ---
 name: i18n
 description: 国际化(i18n)方案 - 多语言支持、翻译工作流、RTL布局和本地化最佳实践
-version: 1.0.0
+version: 0.2.0
 status: active
 category: frontend
 tags: [i18n, localization, translation]

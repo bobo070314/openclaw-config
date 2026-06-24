@@ -1,7 +1,7 @@
 ---
 name: review-checklist
 description: 代码审查清单 - PR Review 的系统化检查项，覆盖安全/性能/可维护性
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [code-review, checklist, quality]

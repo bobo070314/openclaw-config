@@ -1,7 +1,7 @@
 ---
 name: version-release
 description: 版本发布流程 - Semantic Versioning、Release Notes生成、Git Tag和CI/CD发布
-version: 1.0.0
+version: 0.2.0
 status: active
 category: devsecops
 tags: [release, versioning, ci-cd]

@@ -1,7 +1,7 @@
 ---
 name: frontend-testing
 description: 前端测试策略 - Vitest/Jest 单元测试、组件测试和集成测试最佳实践
-version: 1.0.0
+version: 0.2.0
 status: active
 category: testing
 tags: [testing, frontend, vitest]
