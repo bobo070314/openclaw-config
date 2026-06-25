@@ -249,7 +249,10 @@
     "enabled": true,
     "ssrfPolicy": {
       "dangerouslyAllowPrivateNetwork": true,
-      "allowedHostnames": ["127.0.0.1", "localhost"]
+      "allowedHostnames": [
+        "127.0.0.1",
+        "localhost"
+      ]
     }
   },
   "gateway": {
@@ -719,6 +722,18 @@
         "enabled": true
       },
       "zustand": {
+        "enabled": true
+      },
+      "github-actions-generator": {
+        "enabled": true
+      },
+      "web-deploy-github": {
+        "enabled": true
+      },
+      "release-notes-generator": {
+        "enabled": true
+      },
+      "deployment-automation": {
         "enabled": true
       }
     }
