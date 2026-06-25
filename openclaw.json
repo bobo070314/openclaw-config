@@ -735,6 +735,78 @@
       },
       "deployment-automation": {
         "enabled": true
+      },
+      "api-doc-generator": {
+        "enabled": true
+      },
+      "auto-valuation": {
+        "enabled": true
+      },
+      "auto_valuation": {
+        "enabled": true
+      },
+      "causal-reasoner": {
+        "enabled": true
+      },
+      "code-navigator": {
+        "enabled": true
+      },
+      "config-diff": {
+        "enabled": true
+      },
+      "docker-compose-gen": {
+        "enabled": true
+      },
+      "evaluator": {
+        "enabled": true
+      },
+      "infra-diagram-as-code": {
+        "enabled": true
+      },
+      "lobe-agent-testing": {
+        "enabled": true
+      },
+      "lobe-data-fetching": {
+        "enabled": true
+      },
+      "log-analyzer": {
+        "enabled": true
+      },
+      "mtunion-product-ai-guide": {
+        "enabled": true
+      },
+      "n8n-code-review": {
+        "enabled": true
+      },
+      "n8n-db-migrations": {
+        "enabled": true
+      },
+      "owl-vision": {
+        "enabled": true
+      },
+      "sandbox-executor": {
+        "enabled": true
+      },
+      "sandbox-test": {
+        "enabled": true
+      },
+      "security-audit": {
+        "enabled": true
+      },
+      "self-coder": {
+        "enabled": true
+      },
+      "site-doctor": {
+        "enabled": true
+      },
+      "sql-optimizer": {
+        "enabled": true
+      },
+      "subconscious-daemon": {
+        "enabled": true
+      },
+      "token-saver": {
+        "enabled": true
       }
     }
   },
