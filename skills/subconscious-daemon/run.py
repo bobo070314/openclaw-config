@@ -21,6 +21,34 @@ UTC = timezone.utc
 
 SKILLS_DIR = Path("D:/bobo/openclaw-foreign/skills")
 WORKSPACE_DIR = Path("D:/bobo/openclaw-foreign/workspace")
+
+# 🔒 V5.2 Project boundary guard + knowledge modules
+try:
+    sys.path.insert(0, str(WORKSPACE_DIR / "projects" / "caipiao"))
+    from core.project_context import ProjectContext
+    from core.obsidian_connector import ObsidianConnector
+    from core.memory_retriever import MemoryRetriever
+
+    CTX = ProjectContext("caipiao高价收车", str(WORKSPACE_DIR), project_subdir="projects/caipiao")
+    print(CTX.anchor(), flush=True)
+
+    OBSIDIAN = ObsidianConnector(CTX)
+    RETRIEVER = MemoryRetriever(CTX)
+    print(RETRIEVER.build_index(), flush=True)
+    print(f"📖 Obsidian API: {'ONLINE' if OBSIDIAN.ping() else 'OFFLINE (file fallback)'}", flush=True)
+except ImportError:
+    CTX = None
+    OBSIDIAN = None
+    RETRIEVER = None
+
+def _safe_path(p: str) -> Path:
+    """Resolve path through ProjectContext if active, else plain Path"""
+    if CTX is not None:
+        try:
+            return CTX.resolve(p)
+        except PermissionError:
+            pass
+    return Path(p)
 LOG_DIR = SKILLS_DIR / ".daemon" / "logs"
 STATE_FILE = SKILLS_DIR / ".daemon" / "state.json"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
