@@ -1,782 +1,995 @@
 {
-  "agents": {
-    "defaults": {
-      "model": {
-        "primary": "openrouter/siliconcloud/qwen-3-8b",
-        "fallbacks": [
-          "openrouter/poolside/laguna-m.1",
-          "openrouter/cohere/north-mini-code",
-          "zhipu/glm-4-flash"
-        ]
-      },
-      "workspace": "D:\\bobo\\openclaw-foreign\\workspace",
-      "maxConcurrent": 3,
-      "timeoutSeconds": 72000,
-      "thinkingDefault": "off",
-      "memorySearch": {
-        "provider": "dashscope",
-        "model": "text-embedding-v3"
-      }
-    },
-    "list": [
-      {
-        "id": "assistant",
-        "name": "猫抓助手",
-        "default": true,
-        "skills": [],
-        "identity": {
-          "name": "猫抓助手"
+    "agents": {
+        "defaults": {
+            "model": {
+                "primary": "dashscope/qwen-flash",
+                "fallbacks": [
+                    "dashscope/qwen-turbo"
+                ]
+            },
+            "workspace": "D:\\bobo\\openclaw-foreign\\workspace",
+            "maxConcurrent": 3,
+            "timeoutSeconds": 72000,
+            "heartbeat": {
+                "isolatedSession": true,
+                "lightContext": true,
+                "model": "qclaw/modelroute"
+            },
+            "memorySearch": {
+                "provider": "none"
+            },
+            "skills": [
+                "find-skills",
+                "qclaw-env",
+                "web_search"
+            ],
+            "compaction": {
+                "reserveTokensFloor": 35000
+            }
         },
-        "model": {
-          "primary": "openrouter/poolside/laguna-m.1",
-          "fallbacks": [
-            "openrouter/poolside/laguna-m.1",
-            "openrouter/cohere/north-mini-code",
-            "zhipu/glm-4-flash"
-          ]
+        "list": [
+            {
+                "id": "main",
+                "default": true,
+                "name": "猫抓",
+                "reasoningDefault": "stream",
+                "skills": [
+                    "find-skills",
+                    "qclaw-env",
+                    "qclaw-rules",
+                    "qclaw-cron-skill",
+                    "qclaw-skill-creator",
+                    "xbrowser",
+                    "tavily-search",
+                    "agent-browser",
+                    "web-scraper",
+                    "web_search",
+                    "code-runner",
+                    "email-skill"
+                ],
+                "identity": {
+                    "name": "猫抓"
+                }
+            },
+            {
+                "id": "minigt1",
+                "name": "模型车专家",
+                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-minigt1",
+                "reasoningDefault": "stream",
+                "skills": [
+                    "find-skills",
+                    "qclaw-env",
+                    "xbrowser",
+                    "web_search",
+                    "pdf",
+                    "xlsx",
+                    "docx",
+                    "qclaw-cron-skill",
+                    "qclaw-rules",
+                    "qclaw-skill-creator",
+                    "another_them",
+                    "persona-switch",
+                    "aippt",
+                    "kdocs",
+                    "wecomcli-contact",
+                    "wecomcli-doc",
+                    "wecomcli-meeting",
+                    "wecomcli-msg",
+                    "wecomcli-schedule",
+                    "wecomcli-todo",
+                    "wecomcli-setup",
+                    "youdaonote"
+                ],
+                "identity": {
+                    "name": "模型车专家"
+                }
+            },
+            {
+                "id": "caipiao",
+                "name": "彩票策略师",
+                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-caipiao",
+                "reasoningDefault": "stream",
+                "skills": [
+                    "find-skills",
+                    "qclaw-env",
+                    "xlsx",
+                    "pdf",
+                    "docx",
+                    "web_search",
+                    "qclaw-cron-skill",
+                    "qclaw-rules",
+                    "qclaw-skill-creator",
+                    "xbrowser",
+                    "another_them",
+                    "persona-switch",
+                    "aippt",
+                    "kdocs",
+                    "wecomcli-contact",
+                    "wecomcli-doc",
+                    "wecomcli-meeting",
+                    "wecomcli-msg",
+                    "wecomcli-schedule",
+                    "wecomcli-todo",
+                    "wecomcli-setup",
+                    "youdaonote"
+                ],
+                "identity": {
+                    "name": "彩票策略师"
+                }
+            },
+            {
+                "id": "xianggu",
+                "name": "享估就车",
+                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-xianggu",
+                "reasoningDefault": "stream",
+                "skills": [
+                    "find-skills",
+                    "qclaw-env",
+                    "xbrowser",
+                    "xlsx",
+                    "pdf",
+                    "web_search",
+                    "qclaw-cron-skill",
+                    "qclaw-rules",
+                    "qclaw-skill-creator",
+                    "another_them",
+                    "persona-switch",
+                    "aippt",
+                    "kdocs",
+                    "wecomcli-contact",
+                    "wecomcli-doc",
+                    "wecomcli-meeting",
+                    "wecomcli-msg",
+                    "wecomcli-schedule",
+                    "wecomcli-todo",
+                    "wecomcli-setup",
+                    "youdaonote"
+                ],
+                "identity": {
+                    "name": "享估就车"
+                }
+            },
+            {
+                "id": "sjkyvvr4niogu3pv",
+                "name": "生辰命理大师",
+                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-sjkyvvr4niogu3pv",
+                "reasoningDefault": "stream",
+                "skills": [
+                    "aippt",
+                    "cloud-upload-backup",
+                    "docx",
+                    "email-skill",
+                    "find-skills",
+                    "kdocs",
+                    "mcporter",
+                    "pdf",
+                    "pptx",
+                    "qclaw-cron-skill",
+                    "qclaw-env",
+                    "qclaw-rules",
+                    "qclaw-skill-creator",
+                    "wecomcli-setup",
+                    "xbrowser",
+                    "xlsx",
+                    "youdaonote",
+                    "another_them",
+                    "cantian-bazi",
+                    "persona-switch",
+                    "wecomcli-contact",
+                    "wecomcli-doc",
+                    "wecomcli-meeting",
+                    "wecomcli-msg",
+                    "wecomcli-schedule",
+                    "wecomcli-todo",
+                    "qclaw-text-file",
+                    "online-search"
+                ],
+                "identity": {
+                    "name": "生辰命理大师",
+                    "avatar": "https://cdn.qclaw.qq.com/qclaw_miniapp/public/expert_avatar/expert_avatar_fortune_master.png"
+                }
+            },
+            {
+                "id": "5rlv3k6rth278zvo",
+                "name": "论文读写专家",
+                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-5rlv3k6rth278zvo",
+                "agentDir": "C:\\Users\\asus\\.qclaw\\agents\\5rlv3k6rth278zvo\\agent",
+                "skills": [
+                    "cloud-upload-backup",
+                    "docx",
+                    "email-skill",
+                    "find-skills",
+                    "mcporter",
+                    "pdf",
+                    "qclaw-cron-skill",
+                    "qclaw-env",
+                    "qclaw-rules",
+                    "qclaw-skill-creator",
+                    "xbrowser",
+                    "xlsx",
+                    "another_them",
+                    "persona-switch",
+                    "aippt",
+                    "kdocs",
+                    "wecomcli-contact",
+                    "wecomcli-doc",
+                    "wecomcli-meeting",
+                    "wecomcli-msg",
+                    "wecomcli-schedule",
+                    "wecomcli-todo",
+                    "wecomcli-setup",
+                    "youdaonote"
+                ],
+                "identity": {
+                    "name": "论文读写专家",
+                    "emoji": "https://cdn.qclaw.qq.com/qclaw_miniapp/public/expert_avatar/expert_avatar_ai_paper_reader.png",
+                    "avatar": "https://cdn.qclaw.qq.com/qclaw_miniapp/public/expert_avatar/expert_avatar_ai_paper_reader.png"
+                },
+                "reasoningDefault": "stream"
+            },
+            {
+                "id": "product-manager",
+                "name": "大女儿·产品经理",
+                "workspace": "D:\\bobo\\openclaw-foreign\\workspace-product",
+                "default": false,
+                "reasoningDefault": "stream",
+                "skills": [
+                    "find-skills",
+                    "qclaw-env",
+                    "web_search",
+                    "qclaw-cron-skill",
+                    "qclaw-rules",
+                    "qclaw-skill-creator",
+                    "docx",
+                    "xlsx",
+                    "kdocs",
+                    "ontology",
+                    "youdaonote"
+                ],
+                "identity": {
+                    "name": "大女儿·产品经理",
+                    "emoji": "📋"
+                }
+            },
+            {
+                "id": "content-creator",
+                "name": "二女儿·内容创作者",
+                "workspace": "D:\\bobo\\openclaw-foreign\\workspace-content",
+                "default": false,
+                "reasoningDefault": "stream",
+                "skills": [
+                    "find-skills",
+                    "qclaw-env",
+                    "qclaw-rules",
+                    "qclaw-skill-creator",
+                    "aippt",
+                    "docx",
+                    "pdf",
+                    "kdocs",
+                    "xbrowser",
+                    "another_them",
+                    "persona-switch"
+                ],
+                "identity": {
+                    "name": "二女儿·内容创作者",
+                    "emoji": "✍️"
+                }
+            },
+            {
+                "id": "designer",
+                "name": "三女儿·设计总监",
+                "workspace": "D:\\bobo\\openclaw-foreign\\workspace-designer",
+                "default": false,
+                "reasoningDefault": "stream",
+                "skills": [
+                    "find-skills",
+                    "qclaw-env",
+                    "qclaw-rules",
+                    "xbrowser",
+                    "web-deploy-github",
+                    "code-runner",
+                    "aippt",
+                    "kdocs",
+                    "docx",
+                    "another_them"
+                ],
+                "identity": {
+                    "name": "三女儿·设计总监",
+                    "emoji": "🎨"
+                }
+            },
+            {
+                "id": "operator",
+                "name": "四女儿·运营专员",
+                "workspace": "D:\\bobo\\openclaw-foreign\\workspace-operator",
+                "default": false,
+                "reasoningDefault": "stream",
+                "skills": [
+                    "find-skills",
+                    "qclaw-env",
+                    "qclaw-rules",
+                    "qclaw-cron-skill",
+                    "wecomcli-msg",
+                    "wecomcli-contact",
+                    "wecomcli-setup",
+                    "youdaonote",
+                    "email-skill",
+                    "kdocs"
+                ],
+                "identity": {
+                    "name": "四女儿·运营专员",
+                    "emoji": "📊"
+                }
+            }
+        ]
+    },
+    "skills": {
+        "limits": {
+            "maxSkillsPromptChars": 20000
+        },
+        "load": {
+            "extraDirs": [
+                "",
+                "C:\\Users\\asus\\.qclaw\\skills",
+                "C:\\Users\\asus\\.qclaw\\skillhub-skills"
+            ]
+        },
+        "entries": {
+            "skill-creator": {
+                "enabled": false
+            },
+            "qclaw-skill-creator": {
+                "enabled": true
+            },
+            "aippt": {
+                "enabled": true
+            },
+            "kdocs": {
+                "enabled": true
+            },
+            "wecomcli-contact": {
+                "enabled": true
+            },
+            "wecomcli-doc": {
+                "enabled": true
+            },
+            "wecomcli-meeting": {
+                "enabled": true
+            },
+            "wecomcli-msg": {
+                "enabled": true
+            },
+            "wecomcli-schedule": {
+                "enabled": true
+            },
+            "wecomcli-todo": {
+                "enabled": true
+            },
+            "wecomcli-setup": {
+                "enabled": true
+            },
+            "youdaonote": {
+                "enabled": true
+            },
+            "academic-research-hub": {
+                "enabled": true
+            },
+            "cnki-advanced-search": {
+                "enabled": true
+            },
+            "nature-citation": {
+                "enabled": true
+            },
+            "nature-data": {
+                "enabled": true
+            },
+            "nature-figure": {
+                "enabled": true
+            },
+            "nature-paper2ppt": {
+                "enabled": true
+            },
+            "nature-polishing": {
+                "enabled": true
+            },
+            "nature-reader": {
+                "enabled": true
+            },
+            "nature-response": {
+                "enabled": true
+            },
+            "nature-reviewer": {
+                "enabled": true
+            },
+            "nature-writing": {
+                "enabled": true
+            },
+            "_shared": {
+                "enabled": true
+            },
+            "tavily-search": {
+                "enabled": true
+            },
+            "read-github": {
+                "enabled": true
+            },
+            "github-ai-trends": {
+                "enabled": true
+            },
+            "agent-browser": {
+                "enabled": true
+            },
+            "web-scraper": {
+                "enabled": true
+            },
+            "code-runner": {
+                "enabled": true
+            },
+            "github-actions-generator": {
+                "enabled": true
+            },
+            "web-deploy-github": {
+                "enabled": true
+            },
+            "ontology": {
+                "enabled": true
+            },
+            "online-search": {
+                "enabled": true
+            },
+            "创业可以学": {
+                "enabled": false
+            },
+            "wendao-partner-qclaw-skill": {
+                "enabled": false
+            },
+            "bdpan-storage": {
+                "enabled": false
+            },
+            "flyai": {
+                "enabled": false
+            },
+            "tencent-news": {
+                "enabled": false
+            },
+            "tencent-musician-skills": {
+                "enabled": false
+            },
+            "lark-setup": {
+                "enabled": false
+            }
         }
-      }
-    ]
-  },
-  "models": {
-    "mode": "merge",
-    "providers": {
-      "zhipu": {
-        "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
-        "apiKey": "2ccddfa85ba047918ba42cef3b1a9d72.fCnRkscAz5Q3Otg8",
-        "api": "openai-completions",
-        "models": [
-          {
-            "id": "glm-4-flash",
-            "name": "[FREE] GLM-4 Flash 128K"
-          },
-          {
-            "id": "glm-4v-flash",
-            "name": "[FREE] GLM-4V Flash Vision"
-          },
-          {
-            "id": "glm-z1-flash",
-            "name": "[FREE] GLM-Z1 Flash Reasoning"
-          },
-          {
-            "id": "glm-4.5-air",
-            "name": "[FREE] GLM-4.5 Air Fast"
-          },
-          {
-            "id": "cogview-3-flash",
-            "name": "[FREE] CogView-3 Image"
-          }
-        ]
-      },
-      "siliconflow": {
-        "baseUrl": "https://api.siliconflow.cn/v1",
-        "apiKey": "DISABLED_2026-06-26_FREETIER_ONLY",
-        "api": "openai-completions",
-        "models": [
-          {
-            "id": "Qwen/Qwen3-8B",
-            "name": "[FREE] Qwen3 8B - DISABLED"
-          },
-          {
-            "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-            "name": "[FREE] DS R1 7B - DISABLED"
-          }
-        ]
-      },
-      "dashscope": {
-        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "apiKey": "DISABLED_2026-06-26_PREVENT_BILLING",
-        "api": "openai-completions",
-        "models": [
-          {
-            "id": "qwen-flash",
-            "name": "[FREE 7000w] Qwen Flash"
-          },
-          {
-            "id": "qwen-turbo",
-            "name": "[FREE] Qwen Turbo"
-          },
-          {
-            "id": "qwen3-coder-flash",
-            "name": "[FREE] Qwen3 Coder Flash"
-          },
-          {
-            "id": "qwen-mt-flash",
-            "name": "[FREE] Qwen MT Flash"
-          },
-          {
-            "id": "qwen-mt-lite",
-            "name": "[FREE] Qwen MT Lite"
-          }
-        ]
-      },
-      "doubao": {
-        "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
-        "apiKey": "DISABLED_2026-06-26_PREVENT_BILLING",
-        "api": "openai-completions",
-        "models": [
-          {
-            "id": "doubao-seed-2-0-lite-260428",
-            "name": "[FREE 50w] Seed 2.0 Lite"
-          },
-          {
-            "id": "doubao-seed-2-0-mini-260428",
-            "name": "[FREE 50w] Seed 2.0 Mini"
-          },
-          {
-            "id": "doubao-seed-2-0-pro-260215",
-            "name": "[PAID 3.2/16] Seed 2.0 Pro"
-          },
-          {
-            "id": "doubao-seed-1-6-251015",
-            "name": "[PAID 3.2/16] Seed 1.6"
-          }
-        ]
-      },
-      "openrouter": {
-        "baseUrl": "https://openrouter.ai/api/v1",
-        "apiKey": "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",
-        "api": "openai-completions",
-        "models": [
-          {
-            "id": "google/gemini-2.5-flash",
-            "name": "[FREE] Gemini 2.5 Flash (1M)"
-          },
-          {
-            "id": "google/gemini-2.5-flash-lite",
-            "name": "[FREE] Gemini 2.5 Flash Lite (1M)"
-          },
-          {
-            "id": "nvidia/nemotron-3-ultra-550b-a55b",
-            "name": "[FREE] Nemotron 3 Ultra 550B"
-          },
-          {
-            "id": "nvidia/nemotron-3-super-120b-a12b",
-            "name": "[FREE] Nemotron 3 Super 120B"
-          },
-          {
-            "id": "google/gemma-4-31b-it",
-            "name": "[FREE] Gemma 4 31B"
-          },
-          {
-            "id": "google/gemma-4-26b-a4b-it",
-            "name": "[FREE] Gemma 4 26B"
-          },
-          {
-            "id": "cohere/north-mini-code",
-            "name": "[FREE] North Mini Code"
-          },
-          {
-            "id": "poolside/laguna-m.1",
-            "name": "[FREE] Laguna M.1"
-          },
-          {
-            "id": "google/lyria-3-clip-preview",
-            "name": "[FREE] Lyria 3 Clip"
-          }
-        ]
-      }
-    }
-  },
-  "tools": {
-    "web": {
-      "search": {
-        "enabled": true
-      }
     },
-    "exec": {
-      "pathPrepend": [
-        "D:/bobo/openclaw-foreign/workspace"
-      ]
-    }
-  },
-  "browser": {
-    "enabled": true,
-    "ssrfPolicy": {
-      "dangerouslyAllowPrivateNetwork": true,
-      "allowedHostnames": [
-        "127.0.0.1",
-        "localhost"
-      ]
-    }
-  },
-  "gateway": {
-    "port": 18791,
-    "mode": "local",
-    "bind": "loopback",
-    "auth": {
-      "mode": "none",
-      "token": "e58113b4f30980623d0a7855e1dc9c1fd725b7eb2b690f7b"
-    },
-    "nodes": {},
-    "controlUi": {
-      "allowedOrigins": [
-        "null",
-        "file://"
-      ]
-    }
-  },
-  "plugins": {
-    "enabled": true,
-    "allow": [
-      "lossless-claw",
-      "deepseek",
-      "browser",
-      "memory-core"
-    ],
-    "slots": {
-      "contextEngine": "lossless-claw"
-    },
-    "load": {
-      "paths": [
-        "D:\\bobo\\openclaw-foreign\\plugins\\lossless-claw"
-      ]
-    },
-    "entries": {
-      "lossless-claw": {
-        "enabled": true,
-        "config": {
-          "dbPath": "D:\\bobo\\openclaw-foreign\\state\\lcm.db",
-          "contextThreshold": 0.6,
-          "freshTailCount": 32,
-          "freshTailMaxTokens": 32000,
-          "incrementalMaxDepth": 3,
-          "ignoreSessionPatterns": [
-            "agent:*:cron:**",
-            "**:heartbeat"
-          ],
-          "statelessSessionPatterns": [
-            "agent:*:subagent:**"
-          ],
-          "skipStatelessSessions": true
+    "models": {
+        "mode": "replace",
+        "pricing": {
+            "enabled": false
+        },
+        "providers": {
+            "dashscope": {
+                "apiKey": "${OPENCLAW_DASHSCOPE_KEY}",
+                "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+                "api": "openai-completions",
+                "models": [
+                    {
+                        "id": "qwen-flash",
+                        "name": "⭐ qwen-flash · 128K · 7000万/月 · 综合最强免费模型",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "qwen-turbo",
+                        "name": "⭐ qwen-turbo · 128K · 永久免费 · 响应最快",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "qwen3-coder-flash",
+                        "name": "⭐ qwen3-coder-flash · 128K · 100万/90天 · 编程专用",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "qwen-mt-flash",
+                        "name": "⭐ qwen-mt-flash · 128K · 100万/90天 · 翻译专用",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "qwen-mt-lite",
+                        "name": "⭐ qwen-mt-lite · 128K · 100万/90天 · 翻译精简版",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    }
+                ]
+            },
+            "siliconflow": {
+                "apiKey": "${OPENCLAW_SILICONFLOW_KEY}",
+                "baseUrl": "https://api.siliconflow.cn/v1",
+                "api": "openai-completions",
+                "models": [
+                    {
+                        "id": "Qwen/Qwen3-8B",
+                        "name": "⭐ Qwen3-8B · 8B · 32K · 永久免费 · 最新千问3",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 32000,
+                        "maxTokens": 4096,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "Qwen/Qwen2.5-7B-Instruct",
+                        "name": "⭐ Qwen2.5-7B-Instruct · 7B · 32K · 永久免费 · 老牌免费王",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 32000,
+                        "maxTokens": 4096,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+                        "name": "⭐ DeepSeek R1 · Qwen3-8B · 32K · 永久免费 · 推理版",
+                        "reasoning": true,
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 32000,
+                        "maxTokens": 4096,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "Qwen/Qwen3-VL-8B-Instruct",
+                        "name": "⭐ Qwen3-VL-8B · 8B · 32K · 永久免费 · 视觉理解",
+                        "input": [
+                            "text",
+                            "image"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 32000,
+                        "maxTokens": 4096,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "Qwen/Qwen3-VL-32B-Instruct",
+                        "name": "⭐ Qwen3-VL-32B · 32K · 永久免费 · 视觉理解",
+                        "input": [
+                            "text",
+                            "image"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 32000,
+                        "maxTokens": 4096,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "deepseek-ai/DeepSeek-V4-Flash",
+                        "name": "💰 DeepSeek V4 Flash · 128K · ¥1/¥2 · 性价比核弹",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 1,
+                            "output": 2
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "deepseek-ai/DeepSeek-V4-Pro",
+                        "name": "💰 DeepSeek V4 Pro · 128K · ¥3/¥6 · 旗舰版",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 3,
+                            "output": 6
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    }
+                ]
+            },
+            "zhipu": {
+                "apiKey": "826f7a4259f6474d818b10c21a37eac9.H7NOoZ040ihbpsaB",
+                "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+                "api": "openai-completions",
+                "models": [
+                    {
+                        "id": "glm-4-flash",
+                        "name": "⭐ glm-4-flash · 128K · 永久免费 · 中文强推荐",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "glm-z1-flash",
+                        "name": "⭐ glm-z1-flash · 128K · 永久免费 · 推理增强版",
+                        "reasoning": true,
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "glm-4v-flash",
+                        "name": "⭐ glm-4v-flash · 128K · 永久免费 · 视觉理解",
+                        "input": [
+                            "text",
+                            "image"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "cogview-3-flash",
+                        "name": "⭐ cogview-3-flash · 永久免费 · AI画图",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 2000,
+                        "maxTokens": 2000,
+                        "api": "openai-completions"
+                    },
+                    {
+                        "id": "glm-4.5-air",
+                        "name": "⭐ glm-4.5-air · 128K · 永久免费 · 轻量最快",
+                        "input": [
+                            "text"
+                        ],
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 128000,
+                        "maxTokens": 8192,
+                        "api": "openai-completions"
+                    }
+                ]
+            },
+            "ollama": {
+                "api": "ollama",
+                "models": [
+                    {
+                        "id": "qwen3.5:2b",
+                        "name": "[免费本地] 通义千问3.5 (2B)",
+                        "api": "ollama",
+                        "input": [
+                            "text"
+                        ]
+                    },
+                    {
+                        "id": "qwen2.5:1.5b-instruct-q4_K_M",
+                        "name": "[免费本地] 通义千问2.5 (1.5B)",
+                        "api": "ollama",
+                        "input": [
+                            "text"
+                        ]
+                    },
+                    {
+                        "id": "qwen2.5-coder:7b",
+                        "name": "[免费本地] 通义千问Coder (7B)",
+                        "api": "ollama",
+                        "input": [
+                            "text"
+                        ]
+                    }
+                ]
+            },
+            "qclaw-route": {
+                "baseUrl": "http://localhost:54465/v1",
+                "apiKey": "",
+                "api": "openai-completions",
+                "models": [
+                    {
+                        "id": "qclaw/modelroute",
+                        "name": "🚀 智能路由 · 哥哥家 · 自动选模型",
+                        "input": [
+                            "text"
+                        ],
+                        "api": "openai-completions",
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "contextWindow": 100000
+                    }
+                ]
+            }
         }
-      },
-      "deepseek": {
-        "enabled": true
-      },
-      "browser": {
-        "enabled": true
-      }
-    }
-  },
-  "meta": {
-    "lastTouchedVersion": "2026.4.21-5",
-    "lastTouchedAt": "2026-06-22T11:01:10.557Z"
-  },
-  "skills": {
-    "limits": {
-      "maxSkillsPromptChars": 20000
     },
-    "load": {
-      "extraDirs": [
-        "D:\\bobo\\openclaw-foreign\\skills"
-      ]
+    "browser": {
+        "enabled": true,
+        "defaultProfile": "openclaw",
+        "ssrfPolicy": {
+            "dangerouslyAllowPrivateNetwork": false
+        }
     },
-    "entries": {
-      "aippt": {
-        "enabled": true
-      },
-      "another_them": {
-        "enabled": true
-      },
-      "cloud-upload-backup": {
-        "enabled": true
-      },
-      "docx": {
-        "enabled": true
-      },
-      "email-skill": {
-        "enabled": true
-      },
-      "figma": {
-        "enabled": true
-      },
-      "find-skills": {
-        "enabled": true
-      },
-      "kdocs": {
-        "enabled": true
-      },
-      "pdf": {
-        "enabled": true
-      },
-      "persona-switch": {
-        "enabled": true
-      },
-      "qclaw-cron-skill": {
-        "enabled": true
-      },
-      "qclaw-env": {
-        "enabled": true
-      },
-      "qclaw-rules": {
-        "enabled": true
-      },
-      "qclaw-skill-creator": {
-        "enabled": true
-      },
-      "xbrowser": {
-        "enabled": true
-      },
-      "xlsx": {
-        "enabled": true
-      },
-      "youdaonote": {
-        "enabled": true
-      },
-      "wecomcli-contact": {
+    "gateway": {
+        "port": 18900,
+        "mode": "local",
+        "bind": "loopback",
+        "auth": {
+            "mode": "none",
+            "token": "${OPENCLAW_GATEWAY_TOKEN}"
+        },
+        "controlUi": {
+            "allowedOrigins": [
+                "null",
+                "file://"
+            ]
+        },
+        "tailscale": {
+            "mode": "off",
+            "resetOnExit": false
+        },
+        "http": {
+            "endpoints": {
+                "chatCompletions": {
+                    "enabled": true
+                }
+            }
+        },
+        "nodes": {
+            "allowCommands": [
+                "vscode.file.read",
+                "vscode.file.write",
+                "vscode.file.edit",
+                "vscode.file.delete",
+                "vscode.dir.list",
+                "vscode.editor.active",
+                "vscode.editor.openFiles",
+                "vscode.editor.selections",
+                "vscode.diagnostics.get",
+                "vscode.workspace.info",
+                "vscode.lang.definition",
+                "vscode.lang.references",
+                "vscode.lang.hover",
+                "vscode.lang.symbols",
+                "vscode.lang.rename",
+                "vscode.lang.codeActions",
+                "vscode.lang.applyCodeAction",
+                "vscode.code.format",
+                "vscode.test.list",
+                "vscode.test.run",
+                "vscode.test.results",
+                "vscode.git.status",
+                "vscode.git.diff",
+                "vscode.git.log",
+                "vscode.git.blame",
+                "vscode.git.stage",
+                "vscode.git.unstage",
+                "vscode.git.commit",
+                "vscode.git.stash",
+                "vscode.debug.launch",
+                "vscode.debug.stop",
+                "vscode.debug.breakpoint",
+                "vscode.debug.evaluate",
+                "vscode.debug.stackTrace",
+                "vscode.debug.variables",
+                "vscode.debug.status",
+                "vscode.terminal.run",
+                "vscode.agent.run",
+                "vscode.agent.setup",
+                "vscode.agent.status"
+            ]
+        }
+    },
+    "mcp": {
+        "servers": {
+            "gbrain": {
+                "enabled": true,
+                "command": "node",
+                "args": ["skills/gbrain/mcp-server.js"],
+                "cwd": "D:\\bobo\\openclaw-foreign",
+                "env": {
+                    "GBRAIN_ROOT": "D:\\bobo\\openclaw-foreign\\state\\gbrain"
+                }
+            },
+            "sandbox": {
+                "enabled": false,
+                "command": "node",
+                "args": ["skills/gbrain/lib/sandbox.js", "-c"],
+                "cwd": "D:\\bobo\\openclaw-foreign"
+            }
+        }
+    },
+    "channels": {
+        "wechat-access": {
+            "enabled": true,
+            "token": "${OPENCLAW_WECHAT_TOKEN}",
+            "wsUrl": "ws://127.0.0.1:18790/ws",
+            "guid": "40e3bd0bb998f836346553ffda5e1c193e844ef5bdb4db7f94b1a23509c02dc0",
+            "userId": "762944379"
+        }
+    },
+    "plugins": {
         "enabled": true,
-        "config": {}
-      },
-      "wecomcli-doc": {
-        "enabled": true,
-        "config": {}
-      },
-      "wecomcli-meeting": {
-        "enabled": true,
-        "config": {}
-      },
-      "wecomcli-msg": {
-        "enabled": true,
-        "config": {}
-      },
-      "wecomcli-schedule": {
-        "enabled": true,
-        "config": {}
-      },
-      "wecomcli-todo": {
-        "enabled": true,
-        "config": {}
-      },
-      "tencent-docs": {
-        "enabled": true
-      },
-      "tencent-meeting-mcp": {
-        "enabled": true
-      },
-      "imap-smtp-email": {
-        "enabled": true
-      },
-      "notion": {
-        "enabled": true
-      },
-      "weather-advisor": {
-        "enabled": true
-      },
-      "tech-news-digest": {
-        "enabled": true
-      },
-      "document-converter": {
-        "enabled": true
-      },
-      "knowledge-loop": {
-        "enabled": true
-      },
-      "wecomcli-setup": {
-        "enabled": true
-      },
-      "weiyun": {
-        "enabled": true
-      },
-      "wendao-partner-qclaw-skill": {
-        "enabled": true
-      },
-      "bdpan-storage": {
-        "enabled": true
-      },
-      "lark-setup": {
-        "enabled": true
-      },
-      "advertising-creative-strategist": {
-        "enabled": true
-      },
-      "agent-email": {
-        "enabled": true
-      },
-      "baidu-ai-map": {
-        "enabled": true
-      },
-      "cantian-bazi": {
-        "enabled": true
-      },
-      "car-maintenance-mgr": {
-        "enabled": true
-      },
-      "contract-review-expert": {
-        "enabled": true
-      },
-      "data-compliance-doc-expert": {
-        "enabled": true
-      },
-      "douyin-strategist": {
-        "enabled": true
-      },
-      "ebay-seller-toolkit": {
-        "enabled": true
-      },
-      "elite-longterm-memory": {
-        "enabled": true
-      },
-      "fbs_bookwriter": {
-        "enabled": true
-      },
-      "growth-hacker": {
-        "enabled": true
-      },
-      "lexiang-knowledge-base": {
-        "enabled": true
-      },
-      "meituan-travel": {
-        "enabled": true
-      },
-      "personal-mail-skill": {
-        "enabled": true
-      },
-      "ppc-strategy-specialist": {
-        "enabled": true
-      },
-      "presales-engineer": {
-        "enabled": true
-      },
-      "private-domain-operator": {
-        "enabled": true
-      },
-      "prompt-engineer": {
-        "enabled": true
-      },
-      "qcc-company": {
-        "enabled": true
-      },
-      "tencent-esign-contract": {
-        "enabled": true
-      },
-      "thesis-word-formatter": {
-        "enabled": true
-      },
-      "tongdaxin-mcp": {
-        "enabled": true
-      },
-      "wechat-draft-writer": {
-        "enabled": true
-      },
-      "wechat-style-profiler": {
-        "enabled": true
-      },
-      "wechat-title-generator": {
-        "enabled": true
-      },
-      "wechat-topic-outline-planner": {
-        "enabled": true
-      },
-      "wecom-weisheng-scrm": {
-        "enabled": true
-      },
-      "weread-skills": {
-        "enabled": true
-      },
-      "yuandian": {
-        "enabled": true
-      },
-      "zhihu-strategist": {
-        "enabled": true
-      },
-      "add-provider-doc": {
-        "enabled": true
-      },
-      "add-setting-env": {
-        "enabled": true
-      },
-      "agent-runtime-hooks": {
-        "enabled": true
-      },
-      "agent-signal": {
-        "enabled": true
-      },
-      "agent-testing": {
-        "enabled": true
-      },
-      "agent-tracing": {
-        "enabled": true
-      },
-      "backend-code-review": {
-        "enabled": true
-      },
-      "builtin-tool": {
-        "enabled": true
-      },
-      "chat-sdk": {
-        "enabled": true
-      },
-      "cli": {
-        "enabled": true
-      },
-      "clone-project": {
-        "enabled": true
-      },
-      "community-pr-readiness-check": {
-        "enabled": true
-      },
-      "content-design": {
-        "enabled": true
-      },
-      "conventions": {
-        "enabled": true
-      },
-      "create-community-node-lint-rule": {
-        "enabled": true
-      },
-      "create-issue": {
-        "enabled": true
-      },
-      "create-pr": {
-        "enabled": true
-      },
-      "create-skill": {
-        "enabled": true
-      },
-      "data-fetching-architecture": {
-        "enabled": true
-      },
-      "db-migrations": {
-        "enabled": true
-      },
-      "debug-package": {
-        "enabled": true
-      },
-      "design-system": {
-        "enabled": true
-      },
-      "desktop": {
-        "enabled": true
-      },
-      "docs-changelog": {
-        "enabled": true
-      },
-      "drizzle": {
-        "enabled": true
-      },
-      "e2e-cucumber-playwright": {
-        "enabled": true
-      },
-      "experiments": {
-        "enabled": true
-      },
-      "frontend-code-review": {
-        "enabled": true
-      },
-      "frontend-testing": {
-        "enabled": true
-      },
-      "gbrain": {
-        "enabled": true
-      },
-      "heterogeneous-agent": {
-        "enabled": true
-      },
-      "hotkey": {
-        "enabled": true
-      },
-      "how-to-write-component": {
-        "enabled": true
-      },
-      "human-like-code-review": {
-        "enabled": true
-      },
-      "i18n": {
-        "enabled": true
-      },
-      "karpathy-guidelines": {
-        "enabled": true
-      },
-      "linear": {
-        "enabled": true
-      },
-      "linear-issue": {
-        "enabled": true
-      },
-      "loom-transcript": {
-        "enabled": true
-      },
-      "microcopy": {
-        "enabled": true
-      },
-      "modal": {
-        "enabled": true
-      },
-      "model-bank-metadata": {
-        "enabled": true
-      },
-      "model-selection-rules": {
-        "enabled": true
-      },
-      "node-add-oauth": {
-        "enabled": true
-      },
-      "pr": {
-        "enabled": true
-      },
-      "project-overview": {
-        "enabled": true
-      },
-      "protect-endpoints": {
-        "enabled": true
-      },
-      "react": {
-        "enabled": true
-      },
-      "reasoning-framework": {
-        "enabled": true
-      },
-      "reproduce-bug": {
-        "enabled": true
-      },
-      "response-compliance": {
-        "enabled": true
-      },
-      "review-checklist": {
-        "enabled": true
-      },
-      "skills-audit": {
-        "enabled": true
-      },
-      "spa-routes": {
-        "enabled": true
-      },
-      "spec-driven-development": {
-        "enabled": true
-      },
-      "store-data-structures": {
-        "enabled": true
-      },
-      "testing": {
-        "enabled": true
-      },
-      "trpc-router": {
-        "enabled": true
-      },
-      "typescript": {
-        "enabled": true
-      },
-      "upstash-workflow": {
-        "enabled": true
-      },
-      "ux": {
-        "enabled": true
-      },
-      "version-release": {
-        "enabled": true
-      },
-      "zustand": {
-        "enabled": true
-      },
-      "github-actions-generator": {
-        "enabled": true
-      },
-      "web-deploy-github": {
-        "enabled": true
-      },
-      "release-notes-generator": {
-        "enabled": true
-      },
-      "deployment-automation": {
-        "enabled": true
-      },
-      "api-doc-generator": {
-        "enabled": true
-      },
-      "auto-valuation": {
-        "enabled": true
-      },
-      "auto_valuation": {
-        "enabled": true
-      },
-      "causal-reasoner": {
-        "enabled": true
-      },
-      "code-navigator": {
-        "enabled": true
-      },
-      "config-diff": {
-        "enabled": true
-      },
-      "docker-compose-gen": {
-        "enabled": true
-      },
-      "evaluator": {
-        "enabled": true
-      },
-      "infra-diagram-as-code": {
-        "enabled": true
-      },
-      "lobe-agent-testing": {
-        "enabled": true
-      },
-      "lobe-data-fetching": {
-        "enabled": true
-      },
-      "log-analyzer": {
-        "enabled": true
-      },
-      "mtunion-product-ai-guide": {
-        "enabled": true
-      },
-      "n8n-code-review": {
-        "enabled": true
-      },
-      "n8n-db-migrations": {
-        "enabled": true
-      },
-      "owl-vision": {
-        "enabled": true
-      },
-      "sandbox-executor": {
-        "enabled": true
-      },
-      "sandbox-test": {
-        "enabled": true
-      },
-      "security-audit": {
-        "enabled": true
-      },
-      "self-coder": {
-        "enabled": true
-      },
-      "site-doctor": {
-        "enabled": true
-      },
-      "sql-optimizer": {
-        "enabled": true
-      },
-      "subconscious-daemon": {
-        "enabled": true
-      },
-      "token-saver": {
-        "enabled": true
-      }
-    }
-  },
-  "mcp": {
-    "servers": {
-      "sequential-think": {
-        "command": "D:\\\\Program Files\\\\nodejs\\\\node.exe",
-        "args": [
-          "D:\\\\Program Files\\\\nodejs\\\\node_modules\\\\npm\\\\bin\\\\npx-cli.js",
-          "-y",
-          "mcp-sequentialthinking-tools"
+        "allow": [
+            "wechat-access",
+            "qclaw-plugin",
+            "qclaw-embedding",
+            "memory-core",
+            "lossless-claw",
+            "browser",
+            "acpx",
+            "deepseek",
+            "ollama"
         ],
-        "disabled": false,
-        "toolFilter": {
-          "include": [
-            "*"
-          ]
+        "slots": {
+            "contextEngine": "lossless-claw"
+        },
+        "load": {
+            "paths": [
+                ""
+            ]
+        },
+        "entries": {
+            "wechat-access": {
+                "enabled": true
+            },
+            "qclaw-plugin": {
+                "enabled": true,
+                "config": {},
+                "hooks": {
+                    "allowConversationAccess": true
+                }
+            },
+            "lossless-claw": {
+                "enabled": true,
+                "config": {
+                    "dbPath": "D:\\bobo\\openclaw-foreign\\memory\\lossless\\lcm.db",
+                    "contextThreshold": 0.6,
+                    "freshTailCount": 64,
+                    "freshTailMaxTokens": 40000,
+                    "incrementalMaxDepth": 5,
+                    "ignoreSessionPatterns": [
+                        "agent:*:cron:**",
+                        "**:heartbeat"
+                    ],
+                    "statelessSessionPatterns": [
+                        "agent:*:subagent:**"
+                    ],
+                    "skipStatelessSessions": true
+                },
+                "hooks": {
+                    "allowConversationAccess": true
+                }
+            },
+            "browser": {
+                "enabled": true
+            },
+            "acpx": {
+                "enabled": true
+            },
+            "deepseek": {
+                "enabled": true
+            },
+            "ollama": {
+                "enabled": true
+            }
+        },
+        "bundledDiscovery": "compat"
+    },
+    "messages": {
+        "queue": {
+            "mode": "followup"
         }
-      }
+    },
+    "session": {
+        "reset": {
+            "mode": "idle",
+            "idleMinutes": 525600
+        },
+        "maintenance": {
+            "pruneAfter": "365d",
+            "maxEntries": 1000000,
+            "resetArchiveRetention": false
+        },
+        "dmScope": "per-channel-peer"
+    },
+    "meta": {
+        "lastTouchedVersion": "2026.6.5",
+        "lastTouchedAt": "2026-06-28T04:15:45.934Z"
+    },
+    "acp": {
+        "enabled": true,
+        "dispatch": {
+            "enabled": false
+        },
+        "defaultAgent": "codex",
+        "allowedAgents": [
+            "codex"
+        ],
+        "maxConcurrentSessions": 3
+    },
+    "wizard": {
+        "lastRunAt": "2026-06-28T04:15:45.486Z",
+        "lastRunVersion": "2026.6.5",
+        "lastRunCommand": "doctor",
+        "lastRunMode": "local"
     }
-  },
-  "wizard": {
-    "lastRunAt": "2026-06-22T07:57:23.672Z",
-    "lastRunVersion": "2026.4.21-5",
-    "lastRunCommand": "doctor",
-    "lastRunMode": "local"
-  }
 }

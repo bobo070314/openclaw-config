@@ -254,16 +254,16 @@ def optimize_with_rules(code: str, skill_name: str = "") -> str:
 def main():
     parser = argparse.ArgumentParser(description="self-coder: AI Self-Modification Engine")
     parser.add_argument("skill", help="Skill name to optimize")
-    parser.add_argument("--api-key", help="DeepSeek API key (or set DEEPSEEK_API_KEY env)")
+    parser.add_argument("--api-key", help="DeepSeek API key (or set # DISABLED (DEEPSEEK_API)_KEY env)")
     parser.add_argument("--model", default=DEFAULT_MODEL, help="Model to use")
     parser.add_argument("--dry-run", action="store_true", help="Show prompt but don't call API")
     parser.add_argument("--rules", action="store_true", help="Use rule engine instead of LLM (no API key needed)")
     args = parser.parse_args()
 
-    api_key = args.api_key or os.environ.get("DEEPSEEK_API_KEY")
+    api_key = args.api_key or os.environ.get("# DISABLED (DEEPSEEK_API)_KEY")
     use_rules = args.rules
     if not api_key and not args.dry_run and not use_rules:
-        print("[ERROR] API key required. Set DEEPSEEK_API_KEY env or pass --api-key", file=sys.stderr)
+        print("[ERROR] API key required. Set # DISABLED (DEEPSEEK_API)_KEY env or pass --api-key", file=sys.stderr)
         sys.exit(1)
 
     print(f"╔══════════════════════════════════════════════════╗")

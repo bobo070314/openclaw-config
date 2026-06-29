@@ -160,7 +160,7 @@ class Storage {
     };
   }
 
-  // ✅ 新增：异步搜索方法（支持全文 + 语义相似度）
+  // ✅ 异步搜索方法（支持全文 + 语义相似度）
   async search(query) {
     const docs = await this.getDocuments();
     const results = [];
@@ -201,6 +201,38 @@ class Storage {
     }
     
     return results.sort((a, b) => b.score - a.score);
+  }
+
+  // ✅ MCP 兼容接口：hybridSearch(query, limit)
+  hybridSearch(query, limit = 5) {
+    // 同步包装 + 限数，避免 mcp-server.js 找不到方法
+    const docs = this._loadJSON();
+    const results = [];
+    const q = query.toLowerCase();
+    for (const doc of docs) {
+      let score = 0;
+      const c = (doc.content || '').toLowerCase();
+      const t = (doc.title || '').toLowerCase();
+      // 全文关键词匹配
+      const qWords = q.split(/\s+/).filter(w => w.length > 0);
+      for (const w of qWords) {
+        if (c.includes(w)) score += 0.5;
+        if (t.includes(w)) score += 0.3;
+      }
+      if (score > 0) {
+        results.push({
+          id: doc.id,
+          title: doc.title || '(无标题)',
+          content: (doc.content || '').substring(0, 500),
+          tags: doc.tags || [],
+          score,
+          type: doc.type || 'text',
+          createdAt: doc.timestamp
+        });
+      }
+    }
+    results.sort((a, b) => b.score - a.score);
+    return results.slice(0, limit);
   }
 }
 

@@ -1,74 +1,138 @@
-# Python 缓存
-__pycache__/
-*.pyc
+# OpenClaw workspace root .gitignore
 
-# 临时文件
-tp/
-node_modules/
-
-# OpenClaw 运行时
-.openclaw/
+# === 临时文件和调试产物 ===
+tmp_*.js
+tmp_*.py
+fix_*.js
+fix_*.py
+test_*.js
+verify_*.txt
+verify_*.json
+json5_result.txt
+*.err
 *.log
+*.BAK
+*.bak_*
+build_config.ps1
+build_config.py
+update_config.ps1
+start-gateway.ps1
+start_gw.cmd
+start_brother.bat
+start*.ps1
+clean_models.js
+fix_config.*
+fix_test.js
+manage_sessions.py
+self_improve.py
+check_tests.py
 
-# Large/transient dirs
-backup/
-archive/
-state.old_*/
-state/
-*.bak*
-*.last-good
+# === 备份和报告 ===
+*.backup_*
+*.clobbered.*
+*.corrupt
+*.invalid_*
 *.BROKEN
+*.last-good
+*-report.md
+*hardening*
+security_audit.js
+zhipu-key-fix-report.md
+model-audit-report.md
+security-report.md
+skills-cleanup-report.md
+config-fix-report.md
+session-manager.html
+health-dashboard.html
 
-# Skills auto-generated stubs (not source-controlled — only batch-generated boilerplate)
-skills/*/run.bat
-skills/*/run.sh
-skills/*/.deploy/
-skills/*/evaluator/
-skills/__audit_batch*.json
-skills/dashboard.py
-
-# Runtime junk (workspace root)
+# === 自动生成目录 ===
+config-backups/
+.auto-memory/
+qmemory/
+config/
+data/
 .deploy/
-agents/
 archive/
 backup/
 browser/
-build_config.py
-check_tests.py
-completions/
 devices/
-eval-suite/
-exec-approvals.json
-fix_entries.py
 flows/
-gateway.err
-health-dashboard.html
-identity/
 lcm-files/
 logs/
-manage_sessions.py
 media/
-node.json
-openclaw.json.BROKEN
-openclaw.json.bak*
-openclaw.json.last-good
-plugin-skills/
-plugins/
-pm2-ecosystem.json
-reset-sessions.bat
-self_improve.py
-session-manager.html
-skill-workshop/
-state.old_*/
-state/
 tasks/
-tmp_fix_models.cjs
-tmp_mark_models.js
-update-check.json
-watchdog.ps1
+tp/
+plugins/
+plugin-skills/
+agents/
+identity/
+completions/
+eval-suite/
+node.json
+
+# === 工作区子目录 ===
+workspace-architect/
+workspace-content/
+workspace-data-analyst/
+workspace-designer/
+workspace-frontend-arch/
+workspace-main/
+workspace-operator/
+workspace-ops-engineer/
+workspace-product-strategist/
+workspace-product/
+workspace-researcher/
+workspace-security-expert/
+workspace-writing-pro/
 workspace-attestations/
 workspace/
+skill-workshop/
 
-# Memory (private)
+# === skill 生成脚本（run.sh/run.bat 由工具自动生成，不进仓库）===
+skills/**/run.bat
+skills/**/run.sh
+skills/**/logs/
+skills/.daemon/
+skills/__audit_*.json
+skills/dashboard.py
+
+# === 技能目录列表（不在主仓库维护的技能）===
+skills/agent-browser/
+skills/code-runner/
+skills/flyai/
+skills/github-ai-trends/
+skills/ima/
+skills/mcporter/
+skills/multi-search-engine/
+skills/ontology/
+skills/read-github/
+skills/tencent-musician-skills/
+skills/tencent-news/
+skills/tencent-survey/
+skills/web-scraper/
+skills/agent-email/
+skills/another_them/
+
+# === 状态和运行时 ===
+state/
+state.old_*/
+exec-approvals.json
+pm2-ecosystem.json
+ecosystem.*.json
+update-check.json
+watchdog.ps1
+reset-sessions.bat
+startup.log
+node.json
+
+# === 系统文件 ===
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
+node_modules/
 memory/
-MEMORY.md.personal*
+tmp_fix_models.cjs
+
+# === 环境 ===
+.env
