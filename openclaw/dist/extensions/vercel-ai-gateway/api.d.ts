@@ -1,0 +1,4 @@
+import { a as VERCEL_AI_GATEWAY_DEFAULT_MODEL_ID, c as getStaticVercelAiGatewayModelCatalog, i as VERCEL_AI_GATEWAY_DEFAULT_MAX_TOKENS, n as VERCEL_AI_GATEWAY_DEFAULT_CONTEXT_WINDOW, o as VERCEL_AI_GATEWAY_PROVIDER_ID, r as VERCEL_AI_GATEWAY_DEFAULT_COST, s as discoverVercelAiGatewayModels, t as VERCEL_AI_GATEWAY_BASE_URL } from "../../models-DQc_otOC.js";
+import { n as buildVercelAiGatewayProvider } from "../../provider-catalog-C9RfszyQ.js";
+import { n as applyVercelAiGatewayConfig, t as VERCEL_AI_GATEWAY_DEFAULT_MODEL_REF } from "../../onboard-DQGAsuhc.js";
+export { VERCEL_AI_GATEWAY_BASE_URL, VERCEL_AI_GATEWAY_DEFAULT_CONTEXT_WINDOW, VERCEL_AI_GATEWAY_DEFAULT_COST, VERCEL_AI_GATEWAY_DEFAULT_MAX_TOKENS, VERCEL_AI_GATEWAY_DEFAULT_MODEL_ID, VERCEL_AI_GATEWAY_DEFAULT_MODEL_REF, VERCEL_AI_GATEWAY_PROVIDER_ID, applyVercelAiGatewayConfig, buildVercelAiGatewayProvider, discoverVercelAiGatewayModels, getStaticVercelAiGatewayModelCatalog };

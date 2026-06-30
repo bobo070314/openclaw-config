@@ -1,6 +1,0 @@
-{
-  "name": "e2e-cucumber-playwright",
-  "version": "0.1.0",
-  "entrypoint": "./run.sh",
-  "status": "stub"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "protect-endpoints",
-  "version": "0.1.0",
-  "entrypoint": "./run.sh",
-  "status": "stub"
-}

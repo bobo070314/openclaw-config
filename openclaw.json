@@ -1,995 +1,456 @@
 {
-    "agents": {
-        "defaults": {
-            "model": {
-                "primary": "dashscope/qwen-flash",
-                "fallbacks": [
-                    "dashscope/qwen-turbo"
-                ]
-            },
-            "workspace": "D:\\bobo\\openclaw-foreign\\workspace",
-            "maxConcurrent": 3,
-            "timeoutSeconds": 72000,
-            "heartbeat": {
-                "isolatedSession": true,
-                "lightContext": true,
-                "model": "qclaw/modelroute"
-            },
-            "memorySearch": {
-                "provider": "none"
-            },
-            "skills": [
-                "find-skills",
-                "qclaw-env",
-                "web_search"
-            ],
-            "compaction": {
-                "reserveTokensFloor": 35000
-            }
-        },
-        "list": [
-            {
-                "id": "main",
-                "default": true,
-                "name": "猫抓",
-                "reasoningDefault": "stream",
-                "skills": [
-                    "find-skills",
-                    "qclaw-env",
-                    "qclaw-rules",
-                    "qclaw-cron-skill",
-                    "qclaw-skill-creator",
-                    "xbrowser",
-                    "tavily-search",
-                    "agent-browser",
-                    "web-scraper",
-                    "web_search",
-                    "code-runner",
-                    "email-skill"
-                ],
-                "identity": {
-                    "name": "猫抓"
-                }
-            },
-            {
-                "id": "minigt1",
-                "name": "模型车专家",
-                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-minigt1",
-                "reasoningDefault": "stream",
-                "skills": [
-                    "find-skills",
-                    "qclaw-env",
-                    "xbrowser",
-                    "web_search",
-                    "pdf",
-                    "xlsx",
-                    "docx",
-                    "qclaw-cron-skill",
-                    "qclaw-rules",
-                    "qclaw-skill-creator",
-                    "another_them",
-                    "persona-switch",
-                    "aippt",
-                    "kdocs",
-                    "wecomcli-contact",
-                    "wecomcli-doc",
-                    "wecomcli-meeting",
-                    "wecomcli-msg",
-                    "wecomcli-schedule",
-                    "wecomcli-todo",
-                    "wecomcli-setup",
-                    "youdaonote"
-                ],
-                "identity": {
-                    "name": "模型车专家"
-                }
-            },
-            {
-                "id": "caipiao",
-                "name": "彩票策略师",
-                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-caipiao",
-                "reasoningDefault": "stream",
-                "skills": [
-                    "find-skills",
-                    "qclaw-env",
-                    "xlsx",
-                    "pdf",
-                    "docx",
-                    "web_search",
-                    "qclaw-cron-skill",
-                    "qclaw-rules",
-                    "qclaw-skill-creator",
-                    "xbrowser",
-                    "another_them",
-                    "persona-switch",
-                    "aippt",
-                    "kdocs",
-                    "wecomcli-contact",
-                    "wecomcli-doc",
-                    "wecomcli-meeting",
-                    "wecomcli-msg",
-                    "wecomcli-schedule",
-                    "wecomcli-todo",
-                    "wecomcli-setup",
-                    "youdaonote"
-                ],
-                "identity": {
-                    "name": "彩票策略师"
-                }
-            },
-            {
-                "id": "xianggu",
-                "name": "享估就车",
-                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-xianggu",
-                "reasoningDefault": "stream",
-                "skills": [
-                    "find-skills",
-                    "qclaw-env",
-                    "xbrowser",
-                    "xlsx",
-                    "pdf",
-                    "web_search",
-                    "qclaw-cron-skill",
-                    "qclaw-rules",
-                    "qclaw-skill-creator",
-                    "another_them",
-                    "persona-switch",
-                    "aippt",
-                    "kdocs",
-                    "wecomcli-contact",
-                    "wecomcli-doc",
-                    "wecomcli-meeting",
-                    "wecomcli-msg",
-                    "wecomcli-schedule",
-                    "wecomcli-todo",
-                    "wecomcli-setup",
-                    "youdaonote"
-                ],
-                "identity": {
-                    "name": "享估就车"
-                }
-            },
-            {
-                "id": "sjkyvvr4niogu3pv",
-                "name": "生辰命理大师",
-                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-sjkyvvr4niogu3pv",
-                "reasoningDefault": "stream",
-                "skills": [
-                    "aippt",
-                    "cloud-upload-backup",
-                    "docx",
-                    "email-skill",
-                    "find-skills",
-                    "kdocs",
-                    "mcporter",
-                    "pdf",
-                    "pptx",
-                    "qclaw-cron-skill",
-                    "qclaw-env",
-                    "qclaw-rules",
-                    "qclaw-skill-creator",
-                    "wecomcli-setup",
-                    "xbrowser",
-                    "xlsx",
-                    "youdaonote",
-                    "another_them",
-                    "cantian-bazi",
-                    "persona-switch",
-                    "wecomcli-contact",
-                    "wecomcli-doc",
-                    "wecomcli-meeting",
-                    "wecomcli-msg",
-                    "wecomcli-schedule",
-                    "wecomcli-todo",
-                    "qclaw-text-file",
-                    "online-search"
-                ],
-                "identity": {
-                    "name": "生辰命理大师",
-                    "avatar": "https://cdn.qclaw.qq.com/qclaw_miniapp/public/expert_avatar/expert_avatar_fortune_master.png"
-                }
-            },
-            {
-                "id": "5rlv3k6rth278zvo",
-                "name": "论文读写专家",
-                "workspace": "C:\\Users\\asus\\.qclaw\\workspace-5rlv3k6rth278zvo",
-                "agentDir": "C:\\Users\\asus\\.qclaw\\agents\\5rlv3k6rth278zvo\\agent",
-                "skills": [
-                    "cloud-upload-backup",
-                    "docx",
-                    "email-skill",
-                    "find-skills",
-                    "mcporter",
-                    "pdf",
-                    "qclaw-cron-skill",
-                    "qclaw-env",
-                    "qclaw-rules",
-                    "qclaw-skill-creator",
-                    "xbrowser",
-                    "xlsx",
-                    "another_them",
-                    "persona-switch",
-                    "aippt",
-                    "kdocs",
-                    "wecomcli-contact",
-                    "wecomcli-doc",
-                    "wecomcli-meeting",
-                    "wecomcli-msg",
-                    "wecomcli-schedule",
-                    "wecomcli-todo",
-                    "wecomcli-setup",
-                    "youdaonote"
-                ],
-                "identity": {
-                    "name": "论文读写专家",
-                    "emoji": "https://cdn.qclaw.qq.com/qclaw_miniapp/public/expert_avatar/expert_avatar_ai_paper_reader.png",
-                    "avatar": "https://cdn.qclaw.qq.com/qclaw_miniapp/public/expert_avatar/expert_avatar_ai_paper_reader.png"
-                },
-                "reasoningDefault": "stream"
-            },
-            {
-                "id": "product-manager",
-                "name": "大女儿·产品经理",
-                "workspace": "D:\\bobo\\openclaw-foreign\\workspace-product",
-                "default": false,
-                "reasoningDefault": "stream",
-                "skills": [
-                    "find-skills",
-                    "qclaw-env",
-                    "web_search",
-                    "qclaw-cron-skill",
-                    "qclaw-rules",
-                    "qclaw-skill-creator",
-                    "docx",
-                    "xlsx",
-                    "kdocs",
-                    "ontology",
-                    "youdaonote"
-                ],
-                "identity": {
-                    "name": "大女儿·产品经理",
-                    "emoji": "📋"
-                }
-            },
-            {
-                "id": "content-creator",
-                "name": "二女儿·内容创作者",
-                "workspace": "D:\\bobo\\openclaw-foreign\\workspace-content",
-                "default": false,
-                "reasoningDefault": "stream",
-                "skills": [
-                    "find-skills",
-                    "qclaw-env",
-                    "qclaw-rules",
-                    "qclaw-skill-creator",
-                    "aippt",
-                    "docx",
-                    "pdf",
-                    "kdocs",
-                    "xbrowser",
-                    "another_them",
-                    "persona-switch"
-                ],
-                "identity": {
-                    "name": "二女儿·内容创作者",
-                    "emoji": "✍️"
-                }
-            },
-            {
-                "id": "designer",
-                "name": "三女儿·设计总监",
-                "workspace": "D:\\bobo\\openclaw-foreign\\workspace-designer",
-                "default": false,
-                "reasoningDefault": "stream",
-                "skills": [
-                    "find-skills",
-                    "qclaw-env",
-                    "qclaw-rules",
-                    "xbrowser",
-                    "web-deploy-github",
-                    "code-runner",
-                    "aippt",
-                    "kdocs",
-                    "docx",
-                    "another_them"
-                ],
-                "identity": {
-                    "name": "三女儿·设计总监",
-                    "emoji": "🎨"
-                }
-            },
-            {
-                "id": "operator",
-                "name": "四女儿·运营专员",
-                "workspace": "D:\\bobo\\openclaw-foreign\\workspace-operator",
-                "default": false,
-                "reasoningDefault": "stream",
-                "skills": [
-                    "find-skills",
-                    "qclaw-env",
-                    "qclaw-rules",
-                    "qclaw-cron-skill",
-                    "wecomcli-msg",
-                    "wecomcli-contact",
-                    "wecomcli-setup",
-                    "youdaonote",
-                    "email-skill",
-                    "kdocs"
-                ],
-                "identity": {
-                    "name": "四女儿·运营专员",
-                    "emoji": "📊"
-                }
-            }
-        ]
-    },
-    "skills": {
-        "limits": {
-            "maxSkillsPromptChars": 20000
-        },
-        "load": {
-            "extraDirs": [
-                "",
-                "C:\\Users\\asus\\.qclaw\\skills",
-                "C:\\Users\\asus\\.qclaw\\skillhub-skills"
-            ]
-        },
-        "entries": {
-            "skill-creator": {
-                "enabled": false
-            },
-            "qclaw-skill-creator": {
-                "enabled": true
-            },
-            "aippt": {
-                "enabled": true
-            },
-            "kdocs": {
-                "enabled": true
-            },
-            "wecomcli-contact": {
-                "enabled": true
-            },
-            "wecomcli-doc": {
-                "enabled": true
-            },
-            "wecomcli-meeting": {
-                "enabled": true
-            },
-            "wecomcli-msg": {
-                "enabled": true
-            },
-            "wecomcli-schedule": {
-                "enabled": true
-            },
-            "wecomcli-todo": {
-                "enabled": true
-            },
-            "wecomcli-setup": {
-                "enabled": true
-            },
-            "youdaonote": {
-                "enabled": true
-            },
-            "academic-research-hub": {
-                "enabled": true
-            },
-            "cnki-advanced-search": {
-                "enabled": true
-            },
-            "nature-citation": {
-                "enabled": true
-            },
-            "nature-data": {
-                "enabled": true
-            },
-            "nature-figure": {
-                "enabled": true
-            },
-            "nature-paper2ppt": {
-                "enabled": true
-            },
-            "nature-polishing": {
-                "enabled": true
-            },
-            "nature-reader": {
-                "enabled": true
-            },
-            "nature-response": {
-                "enabled": true
-            },
-            "nature-reviewer": {
-                "enabled": true
-            },
-            "nature-writing": {
-                "enabled": true
-            },
-            "_shared": {
-                "enabled": true
-            },
-            "tavily-search": {
-                "enabled": true
-            },
-            "read-github": {
-                "enabled": true
-            },
-            "github-ai-trends": {
-                "enabled": true
-            },
-            "agent-browser": {
-                "enabled": true
-            },
-            "web-scraper": {
-                "enabled": true
-            },
-            "code-runner": {
-                "enabled": true
-            },
-            "github-actions-generator": {
-                "enabled": true
-            },
-            "web-deploy-github": {
-                "enabled": true
-            },
-            "ontology": {
-                "enabled": true
-            },
-            "online-search": {
-                "enabled": true
-            },
-            "创业可以学": {
-                "enabled": false
-            },
-            "wendao-partner-qclaw-skill": {
-                "enabled": false
-            },
-            "bdpan-storage": {
-                "enabled": false
-            },
-            "flyai": {
-                "enabled": false
-            },
-            "tencent-news": {
-                "enabled": false
-            },
-            "tencent-musician-skills": {
-                "enabled": false
-            },
-            "lark-setup": {
-                "enabled": false
-            }
-        }
-    },
-    "models": {
-        "mode": "replace",
-        "pricing": {
-            "enabled": false
-        },
-        "providers": {
-            "dashscope": {
-                "apiKey": "${OPENCLAW_DASHSCOPE_KEY}",
-                "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-                "api": "openai-completions",
-                "models": [
-                    {
-                        "id": "qwen-flash",
-                        "name": "⭐ qwen-flash · 128K · 7000万/月 · 综合最强免费模型",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "qwen-turbo",
-                        "name": "⭐ qwen-turbo · 128K · 永久免费 · 响应最快",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "qwen3-coder-flash",
-                        "name": "⭐ qwen3-coder-flash · 128K · 100万/90天 · 编程专用",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "qwen-mt-flash",
-                        "name": "⭐ qwen-mt-flash · 128K · 100万/90天 · 翻译专用",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "qwen-mt-lite",
-                        "name": "⭐ qwen-mt-lite · 128K · 100万/90天 · 翻译精简版",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    }
-                ]
-            },
-            "siliconflow": {
-                "apiKey": "${OPENCLAW_SILICONFLOW_KEY}",
-                "baseUrl": "https://api.siliconflow.cn/v1",
-                "api": "openai-completions",
-                "models": [
-                    {
-                        "id": "Qwen/Qwen3-8B",
-                        "name": "⭐ Qwen3-8B · 8B · 32K · 永久免费 · 最新千问3",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 32000,
-                        "maxTokens": 4096,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "Qwen/Qwen2.5-7B-Instruct",
-                        "name": "⭐ Qwen2.5-7B-Instruct · 7B · 32K · 永久免费 · 老牌免费王",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 32000,
-                        "maxTokens": 4096,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
-                        "name": "⭐ DeepSeek R1 · Qwen3-8B · 32K · 永久免费 · 推理版",
-                        "reasoning": true,
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 32000,
-                        "maxTokens": 4096,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "Qwen/Qwen3-VL-8B-Instruct",
-                        "name": "⭐ Qwen3-VL-8B · 8B · 32K · 永久免费 · 视觉理解",
-                        "input": [
-                            "text",
-                            "image"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 32000,
-                        "maxTokens": 4096,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "Qwen/Qwen3-VL-32B-Instruct",
-                        "name": "⭐ Qwen3-VL-32B · 32K · 永久免费 · 视觉理解",
-                        "input": [
-                            "text",
-                            "image"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 32000,
-                        "maxTokens": 4096,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "deepseek-ai/DeepSeek-V4-Flash",
-                        "name": "💰 DeepSeek V4 Flash · 128K · ¥1/¥2 · 性价比核弹",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 1,
-                            "output": 2
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "deepseek-ai/DeepSeek-V4-Pro",
-                        "name": "💰 DeepSeek V4 Pro · 128K · ¥3/¥6 · 旗舰版",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 3,
-                            "output": 6
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    }
-                ]
-            },
-            "zhipu": {
-                "apiKey": "826f7a4259f6474d818b10c21a37eac9.H7NOoZ040ihbpsaB",
-                "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
-                "api": "openai-completions",
-                "models": [
-                    {
-                        "id": "glm-4-flash",
-                        "name": "⭐ glm-4-flash · 128K · 永久免费 · 中文强推荐",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "glm-z1-flash",
-                        "name": "⭐ glm-z1-flash · 128K · 永久免费 · 推理增强版",
-                        "reasoning": true,
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "glm-4v-flash",
-                        "name": "⭐ glm-4v-flash · 128K · 永久免费 · 视觉理解",
-                        "input": [
-                            "text",
-                            "image"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "cogview-3-flash",
-                        "name": "⭐ cogview-3-flash · 永久免费 · AI画图",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 2000,
-                        "maxTokens": 2000,
-                        "api": "openai-completions"
-                    },
-                    {
-                        "id": "glm-4.5-air",
-                        "name": "⭐ glm-4.5-air · 128K · 永久免费 · 轻量最快",
-                        "input": [
-                            "text"
-                        ],
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 128000,
-                        "maxTokens": 8192,
-                        "api": "openai-completions"
-                    }
-                ]
-            },
-            "ollama": {
-                "api": "ollama",
-                "models": [
-                    {
-                        "id": "qwen3.5:2b",
-                        "name": "[免费本地] 通义千问3.5 (2B)",
-                        "api": "ollama",
-                        "input": [
-                            "text"
-                        ]
-                    },
-                    {
-                        "id": "qwen2.5:1.5b-instruct-q4_K_M",
-                        "name": "[免费本地] 通义千问2.5 (1.5B)",
-                        "api": "ollama",
-                        "input": [
-                            "text"
-                        ]
-                    },
-                    {
-                        "id": "qwen2.5-coder:7b",
-                        "name": "[免费本地] 通义千问Coder (7B)",
-                        "api": "ollama",
-                        "input": [
-                            "text"
-                        ]
-                    }
-                ]
-            },
-            "qclaw-route": {
-                "baseUrl": "http://localhost:54465/v1",
-                "apiKey": "",
-                "api": "openai-completions",
-                "models": [
-                    {
-                        "id": "qclaw/modelroute",
-                        "name": "🚀 智能路由 · 哥哥家 · 自动选模型",
-                        "input": [
-                            "text"
-                        ],
-                        "api": "openai-completions",
-                        "cost": {
-                            "input": 0,
-                            "output": 0
-                        },
-                        "contextWindow": 100000
-                    }
-                ]
-            }
-        }
-    },
-    "browser": {
-        "enabled": true,
-        "defaultProfile": "openclaw",
-        "ssrfPolicy": {
-            "dangerouslyAllowPrivateNetwork": false
-        }
-    },
-    "gateway": {
-        "port": 18900,
-        "mode": "local",
-        "bind": "loopback",
-        "auth": {
-            "mode": "none",
-            "token": "${OPENCLAW_GATEWAY_TOKEN}"
-        },
-        "controlUi": {
-            "allowedOrigins": [
-                "null",
-                "file://"
-            ]
-        },
-        "tailscale": {
-            "mode": "off",
-            "resetOnExit": false
-        },
-        "http": {
-            "endpoints": {
-                "chatCompletions": {
-                    "enabled": true
-                }
-            }
-        },
-        "nodes": {
-            "allowCommands": [
-                "vscode.file.read",
-                "vscode.file.write",
-                "vscode.file.edit",
-                "vscode.file.delete",
-                "vscode.dir.list",
-                "vscode.editor.active",
-                "vscode.editor.openFiles",
-                "vscode.editor.selections",
-                "vscode.diagnostics.get",
-                "vscode.workspace.info",
-                "vscode.lang.definition",
-                "vscode.lang.references",
-                "vscode.lang.hover",
-                "vscode.lang.symbols",
-                "vscode.lang.rename",
-                "vscode.lang.codeActions",
-                "vscode.lang.applyCodeAction",
-                "vscode.code.format",
-                "vscode.test.list",
-                "vscode.test.run",
-                "vscode.test.results",
-                "vscode.git.status",
-                "vscode.git.diff",
-                "vscode.git.log",
-                "vscode.git.blame",
-                "vscode.git.stage",
-                "vscode.git.unstage",
-                "vscode.git.commit",
-                "vscode.git.stash",
-                "vscode.debug.launch",
-                "vscode.debug.stop",
-                "vscode.debug.breakpoint",
-                "vscode.debug.evaluate",
-                "vscode.debug.stackTrace",
-                "vscode.debug.variables",
-                "vscode.debug.status",
-                "vscode.terminal.run",
-                "vscode.agent.run",
-                "vscode.agent.setup",
-                "vscode.agent.status"
-            ]
-        }
-    },
-    "mcp": {
-        "servers": {
-            "gbrain": {
-                "enabled": true,
-                "command": "node",
-                "args": ["skills/gbrain/mcp-server.js"],
-                "cwd": "D:\\bobo\\openclaw-foreign",
-                "env": {
-                    "GBRAIN_ROOT": "D:\\bobo\\openclaw-foreign\\state\\gbrain"
-                }
-            },
-            "sandbox": {
-                "enabled": false,
-                "command": "node",
-                "args": ["skills/gbrain/lib/sandbox.js", "-c"],
-                "cwd": "D:\\bobo\\openclaw-foreign"
-            }
-        }
-    },
-    "channels": {
-        "wechat-access": {
-            "enabled": true,
-            "token": "${OPENCLAW_WECHAT_TOKEN}",
-            "wsUrl": "ws://127.0.0.1:18790/ws",
-            "guid": "40e3bd0bb998f836346553ffda5e1c193e844ef5bdb4db7f94b1a23509c02dc0",
-            "userId": "762944379"
-        }
-    },
-    "plugins": {
-        "enabled": true,
-        "allow": [
-            "wechat-access",
-            "qclaw-plugin",
-            "qclaw-embedding",
-            "memory-core",
-            "lossless-claw",
-            "browser",
-            "acpx",
-            "deepseek",
-            "ollama"
-        ],
-        "slots": {
-            "contextEngine": "lossless-claw"
-        },
-        "load": {
-            "paths": [
-                ""
-            ]
-        },
-        "entries": {
-            "wechat-access": {
-                "enabled": true
-            },
-            "qclaw-plugin": {
-                "enabled": true,
-                "config": {},
-                "hooks": {
-                    "allowConversationAccess": true
-                }
-            },
-            "lossless-claw": {
-                "enabled": true,
-                "config": {
-                    "dbPath": "D:\\bobo\\openclaw-foreign\\memory\\lossless\\lcm.db",
-                    "contextThreshold": 0.6,
-                    "freshTailCount": 64,
-                    "freshTailMaxTokens": 40000,
-                    "incrementalMaxDepth": 5,
-                    "ignoreSessionPatterns": [
-                        "agent:*:cron:**",
-                        "**:heartbeat"
-                    ],
-                    "statelessSessionPatterns": [
-                        "agent:*:subagent:**"
-                    ],
-                    "skipStatelessSessions": true
-                },
-                "hooks": {
-                    "allowConversationAccess": true
-                }
-            },
-            "browser": {
-                "enabled": true
-            },
-            "acpx": {
-                "enabled": true
-            },
-            "deepseek": {
-                "enabled": true
-            },
-            "ollama": {
-                "enabled": true
-            }
-        },
-        "bundledDiscovery": "compat"
-    },
-    "messages": {
-        "queue": {
-            "mode": "followup"
-        }
-    },
-    "session": {
-        "reset": {
-            "mode": "idle",
-            "idleMinutes": 525600
-        },
-        "maintenance": {
-            "pruneAfter": "365d",
-            "maxEntries": 1000000,
-            "resetArchiveRetention": false
-        },
-        "dmScope": "per-channel-peer"
-    },
-    "meta": {
-        "lastTouchedVersion": "2026.6.5",
-        "lastTouchedAt": "2026-06-28T04:15:45.934Z"
-    },
-    "acp": {
-        "enabled": true,
-        "dispatch": {
-            "enabled": false
-        },
-        "defaultAgent": "codex",
-        "allowedAgents": [
-            "codex"
-        ],
-        "maxConcurrentSessions": 3
-    },
-    "wizard": {
-        "lastRunAt": "2026-06-28T04:15:45.486Z",
-        "lastRunVersion": "2026.6.5",
-        "lastRunCommand": "doctor",
-        "lastRunMode": "local"
+  "tools": {
+    "exec": {
+      "mode": "full"
     }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "dashscope/qwen-turbo"
+      },
+      "workspace": "D:\\bobo\\openclaw-foreign\\workspace",
+      "timeoutSeconds": 72000,
+      "maxConcurrent": 2,
+      "compaction": {
+        "mode": "default",
+        "reserveTokensFloor": 15000
+      },
+      "memorySearch": {
+        "provider": "none"
+      },
+      "bootstrapMaxChars": 20000,
+      "bootstrapTotalMaxChars": 150000,
+      "contextInjection": "always"
+    },
+    "list": [
+      {
+        "id": "main",
+        "default": true,
+        "name": "OpenClaw Foreign",
+        "identity": {
+          "name": "OpenClaw Foreign"
+        },
+        "skills": [
+          "find-skills",
+          "qclaw-env",
+          "web_search",
+          "ppt-structure-optimizer",
+          "ppt-design-aesthetic",
+          "ppt-visual-enhancer",
+          "ppt-animation-smart",
+          "ppt-export-automation",
+          "human-style-editor",
+          "natural-language-polish",
+          "conversational-tone",
+          "informal-expression",
+          "context-aware-rewriter",
+          "voice-consistency",
+          "culture-localizer",
+          "slang-integrator",
+          "emotional-nuance",
+          "authentic-voice",
+          "refactor-advisor",
+          "code-reviewer",
+          "bug-tracer",
+          "performance-optimizer",
+          "security-auditor",
+          "test-generator",
+          "documentation-generator",
+          "design-system-connector",
+          "color-palette-creator",
+          "typography-advisor",
+          "layout-auditor",
+          "icon-selector",
+          "web3-template-engine",
+          "database-orm-prisma",
+          "workflow-automation-n8n",
+          "backend-supabase-operations",
+          "feishu-lark-cli",
+          "wechat-wxjava-sdk",
+          "alipay-ijpay-integration",
+          "dingtalk-workspace-cli",
+          "wechat-pay-enterprise",
+          "chinese-oss-ecosystem",
+          "skill-auto-engine",
+          "stock-market-china",
+          "china-logistics-tracking",
+          "used-car-valuation",
+          "vehicle-registration",
+          "vehicle-maintenance",
+          "new-energy-vehicle-kb",
+          "vehicle-model-db",
+          "fengshui-consultant",
+          "health-tcm-guide",
+          "pet-care-guide",
+          "home-renovation-guide",
+          "travel-china-guide",
+          "china-legal-advisor"
+        ]
+      }
+    ]
+  },
+  "models": {
+    "mode": "replace",
+    "providers": {
+      "dashscope": {
+        "api": "openai-completions",
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "apiKey": "sk-ws-H.RYXHEXM.SpZG.MEYCIQDja63xg1oh5HoxLmfAPt17AGCuY0xO3buSlCc2b_ASgwIhAJZ2gGzLIYPxLHyigzYdFgIui74xKObxgbA_pk9X2kf8",
+        "timeoutSeconds": 120,
+        "models": [
+          {
+            "id": "qwen-turbo",
+            "name": "[阿里·免费额度] Qwen Turbo | 快速 | 128K ⚠️",
+            "api": "openai-completions",
+            "contextWindow": 128000,
+            "cost": {
+              "input": 0,
+              "output": 0
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen-flash",
+            "name": "[阿里·免费额度] Qwen Flash | 极速 | 128K ⚠️",
+            "api": "openai-completions",
+            "contextWindow": 128000,
+            "cost": {
+              "input": 0,
+              "output": 0
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen-plus",
+            "name": "[阿里·付费] Qwen Plus | 均衡 | 128K | 输入¥0.004/M",
+            "api": "openai-completions",
+            "contextWindow": 128000,
+            "cost": {
+              "input": 0.004,
+              "output": 0.012
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen-max",
+            "name": "[阿里·付费] Qwen Max | 最强 | 128K | 输入¥0.04/M",
+            "api": "openai-completions",
+            "contextWindow": 128000,
+            "cost": {
+              "input": 0.04,
+              "output": 0.12
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen3.7-plus",
+            "name": "[阿里·高性价比] Qwen3.7-Plus | 多模态·看图 | 1M | 输入¥0.4/M 🔥",
+            "api": "openai-completions",
+            "contextWindow": 1000000,
+            "cost": {
+              "input": 0.0004,
+              "output": 0.0016
+            },
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-v3",
+            "name": "[阿里·DeepSeek] V3 | 5折·强 | 64K | 输入¥1/M 🔥",
+            "api": "openai-completions",
+            "contextWindow": 64000,
+            "cost": {
+              "input": 0.001,
+              "output": 0.004
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-r1",
+            "name": "[阿里·DeepSeek] R1 | 5折·推理强 | 64K | 输入¥2/M 🔥",
+            "api": "openai-completions",
+            "contextWindow": 64000,
+            "cost": {
+              "input": 0.002,
+              "output": 0.008
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "siliconflow": {
+        "api": "openai-completions",
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "apiKey": "sk-zxybvojqcuojwlfeczbwunmmzzwahoymcbrtfrpennvrrrmw",
+        "timeoutSeconds": 120,
+        "models": [
+          {
+            "id": "Qwen/Qwen2.5-7B-Instruct",
+            "name": "[硅基·付费] Qwen2.5-7B | 中文强 | 32K | ¥0 ✅",
+            "api": "openai-completions",
+            "contextWindow": 32000,
+            "cost": {
+              "input": 0,
+              "output": 0
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "Qwen/Qwen2.5-14B-Instruct",
+            "name": "[硅基·付费] Qwen2.5-14B | 更强 | 32K | ¥0 ✅",
+            "api": "openai-completions",
+            "contextWindow": 32000,
+            "cost": {
+              "input": 0,
+              "output": 0
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "Qwen/Qwen2.5-32B-Instruct",
+            "name": "[硅基·付费] Qwen2.5-32B | 强 | 32K | ¥0 ✅",
+            "api": "openai-completions",
+            "contextWindow": 32000,
+            "cost": {
+              "input": 0,
+              "output": 0
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "Qwen/Qwen2.5-72B-Instruct",
+            "name": "[硅基·付费] Qwen2.5-72B | 最强Qwen | 32K | ¥0 ✅",
+            "api": "openai-completions",
+            "contextWindow": 32000,
+            "cost": {
+              "input": 0,
+              "output": 0
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-ai/DeepSeek-V3",
+            "name": "[硅基·付费] DeepSeek-V3 | 强·160K | 输入¥4/M 输出¥12/M ✅",
+            "api": "openai-completions",
+            "contextWindow": 160000,
+            "cost": {
+              "input": 0.004,
+              "output": 0.012
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "zhipu": {
+        "api": "openai-completions",
+        "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+        "apiKey": "b00908b92f31417ca7d2621cc96c60fa.Cg89NYq5RgSdSbHB",
+        "timeoutSeconds": 120,
+        "models": [
+          {
+            "id": "glm-4-flash",
+            "name": "[智谱·永久免费⭐] GLM-4-Flash | 快速·128K | 推荐",
+            "api": "openai-completions",
+            "contextWindow": 128000,
+            "cost": {
+              "input": 0,
+              "output": 0
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "glm-4v-flash",
+            "name": "[智谱·永久免费⭐] GLM-4V-Flash | 多模态·支持图片 | 128K",
+            "api": "openai-completions",
+            "contextWindow": 128000,
+            "cost": {
+              "input": 0,
+              "output": 0
+            },
+            "input": [
+              "text",
+              "image"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "glm-4.7-flash",
+            "name": "[智谱·永久免费⭐] GLM-4.7-Flash | 超长文本·200K | 编程强",
+            "api": "openai-completions",
+            "contextWindow": 200000,
+            "cost": {
+              "input": 0,
+              "output": 0
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "glm-4-flashx",
+            "name": "[智谱·付费] GLM-4-FlashX | 简单计费 | 128K | ¥0.1/M统一 🔥",
+            "api": "openai-completions",
+            "contextWindow": 128000,
+            "cost": {
+              "input": 0.0001,
+              "output": 0.0001
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "deepseek": {
+        "api": "openai-completions",
+        "baseUrl": "https://api.deepseek.com/v1",
+        "apiKey": "sk-468b5b7ca259462197b4f9e12262f055",
+        "timeoutSeconds": 120,
+        "models": [
+          {
+            "id": "deepseek-v4-flash",
+            "name": "[DeepSeek·超低价🔥] V4-Flash | 性价比王 | 128K | 输入¥0.02/M",
+            "api": "openai-completions",
+            "contextWindow": 128000,
+            "cost": {
+              "input": 2e-05,
+              "output": 0.002
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-chat",
+            "name": "[DeepSeek·付费] V3 | 强·接近GPT-4o | 64K | 输入¥2/M ✅已修复",
+            "api": "openai-completions",
+            "contextWindow": 64000,
+            "cost": {
+              "input": 0.002,
+              "output": 0.008
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-reasoner",
+            "name": "[DeepSeek·付费] R1 | 推理强·思维链 | 64K | 输入¥4/M ✅已修复",
+            "api": "openai-completions",
+            "contextWindow": 64000,
+            "cost": {
+              "input": 0.004,
+              "output": 0.016
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": [
+        "D:\\bobo\\openclaw-foreign\\plugins"
+      ]
+    },
+    "entries": {
+      "lossless-claw": {
+        "enabled": true,
+        "config": {
+          "dbPath": "D:\\bobo\\openclaw-foreign\\memory\\lossless\\lcm.db",
+          "contextThreshold": 0.6
+        }
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "port": 18900,
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "foreign18900"
+    },
+    "controlUi": {
+      "dangerouslyDisableDeviceAuth": false,
+      "allowedOrigins": [
+        "http://127.0.0.1:18900",
+        "http://localhost:18900"
+      ]
+    },
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        }
+      }
+    },
+    "remote": {
+      "token": "foreign18900"
+    }
+  },
+  "skills": {
+    "load": {
+      "extraDirs": [
+        "D:\\bobo\\openclaw-foreign\\skills"
+      ]
+    },
+    "entries": {
+      "apple-reminders": {
+        "enabled": false
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.6.10",
+    "lastTouchedAt": "2026-06-30T06:28:45.983Z"
+  }
 }

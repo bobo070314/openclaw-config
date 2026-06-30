@@ -1,9 +1,0 @@
-{
-    "version":  "1.0.0",
-    "name":  "lobe-agent-testing",
-    "source":  "gh-enterprise-baseline",
-    "description":  "Agent端到端测试框架（lobe-chat项目，20KB）",
-    "implementedAt":  "2026-06-22T23:20:00+08:00",
-    "category":  "dev",
-    "status":  "implemented"
-}
