@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": ["Read", "Write", "Edit", "Browser", "WebSearch", "CodeExecution", "McpTool", "Grep", "Glob", "TaskSpawn", "WebFetch", "PdfTool", "ImageGen", "TtsTool", "MessageSend"],
+    "deny": []
+  },
+  "model": {
+    "provider": "openai",
+    "name": "deepseek/deepseek-v4-flash",
+    "temperature": 0.7
+  },
+  "caliber": {
+    "model": "deepseek/deepseek-v4-flash"
+  }
+}

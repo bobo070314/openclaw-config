@@ -1,0 +1,2242 @@
+{
+  "registry_version": "1.0.0",
+  "generated_at": "2026-07-01T07:17:57.443146+00:00",
+  "total_products": 84,
+  "products": {
+    "v5_absorb_chromosome9": {
+      "file": "v5_absorb_chromosome9.py",
+      "version": "1.0.0-alpha.8090",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_absorb_chromosome9",
+      "description": "IGP V5 染色体9：代码修补部 —— 吸收 Ultimate Bug Scanner + Agent Farm",
+      "public_api_count": 0,
+      "public_apis": [],
+      "changelog": [
+        "1.0.0-alpha.8090: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_absorption_plan2": {
+      "file": "v5_absorption_plan2.py",
+      "version": "1.0.0-alpha.7006",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_absorption_plan2",
+      "description": "",
+      "public_api_count": 1,
+      "public_apis": [
+        "scan_source(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.7006: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_closed_loop_pipeline": {
+      "file": "v5_closed_loop_pipeline.py",
+      "version": "1.0.0-alpha.5616",
+      "stage": "ga",
+      "type": "pipeline",
+      "chromosome": 0,
+      "display_name": "ClosedLoopPipeline",
+      "description": "",
+      "public_api_count": 11,
+      "public_apis": [
+        "log(...)->Any",
+        "class IGP_Pipeline",
+        "step1_absorb(...)->Any",
+        "step2_dev(...)->Any",
+        "step3_fission(...)->Any",
+        "step4_network_deploy(...)->Any",
+        "step5_feedback(...)->Any",
+        "step6_digest(...)->Any",
+        "step7_accept(...)->Any",
+        "run_full_cycle(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5616: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_cruise": {
+      "file": "v5_cruise.py",
+      "version": "1.0.0-alpha.1317",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_cruise",
+      "description": "IGP V5 宇宙巡航 —— 8染色体 × 实战挂载 × 对接 × 自愈 全量就绪报告",
+      "public_api_count": 1,
+      "public_apis": [
+        "count_dir(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.1317: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_dashboard": {
+      "file": "v5_dashboard.py",
+      "version": "1.0.0-alpha.2731",
+      "stage": "beta",
+      "type": "tool",
+      "chromosome": 0,
+      "display_name": "Dashboard",
+      "description": "IGP V5 染色体状态面板 — 独立运行，0错误",
+      "public_api_count": 0,
+      "public_apis": [],
+      "changelog": [
+        "1.0.0-alpha.2731: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_defect_audit": {
+      "file": "v5_defect_audit.py",
+      "version": "1.0.0-alpha.9476",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_defect_audit",
+      "description": "IGP V5 完整缺陷审计 —— 先认清自己，再对症下药",
+      "public_api_count": 2,
+      "public_apis": [
+        "audit_v5(...)->Any",
+        "generate_defect_report(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9476: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_engine_loop": {
+      "file": "v5_engine_loop.py",
+      "version": "1.0.0-alpha.9984",
+      "stage": "beta",
+      "type": "pipeline",
+      "chromosome": 0,
+      "display_name": "EngineLoop",
+      "description": "IGP V5 + V4 六步循环集成引擎 —— 每12小时全自动循环一次",
+      "public_api_count": 4,
+      "public_apis": [
+        "class V5LoopEngine",
+        "run_step(...)->Any",
+        "run_full_cycle(...)->Any",
+        "run_forever(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9984: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_final_all": {
+      "file": "v5_final_all.py",
+      "version": "1.0.0-alpha.0037",
+      "stage": "beta",
+      "type": "verifier",
+      "chromosome": 0,
+      "display_name": "FinalAll",
+      "description": "IGP V5 终极全量验证 —— 12染色体全链路贯通",
+      "public_api_count": 0,
+      "public_apis": [],
+      "changelog": [
+        "1.0.0-alpha.0037: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_final_verify": {
+      "file": "v5_final_verify.py",
+      "version": "1.0.0-alpha.9406",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_final_verify",
+      "description": "IGP V5 终极全量验证 —— 8条染色体 × 实战挂载 × 家族升级 × 变现",
+      "public_api_count": 2,
+      "public_apis": [
+        "check_file(...)->Any",
+        "run_mission(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9406: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_fission_engine": {
+      "file": "v5_fission_engine.py",
+      "version": "1.0.0-alpha.8665",
+      "stage": "beta",
+      "type": "engine",
+      "chromosome": 0,
+      "display_name": "FissionEngine",
+      "description": "",
+      "public_api_count": 19,
+      "public_apis": [
+        "load_cycles(...)->Any",
+        "save_cycles(...)->Any",
+        "get_chromosome_dir(...)->Any",
+        "class ChromosomeCycle",
+        "now_iso(...)->Any",
+        "extract_sources(...)->Any",
+        "extract_insights(...)->Any",
+        "extract_gaps(...)->Any",
+        "class V5Engine",
+        "step_absorb(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.8665: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_ghost_patrol": {
+      "file": "v5_ghost_patrol.py",
+      "version": "1.0.0-alpha.2819",
+      "stage": "beta",
+      "type": "tool",
+      "chromosome": 0,
+      "display_name": "GhostPatrol",
+      "description": "IGP V5 GHOST自愈巡逻 —— 扫描38个模块，自动修复常见问题",
+      "public_api_count": 1,
+      "public_apis": [
+        "patrol_py_file(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2819: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_github_scanner": {
+      "file": "v5_github_scanner.py",
+      "version": "1.0.0-alpha.4752",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_github_scanner",
+      "description": "IGP V5 GitHub Trending Scanner — 扫描可吸收新项目",
+      "public_api_count": 4,
+      "public_apis": [
+        "recommend_chromosome(...)->Any",
+        "fetch_trending(...)->Any",
+        "mock_trending(...)->Any",
+        "main(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.4752: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_health_check": {
+      "file": "v5_health_check.py",
+      "version": "1.0.0-alpha.1370",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_health_check",
+      "description": "IGP V5 染色体健康巡检 + AP2-Commerce对接 + 自愈",
+      "public_api_count": 0,
+      "public_apis": [],
+      "changelog": [
+        "1.0.0-alpha.1370: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_oneclick": {
+      "file": "v5_oneclick.py",
+      "version": "1.0.0-alpha.9068",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_oneclick",
+      "description": "IGP V5 一键全景启动 —— 每日循环 + 竞技场 + 扫描 + 检查",
+      "public_api_count": 1,
+      "public_apis": [
+        "run_checkpoint(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9068: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_pk_arena": {
+      "file": "v5_pk_arena.py",
+      "version": "1.0.0-alpha.8881",
+      "stage": "beta",
+      "type": "arena",
+      "chromosome": 0,
+      "display_name": "PKArena",
+      "description": "IGP V5 每日淘汰赛场 —— 计时+排名+淘汰池",
+      "public_api_count": 2,
+      "public_apis": [
+        "run_chromosome(...)->Any",
+        "main(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.8881: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_pk_battle": {
+      "file": "v5_pk_battle.py",
+      "version": "1.0.0-alpha.1353",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_pk_battle",
+      "description": "",
+      "public_api_count": 5,
+      "public_apis": [
+        "import_chromosome_module(...)->Any",
+        "run_chromosome_test(...)->Any",
+        "run_all_tests(...)->Any",
+        "run_inter_chromosome_pk(...)->Any",
+        "generate_pk_report(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.1353: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_skills_registry": {
+      "file": "v5_skills_registry.py",
+      "version": "1.0.0-alpha.5341",
+      "stage": "beta",
+      "type": "tool",
+      "chromosome": 0,
+      "display_name": "SkillsRegistry",
+      "description": "IGP V5 Skills Registry — 38模块注册表 + Skills目录",
+      "public_api_count": 2,
+      "public_apis": [
+        "extract_docstring(...)->Any",
+        "main(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5341: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_verify": {
+      "file": "v5_verify.py",
+      "version": "1.0.0-alpha.2808",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_verify",
+      "description": "",
+      "public_api_count": 2,
+      "public_apis": [
+        "verify_chromosome(...)->Any",
+        "generate_report(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2808: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_job_engine": {
+      "file": "absorb\\docagent\\v5_job_engine.py",
+      "version": "1.0.0-alpha.2283",
+      "stage": "alpha",
+      "type": "hr",
+      "chromosome": 13,
+      "display_name": "JobEngine",
+      "description": "",
+      "public_api_count": 9,
+      "public_apis": [
+        "class JobDescription",
+        "class Reader",
+        "class ReportWriter",
+        "class Verifier",
+        "main(...)->Any",
+        "to_dict(...)->Any",
+        "scan(...)->Any",
+        "write_md(...)->Any",
+        "verify(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2283: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "scout_plan": {
+      "file": "absorb\\scouting\\scout_plan.py",
+      "version": "1.0.0-alpha.6169",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "scout_plan",
+      "description": "IGP V5 Workforce Enhancement — Phase 1: GitHub Scouting",
+      "public_api_count": 1,
+      "public_apis": [
+        "web_search_with_retry(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6169: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "upgrade_audit": {
+      "file": "absorb\\scouting\\upgrade_audit.py",
+      "version": "1.0.0-alpha.7513",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "upgrade_audit",
+      "description": "",
+      "public_api_count": 1,
+      "public_apis": [
+        "analyze(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.7513: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "thin_upgrade": {
+      "file": "chromosomes\\thin_upgrade.py",
+      "version": "1.0.0-alpha.0042",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "thin_upgrade",
+      "description": "",
+      "public_api_count": 19,
+      "public_apis": [
+        "class StructuredLogger",
+        "class SafeRunnerV2",
+        "class AP2GatewayProvider",
+        "class WeightedRouter",
+        "class EloRanker",
+        "log(...)->Any",
+        "rotate_logs(...)->Any",
+        "run(...)->Any",
+        "register_wallet(...)->Any",
+        "process_payment(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.0042: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_code_analyzer": {
+      "file": "chromosomes\\chromosome0\\infra\\v5_code_analyzer.py",
+      "version": "1.0.0-alpha.5236",
+      "stage": "alpha",
+      "type": "analyzer",
+      "chromosome": 0,
+      "display_name": "CodeAnalyzer",
+      "description": "",
+      "public_api_count": 8,
+      "public_apis": [
+        "class CodeAnalyzer",
+        "scan_dead_code(...)->Any",
+        "scan_refactoring(...)->Any",
+        "scan_bad_patterns(...)->Any",
+        "scan_mutation_opportunity(...)->Any",
+        "all_results(...)->Any",
+        "total_issues(...)->Any",
+        "report(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5236: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 92,
+        "avg_latency_ms": 12.978260869565217,
+        "error_rate": 0.9891304347826086
+      }
+    },
+    "v5_mutation_fission": {
+      "file": "chromosomes\\chromosome0\\infra\\v5_mutation_fission.py",
+      "version": "1.0.0-alpha.4716",
+      "stage": "alpha",
+      "type": "engine",
+      "chromosome": 0,
+      "display_name": "MutationFission",
+      "description": "",
+      "public_api_count": 12,
+      "public_apis": [
+        "class MutationEngine",
+        "class FissionEngine",
+        "class AutoFixScanner",
+        "class SmartAuditor",
+        "cross_breed(...)->Any",
+        "auto_generate(...)->Any",
+        "combine_into_hybrid(...)->Any",
+        "copy_mutate(...)->Any",
+        "fission(...)->Any",
+        "all_fissions(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.4716: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_mutation_fission_live": {
+      "file": "chromosomes\\chromosome0\\infra\\v5_mutation_fission_live.py",
+      "version": "1.0.0-alpha.0858",
+      "stage": "alpha",
+      "type": "engine",
+      "chromosome": 0,
+      "display_name": "MutationFissionLive",
+      "description": "",
+      "public_api_count": 14,
+      "public_apis": [
+        "class SecureResult",
+        "class WatchdogRunner",
+        "class AuditRouter",
+        "create_fission_chromosome(...)->Any",
+        "sign(...)->Any",
+        "verify(...)->Any",
+        "meta(...)->Any",
+        "watch_and_run(...)->Any",
+        "report(...)->Any",
+        "register(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.0858: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "fastmcp_export": {
+      "file": "chromosomes\\chromosome1\\infra\\fastmcp_export.py",
+      "version": "1.0.0-alpha.8811",
+      "stage": "beta",
+      "type": "protocol",
+      "chromosome": 1,
+      "display_name": "FastMCPExport",
+      "description": "",
+      "public_api_count": 0,
+      "public_apis": [],
+      "changelog": [
+        "1.0.0-alpha.8811: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "igp_mcp_pk": {
+      "file": "chromosomes\\chromosome1\\infra\\igp_mcp_pk.py",
+      "version": "1.0.0-alpha.4926",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "igp_mcp_pk",
+      "description": "",
+      "public_api_count": 6,
+      "public_apis": [
+        "class MCP_PK_Rank",
+        "update_ranking(...)->Any",
+        "get_ranked_servers(...)->Any",
+        "check_eligibility(...)->Any",
+        "promote_server(...)->Any",
+        "demote_server(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.4926: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "igp_mcp_v5_client": {
+      "file": "chromosomes\\chromosome1\\infra\\igp_mcp_v5_client.py",
+      "version": "1.0.0-alpha.9751",
+      "stage": "beta",
+      "type": "protocol",
+      "chromosome": 1,
+      "display_name": "MCPClient",
+      "description": "",
+      "public_api_count": 8,
+      "public_apis": [
+        "class MCPClient",
+        "connect_stdio(...)->Any",
+        "connect_http(...)->Any",
+        "discover_tools(...)->Any",
+        "call_tool(...)->Any",
+        "get_call_log(...)->Any",
+        "get_stats(...)->Any",
+        "is_connected(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9751: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "igp_mcp_v5_server": {
+      "file": "chromosomes\\chromosome1\\infra\\igp_mcp_v5_server.py",
+      "version": "1.0.0-alpha.6098",
+      "stage": "beta",
+      "type": "protocol",
+      "chromosome": 1,
+      "display_name": "MCPServer",
+      "description": "",
+      "public_api_count": 8,
+      "public_apis": [
+        "class MCPServer",
+        "register_tool(...)->Any",
+        "register_resource(...)->Any",
+        "get_tool_list(...)->Any",
+        "call_tool(...)->Any",
+        "start(...)->Any",
+        "stop(...)->Any",
+        "tool_count(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6098: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "mcp_v2_upgrade": {
+      "file": "chromosomes\\chromosome1\\infra\\mcp_v2_upgrade.py",
+      "version": "1.0.0-alpha.2387",
+      "stage": "beta",
+      "type": "upgrade",
+      "chromosome": 1,
+      "display_name": "MCPv2Upgrade",
+      "description": "染色体1 MCP v2升级 — 修复bare except + TODO遗留",
+      "public_api_count": 12,
+      "public_apis": [
+        "class MCPv2Discovery",
+        "class FastMCPExport",
+        "discover_local(...)->Any",
+        "discover_pypi(...)->Any",
+        "get_tool_list(...)->Any",
+        "get_server_info(...)->Any",
+        "create_evaluation(...)->Any",
+        "tool(...)->Any",
+        "run(...)->Any",
+        "decorator(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2387: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "run": {
+      "file": "igp_inject\\run.py",
+      "version": "1.0.0-alpha.4767",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "run",
+      "description": "IGP V5→V4 集成验证脚本",
+      "public_api_count": 0,
+      "public_apis": [],
+      "changelog": [
+        "1.0.0-alpha.4767: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_contract_decorators": {
+      "file": "chromosomes\\chromosome10\\infra\\v5_contract_decorators.py",
+      "version": "1.0.0-alpha.2552",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_contract_decorators",
+      "description": "v5_contract_decorators.py - Contract programming decorators inspired by deal",
+      "public_api_count": 9,
+      "public_apis": [
+        "pre_condition(...)->Any",
+        "post_condition(...)->Any",
+        "invariant(...)->Any",
+        "decorator(...)->Any",
+        "decorator(...)->Any",
+        "decorator(...)->Any",
+        "wrapper(...)->Any",
+        "wrapper(...)->Any",
+        "wrapper(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2552: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_logic_upgrade": {
+      "file": "chromosomes\\chromosome10\\infra\\v5_logic_upgrade.py",
+      "version": "1.0.0-alpha.1322",
+      "stage": "alpha",
+      "type": "upgrade",
+      "chromosome": 10,
+      "display_name": "LogicUpgrade",
+      "description": "",
+      "public_api_count": 26,
+      "public_apis": [
+        "class KnowledgeBase",
+        "class SymbolicEngineV2",
+        "class ContractDecoratorV2",
+        "class LogicReasonerV2",
+        "add_fact(...)->Any",
+        "add_rule(...)->Any",
+        "query(...)->Any",
+        "clear(...)->Any",
+        "declare(...)->Any",
+        "add_constraint(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.1322: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_symbolic_engine": {
+      "file": "chromosomes\\chromosome10\\infra\\v5_symbolic_engine.py",
+      "version": "1.0.0-alpha.5205",
+      "stage": "beta",
+      "type": "engine",
+      "chromosome": 10,
+      "display_name": "SymbolicEngine",
+      "description": "",
+      "public_api_count": 21,
+      "public_apis": [
+        "class SymbolicEngine",
+        "class ContractDecorator",
+        "class LogicReasoner",
+        "add_var(...)->Any",
+        "add_constraint(...)->Any",
+        "solve(...)->Any",
+        "check(...)->Any",
+        "infer_return_type(...)->Any",
+        "precondition(...)->Any",
+        "postcondition(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5205: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 90,
+        "avg_latency_ms": 45.0,
+        "error_rate": 0.0
+      }
+    },
+    "v5_complexity_analyzer": {
+      "file": "chromosomes\\chromosome11\\infra\\v5_complexity_analyzer.py",
+      "version": "1.0.0-alpha.7892",
+      "stage": "beta",
+      "type": "analyzer",
+      "chromosome": 11,
+      "display_name": "ComplexityAnalyzer",
+      "description": "",
+      "public_api_count": 4,
+      "public_apis": [
+        "class ComplexityAnalyzer",
+        "analyze_file(...)->Any",
+        "scan_directory(...)->Any",
+        "score(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.7892: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 1,
+        "avg_latency_ms": 5.0,
+        "error_rate": 0.0
+      }
+    },
+    "v5_auto_tester": {
+      "file": "chromosomes\\chromosome12\\infra\\v5_auto_tester.py",
+      "version": "1.0.0-alpha.9937",
+      "stage": "beta",
+      "type": "tester",
+      "chromosome": 12,
+      "display_name": "AutoTester",
+      "description": "",
+      "public_api_count": 10,
+      "public_apis": [
+        "class V5Logger",
+        "class AutoTester",
+        "class SafeRunner",
+        "get(...)->Any",
+        "test_function(...)->Any",
+        "report(...)->Any",
+        "class Result",
+        "run(...)->Any",
+        "add(...)->Any",
+        "divide(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9937: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 2,
+        "avg_latency_ms": 93.5,
+        "error_rate": 0.5
+      }
+    },
+    "v5_auto_tester_v2": {
+      "file": "chromosomes\\chromosome12\\infra\\v5_auto_tester_v2.py",
+      "version": "1.0.0-alpha.3788",
+      "stage": "alpha",
+      "type": "tester",
+      "chromosome": 12,
+      "display_name": "AutoTesterV2",
+      "description": "",
+      "public_api_count": 13,
+      "public_apis": [
+        "class TestResult",
+        "class TestSuite",
+        "class AutoTester",
+        "from_result(...)->Any",
+        "to_dict(...)->Any",
+        "add(...)->Any",
+        "run_all(...)->Any",
+        "run_safe(...)->Any",
+        "statistics(...)->Any",
+        "add_suite(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.3788: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_logger_context": {
+      "file": "chromosomes\\chromosome12\\infra\\v5_logger_context.py",
+      "version": "1.0.0-alpha.6128",
+      "stage": "alpha",
+      "type": "logger",
+      "chromosome": 12,
+      "display_name": "LoggerContext",
+      "description": "",
+      "public_api_count": 13,
+      "public_apis": [
+        "class LoggerContext",
+        "get(...)->Any",
+        "bind(...)->Any",
+        "unbind(...)->Any",
+        "with_context(...)->Any",
+        "bind_global(...)->Any",
+        "json_output(...)->Any",
+        "set_level(...)->Any",
+        "debug(...)->Any",
+        "info(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6128: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_result_monad": {
+      "file": "chromosomes\\chromosome12\\infra\\v5_result_monad.py",
+      "version": "1.0.0-alpha.9402",
+      "stage": "alpha",
+      "type": "monad",
+      "chromosome": 12,
+      "display_name": "ResultMonad",
+      "description": "",
+      "public_api_count": 14,
+      "public_apis": [
+        "class Result",
+        "Ok(...)->Any",
+        "Err(...)->Any",
+        "is_ok(...)->Any",
+        "is_err(...)->Any",
+        "unwrap(...)->Any",
+        "unwrap_or(...)->Any",
+        "unwrap_or_else(...)->Any",
+        "expect(...)->Any",
+        "map(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9402: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_safe_runner": {
+      "file": "chromosomes\\chromosome12\\infra\\v5_safe_runner.py",
+      "version": "1.0.0-alpha.6173",
+      "stage": "alpha",
+      "type": "runner",
+      "chromosome": 12,
+      "display_name": "SafeRunner",
+      "description": "",
+      "public_api_count": 10,
+      "public_apis": [
+        "class SafeRunner",
+        "ensure(...)->Any",
+        "run(...)->Any",
+        "run_async(...)->Any",
+        "batch_run(...)->Any",
+        "with_sandbox(...)->Any",
+        "circuit_breaker(...)->Any",
+        "statistics(...)->Any",
+        "shutdown(...)->Any",
+        "sandboxed(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6173: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_hr_engine": {
+      "file": "chromosomes\\chromosome13_hr\\infra\\v5_hr_engine.py",
+      "version": "1.0.0-alpha.2283",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_hr_engine",
+      "description": "",
+      "public_api_count": 9,
+      "public_apis": [
+        "class JobDescription",
+        "class Reader",
+        "class ReportWriter",
+        "class Verifier",
+        "main(...)->Any",
+        "to_dict(...)->Any",
+        "scan(...)->Any",
+        "write_md(...)->Any",
+        "verify(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2283: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "a2a_agent_card": {
+      "file": "chromosomes\\chromosome2\\infra\\a2a_agent_card.py",
+      "version": "1.0.0-alpha.7683",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "a2a_agent_card",
+      "description": "",
+      "public_api_count": 5,
+      "public_apis": [
+        "class AgentCard",
+        "to_dict(...)->Any",
+        "from_dict(...)->Any",
+        "save(...)->Any",
+        "load(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.7683: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "a2a_discovery": {
+      "file": "chromosomes\\chromosome2\\infra\\a2a_discovery.py",
+      "version": "1.0.0-alpha.9188",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "a2a_discovery",
+      "description": "",
+      "public_api_count": 7,
+      "public_apis": [
+        "class AgentDiscoveryService",
+        "register(...)->Any",
+        "find_by_capability(...)->Any",
+        "broadcast(...)->Any",
+        "get_all_agents(...)->Any",
+        "save_registry(...)->Any",
+        "load_registry(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9188: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "a2a_task_protocol": {
+      "file": "chromosomes\\chromosome2\\infra\\a2a_task_protocol.py",
+      "version": "1.0.0-alpha.7949",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "a2a_task_protocol",
+      "description": "",
+      "public_api_count": 8,
+      "public_apis": [
+        "class TaskMessage",
+        "json_rpc_request(...)->Any",
+        "json_rpc_response(...)->Any",
+        "json_rpc_error(...)->Any",
+        "to_dict(...)->Any",
+        "to_json(...)->Any",
+        "from_json(...)->Any",
+        "is_streaming(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.7949: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "a2a_v2_upgrade": {
+      "file": "chromosomes\\chromosome2\\infra\\a2a_v2_upgrade.py",
+      "version": "1.0.0-alpha.2386",
+      "stage": "beta",
+      "type": "protocol",
+      "chromosome": 2,
+      "display_name": "A2Av2",
+      "description": "",
+      "public_api_count": 17,
+      "public_apis": [
+        "class AgentCard",
+        "class A2ATaskProtocol",
+        "class A2AFederation",
+        "add_skill(...)->Any",
+        "to_json(...)->Any",
+        "to_dict(...)->Any",
+        "create_task(...)->Any",
+        "create_streaming(...)->Any",
+        "cancel_task(...)->Any",
+        "get_task_status(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2386: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "skill_market": {
+      "file": "chromosomes\\chromosome3\\infra\\skill_market.py",
+      "version": "1.0.0-alpha.2815",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "skill_market",
+      "description": "",
+      "public_api_count": 6,
+      "public_apis": [
+        "class SkillMarket",
+        "add_skill(...)->Any",
+        "rate_skill(...)->Any",
+        "get_top_skills(...)->Any",
+        "install_skill(...)->Any",
+        "uninstall_skill(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2815: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "skill_package": {
+      "file": "chromosomes\\chromosome3\\infra\\skill_package.py",
+      "version": "1.0.0-alpha.3323",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "skill_package",
+      "description": "",
+      "public_api_count": 1,
+      "public_apis": [
+        "load_skills(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.3323: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "skill_pk": {
+      "file": "chromosomes\\chromosome3\\infra\\skill_pk.py",
+      "version": "1.0.0-alpha.3583",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "skill_pk",
+      "description": "",
+      "public_api_count": 0,
+      "public_apis": [],
+      "changelog": [
+        "1.0.0-alpha.3583: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "skill_pk_rank": {
+      "file": "chromosomes\\chromosome3\\infra\\skill_pk_rank.py",
+      "version": "1.0.0-alpha.4749",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "skill_pk_rank",
+      "description": "",
+      "public_api_count": 5,
+      "public_apis": [
+        "class SkillPKRank",
+        "update_stats(...)->Any",
+        "calculate_score(...)->Any",
+        "rank_skills(...)->Any",
+        "check_promotion(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.4749: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_market_upgrade": {
+      "file": "chromosomes\\chromosome3\\infra\\v5_market_upgrade.py",
+      "version": "1.0.0-alpha.4596",
+      "stage": "alpha",
+      "type": "market",
+      "chromosome": 3,
+      "display_name": "MarketUpgrade",
+      "description": "",
+      "public_api_count": 21,
+      "public_apis": [
+        "class SkillRegistry",
+        "class SkillPluginLoader",
+        "class SkillVersionManager",
+        "class SkillSearchEngine",
+        "add_skill(...)->Any",
+        "remove_skill(...)->Any",
+        "get_skill(...)->Any",
+        "search_skills(...)->Any",
+        "list_all_skills(...)->Any",
+        "get_tags(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.4596: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "provider_abstraction": {
+      "file": "chromosomes\\chromosome4\\infra\\provider_abstraction.py",
+      "version": "1.0.0-alpha.5423",
+      "stage": "alpha",
+      "type": "router",
+      "chromosome": 4,
+      "display_name": "ProviderAbstraction",
+      "description": "",
+      "public_api_count": 6,
+      "public_apis": [
+        "class ProviderAbstraction",
+        "add_model(...)->Any",
+        "chat(...)->Any",
+        "embed(...)->Any",
+        "invoke(...)->Any",
+        "list_models(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5423: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "provider_pk": {
+      "file": "chromosomes\\chromosome4\\infra\\provider_pk.py",
+      "version": "1.0.0-alpha.1553",
+      "stage": "alpha",
+      "type": "router",
+      "chromosome": 4,
+      "display_name": "ProviderPK",
+      "description": "",
+      "public_api_count": 4,
+      "public_apis": [
+        "class ProviderPK",
+        "update_scores(...)->Any",
+        "get_provider_ranking(...)->Any",
+        "chat(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.1553: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "provider_router": {
+      "file": "chromosomes\\chromosome4\\infra\\provider_router.py",
+      "version": "1.0.0-alpha.6616",
+      "stage": "alpha",
+      "type": "router",
+      "chromosome": 4,
+      "display_name": "ProviderRouter",
+      "description": "",
+      "public_api_count": 3,
+      "public_apis": [
+        "class SmartRouter",
+        "route(...)->Any",
+        "chat(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6616: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_provider_upgrade": {
+      "file": "chromosomes\\chromosome4\\infra\\v5_provider_upgrade.py",
+      "version": "1.0.0-alpha.6076",
+      "stage": "alpha",
+      "type": "upgrade",
+      "chromosome": 4,
+      "display_name": "ProviderUpgrade",
+      "description": "",
+      "public_api_count": 15,
+      "public_apis": [
+        "class WeightedLoadBalancer",
+        "class HealthChecker",
+        "class CircuitBreaker",
+        "class SmartRouter",
+        "class ProviderPK",
+        "get_next_provider(...)->Any",
+        "get_provider_by_weight(...)->Any",
+        "check_health(...)->Any",
+        "get_healthy_providers(...)->Any",
+        "is_open(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6076: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_smart_router": {
+      "file": "chromosomes\\chromosome4\\infra\\v5_smart_router.py",
+      "version": "1.0.0-alpha.3359",
+      "stage": "alpha",
+      "type": "router",
+      "chromosome": 4,
+      "display_name": "SmartRouter",
+      "description": "",
+      "public_api_count": 13,
+      "public_apis": [
+        "class SmartRouter",
+        "register(...)->Any",
+        "unregister(...)->Any",
+        "select(...)->Any",
+        "route(...)->Any",
+        "circuit_breaker(...)->Any",
+        "record_success(...)->Any",
+        "record_failure(...)->Any",
+        "ab_test(...)->Any",
+        "canary(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.3359: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "guardian_act": {
+      "file": "chromosomes\\chromosome5\\infra\\guardian_act.py",
+      "version": "1.0.0-alpha.7978",
+      "stage": "alpha",
+      "type": "security",
+      "chromosome": 5,
+      "display_name": "GuardianAct",
+      "description": "",
+      "public_api_count": 12,
+      "public_apis": [
+        "class GuardianAct",
+        "class GuardianPlan",
+        "class GuardianPolicy",
+        "add_to_queue(...)->Any",
+        "process_queue(...)->Any",
+        "update_whitelist(...)->Any",
+        "update_blacklist(...)->Any",
+        "is_allowed(...)->Any",
+        "stats(...)->Any",
+        "add_step(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.7978: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "guardian_plan": {
+      "file": "chromosomes\\chromosome5\\infra\\guardian_plan.py",
+      "version": "1.0.0-alpha.6669",
+      "stage": "alpha",
+      "type": "security",
+      "chromosome": 5,
+      "display_name": "GuardianPlan",
+      "description": "",
+      "public_api_count": 6,
+      "public_apis": [
+        "class GuardianPlan",
+        "receive_request(...)->Any",
+        "analyze_risk(...)->Any",
+        "generate_report(...)->Any",
+        "get_actions(...)->Any",
+        "execute(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6669: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "guardian_policy": {
+      "file": "chromosomes\\chromosome5\\infra\\guardian_policy.py",
+      "version": "1.0.0-alpha.6127",
+      "stage": "alpha",
+      "type": "security",
+      "chromosome": 5,
+      "display_name": "GuardianPolicy",
+      "description": "Guardian Policy Engine - Security Strategies",
+      "public_api_count": 5,
+      "public_apis": [
+        "class GuardianPolicy",
+        "check_file_op(...)->Any",
+        "check_command_exec(...)->Any",
+        "check_mcp_call(...)->Any",
+        "log_misclassification(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6127: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "acp_client": {
+      "file": "chromosomes\\chromosome6\\infra\\acp_client.py",
+      "version": "1.0.0-alpha.5210",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "acp_client",
+      "description": "",
+      "public_api_count": 9,
+      "public_apis": [
+        "class ACPClient",
+        "create_checkout(...)->Any",
+        "get_cart(...)->Any",
+        "update_cart_item(...)->Any",
+        "delete_cart_item(...)->Any",
+        "checkout(...)->Any",
+        "get_quote(...)->Any",
+        "place_order(...)->Any",
+        "process_payment(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5210: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "agent_commerce": {
+      "file": "chromosomes\\chromosome6\\infra\\agent_commerce.py",
+      "version": "1.0.0-alpha.5684",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "agent_commerce",
+      "description": "",
+      "public_api_count": 8,
+      "public_apis": [
+        "class AgentCommerce",
+        "register_service_provider(...)->Any",
+        "set_pricing_strategy(...)->Any",
+        "track_revenue(...)->Any",
+        "generate_profit_report(...)->Any",
+        "handle_inquiry(...)->Any",
+        "place_order(...)->Any",
+        "process_payment(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5684: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "agent_commerce_v2": {
+      "file": "chromosomes\\chromosome6\\infra\\agent_commerce_v2.py",
+      "version": "1.0.0-alpha.5562",
+      "stage": "ga",
+      "type": "commerce",
+      "chromosome": 6,
+      "display_name": "CommerceV2",
+      "description": "",
+      "public_api_count": 15,
+      "public_apis": [
+        "class StripeIntegration",
+        "class ShopifyIntegration",
+        "class PayPalIntegration",
+        "class AgentCommerceEngine",
+        "create_customer(...)->Any",
+        "create_charge(...)->Any",
+        "get_balance(...)->Any",
+        "list_products(...)->Any",
+        "create_order(...)->Any",
+        "create_payment(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5562: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "commerce_pk": {
+      "file": "chromosomes\\chromosome6\\infra\\commerce_pk.py",
+      "version": "1.0.0-alpha.0371",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "commerce_pk",
+      "description": "",
+      "public_api_count": 6,
+      "public_apis": [
+        "class CommercePK",
+        "rank_services_by_income(...)->Any",
+        "rank_services_by_profit_margin(...)->Any",
+        "rank_services_by_customer_satisfaction(...)->Any",
+        "eliminate_losing_services(...)->Any",
+        "reward_high_profit_services(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.0371: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "commerce_pk_v2": {
+      "file": "chromosomes\\chromosome6\\infra\\commerce_pk_v2.py",
+      "version": "1.0.0-alpha.9199",
+      "stage": "beta",
+      "type": "commerce",
+      "chromosome": 6,
+      "display_name": "CommercePK",
+      "description": "",
+      "public_api_count": 6,
+      "public_apis": [
+        "class CommercePKRank",
+        "register(...)->Any",
+        "record_transaction(...)->Any",
+        "get_ranking(...)->Any",
+        "eliminate(...)->Any",
+        "score_summary(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9199: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "run_v2": {
+      "file": "chromosomes\\chromosome6\\infra\\run_v2.py",
+      "version": "1.0.0-alpha.3684",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "run_v2",
+      "description": "",
+      "public_api_count": 0,
+      "public_apis": [],
+      "changelog": [
+        "1.0.0-alpha.3684: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "agent_os_kernel": {
+      "file": "chromosomes\\chromosome7\\infra\\agent_os_kernel.py",
+      "version": "1.0.0-alpha.9046",
+      "stage": "alpha",
+      "type": "os",
+      "chromosome": 7,
+      "display_name": "AgentOSKernel",
+      "description": "",
+      "public_api_count": 11,
+      "public_apis": [
+        "class AgentOSKernel",
+        "class AgentOSScheduler",
+        "class AgentOSShell",
+        "register_agent(...)->Any",
+        "send_message(...)->Any",
+        "receive(...)->Any",
+        "stop(...)->Any",
+        "status(...)->Any",
+        "add_task(...)->Any",
+        "run_pending(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9046: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "agent_os_scheduler": {
+      "file": "chromosomes\\chromosome7\\infra\\agent_os_scheduler.py",
+      "version": "1.0.0-alpha.0042",
+      "stage": "alpha",
+      "type": "os",
+      "chromosome": 7,
+      "display_name": "AgentOSScheduler",
+      "description": "",
+      "public_api_count": 2,
+      "public_apis": [
+        "class AgentOSScheduler",
+        "schedule(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.0042: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "agent_os_shell": {
+      "file": "chromosomes\\chromosome7\\infra\\agent_os_shell.py",
+      "version": "1.0.0-alpha.2011",
+      "stage": "alpha",
+      "type": "os",
+      "chromosome": 7,
+      "display_name": "AgentOSShell",
+      "description": "",
+      "public_api_count": 3,
+      "public_apis": [
+        "class AgentOSShell",
+        "start(...)->Any",
+        "stop(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2011: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_agent_os_upgrade": {
+      "file": "chromosomes\\chromosome7\\infra\\v5_agent_os_upgrade.py",
+      "version": "1.0.0-alpha.6215",
+      "stage": "alpha",
+      "type": "upgrade",
+      "chromosome": 7,
+      "display_name": "AgentOSUpgrade",
+      "description": "",
+      "public_api_count": 22,
+      "public_apis": [
+        "class ProcessScheduler",
+        "class IPCChannel",
+        "class TokenBudget",
+        "class KernelV2",
+        "submit(...)->Any",
+        "run_once(...)->Any",
+        "get_status(...)->Any",
+        "send(...)->Any",
+        "receive(...)->Any",
+        "subscribe(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6215: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "ap2_payment_gateway": {
+      "file": "chromosomes\\chromosome8\\infra\\ap2_payment_gateway.py",
+      "version": "1.0.0-alpha.3787",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "ap2_payment_gateway",
+      "description": "",
+      "public_api_count": 3,
+      "public_apis": [
+        "class AP2PaymentGateway",
+        "register_wallet(...)->Any",
+        "process_payment_request(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.3787: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "ap2_protocol": {
+      "file": "chromosomes\\chromosome8\\infra\\ap2_protocol.py",
+      "version": "1.0.0-alpha.3893",
+      "stage": "alpha",
+      "type": "protocol",
+      "chromosome": 8,
+      "display_name": "AP2Protocol",
+      "description": "",
+      "public_api_count": 6,
+      "public_apis": [
+        "class AP2Protocol",
+        "create_payment_request(...)->Any",
+        "verify_payment_request(...)->Any",
+        "aggregate_micro_payments(...)->Any",
+        "create_receipt(...)->Any",
+        "create_invoice(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.3893: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "ap2_wallet": {
+      "file": "chromosomes\\chromosome8\\infra\\ap2_wallet.py",
+      "version": "1.0.0-alpha.9897",
+      "stage": "alpha",
+      "type": "wallet",
+      "chromosome": 8,
+      "display_name": "AP2Wallet",
+      "description": "",
+      "public_api_count": 6,
+      "public_apis": [
+        "class AP2Wallet",
+        "class AP2Protocol",
+        "add_transaction(...)->Any",
+        "get_transactions(...)->Any",
+        "balance(...)->Any",
+        "create_wallet(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9897: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_ap2_upgrade": {
+      "file": "chromosomes\\chromosome8\\infra\\v5_ap2_upgrade.py",
+      "version": "1.0.0-alpha.5742",
+      "stage": "alpha",
+      "type": "upgrade",
+      "chromosome": 8,
+      "display_name": "AP2Upgrade",
+      "description": "",
+      "public_api_count": 4,
+      "public_apis": [
+        "class AP2PaymentGateway",
+        "update_elo_score(...)->Any",
+        "record_settlement(...)->Any",
+        "reset(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5742: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_crypto_kit": {
+      "file": "chromosomes\\chromosome8\\infra\\v5_crypto_kit.py",
+      "version": "1.0.0-alpha.3328",
+      "stage": "beta",
+      "type": "security",
+      "chromosome": 8,
+      "display_name": "CryptoKit",
+      "description": "",
+      "public_api_count": 19,
+      "public_apis": [
+        "class CryptoKit",
+        "class SignatureVerifier",
+        "class KeyManager",
+        "hash(...)->Any",
+        "hmac_sign(...)->Any",
+        "hmac_verify(...)->Any",
+        "gen_key(...)->Any",
+        "gen_token(...)->Any",
+        "gen_keypair(...)->Any",
+        "sign(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.3328: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_bug_doctor": {
+      "file": "chromosomes\\chromosome9\\infra\\v5_bug_doctor.py",
+      "version": "1.0.0-alpha.6708",
+      "stage": "ga",
+      "type": "analyzer",
+      "chromosome": 9,
+      "display_name": "BugDoctor",
+      "description": "IGP V5 Bug Doctor —— 基于Ultimate Bug Scanner模式的自动修复",
+      "public_api_count": 4,
+      "public_apis": [
+        "class BugDoctor",
+        "scan_file(...)->Any",
+        "scan_directory(...)->Any",
+        "get_report(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6708: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 96,
+        "avg_latency_ms": 22.708333333333332,
+        "error_rate": 0.0
+      }
+    },
+    "v5_code_repair_upgrade": {
+      "file": "chromosomes\\chromosome9\\infra\\v5_code_repair_upgrade.py",
+      "version": "1.0.0-alpha.5045",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_code_repair_upgrade",
+      "description": "",
+      "public_api_count": 10,
+      "public_apis": [
+        "class AutoFixer",
+        "class IncrementalScanner",
+        "class BugDoctorV2",
+        "apply_fix(...)->Any",
+        "scan_changes(...)->Any",
+        "scan_file(...)->Any",
+        "scan_directory(...)->Any",
+        "get_report(...)->Any",
+        "auto_fix(...)->Any",
+        "incremental_scan(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.5045: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_incremental_scanner": {
+      "file": "chromosomes\\chromosome9\\infra\\v5_incremental_scanner.py",
+      "version": "1.0.0-alpha.7415",
+      "stage": "alpha",
+      "type": "analyzer",
+      "chromosome": 9,
+      "display_name": "IncrementalScanner",
+      "description": "",
+      "public_api_count": 11,
+      "public_apis": [
+        "class Change",
+        "class IncrementalScanner",
+        "scan_diff(...)->Any",
+        "scan_file(...)->Any",
+        "track_change(...)->Any",
+        "watch(...)->Any",
+        "stop_watch(...)->Any",
+        "report(...)->Any",
+        "clear(...)->Any",
+        "recent(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.7415: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "a2a_deploy": {
+      "file": "deploy\\a2a_deploy.py",
+      "version": "1.0.0-alpha.1643",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "a2a_deploy",
+      "description": "",
+      "public_api_count": 5,
+      "public_apis": [
+        "class CodeReviewAgent",
+        "class TranslationAgent",
+        "send_task_to_agent_b(...)->Any",
+        "do_POST(...)->Any",
+        "do_POST(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.1643: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "api_live_check": {
+      "file": "deploy\\api_live_check.py",
+      "version": "1.0.0-alpha.9842",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "api_live_check",
+      "description": "IGP V5 外接真实API检查 — GitHub / Stripe / AP2",
+      "public_api_count": 4,
+      "public_apis": [
+        "check_github(...)->Any",
+        "check_stripe(...)->Any",
+        "check_ap2(...)->Any",
+        "main(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.9842: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "commerce_deploy": {
+      "file": "deploy\\commerce_deploy.py",
+      "version": "1.0.0-alpha.0304",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "commerce_deploy",
+      "description": "",
+      "public_api_count": 0,
+      "public_apis": [],
+      "changelog": [
+        "1.0.0-alpha.0304: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "mcp_deploy": {
+      "file": "deploy\\mcp_deploy.py",
+      "version": "1.0.0-alpha.6197",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "mcp_deploy",
+      "description": "",
+      "public_api_count": 6,
+      "public_apis": [
+        "log_call(...)->Any",
+        "get_mcp_client(...)->Any",
+        "class MCPClient",
+        "class MockMCPClient",
+        "call(...)->Any",
+        "call(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.6197: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_injector": {
+      "file": "igp_inject\\v5_injector.py",
+      "version": "1.0.0-alpha.0832",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_injector",
+      "description": "V5→V4家族集团升级注入器",
+      "public_api_count": 5,
+      "public_apis": [
+        "discover_chromosomes(...)->Any",
+        "generate_v5_unified_engine(...)->Any",
+        "write_integration_report(...)->Any",
+        "write_run_script(...)->Any",
+        "main(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.0832: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_integration_report": {
+      "file": "igp_inject\\v5_integration_report.py",
+      "version": "1.0.0-alpha.0601",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_integration_report",
+      "description": "",
+      "public_api_count": 2,
+      "public_apis": [
+        "generate_integration_report(...)->Any",
+        "generate_upgrade_map(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.0601: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "v5_unified_engine": {
+      "file": "igp_inject\\v5_unified_engine.py",
+      "version": "1.0.0-alpha.4995",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "v5_unified_engine",
+      "description": "",
+      "public_api_count": 17,
+      "public_apis": [
+        "class V4TeamManager",
+        "class ChromosomeManager",
+        "class SixStepCycle",
+        "class ScoreManager",
+        "class V5UnifiedEngine",
+        "add_team(...)->Any",
+        "get_team(...)->Any",
+        "add_chromosome(...)->Any",
+        "get_chromosome(...)->Any",
+        "run_cycle(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.4995: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    },
+    "scan_registry": {
+      "file": "v6\\scan_registry.py",
+      "version": "1.0.0-alpha.2338",
+      "stage": "research",
+      "type": "unknown",
+      "chromosome": 0,
+      "display_name": "scan_registry",
+      "description": "",
+      "public_api_count": 4,
+      "public_apis": [
+        "make_version(...)->Any",
+        "extract_public_api(...)->Any",
+        "get_doc_first_line(...)->Any",
+        "scan_v5_directory(...)->Any"
+      ],
+      "changelog": [
+        "1.0.0-alpha.2338: Initial registration"
+      ],
+      "dependents": [],
+      "metrics": {
+        "calls": 0,
+        "avg_latency_ms": 0,
+        "error_rate": 0
+      }
+    }
+  },
+  "updated_at": "2026-07-01T09:30:36.919799+00:00"
+}

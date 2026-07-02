@@ -1,0 +1,48 @@
+{
+  "reader": {
+    "inputs": [
+      "Python文件路径"
+    ],
+    "outputs": [
+      "AST树",
+      "类定义",
+      "函数签名",
+      "依赖图"
+    ],
+    "technique": "ast.parse全量解析 + 依赖拓扑排序",
+    "igp_adaptation": "4核无依赖版本，no LLM needed"
+  },
+  "hierarchical_traversal": {
+    "inputs": [
+      "文件依赖图DAG"
+    ],
+    "outputs": [
+      "有序处理队列"
+    ],
+    "technique": "拓扑排序 — 无依赖文件优先",
+    "igp_adaptation": "先扫基类/工具类，再扫业务类"
+  },
+  "orchestrator": {
+    "inputs": [
+      "处理队列",
+      "配置"
+    ],
+    "outputs": [
+      "岗位说明书集合"
+    ],
+    "technique": "Reader→Writer→Verifier流水线",
+    "igp_adaptation": "简化版：Reader + Writer二合一"
+  },
+  "verifier": {
+    "inputs": [
+      "生成的文档",
+      "代码AST"
+    ],
+    "outputs": [
+      "质量评分",
+      "缺失项列表"
+    ],
+    "technique": "AST结构对比，检查参数/返回/异常覆盖",
+    "igp_adaptation": "检查每个类是否有岗位说明+方法列表+依赖链"
+  }
+}

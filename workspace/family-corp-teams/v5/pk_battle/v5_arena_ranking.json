@@ -1,0 +1,44 @@
+{
+  "chromosome1": {
+    "name": "MCP生态部",
+    "passed": 3,
+    "total": 3,
+    "score": 10.0,
+    "grade": "S"
+  },
+  "chromosome2": {
+    "name": "A2A联邦部",
+    "passed": 3,
+    "total": 3,
+    "score": 10.0,
+    "grade": "S"
+  },
+  "chromosome3": {
+    "name": "Skills市场部",
+    "passed": 3,
+    "total": 3,
+    "score": 10.0,
+    "grade": "S"
+  },
+  "chromosome4": {
+    "name": "Provider路由部",
+    "passed": 3,
+    "total": 3,
+    "score": 10.0,
+    "grade": "S"
+  },
+  "chromosome5": {
+    "name": "安全Guardian部",
+    "passed": 3,
+    "total": 3,
+    "score": 10.0,
+    "grade": "S"
+  },
+  "chromosome6": {
+    "name": "商业协议部",
+    "passed": 3,
+    "total": 3,
+    "score": 10.0,
+    "grade": "S"
+  }
+}

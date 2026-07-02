@@ -1,0 +1,14 @@
+{
+  "new_score": 5.0,
+  "previous_score": 0,
+  "target_score": 6,
+  "delta": 5.0,
+  "score_breakdown": {
+    "base": 0,
+    "digest_bonus": 0.5,
+    "dev_bonus": 1.0,
+    "mutation_bonus": 1.5,
+    "fission_bonus": 2.0
+  },
+  "cycle_complete_at": "2026-07-01T03:41:28.758005+00:00"
+}

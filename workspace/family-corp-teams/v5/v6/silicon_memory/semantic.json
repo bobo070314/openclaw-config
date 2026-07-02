@@ -1,0 +1,177 @@
+{
+  "entities": {
+    "08372ece": {
+      "name": "SmartRouter",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.568058",
+      "access_count": 1
+    },
+    "a4179d01": {
+      "name": "NoneType",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.574920",
+      "access_count": 0
+    },
+    "04daec76": {
+      "name": "LifecycleManager",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.574929",
+      "access_count": 0
+    },
+    "4ff6e12f": {
+      "name": "CryptoKit",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.577417",
+      "access_count": 1
+    },
+    "900eb7ee": {
+      "name": "SignatureVerifier",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.577426",
+      "access_count": 0
+    },
+    "61d6a83e": {
+      "name": "text=False",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.582898",
+      "access_count": 0
+    },
+    "048ff0b0": {
+      "name": "SiliconMemory",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.586498",
+      "access_count": 0
+    },
+    "e819ae90": {
+      "name": "3x improvement",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.593538",
+      "access_count": 0
+    },
+    "597b5303": {
+      "name": "99/106 classes",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.597455",
+      "access_count": 0
+    },
+    "dfcc5245": {
+      "name": "AutoTester",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.599993",
+      "access_count": 0
+    },
+    "822a17fd": {
+      "name": "CoverUp",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.603898",
+      "access_count": 0
+    },
+    "c12a4203": {
+      "name": "BM25+TF-IDF+entity+time",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.606441",
+      "access_count": 0
+    },
+    "5bfd92fa": {
+      "name": "hot/warm/cold",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.609570",
+      "access_count": 0
+    },
+    "df555216": {
+      "name": "DocAgent",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.612771",
+      "access_count": 0
+    },
+    "1fd09ecc": {
+      "name": "free_mode",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.616045",
+      "access_count": 0
+    },
+    "d3b7c913": {
+      "name": "GitHub",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.618923",
+      "access_count": 0
+    },
+    "3d265b4e": {
+      "name": "PowerShell",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.623360",
+      "access_count": 0
+    },
+    "d20121fc": {
+      "name": "WebChat",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.626184",
+      "access_count": 0
+    },
+    "0342bec5": {
+      "name": "run_inline",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.626193",
+      "access_count": 0
+    },
+    "b1e5fcbd": {
+      "name": "check_all",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.629793",
+      "access_count": 0
+    },
+    "7d6e95aa": {
+      "name": "new: memory/infra/devops/core/product",
+      "type": "auto",
+      "properties": {},
+      "created": "2026-07-01T19:12:47.636558",
+      "access_count": 0
+    }
+  },
+  "relations": [
+    {
+      "subject": "a4179d01",
+      "relation": "co_occur",
+      "object": "04daec76",
+      "ts": "2026-07-01T19:12:47.574936"
+    },
+    {
+      "subject": "4ff6e12f",
+      "relation": "co_occur",
+      "object": "900eb7ee",
+      "ts": "2026-07-01T19:12:47.577432"
+    },
+    {
+      "subject": "4ff6e12f",
+      "relation": "co_occur",
+      "object": "e819ae90",
+      "ts": "2026-07-01T19:12:47.593547"
+    },
+    {
+      "subject": "d20121fc",
+      "relation": "co_occur",
+      "object": "0342bec5",
+      "ts": "2026-07-01T19:12:47.626197"
+    }
+  ]
+}
