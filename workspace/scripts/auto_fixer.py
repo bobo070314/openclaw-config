@@ -5,16 +5,39 @@ DRAFT — Pre-written logic functions for RFC-001.
 Do NOT integrate into orchestrator until v1.8.0 go/no-go decision.
 
 Functions in this file are unit-testable independently.
+
+Usage:
+    python scripts/auto_fixer.py           # run P0 analysis
+    python scripts/auto_fixer.py -h          # show this help
+
+Supported fail_reason patterns (regex):
+  FileMissing  — (file|missing|no\\s+such)
+  RBACViolation— (rbac|permission|access|denied|forbidden|unauthorized)
+  ConfigError  — (config|invalid|bad|syntax|parse)
+
+Template locations:
+  S1 (file)    — S1_TEMPLATES in scripts/auto_fixer.py
+  S2 (config)  — S2_TEMPLATES in scripts/auto_fixer.py
+  S3 (rbac)    — S3_TEMPLATES in scripts/auto_fixer.py
 """
 
+import argparse
 import json
 import re
+import sys
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+
+# ── CLI help ──
+def _print_help():
+    print(__doc__.strip())
+    sys.exit(0)
+
 
 # ── Pre-compiled regex patterns for fuzzy fail_reason matching ──
 _RE_FILE_MISSING = re.compile(r"(file|missing|no\s+such)", re.IGNORECASE)
@@ -49,6 +72,8 @@ def analyze_failures(eval_data: dict | None = None) -> dict:
       - FileMissing:     (file|missing|no\\s+such)
       - ConfigError:     (config|invalid|bad|syntax|parse)
       - RBACViolation:   (rbac|permission|access|denied|forbidden|unauthorized)
+
+    Matching priority: FileMissing > RBACViolation > ConfigError > Unknown
 
     Returns:
         {
@@ -91,7 +116,6 @@ def analyze_failures(eval_data: dict | None = None) -> dict:
         fail_reason = check.get("fail_reason", "No fail_reason provided")
 
         # Priority: FileMissing > RBACViolation > ConfigError > Unknown
-        # RBAC before ConfigError because 'access to configs denied' matches both.
         if _RE_FILE_MISSING.search(fail_reason):
             category = "FileMissing"
         elif _RE_RBAC.search(fail_reason):
@@ -344,5 +368,9 @@ def run_fix_pipeline() -> dict:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="auto_fixer.py — Meta-Agent Auto-Fix Engine")
+    if "-h" in sys.argv[1:] or "--help" in sys.argv[1:]:
+        _print_help()
+
     result = run_fix_pipeline()
     print(json.dumps(result, indent=2, ensure_ascii=False))

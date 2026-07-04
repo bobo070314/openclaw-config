@@ -1,111 +1,142 @@
 {
   "generated_at": "2026-07-04T11:14+08:00",
+  "updated_at": "2026-07-04T11:18+08:00",
   "root": "D:\\bobo\\openclaw-foreign",
   "files": [
     {
       "path": "openclaw-minimal.json.bak.1",
       "size": "~2KB",
       "type": "config backup",
-      "action": "keep"
+      "action": "keep",
+      "description": "Config backup from build process",
+      "cleanup_suggestion": "KEEP — config rollback reference"
     },
     {
       "path": "openclaw-minimal.json.bak.2",
       "size": "~2KB",
       "type": "config backup",
-      "action": "keep"
+      "action": "keep",
+      "description": "Config backup from build process",
+      "cleanup_suggestion": "KEEP — config rollback reference"
     },
     {
       "path": "openclaw-minimal.json.bak.3",
       "size": "~2KB",
       "type": "config backup",
-      "action": "keep"
+      "action": "keep",
+      "description": "Config backup from build process",
+      "cleanup_suggestion": "KEEP — config rollback reference"
     },
     {
       "path": "openclaw-minimal.json.bak.4",
       "size": "~2KB",
       "type": "config backup",
-      "action": "keep"
+      "action": "keep",
+      "description": "Config backup from build process",
+      "cleanup_suggestion": "KEEP — config rollback reference"
     },
     {
       "path": "openclaw-minimal.json.current",
       "size": "~2KB",
       "type": "config copy",
-      "action": "keep"
+      "action": "keep",
+      "description": "Current config copy used by some build scripts",
+      "cleanup_suggestion": "KEEP — used by build scripts"
     },
     {
       "path": "schema.json",
       "size": "~30KB",
       "type": "generated schema",
       "action": "keep",
-      "description": "MCP schemas, used by metamcp"
+      "description": "MCP schemas, used by metamcp",
+      "cleanup_suggestion": "KEEP — metamcp dependency"
     },
     {
       "path": "openclaw-path.txt",
       "size": "~100B",
       "type": "temp log",
-      "action": "delete (if not referenced)"
+      "action": "review",
+      "description": "Old path log, may be stale",
+      "cleanup_suggestion": "CAN DELETE — verify contents first, likely stale from build"
     },
     {
       "path": "openclaw-delivery-v1.0.zip",
       "size": "~3MB",
       "type": "delivery artifact",
       "action": "keep",
-      "description": "v1.0 delivery zip, referenced by A-line customer links"
+      "description": "v1.0 delivery zip, referenced by A-line customer links",
+      "cleanup_suggestion": "KEEP — customer-facing artifact, do not delete"
     },
     {
       "path": "RELEASE_NOTES_v1.0.1.md",
       "size": "~2KB",
       "type": "release note",
       "action": "keep",
-      "description": "v1.0.1 release notes"
+      "description": "v1.0.1 release notes",
+      "cleanup_suggestion": "KEEP — release documentation"
     },
     {
       "path": "_build_zip.py",
       "size": "~1KB",
       "type": "build script",
-      "action": "move to workspace/scripts/",
-      "description": "Used to build delivery.zip. Belongs in scripts/."
+      "action": "move",
+      "description": "Used to build delivery.zip",
+      "cleanup_suggestion": "MOVE to workspace/scripts/ — build tooling lives there"
     },
     {
       "path": "check_zip.py",
       "size": "~500B",
       "type": "validation script",
-      "action": "move to workspace/scripts/",
-      "description": "Used to validate delivery.zip. Belongs in scripts/."
+      "action": "move",
+      "description": "Validates delivery.zip content",
+      "cleanup_suggestion": "MOVE to workspace/scripts/ — belongs with other scripts"
     },
     {
       "path": "check_zip2.py",
       "size": "~500B",
       "type": "validation script",
-      "action": "move to workspace/scripts/",
-      "description": "Duplicate of check_zip.py. Delete after verifying."
+      "action": "delete",
+      "description": "Duplicate of check_zip.py",
+      "cleanup_suggestion": "DELETE — duplicate, verify check_zip.py is sufficient first"
     },
     {
       "path": "inspect_zip.py",
       "size": "~500B",
       "type": "validation script",
-      "action": "delete (one-time use)"
+      "action": "delete",
+      "description": "One-time zip inspection script",
+      "cleanup_suggestion": "DELETE — one-time use, no references"
     },
     {
       "path": "upload_asset.py",
       "size": "~1KB",
       "type": "GitHub upload script",
-      "action": "move to workspace/scripts/",
-      "description": "Uploads release assets to GitHub."
+      "action": "move",
+      "description": "Uploads release assets to GitHub",
+      "cleanup_suggestion": "MOVE to workspace/scripts/ — belongs with CI tooling"
     },
     {
       "path": "tools/",
       "size": "~10KB",
       "type": "tool scripts",
-      "action": "keep (after verifying content)",
-      "description": "Contains tool-related scripts. Movable to workspace/tools or workspace/scripts."
+      "action": "review",
+      "description": "Contains tool-related scripts",
+      "cleanup_suggestion": "REVIEW — check content; may be movable to workspace/scripts/ or keep as-is"
     }
   ],
   "summary": {
     "total_files": 15,
-    "keep": 8,
-    "move_to_scripts": 3,
-    "delete_after_check": 2,
-    "questionable": 2
+    "actions": {
+      "KEEP": 6,
+      "MOVE": 3,
+      "DELETE": 2,
+      "REVIEW": 2
+    },
+    "next_steps": [
+      "1. Move _build_zip.py, check_zip.py, upload_asset.py to workspace/scripts/",
+      "2. Delete check_zip2.py (verify check_zip.py first), inspect_zip.py",
+      "3. Review openclaw-path.txt and tools/ — likely deleteable or movable",
+      "4. All .bak and .current files: keep as config rollback backup"
+    ]
   }
 }

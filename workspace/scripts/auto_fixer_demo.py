@@ -2,8 +2,10 @@
 auto_fixer_demo.py — 10-second demo script for A-line customer followup.
 Shows: input a fail_reason → auto_fixer categorizes it → outputs repair template name.
 
+Colors: green=success, blue=info, red=error, cyan=headers.
+
 Usage:
-    python demos/auto_fixer_demo.py
+    python scripts/auto_fixer_demo.py
 """
 
 import sys
@@ -12,6 +14,15 @@ from pathlib import Path
 sys.path.insert(0, str(Path("scripts").resolve()))
 from auto_fixer import analyze_failures, select_strategy, apply_repair
 
+# ANSI color codes
+GREEN = "\033[92m"
+BLUE = "\033[94m"
+CYAN = "\033[96m"
+YELLOW = "\033[93m"
+RED = "\033[91m"
+BOLD = "\033[1m"
+RESET = "\033[0m"
+
 # Simulate eval failure scenarios
 test_failures = [
     "missing file: configs/agent_chain.yaml",
@@ -19,9 +30,9 @@ test_failures = [
     "rbac: permission denied for user coder",
 ]
 
-print("=" * 52)
-print("  auto_fixer demo — input → categorize → repair")
-print("=" * 52)
+print(f"{CYAN}{'=' * 52}{RESET}")
+print(f"{BOLD}{CYAN}  auto_fixer demo — input \u2192 categorize \u2192 repair{RESET}")
+print(f"{CYAN}{'=' * 52}{RESET}")
 
 for fail_reason in test_failures:
     eval_data = {
@@ -40,14 +51,24 @@ for fail_reason in test_failures:
     strategy = plan["strategy"]
     confidence = plan["confidence"]
 
-    print(f"\n  ── Input ──")
-    print(f"     fail_reason: {fail_reason}")
-    print(f"  ── Result ──")
-    print(f"     category:   {category}")
-    print(f"     strategy:   {strategy}")
-    print(f"     confidence: {confidence}")
-    print(f"     applied to: {result_path}")
+    # Color by category
+    if category == "FileMissing":
+        cat_color = YELLOW
+    elif category == "ConfigError":
+        cat_color = BLUE
+    elif category == "RBACViolation":
+        cat_color = RED
+    else:
+        cat_color = RESET
 
-print(f"\n{'=' * 52}")
-print("  ✅ 10-second demo complete.")
-print(f"{'=' * 52}")
+    print(f"\n  {BOLD}{CYAN}\u2500\u2500 Input{RESET}")
+    print(f"     {BLUE}fail_reason:{RESET} {fail_reason}")
+    print(f"  {BOLD}{CYAN}\u2500\u2500 Result{RESET}")
+    print(f"     {GREEN}category:{RESET}   {cat_color}{category}{RESET}")
+    print(f"     {GREEN}strategy:{RESET}   {cat_color}{strategy}{RESET}")
+    print(f"     {GREEN}confidence:{RESET} {cat_color}{confidence}{RESET}")
+    print(f"     {GREEN}applied to:{RESET} {result_path}")
+
+print(f"\n{CYAN}{'=' * 52}{RESET}")
+print(f"  {GREEN}\u2705 10-second demo complete.{RESET}")
+print(f"{CYAN}{'=' * 52}{RESET}")
