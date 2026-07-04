@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-07-04T11:14+08:00",
+  "root": "D:\\bobo\\openclaw-foreign",
+  "files": [
+    {
+      "path": "openclaw-minimal.json.bak.1",
+      "size": "~2KB",
+      "type": "config backup",
+      "action": "keep"
+    },
+    {
+      "path": "openclaw-minimal.json.bak.2",
+      "size": "~2KB",
+      "type": "config backup",
+      "action": "keep"
+    },
+    {
+      "path": "openclaw-minimal.json.bak.3",
+      "size": "~2KB",
+      "type": "config backup",
+      "action": "keep"
+    },
+    {
+      "path": "openclaw-minimal.json.bak.4",
+      "size": "~2KB",
+      "type": "config backup",
+      "action": "keep"
+    },
+    {
+      "path": "openclaw-minimal.json.current",
+      "size": "~2KB",
+      "type": "config copy",
+      "action": "keep"
+    },
+    {
+      "path": "schema.json",
+      "size": "~30KB",
+      "type": "generated schema",
+      "action": "keep",
+      "description": "MCP schemas, used by metamcp"
+    },
+    {
+      "path": "openclaw-path.txt",
+      "size": "~100B",
+      "type": "temp log",
+      "action": "delete (if not referenced)"
+    },
+    {
+      "path": "openclaw-delivery-v1.0.zip",
+      "size": "~3MB",
+      "type": "delivery artifact",
+      "action": "keep",
+      "description": "v1.0 delivery zip, referenced by A-line customer links"
+    },
+    {
+      "path": "RELEASE_NOTES_v1.0.1.md",
+      "size": "~2KB",
+      "type": "release note",
+      "action": "keep",
+      "description": "v1.0.1 release notes"
+    },
+    {
+      "path": "_build_zip.py",
+      "size": "~1KB",
+      "type": "build script",
+      "action": "move to workspace/scripts/",
+      "description": "Used to build delivery.zip. Belongs in scripts/."
+    },
+    {
+      "path": "check_zip.py",
+      "size": "~500B",
+      "type": "validation script",
+      "action": "move to workspace/scripts/",
+      "description": "Used to validate delivery.zip. Belongs in scripts/."
+    },
+    {
+      "path": "check_zip2.py",
+      "size": "~500B",
+      "type": "validation script",
+      "action": "move to workspace/scripts/",
+      "description": "Duplicate of check_zip.py. Delete after verifying."
+    },
+    {
+      "path": "inspect_zip.py",
+      "size": "~500B",
+      "type": "validation script",
+      "action": "delete (one-time use)"
+    },
+    {
+      "path": "upload_asset.py",
+      "size": "~1KB",
+      "type": "GitHub upload script",
+      "action": "move to workspace/scripts/",
+      "description": "Uploads release assets to GitHub."
+    },
+    {
+      "path": "tools/",
+      "size": "~10KB",
+      "type": "tool scripts",
+      "action": "keep (after verifying content)",
+      "description": "Contains tool-related scripts. Movable to workspace/tools or workspace/scripts."
+    }
+  ],
+  "summary": {
+    "total_files": 15,
+    "keep": 8,
+    "move_to_scripts": 3,
+    "delete_after_check": 2,
+    "questionable": 2
+  }
+}
