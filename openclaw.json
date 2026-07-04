@@ -402,6 +402,9 @@
       ]
     },
     "entries": {
+       "model-router": {
+        "enabled": false
+      },
       "lossless-claw": {
         "enabled": true,
         "config": {

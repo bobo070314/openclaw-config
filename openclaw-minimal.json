@@ -6,8 +6,8 @@
   },
   "agents": {
     "defaults": {
-      "model": "deepseek/deepseek-v4-flash",
-      "workspace": "D:\\\\bobo\\\\openclaw-foreign\\\\workspace",
+      "model": "deepseek-official/deepseek-chat",
+      "workspace": "D:\\bobo\\openclaw-foreign\\workspace",
       "timeoutSeconds": 72000,
       "maxConcurrent": 2,
       "memorySearch": {
@@ -16,324 +16,234 @@
     },
     "list": [
       {
-        "id": "main",
-        "default": true,
+        "id": "ceo",
         "name": "OpenClaw Foreign",
         "identity": {
           "name": "OpenClaw Foreign"
         },
-        "skills": []
+        "skills": [],
+        "description": "集团中枢，管战略/派任务/判优先级"
       },
       {
         "id": "coding",
-        "model": "zhipu/glm-4-flash-250315",
+        "model": "deepseek-official/deepseek-chat",
         "name": "Coding Agent",
-        "skills": []
+        "skills": ["code-reviewer", "python-expert"],
+        "description": "研发部，修漏洞/写代码"
       },
       {
         "id": "reasoning",
-        "model": "tencent/hunyuan-lite",
+        "model": "deepseek-official/deepseek-chat",
         "name": "Reasoning Agent",
-        "skills": []
+        "skills": ["logic-organizer", "problem-solver"],
+        "description": "推理部，理逻辑/拆问题"
       },
       {
         "id": "chat",
-        "model": "deepseek/deepseek-v4-flash",
+        "model": "deepseek-official/deepseek-chat",
         "name": "Chat Agent",
-        "skills": []
+        "skills": ["conversation-helper"],
+        "description": "聊天部，日常对话/信息转发"
+      },
+      {
+        "id": "scout",
+        "model": "deepseek-official/deepseek-chat",
+        "description": "猎头部，主动爬CVE/评优先级"
       }
     ]
   },
   "models": {
     "mode": "merge",
     "providers": {
-      "deepseek": {
-        "baseUrl": "https://api.deepseek.com/v1",
-        "apiKey": "${DEEPSEEK_API_KEY}",
-        "api": "openai-completions",
-        "timeoutSeconds": 120,
-        "models": [
-          {
-            "id": "deepseek-v4-flash",
-            "name": "DeepSeek V4-Flash",
-            "api": "openai-completions",
-            "contextWindow": 128000,
-            "input": [
-              "text"
-            ],
-            "maxTokens": 8192,
-            "cost": {
-              "input": 2e-05,
-              "output": 0.002
-            }
-          }
-        ]
-      },
       "zhipu": {
-        "baseUrl": "https://open.bigmodel.cn/api/paas/v4/",
-        "apiKey": "${ZHIPU_API_KEY}",
+        "baseUrl": "https://open.bigmodel.cn/api/paas/v4a/",
+        "apiKey": "b00908b92f31417ca7d2621cc96c60fa.Cg89NYq5RgSdSbHB",
         "api": "openai-completions",
         "timeoutSeconds": 120,
         "models": [
           {
             "id": "glm-4-flash",
-            "name": "GLM-4-Flash",
+            "name": "[免] 智谱GLM-4.7 200K",
             "api": "openai-completions",
-            "contextWindow": 128000,
-            "input": [
-              "text"
-            ],
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
+            "contextWindow": 200000,
             "maxTokens": 8192,
-            "cost": {
-              "input": 0,
-              "output": 0
-            }
+            "reasoning": false
           },
           {
             "id": "glm-4-flash-250315",
-            "name": "GLM-4.7-Flash",
+            "name": "[免] 智谱GLM-4.7-25 200K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 200000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0,
-              "output": 0
-            }
+            "reasoning": false
           },
           {
-            "id": "glm-4-flashx",
-            "name": "GLM-4-FlashX",
+            "id": "glm-4-flash-128k",
+            "name": "[免] 智谱GLM-4 128K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 128000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0.0001,
-              "output": 0.0001
-            }
+            "reasoning": false
           },
           {
             "id": "glm-z1-air",
-            "name": "GLM-Z1-Air",
+            "name": "[¥0.5] 智谱GLM-Z1 128K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0.0005, "output": 0.002, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 128000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0.0005,
-              "output": 0.002
-            }
+            "reasoning": false
+          },
+          {
+            "id": "glm-4-flashx",
+            "name": "[¥0.1] 智谱FlashX 128K",
+            "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0.0001, "output": 0.0001, "cacheRead": 0, "cacheWrite": 0},
+            "contextWindow": 128000,
+            "maxTokens": 8192,
+            "reasoning": false
           }
         ]
       },
       "siliconflow": {
         "baseUrl": "https://api.siliconflow.cn/v1",
-        "apiKey": "${SILICONFLOW_API_KEY}",
+        "apiKey": "你的硅基流动真实Key",
         "api": "openai-completions",
         "timeoutSeconds": 120,
         "models": [
           {
             "id": "Qwen/Qwen2.5-7B-Instruct",
-            "name": "Qwen2.5-7B",
+            "name": "[免] 硅基Qwen-7B 32K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 32000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0,
-              "output": 0
-            }
-          },
-          {
-            "id": "Qwen/Qwen2.5-14B-Instruct",
-            "name": "Qwen2.5-14B",
-            "api": "openai-completions",
-            "contextWindow": 32000,
-            "input": [
-              "text"
-            ],
-            "maxTokens": 8192,
-            "cost": {
-              "input": 0,
-              "output": 0
-            }
+            "reasoning": false
           },
           {
             "id": "THUDM/GLM-4-9B-0414",
-            "name": "GLM-4-9B",
+            "name": "[免] 硅基GLM-4-9B 128K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 128000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0,
-              "output": 0
-            }
+            "reasoning": false
           },
           {
             "id": "deepseek-ai/DeepSeek-V3",
-            "name": "DeepSeek-V3",
+            "name": "[¥0.8] 硅基深搜V3 160K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0.0008, "output": 0.002, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 160000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0.004,
-              "output": 0.012
-            }
+            "reasoning": false
           }
         ]
       },
       "huoshan": {
         "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
-        "apiKey": "${HUOSHAN_API_KEY}",
+        "apiKey": "你的火山方舟真实Key",
         "api": "openai-completions",
         "timeoutSeconds": 120,
         "models": [
           {
             "id": "doubao-lite-32k",
-            "name": "Doubao-Lite",
+            "name": "[免] 火山豆宝L 32K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 32000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0,
-              "output": 0
-            }
+            "reasoning": false
           },
           {
             "id": "doubao-seed-2-0-code-preview-260215",
-            "name": "Doubao-Code",
+            "name": "[免] 火山豆包码 128K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 128000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0,
-              "output": 0
-            }
-          }
-        ]
-      },
-      "aliyun": {
-        "baseUrl": "https://dashscope.aliyun.com/compatible-mode/v1",
-        "apiKey": "${ALIYUN_API_KEY}",
-        "api": "openai-completions",
-        "timeoutSeconds": 120,
-        "models": [
-          {
-            "id": "qwen-plus",
-            "name": "Qwen-Plus",
-            "api": "openai-completions",
-            "contextWindow": 128000,
-            "input": [
-              "text"
-            ],
-            "maxTokens": 8192,
-            "cost": {
-              "input": 0.004,
-              "output": 0.012
-            }
+            "reasoning": false
           }
         ]
       },
       "tencent": {
         "baseUrl": "https://api.hunyuan.cloud.tencent.com/v1",
-        "apiKey": "${TENCENT_API_KEY}",
+        "apiKey": "你的腾讯混元真实Key",
         "api": "openai-completions",
         "timeoutSeconds": 120,
         "models": [
           {
             "id": "hunyuan-lite",
-            "name": "Hunyuan-lite",
+            "name": "[免] 腾讯轻量 256K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 256000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0,
-              "output": 0
-            }
+            "reasoning": false
           }
         ]
       },
       "baidu": {
         "baseUrl": "https://qianfan.baidubce.com/v2",
-        "apiKey": "${BAIDU_API_KEY}",
+        "apiKey": "你的百度千帆真实Key",
         "api": "openai-completions",
         "timeoutSeconds": 120,
         "models": [
           {
-            "id": "ernie-4.5-turbo-128k",
-            "name": "ERNIE-4.5-Turbo",
+            "id": "ernie-speed-128k",
+            "name": "[免] 百度ERNIE-Spd 128K",
             "api": "openai-completions",
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 128000,
-            "input": [
-              "text"
-            ],
             "maxTokens": 8192,
-            "cost": {
-              "input": 0.0008,
-              "output": 0.002
-            }
-          },
+            "reasoning": false
+          }
+        ]
+      },
+      "deepseek-official": {
+        "baseUrl": "https://api.deepseek.com/v1",
+        "apiKey": "sk-468b5b7ca259462197b4f9e12262f055",
+        "api": "openai-completions",
+        "timeoutSeconds": 120,
+        "models": [
           {
-            "id": "deepseek-v4-flash",
-            "name": "DeepSeek-V4-Flash",
+            "id": "deepseek-chat",
+            "name": "[¥1] 官方深搜V4",
             "api": "openai-completions",
-            "contextWindow": 1000000,
-            "input": [
-              "text"
-            ],
+            "input": ["text"],
+            "cost": {"input": 1, "output": 2, "cacheRead": 0, "cacheWrite": 0},
+            "contextWindow": 128000,
             "maxTokens": 8192,
-            "cost": {
-              "input": 0.001,
-              "output": 0.004
-            }
-          },
-          {
-            "id": "deepseek-v3.2",
-            "name": "DeepSeek-V3.2",
-            "api": "openai-completions",
-            "contextWindow": 1000000,
-            "input": [
-              "text"
-            ],
-            "maxTokens": 8192,
-            "cost": {
-              "input": 0.002,
-              "output": 0.008
-            }
+            "reasoning": false
           }
         ]
       }
     }
   },
   "plugins": {
-    "load": {
-      "paths": []
-    },
-    "entries": {}
+    "load": {"paths": []},
+    "allow": ["deepseek", "qwen", "tavily"],
+    "bundledDiscovery": "compat",
+    "entries": {
+      "deepseek": {"enabled": true},
+      "qwen": {"enabled": true},
+      "tavily": {"enabled": true}
+    }
   },
   "gateway": {
     "mode": "local",
@@ -341,20 +251,28 @@
     "bind": "loopback",
     "auth": {
       "mode": "token",
-      "token": "foreign18900"
+      "token": "bobo666"
     },
     "controlUi": {
       "dangerouslyDisableDeviceAuth": true
     },
     "http": {
       "endpoints": {
-        "chatCompletions": {
-          "enabled": true
-        }
+        "chatCompletions": {"enabled": true}
       }
     },
     "remote": {
-      "token": "foreign18900"
+      "token": "bobo666"
     }
+  },
+  "wizard": {
+    "lastRunAt": "2026-07-02T17:47:00.589Z",
+    "lastRunVersion": "2026.6.11",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.6.11",
+    "lastTouchedAt": "2026-07-03T06:18:22.739Z"
   }
 }

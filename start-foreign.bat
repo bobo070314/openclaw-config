@@ -17,8 +17,8 @@ set "QCLAW_USER_ID="
 set "QCLAW_USER_DATA_DIR="
 set "QCLAW_WECHAT_WS_URL="
 
-REM Force OpenClaw Foreign config
-set "OPENCLAW_CONFIG_PATH=D:\bobo\openclaw-foreign\openclaw.json"
+REM Force OpenClaw Foreign config (use minimal config to avoid plugin issues)
+set "OPENCLAW_CONFIG_PATH=D:\bobo\openclaw-foreign\openclaw-minimal.json"
 set "OPENCLAW_STATE_DIR=D:\bobo\openclaw-foreign\state"
 
 REM Kill old processes
@@ -40,7 +40,7 @@ if %errorlevel% equ 0 (
 )
 
 REM Start gateway in new window (stays running after this bat exits)
-start "OpenClaw-Foreign" /min cmd /k "cd /d D:\bobo\openclaw-foreign && set OPENCLAW_CONFIG_PATH=D:\bobo\openclaw-foreign\openclaw.json && set OPENCLAW_STATE_DIR=D:\bobo\openclaw-foreign\state && node.exe openclaw\openclaw.mjs gateway --port 18900"
+start "OpenClaw-Foreign" /min cmd /k "cd /d D:\bobo\openclaw-foreign && set OPENCLAW_CONFIG_PATH=D:\bobo\openclaw-foreign\openclaw-minimal.json && set OPENCLAW_STATE_DIR=D:\bobo\openclaw-foreign\state && node.exe openclaw\openclaw.mjs gateway --port 18900"
 
 REM Wait a moment then check if started
 echo Waiting for gateway to start...
