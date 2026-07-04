@@ -1,0 +1,25 @@
+v1.8.0 auto_fixer Demo 短视频脚本
+
+片长: 10 秒 | 用途: 发客户微信/邮件 | 制作: 屏幕录制 + 语音解说
+
+---
+
+[镜] 桌面 → 打开 scripts/auto_fixer_demo.py
+[音] "三段演示：文件缺失、配置错误、权限拒绝"
+
+[镜] run python scripts/auto_fixer_demo.py
+[音] "输出自动归类，1 秒出修复方案"
+
+[镜] 聚焦输出：category S1/S2/S3, confidence 1.0
+[音] "修复模板即时生成"
+
+[镜] 切到configs/agent_chain.yaml
+[音] "零人工干预，系统自愈"
+
+---
+
+备用文案（纯文字版）：
+
+"auto_fixer demo: 文件缺失 → S1 补全 / 配置错误 → S2 修正 / 权限拒绝 → S3 恢复。输入 fail_reason，1 秒出模板，零人工干预。"
+
+"50 项测试全部通过，灰度 P0→P3 分阶段上线，不做一夜切换。"

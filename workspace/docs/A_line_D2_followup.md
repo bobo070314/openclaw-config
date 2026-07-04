@@ -14,6 +14,9 @@
 我顺手跑了一份当前系统的运行快照，放在附件里。
 pass_rate 1.0，零报错。解压后跑 `scripts/init.ps1` → `scripts/orchestrator.py` 即可复现。
 
+对了，系统内置了自动修复引擎 —— 文件丢了自动补、配置错了自动修、权限乱了自动恢复。
+跑一遍 `python scripts/auto_fixer_demo.py` 就能看到效果。
+
 有问题随时聊。
 ```
 
