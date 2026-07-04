@@ -1,0 +1,7 @@
+{
+  "dept": "growth",
+  "project": "igp-scanner",
+  "absorb": "DNA基因组",
+  "task": "运行scanner.py扫描项目生态词频，输出差异化分析",
+  "status": "ok"
+}

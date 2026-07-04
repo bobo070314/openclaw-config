@@ -1,0 +1,9 @@
+{
+  "mutations_applied": [
+    "外部可插拔",
+    "Token效率评分",
+    "PK排名机制"
+  ],
+  "mutation_design": "Skills市场部突变设计:\n- 外部可插拔\n- Token效率评分\n- PK排名机制",
+  "mutation_at": "2026-07-01T03:41:28.725529+00:00"
+}

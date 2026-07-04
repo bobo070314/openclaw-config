@@ -1,0 +1,332 @@
+{
+  "projects\\d2a-server\\server.py": {
+    "path": "projects\\d2a-server\\server.py",
+    "len": 1283,
+    "dna": "GAAACACAACGAACACGGGCCATGCCGCAACCTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGA",
+    "words": 78
+  },
+  "projects\\gauntlet\\init.py": {
+    "path": "projects\\gauntlet\\init.py",
+    "len": 2069,
+    "dna": "AGAGCGTAGATGCCGCAACCTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGCCATGACA",
+    "words": 92
+  },
+  "projects\\igp-cli\\cli.py": {
+    "path": "projects\\igp-cli\\cli.py",
+    "len": 1909,
+    "dna": "AGTTAGGGCCATGCCGCAAAACCACGACAATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAAT",
+    "words": 91
+  },
+  "projects\\igp-d2a\\agent_protocol.py": {
+    "path": "projects\\igp-d2a\\agent_protocol.py",
+    "len": 4113,
+    "dna": "AGGAGAAAGGCATGAACGGGGCCCCTAAAGCCGCTCTTACGTCGCGAGACCACCGGGGATGCCGACCGGAGCAAATCCTGAGAGATAATGCCGGAGAGAT",
+    "words": 121
+  },
+  "projects\\igp-d2a\\d2a_v2.py": {
+    "path": "projects\\igp-d2a\\d2a_v2.py",
+    "len": 1835,
+    "dna": "GAAACGGGGGAACACAACGATGCCGCAAAACCCAGATATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATAT",
+    "words": 92
+  },
+  "projects\\igp-d2a\\federation.py": {
+    "path": "projects\\igp-d2a\\federation.py",
+    "len": 1321,
+    "dna": "GAATGCCGCAACCTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGCCATGACAGAGGCAC",
+    "words": 66
+  },
+  "projects\\igp-d2a\\igp_mcp.py": {
+    "path": "projects\\igp-d2a\\igp_mcp.py",
+    "len": 8395,
+    "dna": "AGTTGGCCGCTCTACACATTGACCCGTCACGGGGAGGATGCCGCAACCAATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAAC",
+    "words": 170
+  },
+  "projects\\igp-d2a\\mcp_client.py": {
+    "path": "projects\\igp-d2a\\mcp_client.py",
+    "len": 1183,
+    "dna": "AGTTGTTAACGTTGACCCGTATGCCGCAACCAATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGCCGCGACCAGAGGCACTATAT",
+    "words": 64
+  },
+  "projects\\igp-d2a\\mcp_server.py": {
+    "path": "projects\\igp-d2a\\mcp_server.py",
+    "len": 2162,
+    "dna": "AGTTGGGGGAACACTTGACCCGTCACGGGGGGGCCGGGGAACACATGCCGCAACCTCCTGGGGAACACATGCCGGGGGAACACCAAAGGGGCAGAAGGAC",
+    "words": 94
+  },
+  "projects\\igp-d2a\\mcp_server_evolved.py": {
+    "path": "projects\\igp-d2a\\mcp_server_evolved.py",
+    "len": 2172,
+    "dna": "AGTTGGGGGAACACTTGACCCGTCACGGGGGGGCCGGGGAACACATGCCGCAACCTCCTGGGGAACACATGCCGGGGGAACACCAAAGGGGCAGAAGGAC",
+    "words": 95
+  },
+  "projects\\igp-d2a\\mcp_skills.py": {
+    "path": "projects\\igp-d2a\\mcp_skills.py",
+    "len": 2267,
+    "dna": "AGTTGAATTAAACGAATTAAATTTGATGCCGCAACCAATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATAT",
+    "words": 91
+  },
+  "projects\\igp-d2a\\test_agents.py": {
+    "path": "projects\\igp-d2a\\test_agents.py",
+    "len": 514,
+    "dna": "AGGAATGCCGAAACCAAGAGGACAACGCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGCCATGAAGGATCCTAACGGCCGCTCTATGCCG",
+    "words": 39
+  },
+  "projects\\igp-dashboard\\absorb_viz.py": {
+    "path": "projects\\igp-dashboard\\absorb_viz.py",
+    "len": 1696,
+    "dna": "AGATGCCGCAACCTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGCCATGACAGAGGCAC",
+    "words": 79
+  },
+  "projects\\igp-dashboard\\dashboard.py": {
+    "path": "projects\\igp-dashboard\\dashboard.py",
+    "len": 975,
+    "dna": "AGAATAAGAATGCCGCAACCAGGGATTATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGCCATGACAGAGGCACTATATGCCATGAG",
+    "words": 61
+  },
+  "projects\\igp-data\\data.py": {
+    "path": "projects\\igp-data\\data.py",
+    "len": 737,
+    "dna": "AGGAGAACCGCAATAAATGCCGCAACCTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGA",
+    "words": 57
+  },
+  "projects\\igp-design\\theme.py": {
+    "path": "projects\\igp-design\\theme.py",
+    "len": 698,
+    "dna": "AGGAAACAATAAGAATGCCGCAGATGCCCAAACACTGTACGTGATGATAACACTGCTTGCTCAGGCCTCACTGGATCACCACCATATACGATACACTGCT",
+    "words": 40
+  },
+  "projects\\igp-diag\\diag.py": {
+    "path": "projects\\igp-diag\\diag.py",
+    "len": 1336,
+    "dna": "AGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGATGAATGGATCCA",
+    "words": 64
+  },
+  "projects\\igp-docmind\\docmind.py": {
+    "path": "projects\\igp-docmind\\docmind.py",
+    "len": 11985,
+    "dna": "AGGCTTACGGGTGAGGTACTCGAGGTACTCGGAGCGTGGCAGGTTACGCCACCGAGGTACTCTCGGGCCGGTAGCGTGTCTACGCCACCTTTATGCCGCA",
+    "words": 271
+  },
+  "projects\\igp-docmind\\docmind_dna.py": {
+    "path": "projects\\igp-docmind\\docmind_dna.py",
+    "len": 14503,
+    "dna": "GCAGCAGCAAAACATCAGAAACTGATACAATGTAGTGATGCCGCACAACCTAGGCACGCTTCCTTCTTATGACCAATGCCGTCGCGACTCCTGAGAGATA",
+    "words": 271
+  },
+  "projects\\igp-docmind\\docmind_finance.py": {
+    "path": "projects\\igp-docmind\\docmind_finance.py",
+    "len": 8426,
+    "dna": "AGGCTTACGGACGTACCTATATGCTAATGGGCAGCCGTCTACATGCCGCAACCCATAGGTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGAC",
+    "words": 182
+  },
+  "projects\\igp-docmind\\docmind_fusion.py": {
+    "path": "projects\\igp-docmind\\docmind_fusion.py",
+    "len": 10197,
+    "dna": "GCTTACGTGAACCTTTTGGCTGCACTATATGCTAATTTACCGCATTTATGCCGCAACCCATAGGAAGATATCCTGAGAGATAATGCCGGAGAGATATCCT",
+    "words": 239
+  },
+  "projects\\igp-docmind\\docmind_ghost.py": {
+    "path": "projects\\igp-docmind\\docmind_ghost.py",
+    "len": 6951,
+    "dna": "GCTTACGGCAGGCAGCAAGTATAACGCACATGCCGCAACCCAGATACACGCTTCCTGAGAGATAATGCCGGAGAGATATCCTCGACAAATGCCGCGACAA",
+    "words": 201
+  },
+  "projects\\igp-docmind\\docmind_tree.py": {
+    "path": "projects\\igp-docmind\\docmind_tree.py",
+    "len": 13180,
+    "dna": "AGGCTTACGGCTTACGACTGATGCCGCAAAACCCAGAAGTACTAGGCACGCTTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCA",
+    "words": 211
+  },
+  "projects\\igp-docmind\\docmind_ultimate.py": {
+    "path": "projects\\igp-docmind\\docmind_ultimate.py",
+    "len": 16166,
+    "dna": "GCTTACGGTGATAGATTTTTTGCATTTTTATGCATTATTATTTTGCCTGGACCATTTTTTTATGCCGCAACCCATAGGGATATCCTGAGAGATAATGCCG",
+    "words": 288
+  },
+  "projects\\igp-docmind\\docmind_v2.py": {
+    "path": "projects\\igp-docmind\\docmind_v2.py",
+    "len": 13230,
+    "dna": "AGGCTTACGGAAGAAACTCGAGGTACTCGAGGTACTCGGAGCGTGGCAGGTTACGCCGAAGAAACTCAAGATTAGAATTTCGAAGACTCGACGAAGAAAC",
+    "words": 330
+  },
+  "projects\\igp-docmind\\docmind_v3.py": {
+    "path": "projects\\igp-docmind\\docmind_v3.py",
+    "len": 15892,
+    "dna": "AGGCTTACGAACGGAGGTACTCGAAGAAACTCCGCTCAGACAAAAACTACAACGATGCCGCAAAACCCAGAAGTACGGAGTCCTGAGAGATAATGCCGGA",
+    "words": 316
+  },
+  "projects\\igp-docmind\\docmind_v4.py": {
+    "path": "projects\\igp-docmind\\docmind_v4.py",
+    "len": 17984,
+    "dna": "AGGCTTACGGCGTTCTCTTCTCCTGGTGTGAGCACGCAGATGACCCTACGAGAGGTACTCTGAAGAAACTCGAAGACTCGACTGGGGGCCATGCCGCAAA",
+    "words": 287
+  },
+  "projects\\igp-docmind\\docmind_v5.py": {
+    "path": "projects\\igp-docmind\\docmind_v5.py",
+    "len": 3370,
+    "dna": "GCTTACGTTTACCATGCCGCAACCCATCCTGAGAGATAATGCCGGAGAGATATCCTCGACAAATGCCGCGACAATATATCGCCCCCGACTTATCCAACCC",
+    "words": 122
+  },
+  "projects\\igp-docmind\\pipeline_integrate.py": {
+    "path": "projects\\igp-docmind\\pipeline_integrate.py",
+    "len": 6013,
+    "dna": "AGGCTTACGGAGATACAGCTTACGAGGAGATACACCATTAGCTTACGACCTGCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATATATC",
+    "words": 140
+  },
+  "projects\\igp-evolver\\evolver.py": {
+    "path": "projects\\igp-evolver\\evolver.py",
+    "len": 6911,
+    "dna": "AGACTACAACGGGGCCATGCCGCAACCAACATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAA",
+    "words": 148
+  },
+  "projects\\igp-federation\\bridge.py": {
+    "path": "projects\\igp-federation\\bridge.py",
+    "len": 4844,
+    "dna": "AGTAGACAGACCCCAGACGACTTAGGGCCATGCCGCAACCGGGGTTAACGACTAGTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTAT",
+    "words": 139
+  },
+  "projects\\igp-federation\\bridge_v2.py": {
+    "path": "projects\\igp-federation\\bridge_v2.py",
+    "len": 6855,
+    "dna": "AGTAGACAGACCCCAGAGGGGCGACTTAACCGGGCCATGCCGCAACCAGGGATAGCGCCTAAATCCTGAGAGATAATGCCGGAGAGATACCAGATACGCC",
+    "words": 152
+  },
+  "projects\\igp-federation\\bridge_v2_evolved.py": {
+    "path": "projects\\igp-federation\\bridge_v2_evolved.py",
+    "len": 6895,
+    "dna": "AGTAGACAGACCCCAGAGGGGCGACTTAACCGGGCCATGCCGCAACCAGGGATAGCGCCTAAATCCTGAGAGATAATGCCGGAGAGATACCAGATACGCC",
+    "words": 153
+  },
+  "projects\\igp-gate\\gate.py": {
+    "path": "projects\\igp-gate\\gate.py",
+    "len": 1418,
+    "dna": "AGGCATCTTAGATGCCGCAAACATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGATTGATTATATGTCCGACGCGACTGACTCGA",
+    "words": 68
+  },
+  "projects\\igp-genesis\\dept_ai.py": {
+    "path": "projects\\igp-genesis\\dept_ai.py",
+    "len": 1024,
+    "dna": "GAGGAAAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGAAAAAACGGATACAGAATTAATTCATAGA",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_backend.py": {
+    "path": "projects\\igp-genesis\\dept_backend.py",
+    "len": 1054,
+    "dna": "GAGGCATACGAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGCATACGCATACGAACGGATACAGAA",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_compliance.py": {
+    "path": "projects\\igp-genesis\\dept_compliance.py",
+    "len": 1072,
+    "dna": "GAGGTCTGTAACTAAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGTCTGTAACTATCTGTAACTAA",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_data.py": {
+    "path": "projects\\igp-genesis\\dept_data.py",
+    "len": 1036,
+    "dna": "GAGGGAGAAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGGAGAGAGAAACGGATACAGAATTAATT",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_design.py": {
+    "path": "projects\\igp-genesis\\dept_design.py",
+    "len": 1048,
+    "dna": "GAGGGAAACAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGGAAACGAAACAACGGATACAGAATTA",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_frontend.py": {
+    "path": "projects\\igp-genesis\\dept_frontend.py",
+    "len": 1060,
+    "dna": "GAGGTCCCGACGAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGTCCCGACGTCCCGACGAACGGAT",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_growth.py": {
+    "path": "projects\\igp-genesis\\dept_growth.py",
+    "len": 1048,
+    "dna": "GAGGCCGGAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGCCGGCCGGAACGGATACAGAATTAATT",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_infra.py": {
+    "path": "projects\\igp-genesis\\dept_infra.py",
+    "len": 1042,
+    "dna": "GAGGACTCAAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGACTCAACTCAAACGGATACAGAATTA",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_mobile.py": {
+    "path": "projects\\igp-genesis\\dept_mobile.py",
+    "len": 1048,
+    "dna": "GAGGTCCATAAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGTCCATATCCATAAACGGATACAGAA",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_pmo.py": {
+    "path": "projects\\igp-genesis\\dept_pmo.py",
+    "len": 1030,
+    "dna": "GAGGGTCAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGGTCGTCAACGGATACAGAATTAATTCAT",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_quality.py": {
+    "path": "projects\\igp-genesis\\dept_quality.py",
+    "len": 1054,
+    "dna": "GAGGGATAGAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGGATAGGATAGAACGGATACAGAATTA",
+    "words": 45
+  },
+  "projects\\igp-genesis\\dept_tech_support.py": {
+    "path": "projects\\igp-genesis\\dept_tech_support.py",
+    "len": 1082,
+    "dna": "GAGGGATGAGGGCCGAGACAAAACAGATCCAGATGCCGCAAAACCTCCTGAGAGATAATGCCGGAGAGATATTAAAGAGGGATGAGGGCCGGATGAGGGC",
+    "words": 47
+  },
+  "projects\\igp-genesis\\genesis.py": {
+    "path": "projects\\igp-genesis\\genesis.py",
+    "len": 6476,
+    "dna": "AGACAAAAAACGAACGAACGAACGGGGCCATGCCGCAAAACCAGGGATTCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCC",
+    "words": 159
+  },
+  "projects\\igp-ghost\\ghost.py": {
+    "path": "projects\\igp-ghost\\ghost.py",
+    "len": 7708,
+    "dna": "AGGCAGATGCCGCAAAACCAGCGCCTAAAAGGGATGATATCCTGAGAGATAATGCCGGAGAGATACCAGATACGCCCCCGACTTATCCAACCCAGATATA",
+    "words": 181
+  },
+  "projects\\igp-ghost\\ghost_cron.py": {
+    "path": "projects\\igp-ghost\\ghost_cron.py",
+    "len": 4612,
+    "dna": "GCAGTCCCGCTTACGGTGATAGAATGCCGCAACCAAGATATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATAT",
+    "words": 129
+  },
+  "projects\\igp-ghost\\healer_service.py": {
+    "path": "projects\\igp-ghost\\healer_service.py",
+    "len": 1909,
+    "dna": "GCAGGAATACAACATACAAGTATAACATGCCGCAACCAATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATA",
+    "words": 100
+  },
+  "projects\\igp-knowledge\\knowledge.py": {
+    "path": "projects\\igp-knowledge\\knowledge.py",
+    "len": 3066,
+    "dna": "AGAAATCAGGACGCTTACGATGCCGCAAAACCCATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCG",
+    "words": 118
+  },
+  "projects\\igp-knowledge\\knowledge_evo.py": {
+    "path": "projects\\igp-knowledge\\knowledge_evo.py",
+    "len": 2174,
+    "dna": "CCTAGAGGCTTACGGCAATGCCGCAACCCATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAAT",
+    "words": 114
+  },
+  "projects\\igp-mutation\\mutate.py": {
+    "path": "projects\\igp-mutation\\mutate.py",
+    "len": 6265,
+    "dna": "AGTGGAGACCACTACACAAAAAACGAACGAACGGGGCCATGCCGCAACCAACATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCC",
+    "words": 151
+  },
+  "projects\\igp-quality\\upgrade.py": {
+    "path": "projects\\igp-quality\\upgrade.py",
+    "len": 1754,
+    "dna": "AGGATAGATGCCGCAACCTATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGCCATGACAGAGGCACTATATGCCATGAGATATCCAG",
+    "words": 72
+  },
+  "projects\\igp-scanner\\scanner.py": {
+    "path": "projects\\igp-scanner\\scanner.py",
+    "len": 1547,
+    "dna": "AGAGATGCCGCAAAACCCATCCTGAGAGATAATGCCGGAGAGATATATATCGCCCCCGACTTATCCAACCCAGATATATATTCCGGAATAGATATACATC",
+    "words": 80
+  }
+}

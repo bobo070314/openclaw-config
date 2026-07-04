@@ -1,0 +1,81 @@
+{
+  "from": "igp-global",
+  "type": "sync",
+  "timestamp": "2026-07-02T17:51:40.900416",
+  "projects": {
+    "d2a-server": {
+      "files": 4,
+      "py_lines": 36
+    },
+    "gauntlet": {
+      "files": 4,
+      "py_lines": 65
+    },
+    "igp-cli": {
+      "files": 4,
+      "py_lines": 57
+    },
+    "igp-d2a": {
+      "files": 13,
+      "py_lines": 750
+    },
+    "igp-dashboard": {
+      "files": 5,
+      "py_lines": 75
+    },
+    "igp-data": {
+      "files": 3,
+      "py_lines": 27
+    },
+    "igp-design": {
+      "files": 3,
+      "py_lines": 28
+    },
+    "igp-diag": {
+      "files": 3,
+      "py_lines": 46
+    },
+    "igp-docmind": {
+      "files": 26,
+      "py_lines": 4421
+    },
+    "igp-evolver": {
+      "files": 3,
+      "py_lines": 221
+    },
+    "igp-federation": {
+      "files": 6,
+      "py_lines": 571
+    },
+    "igp-gate": {
+      "files": 3,
+      "py_lines": 52
+    },
+    "igp-genesis": {
+      "files": 15,
+      "py_lines": 693
+    },
+    "igp-ghost": {
+      "files": 7,
+      "py_lines": 437
+    },
+    "igp-knowledge": {
+      "files": 7,
+      "py_lines": 170
+    },
+    "igp-mutation": {
+      "files": 3,
+      "py_lines": 198
+    },
+    "igp-quality": {
+      "files": 3,
+      "py_lines": 60
+    },
+    "igp-scanner": {
+      "files": 3,
+      "py_lines": 49
+    }
+  },
+  "total_projects": 18,
+  "total_lines": 7956
+}

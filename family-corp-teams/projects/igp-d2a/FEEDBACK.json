@@ -1,0 +1,9 @@
+{
+  "source": "IGP研发闭环 — D2A Agent协议",
+  "problem_solved": "igp_a2a_bridge.py 为空文件(5分) → 替换为IGP-D2A",
+  "improvement": "从0分到实测3Agent通通信",
+  "zero_token": true,
+  "tech_stack": "Python 3.14 标准库, 0第三方依赖",
+  "digest_target": "infra-team2 → 升级igp_a2a_bridge.py",
+  "eliminate": "igp_a2a_bridge.py (5分, 空文件)"
+}

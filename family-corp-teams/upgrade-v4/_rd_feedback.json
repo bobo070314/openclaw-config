@@ -1,0 +1,7 @@
+{
+  "upgrade": "2026-07-01",
+  "dept": "infra-team2",
+  "before": "igp_a2a_bridge.py 空文件 (5分)",
+  "after": "IGP-D2A Agent协议 (3Agent全通)",
+  "source": "family-corp-teams/projects/igp-d2a/"
+}

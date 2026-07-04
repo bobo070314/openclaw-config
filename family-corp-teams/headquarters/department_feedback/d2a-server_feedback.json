@@ -1,0 +1,18 @@
+{
+  "department": "2.infra",
+  "project": "d2a-server",
+  "absorb_source": "D2A协议",
+  "tool": "Agent通信验证",
+  "files": 1,
+  "success_rate": "100% (1/1)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "server.py",
+      "status": "ok",
+      "output": "D2A Server v2 |   Registered: 10 agents |   Test: ok - patrol on ghost-team OK",
+      "time": 0.07
+    }
+  ],
+  "time": "2026-07-01T11:10:35"
+}

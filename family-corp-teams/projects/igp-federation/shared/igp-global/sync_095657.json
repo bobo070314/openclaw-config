@@ -1,0 +1,37 @@
+{
+  "from": "igp-global",
+  "type": "sync",
+  "timestamp": "2026-07-01T09:56:57.889495",
+  "projects": {
+    "gauntlet": {
+      "files": 1,
+      "py_lines": 61
+    },
+    "igp-d2a": {
+      "files": 4,
+      "py_lines": 136
+    },
+    "igp-evolver": {
+      "files": 2,
+      "py_lines": 221
+    },
+    "igp-federation": {
+      "files": 6,
+      "py_lines": 571
+    },
+    "igp-genesis": {
+      "files": 14,
+      "py_lines": 693
+    },
+    "igp-ghost": {
+      "files": 4,
+      "py_lines": 316
+    },
+    "igp-mutation": {
+      "files": 2,
+      "py_lines": 198
+    }
+  },
+  "total_projects": 7,
+  "total_lines": 2196
+}

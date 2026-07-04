@@ -1,0 +1,18 @@
+{
+  "department": "7.mobile",
+  "project": "igp-cli",
+  "absorb_source": "LLM分支",
+  "tool": "CLI工具可用性",
+  "files": 1,
+  "success_rate": "100% (1/1)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "cli.py",
+      "status": "ok",
+      "output": "  igp-ghost          | 2文件 | 389行 |   igp-knowledge      | 1文件 | 109行 |   igp-mutation       | 1文件 | 199行 |   igp-quality        | 1文件 | 61行 |   igp-s",
+      "time": 0.13
+    }
+  ],
+  "time": "2026-07-01T11:10:35"
+}

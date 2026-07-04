@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-07-01T09:55:05.899651",
+  "round": 1,
+  "purged": [
+    {
+      "department": "ai",
+      "reason": "无突破项目 + 无原创代码"
+    },
+    {
+      "department": "backend",
+      "reason": "无突破项目 + 无原创代码"
+    },
+    {
+      "department": "compliance",
+      "reason": "无突破项目 + 无原创代码"
+    },
+    {
+      "department": "data",
+      "reason": "无突破项目 + 无原创代码"
+    },
+    {
+      "department": "design",
+      "reason": "无突破项目 + 无原创代码"
+    },
+    {
+      "department": "growth",
+      "reason": "无突破项目 + 无原创代码"
+    },
+    {
+      "department": "mobile",
+      "reason": "无突破项目 + 无原创代码"
+    },
+    {
+      "department": "pmo",
+      "reason": "无突破项目 + 无原创代码"
+    },
+    {
+      "department": "tech-support",
+      "reason": "无突破项目 + 无原创代码"
+    }
+  ],
+  "spared": []
+}

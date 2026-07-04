@@ -1,0 +1,18 @@
+{
+  "department": "11.tech-support",
+  "project": "igp-diag",
+  "absorb_source": "LLM引擎",
+  "tool": "一键诊断可用性",
+  "files": 1,
+  "success_rate": "100% (1/1)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "diag.py",
+      "status": "ok",
+      "output": "  ❌ igp-mutation       |  50/100 █████ |   ❌ igp-quality        |  50/100 █████ |   ❌ igp-scanner        |  50/100 █████ |   ❌ rd_loop_a2a.json   |   ",
+      "time": 0.08
+    }
+  ],
+  "time": "2026-07-01T11:10:36"
+}

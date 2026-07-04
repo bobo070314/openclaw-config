@@ -1,0 +1,18 @@
+{
+  "department": "6.ai",
+  "project": "igp-knowledge",
+  "absorb_source": "LLM+DNA",
+  "tool": "知识库搜索验证",
+  "files": 1,
+  "success_rate": "100% (1/1)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "knowledge.py",
+      "status": "ok",
+      "output": "import os, json, re | from |   ✅ 已保存: knowledge_base.json + index_data.json |   📍 D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-kn",
+      "time": 0.1
+    }
+  ],
+  "time": "2026-07-01T11:10:35"
+}

@@ -1,0 +1,12 @@
+{
+  "dirs_created": [
+    "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\v5\\chromosomes\\provider\\infra",
+    "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\v5\\chromosomes\\provider\\skills",
+    "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\v5\\chromosomes\\provider\\reports"
+  ],
+  "independent_absorb_source": "v5-absorb/chromosome_*_provider.md",
+  "independent_kpi": true,
+  "can_survive_alone": true,
+  "genes": [],
+  "fission_at": "2026-07-01T03:41:28.737397+00:00"
+}

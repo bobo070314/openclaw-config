@@ -1,0 +1,105 @@
+{
+  "nexus-core": {
+    "name": "nexus-core",
+    "parent": "bigbang",
+    "generation": 0,
+    "created": "2026-07-01T09:41:05.905086",
+    "description": "IGP 原初 Agent — 万物起点"
+  },
+  "dept-frontend": {
+    "name": "dept-frontend",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.214101",
+    "description": "frontend 部门自动生成 Agent",
+    "file": "dept_frontend.py"
+  },
+  "dept-backend": {
+    "name": "dept-backend",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.215118",
+    "description": "backend 部门自动生成 Agent",
+    "file": "dept_backend.py"
+  },
+  "dept-infra": {
+    "name": "dept-infra",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.216225",
+    "description": "infra 部门自动生成 Agent",
+    "file": "dept_infra.py"
+  },
+  "dept-ai": {
+    "name": "dept-ai",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.217128",
+    "description": "ai 部门自动生成 Agent",
+    "file": "dept_ai.py"
+  },
+  "dept-mobile": {
+    "name": "dept-mobile",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.218160",
+    "description": "mobile 部门自动生成 Agent",
+    "file": "dept_mobile.py"
+  },
+  "dept-design": {
+    "name": "dept-design",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.219664",
+    "description": "design 部门自动生成 Agent",
+    "file": "dept_design.py"
+  },
+  "dept-quality": {
+    "name": "dept-quality",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.221134",
+    "description": "quality 部门自动生成 Agent",
+    "file": "dept_quality.py"
+  },
+  "dept-pmo": {
+    "name": "dept-pmo",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.222703",
+    "description": "pmo 部门自动生成 Agent",
+    "file": "dept_pmo.py"
+  },
+  "dept-growth": {
+    "name": "dept-growth",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.223697",
+    "description": "growth 部门自动生成 Agent",
+    "file": "dept_growth.py"
+  },
+  "dept-data": {
+    "name": "dept-data",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.225182",
+    "description": "data 部门自动生成 Agent",
+    "file": "dept_data.py"
+  },
+  "dept-tech-support": {
+    "name": "dept-tech-support",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.226785",
+    "description": "tech-support 部门自动生成 Agent",
+    "file": "dept_tech_support.py"
+  },
+  "dept-compliance": {
+    "name": "dept-compliance",
+    "parent": "nexus-core",
+    "generation": 1,
+    "created": "2026-07-02T17:51:42.228600",
+    "description": "compliance 部门自动生成 Agent",
+    "file": "dept_compliance.py"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "engine": "2.0.0",
+  "generated": "2026-07-02T17:51:28.124409",
+  "count": 3,
+  "analyses": [
+    {
+      "timestamp": "2026-07-02T17:51:28.120819",
+      "engine": "igp-docmind-v2.0.0",
+      "stats": {
+        "chars": 1327,
+        "words": 205,
+        "lines": 39,
+        "paragraphs": 13,
+        "compressed_ratio": "87%"
+      },
+      "metadata": {
+        "date": "2026-07-01",
+        "title": "IGP Research Technical Report 2026-Q3",
+        "keywords": [
+          "Research",
+          "The"
+        ]
+      },
+      "structure": {
+        "headers": 6,
+        "header_tree": [
+          {
+            "level": 1,
+            "text": "IGP Research Technical Report 2026-Q3",
+            "type": "markdown_header"
+          },
+          {
+            "level": 2,
+            "text": "1. Executive Summary",
+            "type": "markdown_header"
+          },
+          {
+            "level": 2,
+            "text": "2. Methodology",
+            "type": "markdown_header"
+          },
+          {
+            "level": 2,
+            "text": "3. Results",
+            "type": "markdown_header"
+          },
+          {
+            "level": 2,
+            "text": "4. Conclusion",
+            "type": "markdown_header"
+          },
+          {
+            "level": 2,
+            "text": "5. Next Steps",
+            "type": "markdown_header"
+          }
+        ],
+        "lists": {
+          "bullet": 6,
+          "numbered": 4,
+          "definition": 1
+        }
+      },
+      "content": {
+        "compressed": "# IGP Research Technical Report 2026-Q3\n\nAuthor: IGP Research Team | Version: 1.2.0 | Date: 2026-07-01\n\n## 1. Executive Summary\n\nThis report presents our latest breakthrough in self-evolving agent systems. [...中间1句压缩为1句关键词] The system achieved a 94.3% success rate, surpassing previous benchmarks.\n\n## 2. Methodology\n\nOur approach combines three key innovations:\n- Self-replication engine (Genesis)\n- Gene mutation mechanism (Mutation)  \n- Automatic scoring and evolution (Evolver)\n\nThe core insight ",
+        "original_preview": "# IGP Research Technical Report 2026-Q3\n\nAuthor: IGP Research Team | Version: 1.2.0 | Date: 2026-07-01\n\n## 1. Executive Summary\n\nThis report presents our latest breakthrough in self-evolving agent sys",
+        "full_length": 1327
+      }
+    },
+    {
+      "timestamp": "2026-07-02T17:51:28.121132",
+      "engine": "igp-docmind-v2.0.0",
+      "stats": {
+        "chars": 627,
+        "words": 78,
+        "lines": 24,
+        "paragraphs": 6,
+        "compressed_ratio": "85%"
+      },
+      "metadata": {
+        "author": "Technical Documentation Team",
+        "keywords": [
+          "Configuration"
+        ]
+      },
+      "structure": {
+        "headers": 0,
+        "header_tree": [],
+        "lists": {
+          "bullet": 8,
+          "numbered": 3,
+          "definition": 4
+        }
+      },
+      "content": {
+        "compressed": "DeepSeek-OCR Configuration Guide\n================================\n\nAuthor: Technical Documentation Team\nVersion: 1.0\n\nPrerequisites:\n- Python 3.10+\n- CUDA 12.1 (optional, for GPU)\n- vLLM 0.8.5+\n\nInstallation Steps:\n1. [...中间2句压缩为1句关键词] Download model: from huggingface\n\nKey Configuration:\n- model_name: deepseek-ai/DeepSeek-OCR\n- prompt format: <image>\\n<|grounding|>Convert the document to markdown\n- batch_size: 32 (default)\n\nNotes:\n- A single A100-40G can process 200K+ pages daily\n- Visual causal",
+        "original_preview": "DeepSeek-OCR Configuration Guide\n================================\n\nAuthor: Technical Documentation Team\nVersion: 1.0\n\nPrerequisites:\n- Python 3.10+\n- CUDA 12.1 (optional, for GPU)\n- vLLM 0.8.5+\n\nInsta",
+        "full_length": 627
+      }
+    },
+    {
+      "timestamp": "2026-07-02T17:51:28.121552",
+      "engine": "igp-docmind-v2.0.0",
+      "stats": {
+        "chars": 128,
+        "words": 7,
+        "lines": 3,
+        "paragraphs": 2,
+        "compressed_ratio": "100%"
+      },
+      "metadata": {
+        "keywords": []
+      },
+      "structure": {
+        "headers": 0,
+        "header_tree": [],
+        "lists": {
+          "bullet": 0,
+          "numbered": 0,
+          "definition": 0
+        }
+      },
+      "content": {
+        "compressed": "MEMO: DocMind v2 Release\n\n今天完成了DocMind v2的研发，吸收了DeepSeek-OCR的视觉压缩思想和PaddleOCR的工程化设计。核心升级点：多类型支持、结构检测、批量JSONL。下一步将接入IGP Pipeline。",
+        "original_preview": "MEMO: DocMind v2 Release\n\n今天完成了DocMind v2的研发，吸收了DeepSeek-OCR的视觉压缩思想和PaddleOCR的工程化设计。核心升级点：多类型支持、结构检测、批量JSONL。下一步将接入IGP Pipeline。",
+        "full_length": 128
+      }
+    }
+  ]
+}

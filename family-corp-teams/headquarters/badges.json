@@ -1,0 +1,121 @@
+{
+  "version": "v1",
+  "badge_definitions": {
+    "first_project": {
+      "name": "🔥 开山鼻祖",
+      "desc": "完成第一个自主研发项目",
+      "icon": "🔥"
+    },
+    "pipeline_pioneer": {
+      "name": "⚡ 流水线先锋",
+      "desc": "跑通监控→通信→自愈→汇报全链路",
+      "icon": "⚡"
+    },
+    "self_replicator": {
+      "name": "🧬 基因复制者",
+      "desc": "参与Agent自我复制",
+      "icon": "🧬"
+    },
+    "bug_hunter": {
+      "name": "🐛 猎虫者",
+      "desc": "发现并修复一个真实bug",
+      "icon": "🐛"
+    },
+    "zero_token": {
+      "name": "💎 零耗大师",
+      "desc": "0 token完成项目",
+      "icon": "💎"
+    },
+    "fast_shipper": {
+      "name": "🚀 极速发货",
+      "desc": "30分钟内交付项目",
+      "icon": "🚀"
+    },
+    "quality_guardian": {
+      "name": "🛡 质量卫士",
+      "desc": "代码评分8分以上",
+      "icon": "🛡"
+    },
+    "agent_builder": {
+      "name": "🤖 Agent建筑师",
+      "desc": "创建或升级Agent模块",
+      "icon": "🤖"
+    }
+  },
+  "awards": {
+    "infra-team2": {
+      "department": "infra-team2",
+      "badges": [
+        "first_project",
+        "zero_token",
+        "agent_builder",
+        "⚡ 融合中枢"
+      ],
+      "note": "D2A Agent协议研发并集成到V4",
+      "total": 4
+    },
+    "ghost-team": {
+      "department": "ghost-team",
+      "badges": [
+        "first_project",
+        "zero_token",
+        "bug_hunter",
+        "fast_shipper",
+        "📋 自动日报"
+      ],
+      "note": "Ghost v1→v2 检测+自愈+报警",
+      "total": 5
+    },
+    "hq-swat": {
+      "department": "hq-swat",
+      "badges": [
+        "pipeline_pioneer",
+        "self_replicator",
+        "🧬 自我进化"
+      ],
+      "note": "Nexus融合系统 + Genesis自我复制",
+      "total": 3
+    }
+  },
+  "leaderboard": {
+    "updated": "2026-07-01T09:45",
+    "rankings": [
+      {
+        "rank": 1,
+        "department": "ghost-team",
+        "badges": 5,
+        "badge_list": [
+          "first_project",
+          "zero_token",
+          "bug_hunter",
+          "fast_shipper",
+          "📋 自动日报"
+        ],
+        "note": "Ghost v1→v2 检测+自愈+报警"
+      },
+      {
+        "rank": 2,
+        "department": "infra-team2",
+        "badges": 4,
+        "badge_list": [
+          "first_project",
+          "zero_token",
+          "agent_builder",
+          "⚡ 融合中枢"
+        ],
+        "note": "D2A Agent协议研发并集成到V4"
+      },
+      {
+        "rank": 3,
+        "department": "hq-swat",
+        "badges": 3,
+        "badge_list": [
+          "pipeline_pioneer",
+          "self_replicator",
+          "🧬 自我进化"
+        ],
+        "note": "Nexus融合系统 + Genesis自我复制"
+      }
+    ]
+  }
+}

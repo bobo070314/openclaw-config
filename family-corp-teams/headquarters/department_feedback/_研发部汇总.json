@@ -1,0 +1,21 @@
+{
+  "title": "IGP 部门实操反馈汇总",
+  "time": "2026-07-01T11:10:36",
+  "departments_ran": 12,
+  "status": "done",
+  "breakthroughs": [
+    "1.ghost-team(igp-ghost): 100%通过",
+    "2.infra(d2a-server): 100%通过",
+    "3.quality(igp-quality): 100%通过",
+    "4.frontend(igp-dashboard): 100%通过",
+    "5.backend(igp-d2a): 100%通过",
+    "6.ai(igp-knowledge): 100%通过",
+    "7.mobile(igp-cli): 100%通过",
+    "8.design(igp-design): 100%通过",
+    "9.growth(igp-scanner): 100%通过",
+    "10.data(igp-data): 100%通过",
+    "11.tech-support(igp-diag): 100%通过",
+    "12.compliance(igp-gate): 100%通过"
+  ],
+  "problems": []
+}

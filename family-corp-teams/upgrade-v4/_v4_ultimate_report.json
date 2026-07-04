@@ -1,0 +1,156 @@
+{
+  "engine": "IGP v4 Unified Engine",
+  "modules": [
+    "SkillsLoader",
+    "MCPClient",
+    "ProviderRouter",
+    "PlanActManager",
+    "CodeReviewAgent",
+    "A2ABridge",
+    "AgentCI"
+  ],
+  "skills": {
+    "count": 26,
+    "ranking": [
+      {
+        "skill": "query-frontend",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-backend",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-infrastructure",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-ai",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-quality",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-mobile",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-design",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-content",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-data",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-growth",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-compliance",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-pmo",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-tech-support",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-advertising-anime",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      },
+      {
+        "skill": "query-ecommerce-marketing",
+        "score": 100.0,
+        "uses": 1,
+        "successes": 1,
+        "failures": 0
+      }
+    ]
+  },
+  "providers": {
+    "count": 2,
+    "leaderboard": [
+      {
+        "provider": "qwen-turbo",
+        "win_rate": 85.3,
+        "wins": 29,
+        "losses": 5,
+        "tasks": 34
+      },
+      {
+        "provider": "qwen-plus",
+        "win_rate": 25.0,
+        "wins": 3,
+        "losses": 9,
+        "tasks": 12
+      }
+    ]
+  },
+  "mcp": {
+    "servers": []
+  },
+  "agents": {
+    "registered": 1
+  },
+  "scores": {
+    "skills": 10,
+    "provider_reliability": 6,
+    "pk_mechanism": 9.5,
+    "self_bootstrap": 8.5,
+    "mcp_compatibility": 8.5,
+    "safety": 8.5,
+    "total": 8.5
+  }
+}

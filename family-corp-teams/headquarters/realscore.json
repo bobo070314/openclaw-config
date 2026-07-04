@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-07-01T10:37:03.845511",
+  "rankings": [
+    {
+      "rank": 1,
+      "project": "igp-docmind",
+      "real_score": 168,
+      "runnable": true,
+      "importable": true,
+      "volume": 5,
+      "doc_score": 3,
+      "core_score": 6
+    },
+    {
+      "rank": 2,
+      "project": "headquarters",
+      "real_score": 120,
+      "runnable": true,
+      "importable": true,
+      "volume": 5,
+      "doc_score": 3,
+      "core_score": 5
+    },
+    {
+      "rank": 3,
+      "project": "igp-ghost",
+      "real_score": 105,
+      "runnable": true,
+      "importable": true,
+      "volume": 4,
+      "doc_score": 2,
+      "core_score": 6
+    },
+    {
+      "rank": 4,
+      "project": "igp-d2a",
+      "real_score": 42,
+      "runnable": true,
+      "importable": true,
+      "volume": 2,
+      "doc_score": 1,
+      "core_score": 6
+    },
+    {
+      "rank": 5,
+      "project": "igp-evolver",
+      "real_score": 30,
+      "runnable": true,
+      "importable": true,
+      "volume": 4,
+      "doc_score": 0,
+      "core_score": 5
+    },
+    {
+      "rank": 6,
+      "project": "igp-genesis",
+      "real_score": 30,
+      "runnable": true,
+      "importable": true,
+      "volume": 4,
+      "doc_score": 0,
+      "core_score": 5
+    },
+    {
+      "rank": 7,
+      "project": "igp-mutation",
+      "real_score": 24,
+      "runnable": true,
+      "importable": true,
+      "volume": 3,
+      "doc_score": 0,
+      "core_score": 5
+    },
+    {
+      "rank": 8,
+      "project": "gauntlet",
+      "real_score": 12,
+      "runnable": true,
+      "importable": true,
+      "volume": 1,
+      "doc_score": 0,
+      "core_score": 5
+    },
+    {
+      "rank": 9,
+      "project": "igp-federation",
+      "real_score": 4,
+      "runnable": false,
+      "importable": true,
+      "volume": 3,
+      "doc_score": 1,
+      "core_score": 4
+    }
+  ]
+}

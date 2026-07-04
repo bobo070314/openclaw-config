@@ -1,0 +1,148 @@
+{
+  "version": "fusion-1.0",
+  "timestamp": "2026-07-01T10:53:16",
+  "results": {
+    "金融风控": {
+      "doc_name": "金融风控",
+      "time": 6.93,
+      "rule": {
+        "total_paras": 4,
+        "headers": 3,
+        "tables": 1,
+        "lists_bullet": 0,
+        "lists_number": 0,
+        "code_blocks": 0,
+        "avg_para_len": 58,
+        "has_date": true,
+        "has_author": true
+      },
+      "dna": {
+        "sequence": "AAAG",
+        "length": 4,
+        "gc_content": 0.25,
+        "composition": {
+          "A": 3,
+          "G": 1
+        }
+      },
+      "finance": {
+        "total_numbers": 16,
+        "monetary_values": 0,
+        "percentages": 2,
+        "risk_signals": 3,
+        "sample_numbers": [
+          "2026",
+          "2",
+          "2026",
+          "07",
+          "01",
+          "18.5",
+          "24.3",
+          "31.4%"
+        ]
+      },
+      "llm": {
+        "金融风险": "风险指标:VIX上升31.4%，欧洲主权债务利差扩大 | 建议:降低权益5%敞口。",
+        "技术审计": "结构评估:合理 | 问题:无明显问题",
+        "知识图谱": "1. 全球市场波动率指数--上升-->24.3\n2. 美联储--利率决议-->市场风险\n3. 欧洲主权债务--利差扩大-->180bp",
+        "DNA视角": "VIX增31.4%，组合需调，降权益5%以控风险。",
+        "投资视角": "卖出权益，持有固收、大宗商品、外汇。置信度：75%。"
+      }
+    },
+    "技术文档": {
+      "doc_name": "技术文档",
+      "time": 5.75,
+      "rule": {
+        "total_paras": 5,
+        "headers": 5,
+        "tables": 0,
+        "lists_bullet": 0,
+        "lists_number": 0,
+        "code_blocks": 2,
+        "avg_para_len": 101,
+        "has_date": true,
+        "has_author": false
+      },
+      "dna": {
+        "sequence": "AAAAA",
+        "length": 5,
+        "gc_content": 0.0,
+        "composition": {
+          "A": 5
+        }
+      },
+      "finance": {
+        "total_numbers": 11,
+        "monetary_values": 0,
+        "percentages": 0,
+        "risk_signals": 0,
+        "sample_numbers": [
+          "5",
+          "5.0",
+          "0",
+          "2026",
+          "07",
+          "01",
+          "2.5",
+          "72B"
+        ]
+      },
+      "llm": {
+        "金融风险": "风险指标:API密钥泄露 | 建议:定期更换密钥，限制访问权限。",
+        "技术审计": "结构评估:清晰 | 问题:依赖项未列出所有必要库。",
+        "知识图谱": "1. IGP DocMind--版本-->5.0.0\n2. FusionEngine--分析-->report.txt\n3. SILICONFLOW_API_KEY--设置-->your_key",
+        "DNA视角": "分析文档：安装指南、使用方法、配置参数、故障排除。",
+        "投资视角": "持有，置信度70%。观察市场反应和更新效果。"
+      }
+    },
+    "会议记录": {
+      "doc_name": "会议记录",
+      "time": 5.62,
+      "rule": {
+        "total_paras": 4,
+        "headers": 4,
+        "tables": 0,
+        "lists_bullet": 0,
+        "lists_number": 0,
+        "code_blocks": 0,
+        "avg_para_len": 44,
+        "has_date": true,
+        "has_author": false
+      },
+      "dna": {
+        "sequence": "AAAA",
+        "length": 4,
+        "gc_content": 0.0,
+        "composition": {
+          "A": 4
+        }
+      },
+      "finance": {
+        "total_numbers": 17,
+        "monetary_values": 0,
+        "percentages": 0,
+        "risk_signals": 0,
+        "sample_numbers": [
+          "2026",
+          "07",
+          "01",
+          "1.",
+          "4",
+          "5",
+          "2.",
+          "3."
+        ]
+      },
+      "llm": {
+        "金融风险": "风险指标:无明显风险 | 建议:关注部门重组影响",
+        "技术审计": "结构评估:合理 | 问题:无明确部门重组方案细节",
+        "知识图谱": "1. DocMind v4--升级-->DocMind v5\n2. 团队--分配-->实施负责人\n3. RealScore--突破-->200分",
+        "DNA视角": "序列分析：项目进展正向，部门调整待定，新成员加入，Q3目标明确。",
+        "投资视角": "持有，置信度70%。会议内容积极，但需观察重组效果。"
+      }
+    }
+  },
+  "engines": 4,
+  "llm_branches": 5,
+  "total_docs": 3
+}

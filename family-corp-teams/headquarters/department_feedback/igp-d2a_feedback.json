@@ -1,0 +1,30 @@
+{
+  "department": "5.backend",
+  "project": "igp-d2a",
+  "absorb_source": "D2A协议",
+  "tool": "Agent协议层运行",
+  "files": 3,
+  "success_rate": "100% (3/3)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "agent_protocol.py",
+      "status": "ok",
+      "output": "    quality-team1: 2条日志 |     infra-team2: 2条日志 |     hq-SWAT: 1条日志 | Total messages: 5 | Protocol check: PASSED",
+      "time": 0.08
+    },
+    {
+      "file": "d2a_v2.py",
+      "status": "ok",
+      "output": "  D2A通信测试: |     发送 → ghost-team: patrol |     回复: headquarters→ghost-team: patrol done |     广播: 12/12个Agent响应 |   ✅ D2A v2 通信层就绪",
+      "time": 0.07
+    },
+    {
+      "file": "test_agents.py",
+      "status": "ok",
+      "output": "  quality-team1: inbox=0, logs=2 |   infra-team2: inbox=0, logs=2 |   hq-SWAT: inbox=0, logs=1 | ✅ IGP-D2A Agent通信协议验证通过！ | OK",
+      "time": 0.07
+    }
+  ],
+  "time": "2026-07-01T11:10:35"
+}

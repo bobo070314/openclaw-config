@@ -1,0 +1,120 @@
+{
+  "timestamp": "2026-07-01T09:52:57.584725",
+  "scores": {
+    "gauntlet": {
+      "innovation": 1,
+      "completion": 2,
+      "total_score": 2,
+      "files": 1
+    },
+    "igp-d2a": {
+      "innovation": 5,
+      "completion": 4,
+      "total_score": 20,
+      "files": 4
+    },
+    "igp-evolver": {
+      "innovation": 3,
+      "completion": 2,
+      "total_score": 6,
+      "files": 2
+    },
+    "igp-federation": {
+      "innovation": 3,
+      "completion": 3,
+      "total_score": 9,
+      "files": 5
+    },
+    "igp-genesis": {
+      "innovation": 5,
+      "completion": 3,
+      "total_score": 15,
+      "files": 14
+    },
+    "igp-ghost": {
+      "innovation": 4,
+      "completion": 3,
+      "total_score": 12,
+      "files": 4
+    },
+    "igp-mutation": {
+      "innovation": 3,
+      "completion": 2,
+      "total_score": 6,
+      "files": 2
+    }
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "project": "igp-d2a",
+      "score": 20,
+      "innovation": 5,
+      "completion": 4
+    },
+    {
+      "rank": 2,
+      "project": "igp-genesis",
+      "score": 15,
+      "innovation": 5,
+      "completion": 3
+    },
+    {
+      "rank": 3,
+      "project": "igp-ghost",
+      "score": 12,
+      "innovation": 4,
+      "completion": 3
+    },
+    {
+      "rank": 4,
+      "project": "igp-federation",
+      "score": 9,
+      "innovation": 3,
+      "completion": 3
+    },
+    {
+      "rank": 5,
+      "project": "igp-evolver",
+      "score": 6,
+      "innovation": 3,
+      "completion": 2
+    },
+    {
+      "rank": 6,
+      "project": "igp-mutation",
+      "score": 6,
+      "innovation": 3,
+      "completion": 2
+    },
+    {
+      "rank": 7,
+      "project": "gauntlet",
+      "score": 2,
+      "innovation": 1,
+      "completion": 2
+    }
+  ],
+  "promotions": {
+    "headquarters": {
+      "project": "igp-genesis",
+      "score": 15,
+      "reason": "以项目 igp-genesis (评分 15) 升任 headquarters 总监"
+    },
+    "infra": {
+      "project": "igp-d2a",
+      "score": 20,
+      "reason": "以项目 igp-d2a (评分 20) 升任 infra 总监"
+    },
+    "quality": {
+      "project": "igp-evolver",
+      "score": 6,
+      "reason": "以项目 igp-evolver (评分 6) 升任 quality 总监"
+    },
+    "frontend": {
+      "project": "igp-ghost",
+      "score": 12,
+      "reason": "以项目 igp-ghost (评分 12) 升任 frontend 总监"
+    }
+  }
+}

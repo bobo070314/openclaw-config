@@ -1,0 +1,244 @@
+{
+  "chromosomes": {
+    "a2a": {
+      "files": 0,
+      "lines": 0,
+      "classes": 0,
+      "functions": 0
+    },
+    "chromosome1": {
+      "files": 6,
+      "lines": 571,
+      "classes": 6,
+      "functions": 35
+    },
+    "chromosome10": {
+      "files": 3,
+      "lines": 277,
+      "classes": 3,
+      "functions": 30
+    },
+    "chromosome11": {
+      "files": 2,
+      "lines": 198,
+      "classes": 1,
+      "functions": 10
+    },
+    "chromosome12": {
+      "files": 2,
+      "lines": 203,
+      "classes": 4,
+      "functions": 11
+    },
+    "chromosome2": {
+      "files": 5,
+      "lines": 480,
+      "classes": 6,
+      "functions": 35
+    },
+    "chromosome3": {
+      "files": 4,
+      "lines": 115,
+      "classes": 2,
+      "functions": 12
+    },
+    "chromosome4": {
+      "files": 4,
+      "lines": 154,
+      "classes": 5,
+      "functions": 17
+    },
+    "chromosome5": {
+      "files": 4,
+      "lines": 205,
+      "classes": 3,
+      "functions": 18
+    },
+    "chromosome6": {
+      "files": 7,
+      "lines": 545,
+      "classes": 8,
+      "functions": 44
+    },
+    "chromosome7": {
+      "files": 4,
+      "lines": 269,
+      "classes": 4,
+      "functions": 27
+    },
+    "chromosome8": {
+      "files": 4,
+      "lines": 268,
+      "classes": 3,
+      "functions": 20
+    },
+    "chromosome9": {
+      "files": 2,
+      "lines": 163,
+      "classes": 1,
+      "functions": 4
+    },
+    "commerce": {
+      "files": 0,
+      "lines": 0,
+      "classes": 0,
+      "functions": 0
+    },
+    "guardian": {
+      "files": 0,
+      "lines": 0,
+      "classes": 0,
+      "functions": 0
+    },
+    "mcp": {
+      "files": 0,
+      "lines": 0,
+      "classes": 0,
+      "functions": 0
+    },
+    "provider": {
+      "files": 0,
+      "lines": 0,
+      "classes": 0,
+      "functions": 0
+    },
+    "skills": {
+      "files": 0,
+      "lines": 0,
+      "classes": 0,
+      "functions": 0
+    }
+  },
+  "v5_root": {
+    "files": 18,
+    "lines": 3053,
+    "classes": 4,
+    "functions": 61,
+    "modules": [
+      "v5\\v5_absorb_chromosome9.py",
+      "v5\\v5_absorption_plan2.py",
+      "v5\\v5_closed_loop_pipeline.py",
+      "v5\\v5_cruise.py",
+      "v5\\v5_dashboard.py",
+      "v5\\v5_defect_audit.py",
+      "v5\\v5_engine_loop.py",
+      "v5\\v5_final_all.py",
+      "v5\\v5_final_verify.py",
+      "v5\\v5_fission_engine.py",
+      "v5\\v5_ghost_patrol.py",
+      "v5\\v5_github_scanner.py",
+      "v5\\v5_health_check.py",
+      "v5\\v5_oneclick.py",
+      "v5\\v5_pk_arena.py",
+      "v5\\v5_pk_battle.py",
+      "v5\\v5_skills_registry.py",
+      "v5\\v5_verify.py"
+    ]
+  },
+  "total": {
+    "files": 65,
+    "lines": 6501,
+    "classes": 50,
+    "functions": 324
+  },
+  "top_imports": [
+    [
+      "Dict",
+      19
+    ],
+    [
+      "os",
+      19
+    ],
+    [
+      "json",
+      14
+    ],
+    [
+      "sys",
+      14
+    ],
+    [
+      "time",
+      9
+    ],
+    [
+      "logging",
+      4
+    ],
+    [
+      "datetime",
+      4
+    ],
+    [
+      "tempfile",
+      3
+    ],
+    [
+      "dataclass",
+      3
+    ],
+    [
+      "AgentOSKernel",
+      3
+    ],
+    [
+      "AP2Protocol",
+      3
+    ],
+    [
+      "defaultdict",
+      2
+    ],
+    [
+      "re",
+      2
+    ],
+    [
+      "Provider",
+      2
+    ],
+    [
+      "AgentCommerce",
+      2
+    ]
+  ],
+  "weaknesses": {
+    "missing_main_block": 50,
+    "missing_main_list": [
+      "v5\\chromosomes\\chromosome1\\infra\\igp_mcp_pk.py",
+      "v5\\chromosomes\\chromosome1\\infra\\igp_mcp_v5_client.py",
+      "v5\\chromosomes\\chromosome1\\infra\\igp_mcp_v5_server.py",
+      "v5\\chromosomes\\chromosome1\\infra\\run.py",
+      "v5\\chromosomes\\chromosome10\\infra\\run.py",
+      "v5\\chromosomes\\chromosome10\\infra\\v5_contract_decorators.py",
+      "v5\\chromosomes\\chromosome11\\infra\\run.py",
+      "v5\\chromosomes\\chromosome12\\infra\\run.py",
+      "v5\\chromosomes\\chromosome2\\infra\\a2a_agent_card.py",
+      "v5\\chromosomes\\chromosome2\\infra\\a2a_discovery.py",
+      "v5\\chromosomes\\chromosome2\\infra\\a2a_task_protocol.py",
+      "v5\\chromosomes\\chromosome2\\infra\\run.py",
+      "v5\\chromosomes\\chromosome3\\infra\\run.py",
+      "v5\\chromosomes\\chromosome3\\infra\\skill_market.py",
+      "v5\\chromosomes\\chromosome3\\infra\\skill_package.py",
+      "v5\\chromosomes\\chromosome3\\infra\\skill_pk_rank.py",
+      "v5\\chromosomes\\chromosome4\\infra\\provider_abstraction.py",
+      "v5\\chromosomes\\chromosome4\\infra\\provider_pk.py",
+      "v5\\chromosomes\\chromosome4\\infra\\provider_router.py",
+      "v5\\chromosomes\\chromosome4\\infra\\run.py"
+    ],
+    "thin_classes_0_1_method": 2,
+    "thin_classes_list": [
+      [
+        "v5\\chromosomes\\chromosome12\\infra\\v5_auto_tester.py",
+        "V5Logger",
+        1
+      ],
+      [
+        "v5\\chromosomes\\chromosome12\\infra\\v5_auto_tester.py",
+        "SafeRunner",
+        1
+      ]
+    ]
+  }
+}

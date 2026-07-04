@@ -1,0 +1,14 @@
+{"timestamp":"2026-07-02T16:20:15.517Z","score":18,"grade":"F","targetAgent":["claude"],"trigger":"score"}
+{"timestamp":"2026-07-02T16:23:36.468Z","score":63,"grade":"C","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T16:27:22.330Z","score":65,"grade":"C","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T16:30:37.045Z","score":65,"grade":"C","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T16:42:59.346Z","score":67,"grade":"C","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T17:33:20.099Z","score":67,"grade":"C","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T17:35:11.975Z","score":80,"grade":"B","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T17:35:25.175Z","score":80,"grade":"B","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T17:35:41.171Z","score":80,"grade":"B","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T17:35:54.609Z","score":80,"grade":"B","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T17:36:07.899Z","score":80,"grade":"B","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T17:36:21.724Z","score":80,"grade":"B","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T17:36:37.140Z","score":80,"grade":"B","targetAgent":["claude","codex"],"trigger":"score"}
+{"timestamp":"2026-07-02T17:40:54.981Z","score":80,"grade":"B","targetAgent":["claude","codex"],"trigger":"score"}

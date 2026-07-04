@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-07-01T11:01:49",
+    "type": "ghost_v3_patrol",
+    "total_issues": 0,
+    "total_healed": 0
+  },
+  {
+    "timestamp": "2026-07-01T11:08:18",
+    "type": "ghost_v3_patrol",
+    "total_issues": 6,
+    "total_healed": 6
+  },
+  {
+    "timestamp": "2026-07-01T11:10:09",
+    "type": "ghost_v3_patrol",
+    "total_issues": 6,
+    "total_healed": 0
+  },
+  {
+    "timestamp": "2026-07-01T11:10:35",
+    "type": "ghost_v3_patrol",
+    "total_issues": 6,
+    "total_healed": 0
+  },
+  {
+    "timestamp": "2026-07-01T11:15:26",
+    "type": "ghost_v3_patrol",
+    "total_issues": 6,
+    "total_healed": 0
+  },
+  {
+    "timestamp": "2026-07-01T11:16:44",
+    "type": "ghost_v3_patrol",
+    "total_issues": 6,
+    "total_healed": 0
+  },
+  {
+    "timestamp": "2026-07-02T17:51:44",
+    "type": "ghost_v3_patrol",
+    "total_issues": 5,
+    "total_healed": 0
+  }
+]

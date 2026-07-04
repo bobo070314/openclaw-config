@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Solid.js 2.0",
+    "source": "github",
+    "stars": 35000,
+    "dept": "frontend",
+    "reason": "新信号响应框架，性能优于React",
+    "scanned_at": "2026-06-30T20:01:09.690483",
+    "status": "absorbed",
+    "absorbed_at": "2026-06-30T20:21:00.252427",
+    "absorbed_complete": "2026-06-30T20:21:14.993248"
+  },
+  {
+    "name": "Bun 1.2",
+    "source": "github",
+    "stars": 28000,
+    "dept": "backend",
+    "reason": "全栈JS runtime，替代Node",
+    "scanned_at": "2026-06-30T20:01:09.690504",
+    "status": "absorbed",
+    "absorbed_at": "2026-06-30T20:21:00.255412",
+    "absorbed_complete": "2026-06-30T20:21:14.993255"
+  },
+  {
+    "name": "MLX Swift",
+    "source": "github",
+    "stars": 15000,
+    "dept": "ai",
+    "reason": "Apple芯片本地AI推理",
+    "scanned_at": "2026-06-30T20:01:09.690515",
+    "status": "absorbed",
+    "absorbed_at": "2026-06-30T20:21:00.258554",
+    "absorbed_complete": "2026-06-30T20:21:14.993258"
+  },
+  {
+    "name": "DuckDB 1.0",
+    "source": "hn",
+    "stars": 12000,
+    "dept": "data",
+    "reason": "嵌入式OLAP数据库",
+    "scanned_at": "2026-06-30T20:01:09.690524",
+    "status": "absorbed",
+    "absorbed_at": "2026-06-30T20:21:00.262109",
+    "absorbed_complete": "2026-06-30T20:21:14.993260"
+  },
+  {
+    "name": "Penpot",
+    "source": "github",
+    "stars": 18000,
+    "dept": "design",
+    "reason": "开源Figma替代",
+    "scanned_at": "2026-06-30T20:01:09.690531",
+    "status": "absorbed",
+    "absorbed_at": "2026-06-30T20:21:00.266215",
+    "absorbed_complete": "2026-06-30T20:21:14.993262"
+  },
+  {
+    "name": "Linear",
+    "source": "hn",
+    "stars": 20000,
+    "dept": "pmo",
+    "reason": "极速项目管理工具",
+    "scanned_at": "2026-06-30T20:01:09.690539",
+    "status": "absorbed",
+    "absorbed_at": "2026-06-30T20:21:00.270143",
+    "absorbed_complete": "2026-06-30T20:21:14.993264"
+  }
+]

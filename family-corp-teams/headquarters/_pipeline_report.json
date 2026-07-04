@@ -1,0 +1,28 @@
+{
+  "id": "pipeline-094031",
+  "ts": "2026-07-01T09:40:31.310219",
+  "from": "pipeline-orchestrator",
+  "to": "hq-SWAT",
+  "action": "report",
+  "data": {
+    "timestamp": "2026-07-01T09:40:31.310219",
+    "pipeline": "monitor → communicate → heal → report",
+    "status": "OK",
+    "steps": {
+      "monitor": {
+        "status": "OK",
+        "checks_ok": 4,
+        "checks_total": 4
+      },
+      "communicate": {
+        "messages": 2,
+        "alert_triggered": false
+      },
+      "heal": {
+        "fixes_applied": 0,
+        "fixes": []
+      }
+    },
+    "summary": "系统健康，无需干预"
+  }
+}

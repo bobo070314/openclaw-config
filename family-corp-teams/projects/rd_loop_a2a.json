@@ -1,0 +1,33 @@
+{
+  "project": "IGP-D2A — Digest-to-Act 内部Agent通讯模块",
+  "date": "2026-07-01",
+  "inspiration": "Google A2A Protocol (Linux Foundation, 150+企业), MCP Python SDK v2",
+  "problem": "igp_a2a_bridge.py 当前为空文件（5分）",
+  "slogan": "不让IGP的Agent之间打电话用吼的",
+  "tech": "Python 3.14 标准库 + JSON over HTTP",
+  "steps": [
+    {
+      "step": "1_rd",
+      "label": "研发 — 实现IGP Agent协议",
+      "status": "done",
+      "output": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-d2a\\agent_protocol.py"
+    },
+    {
+      "step": "2_verify",
+      "label": "验证 — 跑通通信测试",
+      "status": "done",
+      "output": "test_agents.py 运行成功"
+    },
+    {
+      "step": "3_digest",
+      "label": "消化 — 写入最佳实践库",
+      "status": "done"
+    },
+    {
+      "step": "4_upgrade",
+      "label": "升级 — 替换旧方案",
+      "status": "done"
+    }
+  ],
+  "result": "PASS"
+}

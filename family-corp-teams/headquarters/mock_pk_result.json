@@ -1,0 +1,27 @@
+{
+  "ticket_id": "EVO-TEST-001",
+  "department": "frontend",
+  "solutions": [
+    {
+      "team": "team1(Next.js)",
+      "approach": "SSR+ISR+CDN缓存",
+      "quality": 9,
+      "token": 0
+    },
+    {
+      "team": "team2(Vue3)",
+      "approach": "Vue3懒加载+图片压缩",
+      "quality": 7,
+      "token": 0
+    },
+    {
+      "team": "team3(Hono)",
+      "approach": "Hono边缘渲染",
+      "quality": 6,
+      "token": 300
+    }
+  ],
+  "winner": "team1(Next.js)",
+  "loser": "team3(Hono)",
+  "timestamp": "2026-07-01T09:21:48.811969"
+}

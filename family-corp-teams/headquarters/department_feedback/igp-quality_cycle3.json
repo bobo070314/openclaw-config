@@ -1,0 +1,7 @@
+{
+  "dept": "quality",
+  "project": "igp-quality",
+  "absorb": "GLM-OCR",
+  "task": "用upgrade.py扫描所有项目质量分，输出质量榜单",
+  "status": "ok"
+}

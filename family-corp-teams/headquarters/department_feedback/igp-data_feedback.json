@@ -1,0 +1,18 @@
+{
+  "department": "10.data",
+  "project": "igp-data",
+  "absorb_source": "金融数字分析",
+  "tool": "数据看板验证",
+  "files": 1,
+  "success_rate": "100% (1/1)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "data.py",
+      "status": "ok",
+      "output": "IGP Data Dashboard |   Last patrol: ghost_v3_patrol | issues:6 |   Timestamp: 11:10:36 |   Data Dashboard OK",
+      "time": 0.07
+    }
+  ],
+  "time": "2026-07-01T11:10:36"
+}

@@ -1,0 +1,147 @@
+{
+  "unified_report": {
+    "generated": "2026-07-01T09:39:56.641289",
+    "name": "IGP NEXUS — 融合系统报告"
+  },
+  "scan": {
+    "timestamp": "2026-07-01T09:39:56.638915",
+    "nexus_version": "v1",
+    "modules": {
+      "ghost": {
+        "ok": true,
+        "size_kb": 8.0
+      },
+      "d2a": {
+        "ok": true,
+        "size_kb": 4.2
+      },
+      "v4_engine": {
+        "ok": false,
+        "size_kb": 0.0
+      },
+      "v4_bridge": {
+        "ok": true,
+        "size_kb": 4.2
+      },
+      "heartbeat": {
+        "ok": true,
+        "size_kb": 0.4
+      },
+      "policy": {
+        "ok": true,
+        "size_kb": 1.3
+      }
+    },
+    "projects": {
+      "igp-d2a": {
+        "files": 4,
+        "file_list": [
+          "agent_protocol.py",
+          "BEST_PRACTICE.md",
+          "FEEDBACK.json",
+          "test_agents.py"
+        ]
+      },
+      "igp-ghost": {
+        "files": 4,
+        "file_list": [
+          "BEST_PRACTICE.md",
+          "ghost.py",
+          "ghost_cron.py",
+          "README.md"
+        ]
+      }
+    },
+    "departments": {
+      "frontend": {
+        "alive": true,
+        "reports": [
+          "evo-0034_report.md",
+          "evo-0038_report.md"
+        ]
+      },
+      "backend": {
+        "alive": true,
+        "reports": []
+      },
+      "infra": {
+        "alive": true,
+        "reports": []
+      },
+      "ai": {
+        "alive": true,
+        "reports": []
+      },
+      "mobile": {
+        "alive": true,
+        "reports": []
+      },
+      "design": {
+        "alive": true,
+        "reports": []
+      },
+      "quality": {
+        "alive": true,
+        "reports": [
+          "evo-0029_report.json",
+          "evo-0029_report_upgraded.json",
+          "evo-0032_report.json"
+        ]
+      },
+      "pmo": {
+        "alive": true,
+        "reports": []
+      },
+      "growth": {
+        "alive": true,
+        "reports": []
+      },
+      "data": {
+        "alive": true,
+        "reports": []
+      },
+      "tech-support": {
+        "alive": true,
+        "reports": []
+      },
+      "compliance": {
+        "alive": true,
+        "reports": []
+      }
+    },
+    "d2a_compatible": true,
+    "status": "ALERT",
+    "score": 5,
+    "score_max": 6
+  },
+  "agents": {
+    "agents_count": 4,
+    "messages_exchanged": 10,
+    "agents": {
+      "nexus": {
+        "agent": "nexus-core",
+        "dept": "headquarters",
+        "inbox_size": 2,
+        "total_logs": 4
+      },
+      "ghost": {
+        "agent": "ghost-sentinel",
+        "dept": "ghost-team",
+        "inbox_size": 0,
+        "total_logs": 3
+      },
+      "d2a": {
+        "agent": "d2a-broker",
+        "dept": "infra",
+        "inbox_size": 0,
+        "total_logs": 2
+      },
+      "swat": {
+        "agent": "hq-SWAT",
+        "dept": "headquarters",
+        "inbox_size": 0,
+        "total_logs": 1
+      }
+    }
+  }
+}

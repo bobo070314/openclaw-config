@@ -1,0 +1,7 @@
+{
+  "dept": "ai",
+  "project": "igp-knowledge",
+  "absorb": "LLM+DNA",
+  "task": "用knowledge.py建全项目索引（44文件）并测试3个搜索",
+  "status": "ok"
+}

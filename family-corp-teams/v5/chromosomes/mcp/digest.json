@@ -1,0 +1,13 @@
+{
+  "external_sources": [
+    "- [x] FastMCP SDK (pip install fastmcp)"
+  ],
+  "key_insights": [
+    "- [x] FastMCP SDK (pip install fastmcp)",
+    "- [ ] MCP filesystem server",
+    "- [ ] MCP git server",
+    "- [ ] MCP database servers (PostgreSQL, SQLite)"
+  ],
+  "gap_analysis": [],
+  "digest_at": "2026-07-01T03:41:28.694668+00:00"
+}

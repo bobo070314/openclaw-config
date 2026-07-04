@@ -1,0 +1,18 @@
+{
+  "department": "12.compliance",
+  "project": "igp-gate",
+  "absorb_source": "规则引擎",
+  "tool": "质量门禁验证",
+  "files": 1,
+  "success_rate": "100% (1/1)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "gate.py",
+      "status": "ok",
+      "output": "  ❌ projects\\igp-docmind\\docmind_v3.py |      - L365: 行过长(236字) |   ❌ projects\\igp-ghost\\ghost_cron.py |      - L80: 行过长(234字) |   检查完成: 46文件 | 4问题",
+      "time": 0.09
+    }
+  ],
+  "time": "2026-07-01T11:10:36"
+}

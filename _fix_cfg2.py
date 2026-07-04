@@ -1,0 +1,115 @@
+﻿import json, sys
+sys.stdout.reconfigure(encoding='utf-8')
+
+# ===== 用户提供的7个provider完整配置 =====
+providers = {
+    "deepseek": {
+        "baseUrl": "https://api.deepseek.com/v1",
+        "apiKey": "${DEEPSEEK_API_KEY}",
+        "api": "openai-completions",
+        "timeoutSeconds": 120,
+        "models": [
+            {"id": "deepseek-v4-flash", "name": "DeepSeek V4-Flash", "api": "openai-completions", "contextWindow": 128000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 2e-05, "output": 0.002}}
+        ]
+    },
+    "zhipu": {
+        "baseUrl": "https://open.bigmodel.cn/api/paas/v4/",
+        "apiKey": "${ZHIPU_API_KEY}",
+        "api": "openai-completions",
+        "timeoutSeconds": 120,
+        "models": [
+            {"id": "glm-4-flash", "name": "GLM-4-Flash", "api": "openai-completions", "contextWindow": 128000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0, "output": 0}},
+            {"id": "glm-4-flash-250315", "name": "GLM-4.7-Flash", "api": "openai-completions", "contextWindow": 200000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0, "output": 0}},
+            {"id": "glm-4-flashx", "name": "GLM-4-FlashX", "api": "openai-completions", "contextWindow": 128000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0.0001, "output": 0.0001}},
+            {"id": "glm-z1-air", "name": "GLM-Z1-Air", "api": "openai-completions", "contextWindow": 128000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0.0005, "output": 0.002}}
+        ]
+    },
+    "siliconflow": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "apiKey": "${SILICONFLOW_API_KEY}",
+        "api": "openai-completions",
+        "timeoutSeconds": 120,
+        "models": [
+            {"id": "Qwen/Qwen2.5-7B-Instruct", "name": "Qwen2.5-7B", "api": "openai-completions", "contextWindow": 32000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0, "output": 0}},
+            {"id": "Qwen/Qwen2.5-14B-Instruct", "name": "Qwen2.5-14B", "api": "openai-completions", "contextWindow": 32000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0, "output": 0}},
+            {"id": "THUDM/GLM-4-9B-0414", "name": "GLM-4-9B", "api": "openai-completions", "contextWindow": 128000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0, "output": 0}},
+            {"id": "deepseek-ai/DeepSeek-V3", "name": "DeepSeek-V3", "api": "openai-completions", "contextWindow": 160000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0.004, "output": 0.012}}
+        ]
+    },
+    "huoshan": {
+        "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+        "apiKey": "${HUOSHAN_API_KEY}",
+        "api": "openai-completions",
+        "timeoutSeconds": 120,
+        "models": [
+            {"id": "doubao-lite-32k", "name": "Doubao-Lite", "api": "openai-completions", "contextWindow": 32000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0, "output": 0}},
+            {"id": "doubao-seed-2-0-code-preview-260215", "name": "Doubao-Code", "api": "openai-completions", "contextWindow": 128000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0, "output": 0}}
+        ]
+    },
+    "aliyun": {
+        "baseUrl": "https://dashscope.aliyun.com/compatible-mode/v1",
+        "apiKey": "${ALIYUN_API_KEY}",
+        "api": "openai-completions",
+        "timeoutSeconds": 120,
+        "models": [
+            {"id": "qwen-plus", "name": "Qwen-Plus", "api": "openai-completions", "contextWindow": 128000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0.004, "output": 0.012}}
+        ]
+    },
+    "tencent": {
+        "baseUrl": "https://api.hunyuan.cloud.tencent.com/v1",
+        "apiKey": "${TENCENT_API_KEY}",
+        "api": "openai-completions",
+        "timeoutSeconds": 120,
+        "models": [
+            {"id": "hunyuan-lite", "name": "Hunyuan-lite", "api": "openai-completions", "contextWindow": 256000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0, "output": 0}}
+        ]
+    },
+    "baidu": {
+        "baseUrl": "https://qianfan.baidubce.com/v2",
+        "apiKey": "${BAIDU_API_KEY}",
+        "api": "openai-completions",
+        "timeoutSeconds": 120,
+        "models": [
+            {"id": "ernie-4.5-turbo-128k", "name": "ERNIE-4.5-Turbo", "api": "openai-completions", "contextWindow": 128000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0.0008, "output": 0.002}},
+            {"id": "deepseek-v4-flash", "name": "DeepSeek-V4-Flash", "api": "openai-completions", "contextWindow": 1000000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0.001, "output": 0.004}},
+            {"id": "deepseek-v3.2", "name": "DeepSeek-V3.2", "api": "openai-completions", "contextWindow": 1000000, "input": ["text"], "maxTokens": 8192, "cost": {"input": 0.002, "output": 0.008}}
+        ]
+    }
+}
+
+config = {
+    "tools": {"exec": {"mode": "full"}},
+    "agents": {
+        "defaults": {
+            "model": "deepseek/deepseek-v4-flash",
+            "workspace": "D:\\\\bobo\\\\openclaw-foreign\\\\workspace",
+            "timeoutSeconds": 72000,
+            "maxConcurrent": 2,
+            "memorySearch": {"provider": "none"}
+        },
+        "list": [{"id": "main", "default": True, "name": "OpenClaw Foreign", "identity": {"name": "OpenClaw Foreign"}, "skills": []}]
+    },
+    "models": {"mode": "merge", "providers": providers},
+    "plugins": {"load": {"paths": []}, "entries": {}},
+    "gateway": {
+        "mode": "local", "port": 18900, "bind": "loopback",
+        "auth": {"mode": "token", "token": "foreign18900"},
+        "controlUi": {"dangerouslyDisableDeviceAuth": True},
+        "http": {"endpoints": {"chatCompletions": {"enabled": True}}},
+        "remote": {"token": "foreign18900"}
+    }
+}
+
+path = r"D:\\bobo\\openclaw-foreign\\openclaw-minimal.json"
+with open(path, "w", encoding="utf-8") as f:
+    json.dump(config, f, ensure_ascii=False, indent=2)
+    f.write("\\n")
+
+with open(path, "r", encoding="utf-8") as f:
+    v = json.load(f)
+    p = v["models"]["providers"]
+    print("OK - valid JSON written")
+    for k, v2 in p.items():
+        m = v2["models"]
+        print(f"  {k}: {len(m)} models, timeout={v2.get('timeoutSeconds')}")
+    print(f"  gateway.mode={v['gateway']['mode']} port={v['gateway']['port']}")

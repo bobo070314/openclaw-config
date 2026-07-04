@@ -1,0 +1,460 @@
+[
+  {
+    "id": "31c75664",
+    "type": "observation",
+    "payload": {
+      "text": "AP2_Wallet signature verification failed: key points mismatch",
+      "entity": "AP2_Wallet",
+      "dept": "chromosome8"
+    },
+    "tags": [
+      "bug",
+      "sig"
+    ],
+    "ts": "2026-07-01T19:12:47.562906"
+  },
+  {
+    "id": "42989ef8",
+    "type": "observation",
+    "payload": {
+      "text": "SmartRouter route to provider-B returned 503 timeout",
+      "entity": "SmartRouter",
+      "dept": "chromosome4"
+    },
+    "tags": [
+      "bug",
+      "router"
+    ],
+    "ts": "2026-07-01T19:12:47.566658"
+  },
+  {
+    "id": "23b03d6d",
+    "type": "observation",
+    "payload": {
+      "text": "AgentOS Shell 'run' command EOFError",
+      "entity": "AgentOS",
+      "dept": "chromosome7"
+    },
+    "tags": [
+      "bug",
+      "shell"
+    ],
+    "ts": "2026-07-01T19:12:47.569360"
+  },
+  {
+    "id": "22e8de43",
+    "type": "observation",
+    "payload": {
+      "text": "CI/CD pipeline step 5 fail: subprocess encoding GBK",
+      "entity": "Pipeline",
+      "dept": "chromosome18"
+    },
+    "tags": [
+      "bug",
+      "ci"
+    ],
+    "ts": "2026-07-01T19:12:47.570680"
+  },
+  {
+    "id": "5216a155",
+    "type": "observation",
+    "payload": {
+      "text": "PRD queue deadlock: index collision on concurrent submit",
+      "entity": "PRD",
+      "dept": "chromosome19"
+    },
+    "tags": [
+      "bug",
+      "concurrency"
+    ],
+    "ts": "2026-07-01T19:12:47.572104"
+  },
+  {
+    "id": "1e51eed2",
+    "type": "observation",
+    "payload": {
+      "text": "LifecycleManager expired product cleanup failed: NoneType error",
+      "entity": "Lifecycle",
+      "dept": "chromosome3"
+    },
+    "tags": [
+      "bug",
+      "lifecycle"
+    ],
+    "ts": "2026-07-01T19:12:47.573623"
+  },
+  {
+    "id": "b726d3b8",
+    "type": "observation",
+    "payload": {
+      "text": "AP2_Wallet uses CryptoKit.SignatureVerifier, retry 3x on timeout",
+      "entity": "AP2_Wallet",
+      "dept": "chromosome8"
+    },
+    "tags": [
+      "fix",
+      "sig"
+    ],
+    "ts": "2026-07-01T19:12:47.576121"
+  },
+  {
+    "id": "1f70cff9",
+    "type": "observation",
+    "payload": {
+      "text": "SmartRouter fallback: provider-A timeout downgrade to provider-C",
+      "entity": "SmartRouter",
+      "dept": "chromosome4"
+    },
+    "tags": [
+      "fix",
+      "router"
+    ],
+    "ts": "2026-07-01T19:12:47.579037"
+  },
+  {
+    "id": "27333e40",
+    "type": "observation",
+    "payload": {
+      "text": "AgentOS Shell fixed with Popen(text=False) for EOFError",
+      "entity": "AgentOS",
+      "dept": "chromosome7"
+    },
+    "tags": [
+      "fix",
+      "subprocess"
+    ],
+    "ts": "2026-07-01T19:12:47.581563"
+  },
+  {
+    "id": "74a6e11e",
+    "type": "observation",
+    "payload": {
+      "text": "Pipeline fixed with $env:PYTHONIOENCODING=utf-8 for GBK",
+      "entity": "Pipeline",
+      "dept": "chromosome18"
+    },
+    "tags": [
+      "fix",
+      "encoding"
+    ],
+    "ts": "2026-07-01T19:12:47.583928"
+  },
+  {
+    "id": "5cd643c7",
+    "type": "observation",
+    "payload": {
+      "text": "SiliconMemory v1 deployed: 4 classes 20 funcs 259 lines, 93% coverage",
+      "entity": "SiliconMemory",
+      "dept": "chromosome13"
+    },
+    "tags": [
+      "deploy"
+    ],
+    "ts": "2026-07-01T19:12:47.585235"
+  },
+  {
+    "id": "464d6b32",
+    "type": "observation",
+    "payload": {
+      "text": "MCPv2 protocol upgrade complete: FastMCP+A2A federation",
+      "entity": "MCP",
+      "dept": "chromosome1"
+    },
+    "tags": [
+      "deploy",
+      "protocol"
+    ],
+    "ts": "2026-07-01T19:12:47.587839"
+  },
+  {
+    "id": "a1db0565",
+    "type": "observation",
+    "payload": {
+      "text": "HTTP API online: 22 routes, heartbeat auto-recovery",
+      "entity": "API",
+      "dept": "chromosome18"
+    },
+    "tags": [
+      "deploy",
+      "api"
+    ],
+    "ts": "2026-07-01T19:12:47.589310"
+  },
+  {
+    "id": "ff9f0819",
+    "type": "observation",
+    "payload": {
+      "text": "Department registry v3: chromosomes expanded to 19",
+      "entity": "DepartmentRegistry",
+      "dept": "chromosome0"
+    },
+    "tags": [
+      "deploy",
+      "org"
+    ],
+    "ts": "2026-07-01T19:12:47.590677"
+  },
+  {
+    "id": "d0293fe6",
+    "type": "observation",
+    "payload": {
+      "text": "CryptoKit signature speed: 2.1s -> 0.8s (3x improvement)",
+      "entity": "CryptoKit",
+      "dept": "chromosome8"
+    },
+    "tags": [
+      "perf"
+    ],
+    "ts": "2026-07-01T19:12:47.592118"
+  },
+  {
+    "id": "a46d136a",
+    "type": "observation",
+    "payload": {
+      "text": "Test coverage: 36% -> 93% (99/106 classes)",
+      "entity": "TestCoverage",
+      "dept": "chromosome12"
+    },
+    "tags": [
+      "perf",
+      "test"
+    ],
+    "ts": "2026-07-01T19:12:47.595173"
+  },
+  {
+    "id": "c0dc84c8",
+    "type": "observation",
+    "payload": {
+      "text": "AutoTester: 148 tests 140 pass -> removed 8 -> 140/140 all pass",
+      "entity": "AutoTester",
+      "dept": "chromosome12"
+    },
+    "tags": [
+      "perf",
+      "test"
+    ],
+    "ts": "2026-07-01T19:12:47.598542"
+  },
+  {
+    "id": "5f2b6831",
+    "type": "observation",
+    "payload": {
+      "text": "BM25S absorbed: BM25 formula pure Python, zero deps",
+      "entity": "BM25S",
+      "dept": "chromosome13"
+    },
+    "tags": [
+      "absorb",
+      "search"
+    ],
+    "ts": "2026-07-01T19:12:47.601036"
+  },
+  {
+    "id": "6debab71",
+    "type": "observation",
+    "payload": {
+      "text": "CoverUp absorbed: FSE 2025 paper, AST scan -> safe tests",
+      "entity": "CoverUp",
+      "dept": "chromosome0"
+    },
+    "tags": [
+      "absorb",
+      "testing"
+    ],
+    "ts": "2026-07-01T19:12:47.602412"
+  },
+  {
+    "id": "d56d94be",
+    "type": "observation",
+    "payload": {
+      "text": "Mem0 absorbed: 4-signal retrieval design (BM25+TF-IDF+entity+time)",
+      "entity": "Mem0",
+      "dept": "chromosome13"
+    },
+    "tags": [
+      "absorb",
+      "memory"
+    ],
+    "ts": "2026-07-01T19:12:47.604922"
+  },
+  {
+    "id": "8aca3205",
+    "type": "observation",
+    "payload": {
+      "text": "Letta absorbed: 3-tier memory migration (hot/warm/cold)",
+      "entity": "Letta",
+      "dept": "chromosome13"
+    },
+    "tags": [
+      "absorb",
+      "memory"
+    ],
+    "ts": "2026-07-01T19:12:47.607654"
+  },
+  {
+    "id": "a34fa21f",
+    "type": "observation",
+    "payload": {
+      "text": "DocAgent absorbed: Meta ACL 2025, job description engine",
+      "entity": "DocAgent",
+      "dept": "chromosome0"
+    },
+    "tags": [
+      "absorb",
+      "hr"
+    ],
+    "ts": "2026-07-01T19:12:47.610846"
+  },
+  {
+    "id": "9efcc6b7",
+    "type": "observation",
+    "payload": {
+      "text": "Decision: ALL Commerce FREE_MODE=True, no real payment",
+      "entity": "Commerce",
+      "dept": "chromosome6"
+    },
+    "tags": [
+      "decision"
+    ],
+    "ts": "2026-07-01T19:12:47.614160"
+  },
+  {
+    "id": "d84e49ad",
+    "type": "observation",
+    "payload": {
+      "text": "Decision: RD stuck -> check GitHub first",
+      "entity": "Strategy",
+      "dept": "chromosome0"
+    },
+    "tags": [
+      "decision",
+      "rule"
+    ],
+    "ts": "2026-07-01T19:12:47.617226"
+  },
+  {
+    "id": "ed26a029",
+    "type": "observation",
+    "payload": {
+      "text": "Decision: CI/CD pipeline 9/9 must pass before deploy",
+      "entity": "Pipeline",
+      "dept": "chromosome0"
+    },
+    "tags": [
+      "decision",
+      "quality"
+    ],
+    "ts": "2026-07-01T19:12:47.620002"
+  },
+  {
+    "id": "ddd6d164",
+    "type": "observation",
+    "payload": {
+      "text": "igp-run.ps1: PowerShell wrapper for quote issues",
+      "entity": "CLI",
+      "dept": "chromosome18"
+    },
+    "tags": [
+      "tool",
+      "cli"
+    ],
+    "ts": "2026-07-01T19:12:47.621593"
+  },
+  {
+    "id": "7017c9da",
+    "type": "observation",
+    "payload": {
+      "text": "run_inline.py: 7 shortcuts replace WebChat button",
+      "entity": "CLI",
+      "dept": "chromosome18"
+    },
+    "tags": [
+      "tool",
+      "cli"
+    ],
+    "ts": "2026-07-01T19:12:47.624477"
+  },
+  {
+    "id": "8d4c6501",
+    "type": "observation",
+    "payload": {
+      "text": "check_all.bat: one-click full chain check",
+      "entity": "CLI",
+      "dept": "chromosome18"
+    },
+    "tags": [
+      "tool",
+      "cli"
+    ],
+    "ts": "2026-07-01T19:12:47.627430"
+  },
+  {
+    "id": "4af055c0",
+    "type": "observation",
+    "payload": {
+      "text": "sitecustomize.py: global UTF-8 fix for Windows encoding",
+      "entity": "Python",
+      "dept": "chromosome0"
+    },
+    "tags": [
+      "tool",
+      "encoding"
+    ],
+    "ts": "2026-07-01T19:12:47.631242"
+  },
+  {
+    "id": "661ae866",
+    "type": "observation",
+    "payload": {
+      "text": "IGP pyramid: 12 departments 36 teams + 3 HQ units",
+      "entity": "Org",
+      "dept": "chromosome0"
+    },
+    "tags": [
+      "org"
+    ],
+    "ts": "2026-07-01T19:12:47.632984"
+  },
+  {
+    "id": "f283c86d",
+    "type": "observation",
+    "payload": {
+      "text": "Chromosome fission: 12->19 (new: memory/infra/devops/core/product)",
+      "entity": "Org",
+      "dept": "chromosome0"
+    },
+    "tags": [
+      "org",
+      "fission"
+    ],
+    "ts": "2026-07-01T19:12:47.634743"
+  },
+  {
+    "id": "a996981f",
+    "type": "observation",
+    "payload": {
+      "text": "SWAT team: 3 people, emergency cross-dept issues",
+      "entity": "SWAT",
+      "dept": "chromosome0"
+    },
+    "tags": [
+      "org"
+    ],
+    "ts": "2026-07-01T19:12:47.637756"
+  },
+  {
+    "id": "513595bd",
+    "type": "observation",
+    "payload": {
+      "text": "IGP研发部完成硅胶体记忆v2.1封顶版本",
+      "entity": null,
+      "dept": null,
+      "version": "2.1",
+      "target": "max_pure_std"
+    },
+    "tags": [
+      "final"
+    ],
+    "ts": "2026-07-01T19:13:19.611961"
+  }
+]

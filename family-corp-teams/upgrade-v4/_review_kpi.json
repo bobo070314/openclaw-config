@@ -1,0 +1,22 @@
+{
+  "v4-reviewer": {
+    "reviews_done": 14,
+    "bugs_found": 0,
+    "score": 0
+  },
+  "v4-upgrade-bot": {
+    "reviews_done": 3,
+    "bugs_found": 0,
+    "score": 0
+  },
+  "v4-self-reviewer": {
+    "reviews_done": 1,
+    "bugs_found": 0,
+    "score": 0
+  },
+  "demo": {
+    "reviews_done": 1,
+    "bugs_found": 0,
+    "score": 0
+  }
+}

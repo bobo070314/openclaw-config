@@ -1,0 +1,286 @@
+{
+  "score": 80,
+  "maxScore": 100,
+  "grade": "B",
+  "checks": [
+    {
+      "id": "claude_md_exists",
+      "name": "CLAUDE.md exists",
+      "category": "existence",
+      "maxPoints": 6,
+      "earnedPoints": 6,
+      "passed": true,
+      "detail": "Found at project root"
+    },
+    {
+      "id": "claude_rules_exist",
+      "name": "Claude rules exist (.claude/rules/)",
+      "category": "existence",
+      "maxPoints": 3,
+      "earnedPoints": 3,
+      "passed": true,
+      "detail": "3 rules found"
+    },
+    {
+      "id": "codex_agents_md_exists",
+      "name": "AGENTS.md exists",
+      "category": "existence",
+      "maxPoints": 6,
+      "earnedPoints": 6,
+      "passed": true,
+      "detail": "Found at project root"
+    },
+    {
+      "id": "skills_exist",
+      "name": "Skills configured",
+      "category": "existence",
+      "maxPoints": 8,
+      "earnedPoints": 8,
+      "passed": true,
+      "detail": "3 skills found"
+    },
+    {
+      "id": "mcp_servers",
+      "name": "MCP servers configured",
+      "category": "existence",
+      "maxPoints": 0,
+      "earnedPoints": 0,
+      "passed": false,
+      "detail": "No MCP servers configured",
+      "suggestion": "MCP servers connect your agent to external tools (databases, Slack, Linear, etc). Add if your team uses external services",
+      "fix": {
+        "action": "configure_mcp",
+        "data": {},
+        "instruction": "Add MCP server configurations in .mcp.json for any external services the project uses."
+      }
+    },
+    {
+      "id": "has_executable_content",
+      "name": "Executable content (code blocks)",
+      "category": "quality",
+      "maxPoints": 8,
+      "earnedPoints": 8,
+      "passed": true,
+      "detail": "4 code blocks found"
+    },
+    {
+      "id": "concise_config",
+      "name": "Concise config (token budget)",
+      "category": "quality",
+      "maxPoints": 6,
+      "earnedPoints": 6,
+      "passed": true,
+      "detail": "~1467 tokens total across all config files"
+    },
+    {
+      "id": "concreteness",
+      "name": "Concrete instructions",
+      "category": "quality",
+      "maxPoints": 4,
+      "earnedPoints": 4,
+      "passed": true,
+      "detail": "93% of lines reference specific files, paths, or code"
+    },
+    {
+      "id": "no_directory_tree",
+      "name": "No directory tree listings",
+      "category": "quality",
+      "maxPoints": 3,
+      "earnedPoints": 3,
+      "passed": true,
+      "detail": "No large directory trees found"
+    },
+    {
+      "id": "has_structure",
+      "name": "Structured with headings",
+      "category": "quality",
+      "maxPoints": 2,
+      "earnedPoints": 2,
+      "passed": true,
+      "detail": "6 sections, 14 list items"
+    },
+    {
+      "id": "project_grounding",
+      "name": "Project grounding",
+      "category": "grounding",
+      "maxPoints": 12,
+      "earnedPoints": 0,
+      "passed": false,
+      "detail": "26/2088 project entries referenced in config (1%)",
+      "suggestion": "Config doesn't mention: backups, core, cron, cron\\runs, empty-extensions (+724 more)",
+      "fix": {
+        "action": "add_references",
+        "data": {
+          "missing": [
+            "backups",
+            "core",
+            "cron",
+            "cron\\runs",
+            "empty-extensions",
+            "family-corp-teams\\advertising-anime",
+            "family-corp-teams\\ai",
+            "family-corp-teams\\backend",
+            "family-corp-teams\\compliance",
+            "family-corp-teams\\content"
+          ],
+          "mentioned": [
+            "family-corp-teams",
+            "family-corp-teams\\v5",
+            "family-corp-teams\\v5\\a2a_network",
+            "family-corp-teams\\v5\\absorb",
+            "family-corp-teams\\v5\\chromosomes",
+            "family-corp-teams\\v5\\deploy",
+            "family-corp-teams\\v5\\igp_inject",
+            "family-corp-teams\\v5\\job_descriptions",
+            "family-corp-teams\\v5\\mcp_servers",
+            "family-corp-teams\\v5\\monetize"
+          ],
+          "totalEntries": 2088,
+          "coverage": 1
+        },
+        "instruction": "Reference these project directories in your config: backups, core, cron, cron\\runs, empty-extensions"
+      }
+    },
+    {
+      "id": "reference_density",
+      "name": "Reference density",
+      "category": "grounding",
+      "maxPoints": 8,
+      "earnedPoints": 4,
+      "passed": true,
+      "detail": "42 specific references across 210 lines (20%)"
+    },
+    {
+      "id": "references_valid",
+      "name": "References point to real files",
+      "category": "accuracy",
+      "maxPoints": 8,
+      "earnedPoints": 8,
+      "passed": true,
+      "detail": "2/2 references verified"
+    },
+    {
+      "id": "config_drift",
+      "name": "Config freshness vs code",
+      "category": "accuracy",
+      "maxPoints": 7,
+      "earnedPoints": 7,
+      "passed": true,
+      "detail": "Config is up to date with latest commits"
+    },
+    {
+      "id": "claude_md_freshness",
+      "name": "Config freshness",
+      "category": "freshness",
+      "maxPoints": 4,
+      "earnedPoints": 4,
+      "passed": true,
+      "detail": "Config updated in the latest commit"
+    },
+    {
+      "id": "no_secrets",
+      "name": "No secrets in config files",
+      "category": "freshness",
+      "earnedPoints": 4,
+      "maxPoints": 4,
+      "passed": true,
+      "detail": "No secrets detected"
+    },
+    {
+      "id": "permissions_configured",
+      "name": "Permissions configured",
+      "category": "freshness",
+      "maxPoints": 2,
+      "earnedPoints": 2,
+      "passed": true,
+      "detail": "15 permissions configured"
+    },
+    {
+      "id": "hooks_configured",
+      "name": "Hooks configured",
+      "category": "bonus",
+      "maxPoints": 2,
+      "earnedPoints": 2,
+      "passed": true,
+      "detail": "git pre-commit"
+    },
+    {
+      "id": "open_skills_format",
+      "name": "Skills use OpenSkills format",
+      "category": "bonus",
+      "maxPoints": 2,
+      "earnedPoints": 0,
+      "passed": false,
+      "detail": "0/3 use OpenSkills format",
+      "suggestion": "OpenSkills format (SKILL.md with YAML header) makes skills portable across agents. Migrate for cross-tool compatibility",
+      "fix": {
+        "action": "migrate_skills",
+        "data": {
+          "openSkills": 0,
+          "total": 3
+        },
+        "instruction": "Migrate flat skill files to .claude/skills/{name}/SKILL.md with YAML frontmatter."
+      }
+    },
+    {
+      "id": "learned_content",
+      "name": "Learned content present",
+      "category": "bonus",
+      "maxPoints": 2,
+      "earnedPoints": 0,
+      "passed": false,
+      "detail": "No learned content",
+      "suggestion": "Session learnings capture patterns from your coding sessions so the agent improves over time. Run `caliber learn install`"
+    },
+    {
+      "id": "model_pinned",
+      "name": "Model & effort pinned",
+      "category": "bonus",
+      "maxPoints": 2,
+      "earnedPoints": 2,
+      "passed": true,
+      "detail": "Model or effort level explicitly set in config"
+    },
+    {
+      "id": "sources_configured",
+      "name": "External sources configured",
+      "category": "bonus",
+      "maxPoints": 0,
+      "earnedPoints": 0,
+      "passed": false,
+      "detail": "No external sources configured",
+      "suggestion": "Run `caliber sources add <path>` to add related repos or docs"
+    }
+  ],
+  "categories": {
+    "existence": {
+      "earned": 23,
+      "max": 23
+    },
+    "quality": {
+      "earned": 23,
+      "max": 23
+    },
+    "grounding": {
+      "earned": 4,
+      "max": 20
+    },
+    "accuracy": {
+      "earned": 15,
+      "max": 15
+    },
+    "freshness": {
+      "earned": 10,
+      "max": 10
+    },
+    "bonus": {
+      "earned": 4,
+      "max": 8
+    }
+  },
+  "targetAgent": [
+    "claude",
+    "codex"
+  ],
+  "timestamp": "2026-07-02T17:40:54.980Z"
+}

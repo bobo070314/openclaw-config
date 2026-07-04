@@ -1,0 +1,12 @@
+{
+  "qwen-plus": {
+    "wins": 3,
+    "losses": 9,
+    "tasks": 12
+  },
+  "qwen-turbo": {
+    "wins": 30,
+    "losses": 5,
+    "tasks": 35
+  }
+}

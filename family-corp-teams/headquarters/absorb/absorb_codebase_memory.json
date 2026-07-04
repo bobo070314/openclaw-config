@@ -1,0 +1,261 @@
+{
+  "absorbed": "codebase-memory-mcp",
+  "source": "https://github.com/DeusData/codebase-memory-mcp",
+  "stars": "7.6K+",
+  "date": "2026-07-01T11:19:13",
+  "igp_stats": {
+    "total_files": 162,
+    "total_lines": 23402,
+    "total_functions": 717,
+    "total_classes": 109,
+    "directories": {
+      ".": {
+        "files": 8,
+        "lines": 2443,
+        "funcs": 61,
+        "classes": 0
+      },
+      "headquarters": {
+        "files": 15,
+        "lines": 2379,
+        "funcs": 57,
+        "classes": 5
+      },
+      "headquarters\\department_feedback": {
+        "files": 1,
+        "lines": 211,
+        "funcs": 0,
+        "classes": 0
+      },
+      "infra": {
+        "files": 1,
+        "lines": 26,
+        "funcs": 0,
+        "classes": 0
+      },
+      "projects\\d2a-server": {
+        "files": 1,
+        "lines": 37,
+        "funcs": 4,
+        "classes": 1
+      },
+      "projects\\gauntlet": {
+        "files": 1,
+        "lines": 66,
+        "funcs": 0,
+        "classes": 0
+      },
+      "projects\\igp-cli": {
+        "files": 1,
+        "lines": 58,
+        "funcs": 4,
+        "classes": 0
+      },
+      "projects\\igp-d2a": {
+        "files": 3,
+        "lines": 216,
+        "funcs": 14,
+        "classes": 3
+      },
+      "projects\\igp-dashboard": {
+        "files": 1,
+        "lines": 29,
+        "funcs": 1,
+        "classes": 0
+      },
+      "projects\\igp-data": {
+        "files": 1,
+        "lines": 28,
+        "funcs": 2,
+        "classes": 0
+      },
+      "projects\\igp-design": {
+        "files": 1,
+        "lines": 29,
+        "funcs": 3,
+        "classes": 0
+      },
+      "projects\\igp-diag": {
+        "files": 1,
+        "lines": 47,
+        "funcs": 2,
+        "classes": 0
+      },
+      "projects\\igp-docmind": {
+        "files": 12,
+        "lines": 4433,
+        "funcs": 123,
+        "classes": 41
+      },
+      "projects\\igp-evolver": {
+        "files": 1,
+        "lines": 222,
+        "funcs": 10,
+        "classes": 1
+      },
+      "projects\\igp-federation": {
+        "files": 3,
+        "lines": 574,
+        "funcs": 23,
+        "classes": 3
+      },
+      "projects\\igp-gate": {
+        "files": 1,
+        "lines": 53,
+        "funcs": 2,
+        "classes": 0
+      },
+      "projects\\igp-genesis": {
+        "files": 13,
+        "lines": 706,
+        "funcs": 46,
+        "classes": 14
+      },
+      "projects\\igp-ghost": {
+        "files": 2,
+        "lines": 389,
+        "funcs": 10,
+        "classes": 0
+      },
+      "projects\\igp-knowledge": {
+        "files": 1,
+        "lines": 109,
+        "funcs": 3,
+        "classes": 1
+      },
+      "projects\\igp-mutation": {
+        "files": 1,
+        "lines": 199,
+        "funcs": 5,
+        "classes": 0
+      },
+      "projects\\igp-quality": {
+        "files": 1,
+        "lines": 61,
+        "funcs": 3,
+        "classes": 0
+      },
+      "projects\\igp-scanner": {
+        "files": 1,
+        "lines": 50,
+        "funcs": 2,
+        "classes": 0
+      },
+      "upgrade-v3": {
+        "files": 34,
+        "lines": 4646,
+        "funcs": 121,
+        "classes": 19
+      },
+      "upgrade-v4\\_archive": {
+        "files": 24,
+        "lines": 1193,
+        "funcs": 30,
+        "classes": 5
+      },
+      "upgrade-v4": {
+        "files": 33,
+        "lines": 5198,
+        "funcs": 191,
+        "classes": 16
+      }
+    }
+  },
+  "project_functions": {
+    "all_hands_goal_fix.py": 7,
+    "auto_evolution_engine.py": 8,
+    "auto_maintenance.py": 4,
+    "evolution_engine.py": 4,
+    "express_evolution.py": 9,
+    "_healthcheck.py": 2,
+    "_simulate_full_chain.py": 1,
+    "arena.py": 5,
+    "badges.py": 4,
+    "daemon.py": 2,
+    "evolve_check.py": 2,
+    "harbinger.py": 6,
+    "nexus.py": 6,
+    "oracle.py": 6,
+    "pipeline.py": 5,
+    "purge.py": 2,
+    "realscore.py": 5,
+    "rise.py": 11,
+    "igp_engine.py": 29,
+    "d2a-server": 4,
+    "igp-cli": 4,
+    "igp-d2a": 14,
+    "igp-dashboard": 1,
+    "igp-data": 2,
+    "igp-design": 3,
+    "igp-diag": 2,
+    "igp-docmind": 123,
+    "igp-evolver": 10,
+    "igp-federation": 23,
+    "igp-gate": 2,
+    "igp-genesis": 46,
+    "igp-ghost": 10,
+    "igp-knowledge": 3,
+    "igp-mutation": 5,
+    "igp-quality": 3,
+    "igp-scanner": 2,
+    "_absorption_accelerator.py": 9,
+    "_external_absorption_report.py": 3,
+    "_final_report.py": 3,
+    "_llm_pk_test.py": 1,
+    "_round2_integrate.py": 3,
+    "_test_unified_engine.py": 4,
+    "_v4_mobilization.py": 2,
+    "igp_agent_runner.py": 13,
+    "igp_engine_v3_bridge.py": 2,
+    "igp_git_helper.py": 7,
+    "igp_llm_agent.py": 9,
+    "igp_mcp_bridge.py": 15,
+    "igp_mcp_bridge_test.py": 16,
+    "igp_rag_index.py": 7,
+    "pr_pipeline.py": 2,
+    "semantic_rag.py": 4,
+    "test_runner.py": 5,
+    "thinking_engine.py": 2,
+    "unified_engine.py": 9,
+    "v3_engine.py": 3,
+    "v3_upgrade_engine.py": 2,
+    "_archive": 30,
+    "_github_first.py": 1,
+    "_night_report.py": 1,
+    "_upgrade_blood.py": 5,
+    "_upgrade_blood_v2.py": 2,
+    "_upgrade_blood_v3.py": 4,
+    "_v4_42team_research.py": 2,
+    "_v4_absorb_and_upgrade.py": 2,
+    "_v4_bootstrap_demo.py": 4,
+    "_v4_cycle5_full.py": 4,
+    "_v4_direct_upgrade.py": 5,
+    "_v4_final_showdown.py": 2,
+    "_v4_inject_final.py": 5,
+    "_v4_integrate_teams.py": 4,
+    "_v4_mcp_breakthrough.py": 7,
+    "_v4_round2_boostrap.py": 4,
+    "_v4_self_test_runner.py": 4,
+    "_v4_ultimate_bootstrap.py": 4,
+    "_v4_v1_unify.py": 4,
+    "family-corp-code-reviewer.py": 2,
+    "igp_a2a_bridge.py": 9,
+    "igp_code_review.py": 7,
+    "igp_mcp_client.py": 2,
+    "igp_mcp_server.py": 4,
+    "igp_plan_act.py": 6,
+    "igp_provider_router.py": 11,
+    "igp_skills_loader.py": 2,
+    "mcp_audit_wrapper.py": 2,
+    "upgrade-v4_code_reviewer.py": 2,
+    "upgrade-v4_gauntlet_engine.py": 5,
+    "v4_unified_engine.py": 75
+  },
+  "key_takeaways": [
+    "tree-sitter AST解析可移植到IGP代码分析",
+    "知识图谱构建方式可增强knowledge.py",
+    "MCP工具协议可做IGP项目间查询",
+    "158语言支持可扩展IGP生态扫描"
+  ],
+  "mutation_proposal": "IGP-CODEGRAPH: 构建IGP项目间代码关系图谱，自动检测跨项目依赖和代码演化"
+}

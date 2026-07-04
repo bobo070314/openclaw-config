@@ -1,0 +1,330 @@
+{
+  "registry": [
+    {
+      "name": "MCP生态部",
+      "type": "chromosome",
+      "chromosome_id": 1,
+      "modules": [
+        "fastmcp_export.py",
+        "igp_mcp_pk.py",
+        "igp_mcp_v5_client.py",
+        "igp_mcp_v5_server.py",
+        "mcp_v2_upgrade.py",
+        "run.py"
+      ],
+      "module_details": [
+        {
+          "filename": "fastmcp_export.py",
+          "docstring": "Auto-generated FastMCP Server from IGP Skills",
+          "size_bytes": 1131
+        },
+        {
+          "filename": "igp_mcp_pk.py",
+          "docstring": "MCP PK ranking module",
+          "size_bytes": 1789
+        },
+        {
+          "filename": "igp_mcp_v5_client.py",
+          "docstring": "IGP V5 MCP Client - 连接任何MCP Server",
+          "size_bytes": 2579
+        },
+        {
+          "filename": "igp_mcp_v5_server.py",
+          "docstring": "IGP V5 MCP Server 导出器 - 把IGP Skills 导出为 MCP Server",
+          "size_bytes": 2003
+        },
+        {
+          "filename": "mcp_v2_upgrade.py",
+          "docstring": "IGP V5 MCP生态部 v2 — FastMCP兼容 + MCP服务器自动发现",
+          "size_bytes": 11188
+        },
+        {
+          "filename": "run.py",
+          "docstring": "(无文档)",
+          "size_bytes": 877
+        }
+      ],
+      "entry_point": "run.py",
+      "entry_command": "python chromosomes/chromosome1/infra/run.py",
+      "total_modules": 6
+    },
+    {
+      "name": "A2A联邦部",
+      "type": "chromosome",
+      "chromosome_id": 2,
+      "modules": [
+        "a2a_agent_card.py",
+        "a2a_discovery.py",
+        "a2a_task_protocol.py",
+        "a2a_v2_upgrade.py",
+        "run.py"
+      ],
+      "module_details": [
+        {
+          "filename": "a2a_agent_card.py",
+          "docstring": "Agent身份/能力/端点描述",
+          "size_bytes": 1106
+        },
+        {
+          "filename": "a2a_discovery.py",
+          "docstring": "Agent发现服务实现",
+          "size_bytes": 1757
+        },
+        {
+          "filename": "a2a_task_protocol.py",
+          "docstring": "A2A任务协议消息结构",
+          "size_bytes": 1924
+        },
+        {
+          "filename": "a2a_v2_upgrade.py",
+          "docstring": "IGP V5 A2A联邦部 v2 — 完整Agent间协议 + 联邦发现 + 任务委派",
+          "size_bytes": 9777
+        },
+        {
+          "filename": "run.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1200
+        }
+      ],
+      "entry_point": "run.py",
+      "entry_command": "python chromosomes/chromosome2/infra/run.py",
+      "total_modules": 5
+    },
+    {
+      "name": "Skills市场部",
+      "type": "chromosome",
+      "chromosome_id": 3,
+      "modules": [
+        "run.py",
+        "skill_market.py",
+        "skill_package.py",
+        "skill_pk_rank.py"
+      ],
+      "module_details": [
+        {
+          "filename": "run.py",
+          "docstring": "(无文档)",
+          "size_bytes": 639
+        },
+        {
+          "filename": "skill_market.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1001
+        },
+        {
+          "filename": "skill_package.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1171
+        },
+        {
+          "filename": "skill_pk_rank.py",
+          "docstring": "(无文档)",
+          "size_bytes": 987
+        }
+      ],
+      "entry_point": "run.py",
+      "entry_command": "python chromosomes/chromosome3/infra/run.py",
+      "total_modules": 4
+    },
+    {
+      "name": "Provider路由部",
+      "type": "chromosome",
+      "chromosome_id": 4,
+      "modules": [
+        "provider_abstraction.py",
+        "provider_pk.py",
+        "provider_router.py",
+        "run.py"
+      ],
+      "module_details": [
+        {
+          "filename": "provider_abstraction.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1030
+        },
+        {
+          "filename": "provider_pk.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1463
+        },
+        {
+          "filename": "provider_router.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1071
+        },
+        {
+          "filename": "run.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1452
+        }
+      ],
+      "entry_point": "run.py",
+      "entry_command": "python chromosomes/chromosome4/infra/run.py",
+      "total_modules": 4
+    },
+    {
+      "name": "安全Guardian部",
+      "type": "chromosome",
+      "chromosome_id": 5,
+      "modules": [
+        "guardian_act.py",
+        "guardian_plan.py",
+        "guardian_policy.py",
+        "run.py"
+      ],
+      "module_details": [
+        {
+          "filename": "guardian_act.py",
+          "docstring": "Guardian Act Module - Approval Execution",
+          "size_bytes": 1150
+        },
+        {
+          "filename": "guardian_plan.py",
+          "docstring": "Plan阶段：只读分析，不执行任何修改",
+          "size_bytes": 2371
+        },
+        {
+          "filename": "guardian_policy.py",
+          "docstring": "Guardian Policy Engine - Security Strategies",
+          "size_bytes": 1400
+        },
+        {
+          "filename": "run.py",
+          "docstring": "Guardian Verification Script",
+          "size_bytes": 1325
+        }
+      ],
+      "entry_point": "run.py",
+      "entry_command": "python chromosomes/chromosome5/infra/run.py",
+      "total_modules": 4
+    },
+    {
+      "name": "商业协议部",
+      "type": "chromosome",
+      "chromosome_id": 6,
+      "modules": [
+        "acp_client.py",
+        "agent_commerce.py",
+        "agent_commerce_v2.py",
+        "commerce_pk.py",
+        "commerce_pk_v2.py",
+        "run.py",
+        "run_v2.py"
+      ],
+      "module_details": [
+        {
+          "filename": "acp_client.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1587
+        },
+        {
+          "filename": "agent_commerce.py",
+          "docstring": "(无文档)",
+          "size_bytes": 2109
+        },
+        {
+          "filename": "agent_commerce_v2.py",
+          "docstring": "IGP V5 商业协议部 v2 —— 接入真实支付/电商API",
+          "size_bytes": 6871
+        },
+        {
+          "filename": "commerce_pk.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1831
+        },
+        {
+          "filename": "commerce_pk_v2.py",
+          "docstring": "IGP V5 商业协议部 v2 — 收入追踪 + PK排名",
+          "size_bytes": 3824
+        },
+        {
+          "filename": "run.py",
+          "docstring": "(无文档)",
+          "size_bytes": 746
+        },
+        {
+          "filename": "run_v2.py",
+          "docstring": "商业协议部 v2 验证 —— 真实支付API + 商业PK",
+          "size_bytes": 3252
+        }
+      ],
+      "entry_point": "run_v2.py",
+      "entry_command": "python chromosomes/chromosome6/infra/run_v2.py",
+      "total_modules": 7
+    },
+    {
+      "name": "Agent OS层",
+      "type": "chromosome",
+      "chromosome_id": 7,
+      "modules": [
+        "agent_os_kernel.py",
+        "agent_os_scheduler.py",
+        "agent_os_shell.py",
+        "run.py"
+      ],
+      "module_details": [
+        {
+          "filename": "agent_os_kernel.py",
+          "docstring": "(无文档)",
+          "size_bytes": 3622
+        },
+        {
+          "filename": "agent_os_scheduler.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1405
+        },
+        {
+          "filename": "agent_os_shell.py",
+          "docstring": "(无文档)",
+          "size_bytes": 2858
+        },
+        {
+          "filename": "run.py",
+          "docstring": "chromosome7 Agent OS 无交互验证",
+          "size_bytes": 1471
+        }
+      ],
+      "entry_point": "run.py",
+      "entry_command": "python chromosomes/chromosome7/infra/run.py",
+      "total_modules": 4
+    },
+    {
+      "name": "AP2支付协议",
+      "type": "chromosome",
+      "chromosome_id": 8,
+      "modules": [
+        "ap2_payment_gateway.py",
+        "ap2_protocol.py",
+        "ap2_wallet.py",
+        "run.py"
+      ],
+      "module_details": [
+        {
+          "filename": "ap2_payment_gateway.py",
+          "docstring": "(无文档)",
+          "size_bytes": 2029
+        },
+        {
+          "filename": "ap2_protocol.py",
+          "docstring": "(无文档)",
+          "size_bytes": 3332
+        },
+        {
+          "filename": "ap2_wallet.py",
+          "docstring": "(无文档)",
+          "size_bytes": 2561
+        },
+        {
+          "filename": "run.py",
+          "docstring": "(无文档)",
+          "size_bytes": 1487
+        }
+      ],
+      "entry_point": "run.py",
+      "entry_command": "python chromosomes/chromosome8/infra/run.py",
+      "total_modules": 4
+    }
+  ],
+  "total_chromosomes": 8,
+  "total_modules": 38
+}

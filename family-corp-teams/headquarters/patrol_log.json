@@ -1,0 +1,40 @@
+{
+  "patrols": [
+    {
+      "timestamp": "2026-07-01T10:56:10",
+      "type": "self_heal_patrol",
+      "model": "Qwen/Qwen2.5-72B-Instruct",
+      "engines": [
+        "rules",
+        "finance",
+        "LLM",
+        "fusion"
+      ],
+      "status": "healthy"
+    },
+    {
+      "timestamp": "2026-07-01T11:07:58",
+      "type": "self_heal_patrol",
+      "model": "Qwen/Qwen2.5-72B-Instruct",
+      "engines": [
+        "rules",
+        "finance",
+        "LLM",
+        "fusion"
+      ],
+      "status": "healthy"
+    },
+    {
+      "timestamp": "2026-07-02T17:51:22",
+      "type": "self_heal_patrol",
+      "model": "Qwen/Qwen2.5-72B-Instruct",
+      "engines": [
+        "rules",
+        "finance",
+        "LLM",
+        "fusion"
+      ],
+      "status": "healthy"
+    }
+  ]
+}

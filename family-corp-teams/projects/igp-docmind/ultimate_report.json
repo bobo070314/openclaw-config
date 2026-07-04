@@ -1,0 +1,84 @@
+{
+  "version": "ultimate-1.0",
+  "timestamp": "2026-07-01T10:54:22",
+  "results": {
+    "金融风控": {
+      "name": "金融风控",
+      "total_time": 4.51,
+      "layers": {
+        "rules": {
+          "headers": 4,
+          "tables": 2,
+          "paras": 9
+        },
+        "dna": {
+          "length": 9,
+          "gc": 0.22
+        },
+        "finance": {
+          "numbers": 20,
+          "percentages": 2,
+          "signals": 2
+        },
+        "llm": {
+          "c_risk": "市场波动加剧，债务风险上升，组合权益敞口偏高，建议按报告调整降低风险。",
+          "c_quality": "文档结构合理，DNA特征不适用，金融信号显示高风险，建议谨慎评估。",
+          "c_strategy": "市场风险上升，组合夏普比率低于目标，建议按计划降低权益敞口5%以控制风险。"
+        },
+        "fusion": 95
+      }
+    },
+    "技术部署": {
+      "name": "技术部署",
+      "total_time": 3.48,
+      "layers": {
+        "rules": {
+          "headers": 4,
+          "tables": 0,
+          "paras": 17
+        },
+        "dna": {
+          "length": 13,
+          "gc": 0.0
+        },
+        "finance": {
+          "numbers": 9,
+          "percentages": 0,
+          "signals": 1
+        },
+        "llm": {
+          "c_risk": "文档涉及API密钥暴露风险，建议立即检查并更新密钥。",
+          "c_quality": "文档结构合理，代码块清晰，但DNA特征与内容不符，金融信号单一，可信度中等。",
+          "c_strategy": "文档更新至v5，安装和使用说明清晰，建议测试各分支功能并优化风险信号处理。"
+        },
+        "fusion": 90
+      }
+    },
+    "会议纪要": {
+      "name": "会议纪要",
+      "total_time": 3.07,
+      "layers": {
+        "rules": {
+          "headers": 3,
+          "tables": 0,
+          "paras": 10
+        },
+        "dna": {
+          "length": 10,
+          "gc": 0.0
+        },
+        "finance": {
+          "numbers": 15,
+          "percentages": 0,
+          "signals": 0
+        },
+        "llm": {
+          "c_risk": "项目进展顺利，部门重组待评估，Q3目标具挑战性，需密切监控执行情况。",
+          "c_quality": "文档结构合理，内容清晰，但DNA特征与金融信号不相关，影响评估。",
+          "c_strategy": "项目进展顺利，需加快部门重组评估，确保Q3目标实现。"
+        },
+        "fusion": 65
+      }
+    }
+  }
+}

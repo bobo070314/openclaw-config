@@ -1,0 +1,24 @@
+{
+  "department": "1.ghost-team",
+  "project": "igp-ghost",
+  "absorb_source": "DNA编码",
+  "tool": "自动巡逻+健康检查",
+  "files": 2,
+  "success_rate": "100% (2/2)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "ghost.py",
+      "status": "ok",
+      "output": "  ✅ subagents |   ✅ heartbeat |   ✅ disk | 🔧 无需自愈 | ✅ Ghost v2 运行完成",
+      "time": 1.87
+    },
+    {
+      "file": "ghost_cron.py",
+      "status": "ok",
+      "output": "  ⚠️ igp-scanner: 1文件50行 |      → 修复后: ⚠️ |   巡逻完成: 19项目 | 修复0处 | 6个问题 |   时间: 11:10:35 |   ✅ 日志已保存: patrol_log.json",
+      "time": 0.09
+    }
+  ],
+  "time": "2026-07-01T11:10:35"
+}

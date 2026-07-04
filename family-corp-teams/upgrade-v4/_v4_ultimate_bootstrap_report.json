@@ -1,0 +1,43 @@
+{
+  "title": "IGP v4 终极自举报告",
+  "timestamp": "2026-07-01 00:48:30",
+  "v4_engine": {
+    "file": "v4_unified_engine.py",
+    "modules": 6,
+    "providers": [
+      "qwen-plus",
+      "qwen-turbo"
+    ],
+    "mcp_servers": [
+      "python-exec"
+    ],
+    "self_review_issues": 23
+  },
+  "skills_ecosystem": {
+    "before_boostrap": 21,
+    "after_boostrap": 24,
+    "boostrapped": [
+      "auto-code-review",
+      "skill-generator",
+      "team-pk-orchestrator"
+    ],
+    "total": 24
+  },
+  "self_boosting_capability": {
+    "can_generate_skills": true,
+    "can_self_review": true,
+    "can_self_heal": false,
+    "can_write_code": true
+  },
+  "capability_scores": {
+    "Skills生态": 10,
+    "Provider路由": 7,
+    "Plan/Act安全": 8,
+    "代码审查": 8,
+    "MCP兼容": 5,
+    "A2A通信": 5,
+    "自举能力": 7,
+    "PK/淘汰机制": 9
+  },
+  "综合评分": 7.4
+}

@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "file": "sample_report.pdf",
+    "pages": 2,
+    "chars": 1175,
+    "timestamp": "2026-07-02T17:51:13.112494"
+  },
+  "content": {
+    "text": "# Project Report: AI Model Performance Analysis\n\nDate: 2026-06-30 | Author: Research Team\n\n## Executive Summary\n\nThis report analyzes the performance metrics of our latest model deployment across three key dimensions: accuracy, latency, and resource utilization. The model demonstrates a 15.3% improvement over the previous version.\n\n## Performance Metrics\n\n| Metric         | v2.1  | v3.0  | Improvement |\n|---------------|-------|-------|-------------|\n| Accuracy      | 87.2% | 92.5% | +5.3%       |\n| Latency (ms)  | 245   | 189   | -22.9%      |\n| Memory (MB)   | 2048  | 1536  | -25.0%      |\n| Throughput    | 48/s  | 72/s  | +50.0%      |\n\n## Key Findings\n\n1. The accuracy improvement is primarily attributed to the new attention mechanism\n2. Latency reduction was achieved through model quantization\n3. Resource utilization shows a 25% reduction in memory footprint\n\n## Recommendations\n\n- Deploy v3.0 to production by end of Q3\n- Conduct A/B testing on 10% of traffic\n- Monitor latency in production environment\n\nPrepared by: IGP Research Division\nConfidential: Internal Use Only\n\nReferences:\n- Technical Report: IGP-TR-2026-06-30\n- Benchmark Results: BENCH-2026-06\n",
+    "truncated": false,
+    "full_length": 1175
+  },
+  "structure": {
+    "tables_detected": 6,
+    "table_details": [
+      {
+        "line": 10,
+        "type": "markdown_table",
+        "content": "| Metric         | v2.1  | v3.0  | Improvement |"
+      },
+      {
+        "line": 11,
+        "type": "markdown_table",
+        "content": "|---------------|-------|-------|-------------|"
+      },
+      {
+        "line": 12,
+        "type": "markdown_table",
+        "content": "| Accuracy      | 87.2% | 92.5% | +5.3%       |"
+      },
+      {
+        "line": 13,
+        "type": "markdown_table",
+        "content": "| Latency (ms)  | 245   | 189   | -22.9%      |"
+      },
+      {
+        "line": 14,
+        "type": "markdown_table",
+        "content": "| Memory (MB)   | 2048  | 1536  | -25.0%      |"
+      },
+      {
+        "line": 15,
+        "type": "markdown_table",
+        "content": "| Throughput    | 48/s  | 72/s  | +50.0%      |"
+      }
+    ]
+  },
+  "format": "igp-docmind-v1"
+}

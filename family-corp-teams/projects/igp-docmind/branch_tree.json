@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-07-02T17:51:22",
+  "total_branches": 5,
+  "branches": {
+    "branch-A-finance": {
+      "branch": "branch-A-finance",
+      "age": 6,
+      "score": 5.0,
+      "vector": {
+        "depth_first": 0.7614370130957548,
+        "width_first": 0.18457441585758572,
+        "key_value": 0.05398857104665942,
+        "code_assert": 0.0
+      },
+      "offspring": [
+        "branch-E-fintech"
+      ]
+    },
+    "branch-B-code": {
+      "branch": "branch-B-code",
+      "age": 6,
+      "score": 5.0,
+      "vector": {
+        "code_assert": 0.8275119926619676,
+        "depth_first": 0.09424907626376962,
+        "width_first": 0.0,
+        "key_value": 0.07823893107426282
+      },
+      "offspring": []
+    },
+    "branch-C-compress": {
+      "branch": "branch-C-compress",
+      "age": 6,
+      "score": 5.0,
+      "vector": {
+        "width_first": 0.4758704703911679,
+        "key_value": 0.36145459832639903,
+        "depth_first": 0.08671603651171203,
+        "code_assert": 0.07595889477072099
+      },
+      "offspring": []
+    },
+    "branch-D-graph": {
+      "branch": "branch-D-graph",
+      "age": 6,
+      "score": 7.0,
+      "vector": {
+        "key_value": 0.6847135471501379,
+        "depth_first": 0.2972196071781502,
+        "width_first": 0.018066845671711986,
+        "code_assert": 0.0
+      },
+      "offspring": []
+    },
+    "branch-E-fintech": {
+      "branch": "branch-E-fintech",
+      "age": 0,
+      "score": 5.0,
+      "vector": {
+        "depth_first": 0.8073872791075996,
+        "width_first": 0.14902303541213072,
+        "key_value": 0.04358968548026968,
+        "code_assert": 0.0
+      },
+      "offspring": []
+    }
+  }
+}

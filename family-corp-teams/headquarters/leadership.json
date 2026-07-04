@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-01",
+  "mandate": "能人上，庸人下 — 突破项目决定领导权",
+  "rules": [
+    "每个部门必须提交1个突破性项目到擂台",
+    "项目评分 = 创新性(1-5) × 完成度(1-5)",
+    "评分最高者升任部门总监",
+    "连续2次无突破项目的部门，leader直接淘汰",
+    "旧leader降为团队成员，新人上位"
+  ],
+  "current_leaders": {
+    "frontend": "igp-ghost团队 (12分)",
+    "backend": "❌ 已淘汰 — 待再生",
+    "infra": "igp-d2a团队 (20分)",
+    "ai": "❌ 已淘汰 — 待再生",
+    "mobile": "❌ 已淘汰 — 待再生",
+    "design": "❌ 已淘汰 — 待再生",
+    "quality": "igp-evolver团队 (6分)",
+    "pmo": "❌ 已淘汰 — 待再生",
+    "growth": "❌ 已淘汰 — 待再生",
+    "data": "❌ 已淘汰 — 待再生",
+    "tech-support": "❌ 已淘汰 — 待再生",
+    "compliance": "❌ 已淘汰 — 待再生"
+  },
+  "promotions": {
+    "infra": "igp-d2a",
+    "quality": "igp-evolver",
+    "frontend": "igp-ghost"
+  },
+  "eliminations": [
+    "ai",
+    "backend",
+    "compliance",
+    "data",
+    "design",
+    "growth",
+    "mobile",
+    "pmo",
+    "tech-support"
+  ],
+  "round_completed": "2026-07-01T09:55:05.899651"
+}

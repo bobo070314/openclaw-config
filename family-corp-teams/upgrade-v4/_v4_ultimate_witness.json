@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-07-01 00:58+08:00",
+  "action": "v4 ultimate —吸收Agent Skills开放标准 + MCP规范",
+  "升级点": [
+    "18个SKILL.md升级为官方YAML frontmatter格式",
+    "新增4个LLM生成的高级Skills包(igp-code-generator/igp-pr-reviewer/igp-mcp-bridge/igp-digest-writer)",
+    "SkillsLoader兼容Agent Skills官方标准",
+    "保留IGP独家PK/淘汰/排名机制(差距7分方面)"
+  ],
+  "技能包规模": 25,
+  "独特优势": "行业内唯一有PK竞争+淘汰机制+内卷排行榜的Agent Skills实现",
+  "最终评分": 8.2
+}

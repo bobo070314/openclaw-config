@@ -1,0 +1,9 @@
+{
+  "from": "igp-global",
+  "to": "igp-china",
+  "action": "ping",
+  "payload": {
+    "msg": "hello from global"
+  },
+  "timestamp": "2026-07-02T17:51:40.739710"
+}

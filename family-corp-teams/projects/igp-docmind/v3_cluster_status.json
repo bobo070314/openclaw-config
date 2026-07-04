@@ -1,0 +1,40 @@
+{
+  "cluster_age": "2026-07-02T17:51:28",
+  "agent_count": 4,
+  "total_processed": 8,
+  "avg_agent_score": 5.0,
+  "agents": [
+    {
+      "id": "doc-agent-001",
+      "specialty": "technical_report",
+      "gen": 0,
+      "processed": 1,
+      "avg_score": 10.0,
+      "alive": true
+    },
+    {
+      "id": "doc-agent-002",
+      "specialty": "markdown_doc",
+      "gen": 3,
+      "processed": 5,
+      "avg_score": 3.8,
+      "alive": true
+    },
+    {
+      "id": "doc-agent-003",
+      "specialty": "config_file",
+      "gen": 1,
+      "processed": 1,
+      "avg_score": 3.0,
+      "alive": true
+    },
+    {
+      "id": "doc-agent-004",
+      "specialty": "markdown_doc_variant_3",
+      "gen": 4,
+      "processed": 1,
+      "avg_score": 3.0,
+      "alive": true
+    }
+  ]
+}

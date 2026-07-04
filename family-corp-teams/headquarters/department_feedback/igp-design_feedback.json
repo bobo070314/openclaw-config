@@ -1,0 +1,18 @@
+{
+  "department": "8.design",
+  "project": "igp-design",
+  "absorb_source": "GLM-OCR异形检测",
+  "tool": "ASCII视觉方案",
+  "files": 1,
+  "success_rate": "100% (1/1)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "theme.py",
+      "status": "ok",
+      "output": "Rank Bar Test: |   DocMind            |█████████████████████████████████       | 168 |   Ghost              |█████████████████████                   |",
+      "time": 0.05
+    }
+  ],
+  "time": "2026-07-01T11:10:36"
+}

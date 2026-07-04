@@ -1,0 +1,18 @@
+{
+  "department": "4.frontend",
+  "project": "igp-dashboard",
+  "absorb_source": "金融分析",
+  "tool": "数据可视化",
+  "files": 1,
+  "success_rate": "100% (1/1)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "dashboard.py",
+      "status": "ok",
+      "output": "  OK igp-ghost          |   389行 ███ |   OK igp-knowledge      |   109行 █ |   OK igp-mutation       |   199行 █ |   OK igp-quality        |    61行  |  ",
+      "time": 0.1
+    }
+  ],
+  "time": "2026-07-01T11:10:35"
+}

@@ -1,0 +1,71 @@
+{
+  "date": "2026-07-01",
+  "policy_version": "v3.0",
+  "orders": [
+    {
+      "dept": "infra",
+      "task": "环境稳定化 — PowerShell exec 下 Python UTF-8 修复",
+      "priority": "P0",
+      "method": "本地解决，0 token",
+      "status": "done"
+    },
+    {
+      "dept": "quality",
+      "task": "工单 EVO-0029 执行质量检查",
+      "priority": "P0",
+      "method": "本地解决，0 token",
+      "status": "done"
+    },
+    {
+      "dept": "quality",
+      "task": "工单 EVO-0032 审查igp_mcp_bridge.py代码质量",
+      "priority": "P0",
+      "method": "本地解决，0 token",
+      "status": "done"
+    },
+    {
+      "dept": "quality",
+      "task": "quality-team3 淘汰再生（连输2次）",
+      "priority": "P0",
+      "method": "本地重组，0 token",
+      "status": "done"
+    },
+    {
+      "dept": "headquarters",
+      "task": "工单 EVO-0033 Goal修复失败Team淘汰重组",
+      "priority": "P0",
+      "method": "本地解决，0 token",
+      "status": "done"
+    },
+    {
+      "dept": "frontend",
+      "task": "工单 EVO-0034 修复前端页面500错误",
+      "priority": "P0",
+      "method": "本地解决，0 token",
+      "status": "done"
+    },
+    {
+      "dept": "frontend",
+      "task": "工单 EVO-0038 GitHub新前端工具吸收扫描",
+      "priority": "P0",
+      "method": "web_search + 本地消化",
+      "status": "done"
+    },
+    {
+      "dept": "headquarters-strategy",
+      "task": "外部吸收第一波：MCP生态/Skills生态扫描",
+      "priority": "P1",
+      "method": "web_search + 本地消化",
+      "status": "done",
+      "note": "无新外部项目 → 转为研发部自主创新"
+    },
+    {
+      "dept": "headquarters-strategy",
+      "task": "V4死文件清理（swat_迭代稿9个+草案30+）",
+      "priority": "P1",
+      "method": "本地归档，0 token",
+      "status": "done"
+    }
+  ],
+  "daily_note": "所有部门按新方针：主动解决问题，不等老板催。先本地解决，解决不了向上汇报。"
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "tickets": [
+    {
+      "id": "TICKET-0001",
+      "title": "修复: gauntlet: 无文档",
+      "priority": 2,
+      "assignee": "auto",
+      "status": "open",
+      "created": "2026-07-01T10:22:24",
+      "updated": "2026-07-01T10:22:24"
+    },
+    {
+      "id": "TICKET-0002",
+      "title": "修复: igp-evolver: 无文档",
+      "priority": 2,
+      "assignee": "auto",
+      "status": "open",
+      "created": "2026-07-01T10:22:24",
+      "updated": "2026-07-01T10:22:24"
+    },
+    {
+      "id": "TICKET-0003",
+      "title": "修复: igp-genesis: 无文档",
+      "priority": 2,
+      "assignee": "auto",
+      "status": "open",
+      "created": "2026-07-01T10:22:24",
+      "updated": "2026-07-01T10:22:24"
+    },
+    {
+      "id": "TICKET-0004",
+      "title": "修复: igp-mutation: 无文档",
+      "priority": 2,
+      "assignee": "auto",
+      "status": "open",
+      "created": "2026-07-01T10:22:24",
+      "updated": "2026-07-01T10:22:24"
+    }
+  ],
+  "counter": 4
+}

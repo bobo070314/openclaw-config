@@ -1,0 +1,77 @@
+{
+  "query-frontend": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-backend": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-infrastructure": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-ai": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-quality": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-mobile": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-design": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-content": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-data": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-growth": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-compliance": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-pmo": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-tech-support": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-advertising-anime": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  },
+  "query-ecommerce-marketing": {
+    "uses": 1,
+    "successes": 1,
+    "failures": 0
+  }
+}

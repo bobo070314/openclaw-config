@@ -1,0 +1,43 @@
+{
+  "gauntlet": {
+    "name": "IGP Gauntlet — 创新擂台",
+    "created": "2026-07-02T17:51:11.331486",
+    "mantra": "12部门，12项目，0Token，全本地",
+    "lanes": {
+      "ghost-team": {
+        "path": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-ghost",
+        "status": "v3生产中"
+      },
+      "infra": {
+        "path": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-d2a",
+        "status": "v2生产中"
+      },
+      "frontend": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-dashboard",
+      "backend": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\d2a-server",
+      "ai": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-knowledge",
+      "mobile": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-cli",
+      "design": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-design",
+      "growth": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-scanner",
+      "data": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-data",
+      "tech-support": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-diag",
+      "compliance": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-gate",
+      "quality": "D:\\bobo\\openclaw-foreign\\workspace\\family-corp-teams\\projects\\igp-v4-upgrade"
+    }
+  },
+  "current_status": {
+    "ghost-team": true,
+    "infra": true,
+    "frontend": true,
+    "backend": true,
+    "ai": true,
+    "mobile": true,
+    "design": true,
+    "growth": true,
+    "data": true,
+    "tech-support": true,
+    "compliance": true,
+    "quality": false
+  },
+  "active_projects": 11,
+  "total_lanes": 12
+}

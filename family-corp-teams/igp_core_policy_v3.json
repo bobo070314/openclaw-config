@@ -1,0 +1,29 @@
+{
+  "version": "3.0",
+  "date": "2026-07-01",
+  "philosophy": {
+    "five_steps": {
+      "1_absorb": "主动从GitHub/HN/竞品吸收外部精华",
+      "2_digest": "消化吸收的内容，化为IGP自己的方法论（不照抄）",
+      "3_rd": "自主研发实现，把外部理念变成代码/架构",
+      "4_breakthrough": "在吸收+研发的基础上，开出别人没有的路",
+      "5_upgrade": "升级全系统评分+文档，持续迭代"
+    },
+    "department_initiative": {
+      "auto_problem_solving": "部门自己发现问题先解决，不等老板指令",
+      "auto_github_scan": "每周自动扫GitHub Trending有关自己领域的",
+      "auto_rd_upgrade": "持续主动研发升级，不满足于现有方案"
+    },
+    "cost_discipline": {
+      "local_first": "一切内部消化，能用本地方案就不用云端",
+      "reduce_tokens": "用DashScope免费模型替代付费模型",
+      "zero_cost_solutions": "优先出0 token方案（纯推理+本地执行）"
+    }
+  },
+  "daily_rules": [
+    "故障/报错 → 对应部门先上，不行再升级到SWAT",
+    "环境问题 → infra部门先诊断，不出结果再上报",
+    "新需求/新功能 → 部门主动认领，盲盒PK",
+    "外部吸收 → 战略投资部主导，各部门配合"
+  ]
+}

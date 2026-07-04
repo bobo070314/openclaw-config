@@ -1,0 +1,7 @@
+{
+  "dept": "compliance",
+  "project": "igp-gate",
+  "absorb": "规则引擎",
+  "task": "运行gate.py检查所有项目质量问题",
+  "status": "ok"
+}

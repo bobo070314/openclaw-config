@@ -1,0 +1,10 @@
+✅ Registry: 
+❌ Lifecycle: invalid syntax (<string>, line 5)
+❌ ReviewAgents: module 'v6.review' has no attribute 'review_file'
+❌ PRDQueue: module 'v6' has no attribute 'prd_queue'
+✅ HTTP API: 
+✅ APIClient: 
+❌ SDKManager: No module named 'commands'
+❌ CLI igp.py: module 'cli' has no attribute 'cli'
+
+Passed: 3/8

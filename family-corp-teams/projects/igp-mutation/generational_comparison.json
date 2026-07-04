@@ -1,0 +1,94 @@
+{
+  "generation": 1,
+  "timestamp": "2026-07-02T17:51:45.477375",
+  "total_agents": 12,
+  "evolved": 0,
+  "avg_score_before": 9.0,
+  "avg_score_after": 9.0,
+  "details": [
+    {
+      "file": "dept_ai.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_backend.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_compliance.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_data.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_design.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_frontend.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_growth.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_infra.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_mobile.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_pmo.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_quality.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    },
+    {
+      "file": "dept_tech_support.py",
+      "score_before": 9,
+      "score_after": 9,
+      "mutations": [],
+      "improved": false
+    }
+  ]
+}

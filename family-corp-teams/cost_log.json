@@ -1,0 +1,448 @@
+{
+  "total_tokens": 11500,
+  "saved_tokens": 138000,
+  "savings_rate": 92.3,
+  "records": [
+    {
+      "ticket_id": "EVO-0001",
+      "department": "frontend",
+      "team_id": "team1(Next.js)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:09.684917"
+    },
+    {
+      "ticket_id": "EVO-0001",
+      "department": "frontend",
+      "team_id": "team2(Vue3)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:09.685833"
+    },
+    {
+      "ticket_id": "EVO-0001",
+      "department": "frontend",
+      "team_id": "team3(Hono)",
+      "tokens": 500,
+      "timestamp": "2026-06-30T20:01:09.686563"
+    },
+    {
+      "ticket_id": "EVO-0002",
+      "department": "frontend",
+      "team_id": "team1(Next.js)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:18.599462"
+    },
+    {
+      "ticket_id": "EVO-0002",
+      "department": "frontend",
+      "team_id": "team2(Vue3)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:18.600354"
+    },
+    {
+      "ticket_id": "EVO-0002",
+      "department": "frontend",
+      "team_id": "team3(Hono)",
+      "tokens": 600,
+      "timestamp": "2026-06-30T20:01:18.600967"
+    },
+    {
+      "ticket_id": "EVO-0003",
+      "department": "frontend",
+      "team_id": "team1(Next.js)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:19.209375"
+    },
+    {
+      "ticket_id": "EVO-0003",
+      "department": "frontend",
+      "team_id": "team2(Vue3)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:19.210285"
+    },
+    {
+      "ticket_id": "EVO-0003",
+      "department": "frontend",
+      "team_id": "team3(Hono)",
+      "tokens": 700,
+      "timestamp": "2026-06-30T20:01:19.211091"
+    },
+    {
+      "ticket_id": "EVO-0004",
+      "department": "backend",
+      "team_id": "team1(FastAPI)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:54.110773"
+    },
+    {
+      "ticket_id": "EVO-0004",
+      "department": "backend",
+      "team_id": "team2(Hono/Edge)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:54.111613"
+    },
+    {
+      "ticket_id": "EVO-0004",
+      "department": "backend",
+      "team_id": "team3(PocketBase)",
+      "tokens": 200,
+      "timestamp": "2026-06-30T20:01:54.112547"
+    },
+    {
+      "ticket_id": "EVO-0005",
+      "department": "ai",
+      "team_id": "team1(Claude/GPT)",
+      "tokens": 3000,
+      "timestamp": "2026-06-30T20:01:54.722562"
+    },
+    {
+      "ticket_id": "EVO-0005",
+      "department": "ai",
+      "team_id": "team2(Ollama/本地)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:54.723463"
+    },
+    {
+      "ticket_id": "EVO-0005",
+      "department": "ai",
+      "team_id": "team3(混合缓存)",
+      "tokens": 500,
+      "timestamp": "2026-06-30T20:01:54.724307"
+    },
+    {
+      "ticket_id": "EVO-0006",
+      "department": "design",
+      "team_id": "team1(Figma)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:55.332837"
+    },
+    {
+      "ticket_id": "EVO-0006",
+      "department": "design",
+      "team_id": "team2(Tailwind)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:55.333895"
+    },
+    {
+      "ticket_id": "EVO-0006",
+      "department": "design",
+      "team_id": "team3(Framer Motion)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:55.334839"
+    },
+    {
+      "ticket_id": "EVO-0007",
+      "department": "growth",
+      "team_id": "team1(内容SEO)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:55.944103"
+    },
+    {
+      "ticket_id": "EVO-0007",
+      "department": "growth",
+      "team_id": "team2(社群运营)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:55.945075"
+    },
+    {
+      "ticket_id": "EVO-0007",
+      "department": "growth",
+      "team_id": "team3(付费增长)",
+      "tokens": 2000,
+      "timestamp": "2026-06-30T20:01:55.945947"
+    },
+    {
+      "ticket_id": "EVO-0008",
+      "department": "compliance",
+      "team_id": "team1(标准流程)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:56.555517"
+    },
+    {
+      "ticket_id": "EVO-0008",
+      "department": "compliance",
+      "team_id": "team2(自动化内审)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:01:56.556525"
+    },
+    {
+      "ticket_id": "EVO-0008",
+      "department": "compliance",
+      "team_id": "team3(AI辅助)",
+      "tokens": 300,
+      "timestamp": "2026-06-30T20:01:56.557366"
+    },
+    {
+      "ticket_id": "EVO-0010",
+      "department": "frontend",
+      "team_id": "team1(Next.js)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:12:02.039006"
+    },
+    {
+      "ticket_id": "EVO-0010",
+      "department": "frontend",
+      "team_id": "team2(Vue3)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:12:02.040276"
+    },
+    {
+      "ticket_id": "EVO-0010",
+      "department": "frontend",
+      "team_id": "team3(Solid.js)",
+      "tokens": 500,
+      "timestamp": "2026-06-30T20:12:02.041289"
+    },
+    {
+      "ticket_id": "EVO-0012",
+      "department": "frontend",
+      "team_id": "team1(Next.js)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:14:48.784969"
+    },
+    {
+      "ticket_id": "EVO-0012",
+      "department": "frontend",
+      "team_id": "team2(Vue3)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:14:48.786227"
+    },
+    {
+      "ticket_id": "EVO-0012",
+      "department": "frontend",
+      "team_id": "team3(Solid.js)",
+      "tokens": 500,
+      "timestamp": "2026-06-30T20:14:48.787368"
+    },
+    {
+      "ticket_id": "EVO-0020",
+      "department": "frontend",
+      "team_id": "team1(Next.js)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:00.878532"
+    },
+    {
+      "ticket_id": "EVO-0020",
+      "department": "frontend",
+      "team_id": "team2(Vue3)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:00.879747"
+    },
+    {
+      "ticket_id": "EVO-0020",
+      "department": "frontend",
+      "team_id": "team3(Solid.js)",
+      "tokens": 300,
+      "timestamp": "2026-06-30T20:21:00.881023"
+    },
+    {
+      "ticket_id": "EVO-0021",
+      "department": "backend",
+      "team_id": "team1(FastAPI)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:01.495410"
+    },
+    {
+      "ticket_id": "EVO-0021",
+      "department": "backend",
+      "team_id": "team2(Hono/Edge)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:01.496594"
+    },
+    {
+      "ticket_id": "EVO-0021",
+      "department": "backend",
+      "team_id": "team3(PocketBase)",
+      "tokens": 400,
+      "timestamp": "2026-06-30T20:21:01.497839"
+    },
+    {
+      "ticket_id": "EVO-0022",
+      "department": "data",
+      "team_id": "team1(Spark)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:02.111966"
+    },
+    {
+      "ticket_id": "EVO-0022",
+      "department": "data",
+      "team_id": "team2(ClickHouse)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:02.113441"
+    },
+    {
+      "ticket_id": "EVO-0022",
+      "department": "data",
+      "team_id": "team3(DuckDB)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:02.114697"
+    },
+    {
+      "ticket_id": "EVO-0023",
+      "department": "design",
+      "team_id": "team1(Figma)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:02.727470"
+    },
+    {
+      "ticket_id": "EVO-0023",
+      "department": "design",
+      "team_id": "team2(Tailwind)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:02.728631"
+    },
+    {
+      "ticket_id": "EVO-0023",
+      "department": "design",
+      "team_id": "team3(Penpot)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:21:02.729874"
+    },
+    {
+      "ticket_id": "EVO-0024",
+      "department": "infrastructure",
+      "team_id": "team1(K8s)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:24:20.217697"
+    },
+    {
+      "ticket_id": "EVO-0024",
+      "department": "infrastructure",
+      "team_id": "team2(Docker)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:24:20.218896"
+    },
+    {
+      "ticket_id": "EVO-0024",
+      "department": "infrastructure",
+      "team_id": "team3(Serverless)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:24:20.220168"
+    },
+    {
+      "ticket_id": "EVO-0025",
+      "department": "quality",
+      "team_id": "team1(Playwright)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:33:13.748992"
+    },
+    {
+      "ticket_id": "EVO-0025",
+      "department": "quality",
+      "team_id": "team2(Cypress)",
+      "tokens": 300,
+      "timestamp": "2026-06-30T20:33:13.751174"
+    },
+    {
+      "ticket_id": "EVO-0025",
+      "department": "quality",
+      "team_id": "team3(Testing Library)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:33:13.752464"
+    },
+    {
+      "ticket_id": "EVO-0026",
+      "department": "quality",
+      "team_id": "team1(Playwright)",
+      "tokens": 200,
+      "timestamp": "2026-06-30T20:33:39.705497"
+    },
+    {
+      "ticket_id": "EVO-0026",
+      "department": "quality",
+      "team_id": "team2(Cypress)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:33:39.706781"
+    },
+    {
+      "ticket_id": "EVO-0026",
+      "department": "quality",
+      "team_id": "team3(Testing Library)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:33:39.708183"
+    },
+    {
+      "ticket_id": "EVO-0027",
+      "department": "ecommerce-marketing",
+      "team_id": "team1(Shopify)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:33:40.324746"
+    },
+    {
+      "ticket_id": "EVO-0027",
+      "department": "ecommerce-marketing",
+      "team_id": "team2(SEO)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:33:40.326292"
+    },
+    {
+      "ticket_id": "EVO-0027",
+      "department": "ecommerce-marketing",
+      "team_id": "team3(Email)",
+      "tokens": 0,
+      "timestamp": "2026-06-30T20:33:40.329039"
+    },
+    {
+      "ticket_id": "EVO-0035",
+      "department": "frontend",
+      "team_id": "team1(Next.js)",
+      "tokens": 0,
+      "timestamp": "2026-07-01T02:03:57.413179"
+    },
+    {
+      "ticket_id": "EVO-0035",
+      "department": "frontend",
+      "team_id": "team2(Vue3)",
+      "tokens": 0,
+      "timestamp": "2026-07-01T02:03:57.415212"
+    },
+    {
+      "ticket_id": "EVO-0035",
+      "department": "frontend",
+      "team_id": "team3(Solid.js)",
+      "tokens": 500,
+      "timestamp": "2026-07-01T02:03:57.416582"
+    },
+    {
+      "ticket_id": "EVO-0036",
+      "department": "frontend",
+      "team_id": "team1(Next.js)",
+      "tokens": 0,
+      "timestamp": "2026-07-01T02:04:56.002129"
+    },
+    {
+      "ticket_id": "EVO-0036",
+      "department": "frontend",
+      "team_id": "team2(Vue3)",
+      "tokens": 0,
+      "timestamp": "2026-07-01T02:04:56.004952"
+    },
+    {
+      "ticket_id": "EVO-0036",
+      "department": "frontend",
+      "team_id": "team3(Solid.js)",
+      "tokens": 500,
+      "timestamp": "2026-07-01T02:04:56.007261"
+    },
+    {
+      "ticket_id": "EVO-0037",
+      "department": "frontend",
+      "team_id": "team1(Next.js)",
+      "tokens": 0,
+      "timestamp": "2026-07-01T02:07:27.046941"
+    },
+    {
+      "ticket_id": "EVO-0037",
+      "department": "frontend",
+      "team_id": "team2(Vue3)",
+      "tokens": 0,
+      "timestamp": "2026-07-01T02:07:27.048567"
+    },
+    {
+      "ticket_id": "EVO-0037",
+      "department": "frontend",
+      "team_id": "team3(Solid.js)",
+      "tokens": 500,
+      "timestamp": "2026-07-01T02:07:27.050403"
+    }
+  ]
+}

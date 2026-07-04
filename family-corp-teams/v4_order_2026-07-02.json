@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-02",
+  "mantra": "全面进攻，零等待，每部门都有产出",
+  "ghost_v3_cron": true,
+  "d2a_v2_integration": true,
+  "v4_full_upgrade": true,
+  "orders": [
+    {
+      "dept": "ghost-team",
+      "task": "Ghost v3: cron定时巡逻 + v4脚本自愈",
+      "priority": "P0",
+      "output": "projects/igp-ghost/ghost.py → ghost_cron.py",
+      "status": "done"
+    },
+    {
+      "dept": "infra",
+      "task": "D2A v2: 集成到IGP引擎，子部门D2A通信",
+      "priority": "P0",
+      "output": "projects/igp-d2a/ → igp_engine.py集成",
+      "status": "done"
+    },
+    {
+      "dept": "quality",
+      "task": "V4全面升级: 修igp_plan_act.py(6分) + igp_yaml(5分)",
+      "priority": "P0",
+      "output": "upgrade-v4/igp_plan_act.py → 8分以上",
+      "status": "done"
+    },
+    {
+      "dept": "frontend",
+      "task": "前端新项目: 实现IGP仪表盘(实时部门状态看板)",
+      "priority": "P1",
+      "output": "projects/igp-dashboard/",
+      "status": "done"
+    },
+    {
+      "dept": "backend",
+      "task": "后端新项目: D2A协议HTTP Server(本地Agent通信)",
+      "priority": "P1",
+      "output": "projects/d2a-server/",
+      "status": "done"
+    },
+    {
+      "dept": "ai",
+      "task": "AI新项目: IGP知识库向量化(本地Embedding)",
+      "priority": "P1",
+      "output": "projects/igp-knowledge/",
+      "status": "done"
+    },
+    {
+      "dept": "mobile",
+      "task": "移动端新项目: IGP CLI工具集(Python, 0依赖)",
+      "priority": "P1",
+      "output": "projects/igp-cli/",
+      "status": "done"
+    },
+    {
+      "dept": "design",
+      "task": "设计新项目: Ghost/D2A视觉方案(ASCII/控制台UI)",
+      "priority": "P1",
+      "output": "projects/igp-design/",
+      "status": "done"
+    },
+    {
+      "dept": "growth",
+      "task": "增长新项目: IGP生态扫描器(自动检测可吸收项目)",
+      "priority": "P1",
+      "output": "projects/igp-scanner/",
+      "status": "done"
+    },
+    {
+      "dept": "data",
+      "task": "数据新项目: Ghost历史数据看板(JSON→可视报告)",
+      "priority": "P1",
+      "output": "projects/igp-data/",
+      "status": "done"
+    },
+    {
+      "dept": "tech-support",
+      "task": "技术支持新项目: 一键诊断脚本(all_in_one.py)",
+      "priority": "P1",
+      "output": "projects/igp-diag/",
+      "status": "done"
+    },
+    {
+      "dept": "compliance",
+      "task": "合规新项目: 代码质量门禁(pre-commit检查器)",
+      "priority": "P1",
+      "output": "projects/igp-gate/",
+      "status": "done"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "skills_count": 18,
+  "skills_ranking": [],
+  "provider_leaderboard": [
+    {
+      "provider": "qwen-turbo",
+      "win_rate": 37.5,
+      "wins": 3,
+      "losses": 5,
+      "tasks": 8
+    },
+    {
+      "provider": "qwen-plus",
+      "win_rate": 20.0,
+      "wins": 2,
+      "losses": 8,
+      "tasks": 10
+    }
+  ],
+  "mcp_servers": [
+    "file-server",
+    "git-server"
+  ],
+  "agents_registered": 0,
+  "review_kpi": {
+    "v4-reviewer": {
+      "reviews_done": 7,
+      "bugs_found": 0,
+      "score": 0
+    }
+  },
+  "total_score": 7.2
+}

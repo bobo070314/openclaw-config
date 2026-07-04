@@ -1,0 +1,7 @@
+{
+  "dept": "backend",
+  "project": "igp-d2a",
+  "absorb": "D2A协议",
+  "task": "测试D2A v2协议所有接口：register(12个Agent)/send/broadcast",
+  "status": "ok"
+}

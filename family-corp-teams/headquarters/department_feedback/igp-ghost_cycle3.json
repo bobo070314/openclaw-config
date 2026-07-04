@@ -1,0 +1,7 @@
+{
+  "dept": ".ghost-team",
+  "project": "igp-ghost",
+  "absorb": "DNA编码",
+  "task": "用ghost_cron.py巡逻全部19项目，生成巡逻报告",
+  "status": "ok"
+}

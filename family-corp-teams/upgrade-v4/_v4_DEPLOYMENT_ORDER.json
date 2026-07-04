@@ -1,0 +1,146 @@
+{
+  "title": "IGP V4 全员作战部署令",
+  "timestamp": "2026-06-30T23:40:00+08:00",
+  "message": "42个Team全部转入v4升级模式。核心研发团队负责MCP/Skills/Provider三块P0。其余团队围绕这三个核心做外围支撑。",
+  "departments": {
+    "frontend": {
+      "核心力量3人": "前端Agent技能包管理UI,MCP Server配置面板",
+      "任务": "Skills目录管理界面"
+    },
+    "backend": {
+      "核心力量3人": "IGP MCP Server导出,A2A协议桥接,多Provider路由",
+      "任务": "基建层协议实现"
+    },
+    "infra": {
+      "核心力量3人": "MCP Client实现,Docker沙箱升级,Sandbox CI",
+      "任务": "执行层安全"
+    },
+    "ai": {
+      "核心力量3人": "Provider抽象层,Skills加载器,LLM路由",
+      "任务": "AI核心引擎"
+    },
+    "quality": {
+      "核心力量3人": "自动代码审查Agent,AgentCI流水线,测试生成",
+      "任务": "质量闭环"
+    },
+    "mobile": {
+      "核心力量3人": "Mobile端Agent展示,MCP over WebSocket",
+      "任务": "移动端扩展"
+    },
+    "design": {
+      "核心力量3人": "Skills包UI设计,MCP Server图标体系",
+      "任务": "视觉一致性"
+    },
+    "content": {
+      "核心力量3人": "SKILL.md模板,外部Skills解析,文档",
+      "任务": "内容标准"
+    },
+    "data": {
+      "核心力量3人": "Provider性能分析,Skills使用热度,KPI关联",
+      "任务": "数据驱动"
+    },
+    "growth": {
+      "核心力量3人": "Skills市场运营,Agent商店推广",
+      "任务": "市场增长"
+    },
+    "compliance": {
+      "核心力量3人": "MCP Server安全审计,Skills包审核",
+      "任务": "合规安全"
+    },
+    "pmo": {
+      "核心力量3人": "v4进度追踪,跨团队协调,里程碑管理",
+      "任务": "项目管理"
+    },
+    "tech-support": {
+      "核心力量3人": "v4故障响应,Skills安装帮助",
+      "任务": "支持运维"
+    },
+    "advertising-anime": {
+      "核心力量3人": "v4宣传视频,Skills演示动画",
+      "任务": "形象展示"
+    },
+    "ecommerce-marketing": {
+      "核心力量3人": "Skills商店上架,开发者生态建设",
+      "任务": "商业闭环"
+    }
+  },
+  "headquarters": {
+    "SWAT突击队": "负责v4最关键的技术盲区——如果MCP/Skills/Provider任一卡住，立即介入",
+    "审计部": "每天核查v4开发进度，产出不足的团队启动淘汰预警",
+    "战略投资部": "对外猎头：主动搜索GitHub顶级Agent项目贡献者，生成邀请入库"
+  },
+  "headhunt": [
+    {
+      "target": "modelcontextprotocol/python-sdk 核心贡献者",
+      "reason": "IGP需要MCP协议级支持，他们是最理解MCP设计哲学的人"
+    },
+    {
+      "target": "modelcontextprotocol/servers 仓库维护者",
+      "reason": "1200+MCP服务器的设计者"
+    },
+    {
+      "target": "Anthropic MCP Spec 工作组参与者",
+      "reason": "MCP协议的制定者"
+    },
+    {
+      "target": "VoltAgent/awesome-agent-skills 维护者",
+      "reason": "500+Skills目录的维护者"
+    },
+    {
+      "target": "Claude Code Skills 格式制定者",
+      "reason": "Skills标准化者"
+    },
+    {
+      "target": "VS Code Agent Skills 扩展作者",
+      "reason": "VS Code Skills生态建设者"
+    },
+    {
+      "target": "OpenCode (172K⭐) 核心架构师",
+      "reason": "Scout subagent + Background agents 的设计者"
+    },
+    {
+      "target": "Cline (63K⭐) Plan/Act 模式设计者",
+      "reason": "安全执行模式的设计者"
+    },
+    {
+      "target": "Goose (48K⭐) Linux Foundation 贡献者",
+      "reason": "通用Agent架构的设计者"
+    },
+    {
+      "target": "SWE-agent 自修复测试流水线设计者",
+      "reason": "Agent CI的设计者"
+    },
+    {
+      "target": "Augment Code Review 架构师",
+      "reason": "自动PR审查的设计者"
+    }
+  ],
+  "innovation_core": {
+    "第1层-吸收": [
+      "MCP协议: 理解Client/Server/Transport核心设计",
+      "Skills标准: 理解SKILL.md格式 + 加载机制",
+      "Provider模式: 理解统一抽象层设计",
+      "Plan/Act: 理解安全执行审批流",
+      "A2A协议: 理解Agent发现/委派"
+    ],
+    "第2层-消化": [
+      "不照抄MCP SDK，自己实现符合MCP协议的Client",
+      "不照抄awesome-agent-skills，自己实现Skills加载器",
+      "不照抄OpenCode provider，自己实现Provider抽象",
+      "不照抄Cline Checkpoints，自己实现Plan/Act",
+      "不照抄A2A，自己实现Agent通信"
+    ],
+    "第3层-研发创新": [
+      "把PK/进化机制嫁接到Skills生态 → 'Skills内卷排行榜'",
+      "把KPI/Token成本嫁接到MCP Server → 'Server性价比排名'",
+      "把开车门嫁接到Agent CI → 'PR自动触发测试+Review'",
+      "把淘汰再生嫁接到Provider → '模型自动路由(哪个好用切哪个)'"
+    ],
+    "第4层-超越": [
+      "目标：行业没有一个系统能把PK内卷+Skills包+企业架构做到一体",
+      "IGP v4 = MCP兼容的Skills内卷生态 + 企业级Agent军团",
+      "这比Claude Code/OpenCode/Codex都多了一个'组织力'维度"
+    ]
+  },
+  "slogan": "吸收→消化→研发→超越。不追低处，开出自己的路。"
+}

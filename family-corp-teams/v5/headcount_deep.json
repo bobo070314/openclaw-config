@@ -1,0 +1,3574 @@
+{
+  "chromosome1": {
+    "label": "MCP生态部",
+    "modules": 6,
+    "lines": 571,
+    "classes": 6,
+    "functions": 35,
+    "specialties": [
+      "fn:get_ranking (Rank)",
+      "MCP_PK_Rank (PK)",
+      "MCPRegistry (Registr)",
+      "MCPServerRank (Server)",
+      "MCPServer (Server)",
+      "MCPClient (Client)",
+      "fn:update_ranking (Rank)",
+      "fn:demote_server (Server)",
+      "fn:get_ranked_servers (Server)",
+      "fn:promote_server (Server)"
+    ],
+    "file_details": [
+      {
+        "file": "fastmcp_export.py",
+        "lines": 54,
+        "status": "SYNTAX_ERR",
+        "error": "unexpected indent (<unknown>, line 14)"
+      },
+      {
+        "file": "igp_mcp_pk.py",
+        "lines": 51,
+        "classes": [
+          {
+            "name": "MCP_PK_Rank",
+            "methods": [
+              "__init__",
+              "update_ranking",
+              "get_ranked_servers",
+              "check_eligibility",
+              "promote_server",
+              "demote_server"
+            ],
+            "method_count": 6
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "update_ranking"
+          },
+          {
+            "name": "get_ranked_servers"
+          },
+          {
+            "name": "check_eligibility"
+          },
+          {
+            "name": "promote_server"
+          },
+          {
+            "name": "demote_server"
+          }
+        ],
+        "imports": [
+          "defaultdict",
+          "logging",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [
+          "MCP_PK_Rank (PK)",
+          "fn:update_ranking (Rank)",
+          "fn:demote_server (Server)",
+          "fn:get_ranked_servers (Server)",
+          "fn:promote_server (Server)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "igp_mcp_v5_client.py",
+        "lines": 80,
+        "classes": [
+          {
+            "name": "MCPClient",
+            "methods": [
+              "__init__",
+              "connect_stdio",
+              "connect_http",
+              "discover_tools",
+              "call_tool",
+              "get_call_log",
+              "get_stats",
+              "is_connected"
+            ],
+            "method_count": 8
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "connect_stdio"
+          },
+          {
+            "name": "connect_http"
+          },
+          {
+            "name": "discover_tools"
+          },
+          {
+            "name": "call_tool"
+          },
+          {
+            "name": "get_call_log"
+          },
+          {
+            "name": "get_stats"
+          },
+          {
+            "name": "is_connected"
+          }
+        ],
+        "imports": [
+          "json",
+          "Optional",
+          "urllib.request",
+          "urllib.parse",
+          "logging",
+          "time"
+        ],
+        "has_main": false,
+        "specialties": [
+          "MCPClient (Client)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "igp_mcp_v5_server.py",
+        "lines": 64,
+        "classes": [
+          {
+            "name": "MCPServer",
+            "methods": [
+              "__init__",
+              "register_tool",
+              "register_resource",
+              "get_tool_list",
+              "call_tool",
+              "start",
+              "stop",
+              "tool_count"
+            ],
+            "method_count": 8
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "register_tool"
+          },
+          {
+            "name": "register_resource"
+          },
+          {
+            "name": "get_tool_list"
+          },
+          {
+            "name": "call_tool"
+          },
+          {
+            "name": "start"
+          },
+          {
+            "name": "stop"
+          },
+          {
+            "name": "tool_count"
+          }
+        ],
+        "imports": [
+          "logging",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [
+          "MCPServer (Server)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "mcp_v2_upgrade.py",
+        "lines": 291,
+        "classes": [
+          {
+            "name": "MCPRegistry",
+            "methods": [
+              "__init__",
+              "register_stdio",
+              "register_http",
+              "discover_local",
+              "discover_pypi",
+              "get_tool_list"
+            ],
+            "method_count": 6
+          },
+          {
+            "name": "FastMCPExporter",
+            "methods": [
+              "__init__",
+              "add_tool",
+              "export_fastmcp_py",
+              "export_mcp_json"
+            ],
+            "method_count": 4
+          },
+          {
+            "name": "MCPServerRank",
+            "methods": [
+              "__init__",
+              "record_call",
+              "get_ranking"
+            ],
+            "method_count": 3
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "register_stdio"
+          },
+          {
+            "name": "register_http"
+          },
+          {
+            "name": "discover_local"
+          },
+          {
+            "name": "discover_pypi"
+          },
+          {
+            "name": "get_tool_list"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "add_tool"
+          },
+          {
+            "name": "export_fastmcp_py"
+          },
+          {
+            "name": "export_mcp_json"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "record_call"
+          },
+          {
+            "name": "get_ranking"
+          }
+        ],
+        "imports": [
+          "Dict",
+          "datetime",
+          "json"
+        ],
+        "has_main": true,
+        "specialties": [
+          "MCPRegistry (Registr)",
+          "MCPServerRank (Server)",
+          "fn:get_ranking (Rank)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "run.py",
+        "lines": 31,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "igp_mcp_v5_client",
+          "logging",
+          "igp_mcp_pk",
+          "igp_mcp_v5_server"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome2": {
+    "label": "A2A联邦部",
+    "modules": 5,
+    "lines": 480,
+    "classes": 6,
+    "functions": 33,
+    "specialties": [
+      "A2ATaskProtocol (Protocol)",
+      "AgentCard (Agent)",
+      "AgentDiscoveryService (Agent)",
+      "fn:load_registry (Registr)",
+      "fn:get_task_status (Task)",
+      "fn:create_task (Task)",
+      "fn:cancel_task (Task)",
+      "fn:save_registry (Registr)",
+      "TaskMessage (Task)",
+      "fn:get_all_agents (Agent)"
+    ],
+    "file_details": [
+      {
+        "file": "a2a_agent_card.py",
+        "lines": 39,
+        "classes": [
+          {
+            "name": "AgentCard",
+            "methods": [
+              "to_dict",
+              "from_dict",
+              "save",
+              "load"
+            ],
+            "method_count": 4
+          }
+        ],
+        "functions": [
+          {
+            "name": "to_dict"
+          },
+          {
+            "name": "from_dict"
+          },
+          {
+            "name": "save"
+          },
+          {
+            "name": "load"
+          }
+        ],
+        "imports": [
+          "dataclass",
+          "Dict",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [
+          "AgentCard (Agent)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "a2a_discovery.py",
+        "lines": 46,
+        "classes": [
+          {
+            "name": "AgentDiscoveryService",
+            "methods": [
+              "__post_init__",
+              "register",
+              "find_by_capability",
+              "broadcast",
+              "get_all_agents",
+              "save_registry",
+              "load_registry"
+            ],
+            "method_count": 7
+          }
+        ],
+        "functions": [
+          {
+            "name": "__post_init__"
+          },
+          {
+            "name": "register"
+          },
+          {
+            "name": "find_by_capability"
+          },
+          {
+            "name": "broadcast"
+          },
+          {
+            "name": "get_all_agents"
+          },
+          {
+            "name": "save_registry"
+          },
+          {
+            "name": "load_registry"
+          }
+        ],
+        "imports": [
+          "dataclass",
+          "Dict",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [
+          "fn:save_registry (Registr)",
+          "AgentDiscoveryService (Agent)",
+          "fn:load_registry (Registr)",
+          "fn:get_all_agents (Agent)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "a2a_task_protocol.py",
+        "lines": 66,
+        "classes": [
+          {
+            "name": "TaskMessage",
+            "methods": [
+              "to_dict",
+              "to_json",
+              "from_json",
+              "is_streaming"
+            ],
+            "method_count": 4
+          }
+        ],
+        "functions": [
+          {
+            "name": "json_rpc_request"
+          },
+          {
+            "name": "json_rpc_response"
+          },
+          {
+            "name": "json_rpc_error"
+          },
+          {
+            "name": "to_dict"
+          },
+          {
+            "name": "to_json"
+          },
+          {
+            "name": "from_json"
+          },
+          {
+            "name": "is_streaming"
+          }
+        ],
+        "imports": [
+          "dataclass",
+          "Dict",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [
+          "TaskMessage (Task)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "a2a_v2_upgrade.py",
+        "lines": 287,
+        "classes": [
+          {
+            "name": "AgentCard",
+            "methods": [
+              "__init__",
+              "add_skill",
+              "to_json",
+              "to_dict"
+            ],
+            "method_count": 4
+          },
+          {
+            "name": "A2ATaskProtocol",
+            "methods": [
+              "__init__",
+              "create_task",
+              "create_streaming",
+              "cancel_task",
+              "get_task_status"
+            ],
+            "method_count": 5
+          },
+          {
+            "name": "A2AFederation",
+            "methods": [
+              "__init__",
+              "register",
+              "unregister",
+              "find_by_capability",
+              "find_by_skill",
+              "broadcast",
+              "list_all",
+              "count"
+            ],
+            "method_count": 8
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "add_skill"
+          },
+          {
+            "name": "to_json"
+          },
+          {
+            "name": "to_dict"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "create_task"
+          },
+          {
+            "name": "create_streaming"
+          },
+          {
+            "name": "cancel_task"
+          },
+          {
+            "name": "get_task_status"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "register"
+          },
+          {
+            "name": "unregister"
+          },
+          {
+            "name": "find_by_capability"
+          },
+          {
+            "name": "find_by_skill"
+          },
+          {
+            "name": "broadcast"
+          }
+        ],
+        "imports": [
+          "Dict",
+          "datetime",
+          "json"
+        ],
+        "has_main": true,
+        "specialties": [
+          "A2ATaskProtocol (Protocol)",
+          "AgentCard (Agent)",
+          "fn:get_task_status (Task)",
+          "fn:cancel_task (Task)",
+          "fn:create_task (Task)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "run.py",
+        "lines": 42,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "uuid",
+          "AgentDiscoveryService",
+          "AgentCard",
+          "TaskMessage"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome3": {
+    "label": "Skills市场部",
+    "modules": 4,
+    "lines": 115,
+    "classes": 2,
+    "functions": 12,
+    "specialties": [
+      "SkillPKRank (PK)",
+      "fn:rank_skills (Rank)",
+      "SkillMarket (Marke)"
+    ],
+    "file_details": [
+      {
+        "file": "run.py",
+        "lines": 20,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "os",
+          "SkillMarket",
+          "SkillPKRank"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "skill_market.py",
+        "lines": 30,
+        "classes": [
+          {
+            "name": "SkillMarket",
+            "methods": [
+              "__init__",
+              "add_skill",
+              "rate_skill",
+              "get_top_skills",
+              "install_skill",
+              "uninstall_skill"
+            ],
+            "method_count": 6
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "add_skill"
+          },
+          {
+            "name": "rate_skill"
+          },
+          {
+            "name": "get_top_skills"
+          },
+          {
+            "name": "install_skill"
+          },
+          {
+            "name": "uninstall_skill"
+          }
+        ],
+        "imports": [],
+        "has_main": false,
+        "specialties": [
+          "SkillMarket (Marke)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "skill_package.py",
+        "lines": 36,
+        "classes": [],
+        "functions": [
+          {
+            "name": "load_skills"
+          }
+        ],
+        "imports": [
+          "os",
+          "Path",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "skill_pk_rank.py",
+        "lines": 29,
+        "classes": [
+          {
+            "name": "SkillPKRank",
+            "methods": [
+              "__init__",
+              "update_stats",
+              "calculate_score",
+              "rank_skills",
+              "check_promotion"
+            ],
+            "method_count": 5
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "update_stats"
+          },
+          {
+            "name": "calculate_score"
+          },
+          {
+            "name": "rank_skills"
+          },
+          {
+            "name": "check_promotion"
+          }
+        ],
+        "imports": [],
+        "has_main": false,
+        "specialties": [
+          "SkillPKRank (PK)",
+          "fn:rank_skills (Rank)"
+        ],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome4": {
+    "label": "Provider路由部",
+    "modules": 4,
+    "lines": 154,
+    "classes": 5,
+    "functions": 17,
+    "specialties": [
+      "fn:get_provider_ranking (Rank)",
+      "SmartRouter (Router)",
+      "ProviderPK (PK)",
+      "ProviderRouter (Router)"
+    ],
+    "file_details": [
+      {
+        "file": "provider_abstraction.py",
+        "lines": 36,
+        "classes": [
+          {
+            "name": "Provider",
+            "methods": [
+              "chat",
+              "invoke",
+              "embed"
+            ],
+            "method_count": 3
+          },
+          {
+            "name": "ProviderRouter",
+            "methods": [
+              "__init__",
+              "route",
+              "chat"
+            ],
+            "method_count": 3
+          }
+        ],
+        "functions": [
+          {
+            "name": "chat"
+          },
+          {
+            "name": "invoke"
+          },
+          {
+            "name": "embed"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "route"
+          },
+          {
+            "name": "chat"
+          }
+        ],
+        "imports": [
+          "os",
+          "ABC",
+          "Dict"
+        ],
+        "has_main": false,
+        "specialties": [
+          "ProviderRouter (Router)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "provider_pk.py",
+        "lines": 37,
+        "classes": [
+          {
+            "name": "ProviderPK",
+            "methods": [
+              "__init__",
+              "update_scores",
+              "get_provider_ranking",
+              "chat"
+            ],
+            "method_count": 4
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "update_scores"
+          },
+          {
+            "name": "get_provider_ranking"
+          },
+          {
+            "name": "chat"
+          }
+        ],
+        "imports": [
+          "os",
+          "time",
+          "sys",
+          "ProviderRouter"
+        ],
+        "has_main": false,
+        "specialties": [
+          "fn:get_provider_ranking (Rank)",
+          "ProviderPK (PK)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "provider_router.py",
+        "lines": 30,
+        "classes": [
+          {
+            "name": "SmartRouter",
+            "methods": [
+              "__init__",
+              "route",
+              "chat"
+            ],
+            "method_count": 3
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "route"
+          },
+          {
+            "name": "chat"
+          }
+        ],
+        "imports": [
+          "os",
+          "sys",
+          "re",
+          "Provider"
+        ],
+        "has_main": false,
+        "specialties": [
+          "SmartRouter (Router)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "run.py",
+        "lines": 51,
+        "classes": [
+          {
+            "name": "MockProvider",
+            "methods": [
+              "__init__",
+              "chat",
+              "invoke",
+              "embed"
+            ],
+            "method_count": 4
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "chat"
+          },
+          {
+            "name": "invoke"
+          },
+          {
+            "name": "embed"
+          }
+        ],
+        "imports": [
+          "ProviderPK",
+          "Any",
+          "SmartRouter",
+          "time",
+          "Provider"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome5": {
+    "label": "安全Guardian部",
+    "modules": 4,
+    "lines": 205,
+    "classes": 3,
+    "functions": 18,
+    "specialties": [],
+    "file_details": [
+      {
+        "file": "guardian_act.py",
+        "lines": 39,
+        "classes": [
+          {
+            "name": "GuardianAct",
+            "methods": [
+              "__init__",
+              "add_to_queue",
+              "create_checkpoint",
+              "auto_rollback",
+              "execute_actions",
+              "update_whitelist",
+              "update_blacklist"
+            ],
+            "method_count": 7
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "add_to_queue"
+          },
+          {
+            "name": "create_checkpoint"
+          },
+          {
+            "name": "auto_rollback"
+          },
+          {
+            "name": "execute_actions"
+          },
+          {
+            "name": "update_whitelist"
+          },
+          {
+            "name": "update_blacklist"
+          }
+        ],
+        "imports": [
+          "os",
+          "Dict"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "guardian_plan.py",
+        "lines": 76,
+        "classes": [
+          {
+            "name": "GuardianPlan",
+            "methods": [
+              "__init__",
+              "receive_request",
+              "analyze_risk",
+              "generate_report",
+              "get_actions",
+              "execute"
+            ],
+            "method_count": 6
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "receive_request"
+          },
+          {
+            "name": "analyze_risk"
+          },
+          {
+            "name": "generate_report"
+          },
+          {
+            "name": "get_actions"
+          },
+          {
+            "name": "execute"
+          }
+        ],
+        "imports": [
+          "os",
+          "Dict",
+          "re"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "guardian_policy.py",
+        "lines": 40,
+        "classes": [
+          {
+            "name": "GuardianPolicy",
+            "methods": [
+              "__init__",
+              "check_file_op",
+              "check_command_exec",
+              "check_mcp_call",
+              "log_misclassification"
+            ],
+            "method_count": 5
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "check_file_op"
+          },
+          {
+            "name": "check_command_exec"
+          },
+          {
+            "name": "check_mcp_call"
+          },
+          {
+            "name": "log_misclassification"
+          }
+        ],
+        "imports": [
+          "os",
+          "Dict"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "run.py",
+        "lines": 50,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "os",
+          "GuardianPolicy",
+          "GuardianAct",
+          "GuardianPlan"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome6": {
+    "label": "商业协议部",
+    "modules": 7,
+    "lines": 545,
+    "classes": 8,
+    "functions": 44,
+    "specialties": [
+      "AgentCommerce (Agent)",
+      "ACPClient (Client)",
+      "CommercePK (PK)",
+      "fn:charge_task (Task)",
+      "fn:rank_services_by_income (Rank)",
+      "fn:rank_services_by_profit_margin (Rank)",
+      "CommercePKRank (PK)",
+      "fn:rank_services_by_customer_satisfaction (Rank)",
+      "AgentCommerceEngine (Agent)",
+      "fn:get_ranking (Rank)"
+    ],
+    "file_details": [
+      {
+        "file": "acp_client.py",
+        "lines": 38,
+        "classes": [
+          {
+            "name": "ACPClient",
+            "methods": [
+              "__init__",
+              "create_checkout",
+              "get_cart",
+              "update_cart_item",
+              "delete_cart_item",
+              "checkout",
+              "get_quote",
+              "place_order",
+              "process_payment"
+            ],
+            "method_count": 9
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "create_checkout"
+          },
+          {
+            "name": "get_cart"
+          },
+          {
+            "name": "update_cart_item"
+          },
+          {
+            "name": "delete_cart_item"
+          },
+          {
+            "name": "checkout"
+          },
+          {
+            "name": "get_quote"
+          },
+          {
+            "name": "place_order"
+          },
+          {
+            "name": "process_payment"
+          }
+        ],
+        "imports": [
+          "requests",
+          "Dict"
+        ],
+        "has_main": false,
+        "specialties": [
+          "ACPClient (Client)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "agent_commerce.py",
+        "lines": 56,
+        "classes": [
+          {
+            "name": "AgentCommerce",
+            "methods": [
+              "__init__",
+              "register_service_provider",
+              "set_pricing_strategy",
+              "track_revenue",
+              "generate_profit_report",
+              "handle_inquiry",
+              "place_order",
+              "process_payment"
+            ],
+            "method_count": 8
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "register_service_provider"
+          },
+          {
+            "name": "set_pricing_strategy"
+          },
+          {
+            "name": "track_revenue"
+          },
+          {
+            "name": "generate_profit_report"
+          },
+          {
+            "name": "handle_inquiry"
+          },
+          {
+            "name": "place_order"
+          },
+          {
+            "name": "process_payment"
+          }
+        ],
+        "imports": [
+          "os",
+          "ACPClient",
+          "sys",
+          "Dict"
+        ],
+        "has_main": false,
+        "specialties": [
+          "AgentCommerce (Agent)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "agent_commerce_v2.py",
+        "lines": 192,
+        "classes": [
+          {
+            "name": "StripeIntegration",
+            "methods": [
+              "__init__",
+              "create_customer",
+              "create_charge",
+              "get_balance"
+            ],
+            "method_count": 4
+          },
+          {
+            "name": "ShopifyIntegration",
+            "methods": [
+              "__init__",
+              "list_products",
+              "create_order"
+            ],
+            "method_count": 3
+          },
+          {
+            "name": "PayPalIntegration",
+            "methods": [
+              "__init__",
+              "create_payment",
+              "execute_payment"
+            ],
+            "method_count": 3
+          },
+          {
+            "name": "AgentCommerceEngine",
+            "methods": [
+              "__init__",
+              "register_service",
+              "charge_task",
+              "get_revenue",
+              "get_report"
+            ],
+            "method_count": 5
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "create_customer"
+          },
+          {
+            "name": "create_charge"
+          },
+          {
+            "name": "get_balance"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "list_products"
+          },
+          {
+            "name": "create_order"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "create_payment"
+          },
+          {
+            "name": "execute_payment"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "register_service"
+          },
+          {
+            "name": "charge_task"
+          },
+          {
+            "name": "get_revenue"
+          },
+          {
+            "name": "get_report"
+          }
+        ],
+        "imports": [
+          "Dict",
+          "datetime",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [
+          "AgentCommerceEngine (Agent)",
+          "fn:charge_task (Task)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "commerce_pk.py",
+        "lines": 46,
+        "classes": [
+          {
+            "name": "CommercePK",
+            "methods": [
+              "__init__",
+              "rank_services_by_income",
+              "rank_services_by_profit_margin",
+              "rank_services_by_customer_satisfaction",
+              "eliminate_losing_services",
+              "reward_high_profit_services"
+            ],
+            "method_count": 6
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "rank_services_by_income"
+          },
+          {
+            "name": "rank_services_by_profit_margin"
+          },
+          {
+            "name": "rank_services_by_customer_satisfaction"
+          },
+          {
+            "name": "eliminate_losing_services"
+          },
+          {
+            "name": "reward_high_profit_services"
+          }
+        ],
+        "imports": [
+          "os",
+          "AgentCommerce",
+          "sys",
+          "Dict"
+        ],
+        "has_main": false,
+        "specialties": [
+          "fn:rank_services_by_income (Rank)",
+          "CommercePK (PK)",
+          "fn:rank_services_by_customer_satisfaction (Rank)",
+          "fn:rank_services_by_profit_margin (Rank)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "commerce_pk_v2.py",
+        "lines": 107,
+        "classes": [
+          {
+            "name": "CommercePKRank",
+            "methods": [
+              "__init__",
+              "register",
+              "record_transaction",
+              "get_ranking",
+              "eliminate",
+              "score_summary"
+            ],
+            "method_count": 6
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "register"
+          },
+          {
+            "name": "record_transaction"
+          },
+          {
+            "name": "get_ranking"
+          },
+          {
+            "name": "eliminate"
+          },
+          {
+            "name": "score_summary"
+          }
+        ],
+        "imports": [
+          "Dict",
+          "datetime",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [
+          "CommercePKRank (PK)",
+          "fn:get_ranking (Rank)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "run.py",
+        "lines": 20,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "AgentCommerce",
+          "CommercePK"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "run_v2.py",
+        "lines": 86,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "sys",
+          "StripeIntegration",
+          "CommercePKRank"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome7": {
+    "label": "Agent OS层",
+    "modules": 4,
+    "lines": 269,
+    "classes": 4,
+    "functions": 27,
+    "specialties": [
+      "AgentOSShell (Agent)",
+      "fn:run_scheduler (Scheduler)",
+      "fn:_is_priority_task (Task)",
+      "AgentOSKernel (Agent)",
+      "AgentOSScheduler (Agent)"
+    ],
+    "file_details": [
+      {
+        "file": "agent_os_kernel.py",
+        "lines": 104,
+        "classes": [
+          {
+            "name": "AgentOSKernel",
+            "methods": [
+              "__init__",
+              "create_process",
+              "allocate_token",
+              "release_token",
+              "send_message",
+              "receive_message",
+              "get_process_status",
+              "get_memory_usage",
+              "run_scheduler",
+              "start",
+              "stop"
+            ],
+            "method_count": 11
+          },
+          {
+            "name": "AgentOSScheduler",
+            "methods": [
+              "__init__",
+              "schedule",
+              "_is_priority_task",
+              "_manage_token_budget"
+            ],
+            "method_count": 4
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "create_process"
+          },
+          {
+            "name": "allocate_token"
+          },
+          {
+            "name": "release_token"
+          },
+          {
+            "name": "send_message"
+          },
+          {
+            "name": "receive_message"
+          },
+          {
+            "name": "get_process_status"
+          },
+          {
+            "name": "get_memory_usage"
+          },
+          {
+            "name": "run_scheduler"
+          },
+          {
+            "name": "start"
+          },
+          {
+            "name": "stop"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "schedule"
+          },
+          {
+            "name": "_is_priority_task"
+          },
+          {
+            "name": "_manage_token_budget"
+          }
+        ],
+        "imports": [
+          "threading",
+          "queue",
+          "Dict",
+          "time"
+        ],
+        "has_main": false,
+        "specialties": [
+          "fn:run_scheduler (Scheduler)",
+          "fn:_is_priority_task (Task)",
+          "AgentOSKernel (Agent)",
+          "AgentOSScheduler (Agent)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "agent_os_scheduler.py",
+        "lines": 41,
+        "classes": [
+          {
+            "name": "AgentOSScheduler",
+            "methods": [
+              "__init__",
+              "schedule",
+              "_is_priority_task",
+              "_manage_token_budget"
+            ],
+            "method_count": 4
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "schedule"
+          },
+          {
+            "name": "_is_priority_task"
+          },
+          {
+            "name": "_manage_token_budget"
+          }
+        ],
+        "imports": [
+          "os",
+          "sys",
+          "AgentOSKernel",
+          "time"
+        ],
+        "has_main": false,
+        "specialties": [
+          "fn:_is_priority_task (Task)",
+          "AgentOSScheduler (Agent)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "agent_os_shell.py",
+        "lines": 86,
+        "classes": [
+          {
+            "name": "AgentOSShell",
+            "methods": [
+              "__init__",
+              "start",
+              "_run_chromosome",
+              "_show_processes",
+              "_show_resource_usage",
+              "_show_logs",
+              "_show_help",
+              "stop"
+            ],
+            "method_count": 8
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "start"
+          },
+          {
+            "name": "_run_chromosome"
+          },
+          {
+            "name": "_show_processes"
+          },
+          {
+            "name": "_show_resource_usage"
+          },
+          {
+            "name": "_show_logs"
+          },
+          {
+            "name": "_show_help"
+          },
+          {
+            "name": "stop"
+          }
+        ],
+        "imports": [
+          "threading",
+          "os",
+          "AgentOSKernel",
+          "sys",
+          "time"
+        ],
+        "has_main": true,
+        "specialties": [
+          "AgentOSShell (Agent)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "run.py",
+        "lines": 38,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "AgentOSKernel",
+          "sys",
+          "AgentOSScheduler"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome8": {
+    "label": "AP2支付协议",
+    "modules": 4,
+    "lines": 268,
+    "classes": 3,
+    "functions": 20,
+    "specialties": [
+      "AP2PaymentGateway (Gateway)",
+      "AP2Protocol (Protocol)",
+      "fn:register_wallet (Wallet)",
+      "AP2Wallet (Wallet)"
+    ],
+    "file_details": [
+      {
+        "file": "ap2_payment_gateway.py",
+        "lines": 55,
+        "classes": [
+          {
+            "name": "AP2PaymentGateway",
+            "methods": [
+              "__init__",
+              "register_wallet",
+              "process_payment_request"
+            ],
+            "method_count": 3
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "register_wallet"
+          },
+          {
+            "name": "process_payment_request"
+          }
+        ],
+        "imports": [
+          "AP2Protocol",
+          "json",
+          "os",
+          "sys",
+          "AP2Wallet"
+        ],
+        "has_main": false,
+        "specialties": [
+          "AP2PaymentGateway (Gateway)",
+          "fn:register_wallet (Wallet)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "ap2_protocol.py",
+        "lines": 86,
+        "classes": [
+          {
+            "name": "AP2Protocol",
+            "methods": [
+              "__init__",
+              "create_payment_request",
+              "verify_payment_request",
+              "aggregate_micro_payments",
+              "create_receipt",
+              "create_invoice"
+            ],
+            "method_count": 6
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "create_payment_request"
+          },
+          {
+            "name": "verify_payment_request"
+          },
+          {
+            "name": "aggregate_micro_payments"
+          },
+          {
+            "name": "create_receipt"
+          },
+          {
+            "name": "create_invoice"
+          }
+        ],
+        "imports": [
+          "time",
+          "hashlib",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [
+          "AP2Protocol (Protocol)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "ap2_wallet.py",
+        "lines": 79,
+        "classes": [
+          {
+            "name": "AP2Wallet",
+            "methods": [
+              "__init__",
+              "_load_transactions",
+              "_save_transactions",
+              "add_transaction",
+              "update_balance",
+              "set_budget",
+              "check_budget",
+              "get_balance",
+              "get_transactions",
+              "get_transaction_by_id",
+              "process_payment"
+            ],
+            "method_count": 11
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "_load_transactions"
+          },
+          {
+            "name": "_save_transactions"
+          },
+          {
+            "name": "add_transaction"
+          },
+          {
+            "name": "update_balance"
+          },
+          {
+            "name": "set_budget"
+          },
+          {
+            "name": "check_budget"
+          },
+          {
+            "name": "get_balance"
+          },
+          {
+            "name": "get_transactions"
+          },
+          {
+            "name": "get_transaction_by_id"
+          },
+          {
+            "name": "process_payment"
+          }
+        ],
+        "imports": [
+          "AP2Protocol",
+          "json",
+          "os",
+          "sys",
+          "time"
+        ],
+        "has_main": false,
+        "specialties": [
+          "AP2Wallet (Wallet)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "run.py",
+        "lines": 48,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "time",
+          "AP2Wallet",
+          "AP2Protocol",
+          "AP2PaymentGateway"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome9": {
+    "label": "代码修补部",
+    "modules": 2,
+    "lines": 163,
+    "classes": 1,
+    "functions": 4,
+    "specialties": [
+      "BugDoctor (Doctor)"
+    ],
+    "file_details": [
+      {
+        "file": "run.py",
+        "lines": 34,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "sys",
+          "tempfile",
+          "BugDoctor"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_bug_doctor.py",
+        "lines": 129,
+        "classes": [
+          {
+            "name": "BugDoctor",
+            "methods": [
+              "__init__",
+              "scan_file",
+              "scan_directory",
+              "get_report"
+            ],
+            "method_count": 4
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "scan_file"
+          },
+          {
+            "name": "scan_directory"
+          },
+          {
+            "name": "get_report"
+          }
+        ],
+        "imports": [
+          "os",
+          "Dict"
+        ],
+        "has_main": false,
+        "specialties": [
+          "BugDoctor (Doctor)"
+        ],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome10": {
+    "label": "逻辑推理部",
+    "modules": 3,
+    "lines": 277,
+    "classes": 3,
+    "functions": 24,
+    "specialties": [
+      "SymbolicEngine (Engine)",
+      "ContractDecorator (Contract)"
+    ],
+    "file_details": [
+      {
+        "file": "run.py",
+        "lines": 4,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "sys"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_contract_decorators.py",
+        "lines": 38,
+        "classes": [],
+        "functions": [
+          {
+            "name": "pre_condition"
+          },
+          {
+            "name": "post_condition"
+          },
+          {
+            "name": "invariant"
+          },
+          {
+            "name": "decorator"
+          },
+          {
+            "name": "decorator"
+          },
+          {
+            "name": "decorator"
+          },
+          {
+            "name": "wrapper"
+          },
+          {
+            "name": "wrapper"
+          },
+          {
+            "name": "wrapper"
+          }
+        ],
+        "imports": [
+          "Callable"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_symbolic_engine.py",
+        "lines": 235,
+        "classes": [
+          {
+            "name": "SymbolicEngine",
+            "methods": [
+              "__init__",
+              "add_var",
+              "add_constraint",
+              "solve",
+              "check",
+              "infer_return_type"
+            ],
+            "method_count": 6
+          },
+          {
+            "name": "ContractDecorator",
+            "methods": [
+              "precondition",
+              "postcondition",
+              "invariant"
+            ],
+            "method_count": 3
+          },
+          {
+            "name": "LogicReasoner",
+            "methods": [
+              "__init__",
+              "add_rule",
+              "add_fact",
+              "_substitute",
+              "reason"
+            ],
+            "method_count": 5
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "add_var"
+          },
+          {
+            "name": "add_constraint"
+          },
+          {
+            "name": "solve"
+          },
+          {
+            "name": "check"
+          },
+          {
+            "name": "infer_return_type"
+          },
+          {
+            "name": "precondition"
+          },
+          {
+            "name": "postcondition"
+          },
+          {
+            "name": "invariant"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "add_rule"
+          },
+          {
+            "name": "add_fact"
+          },
+          {
+            "name": "_substitute"
+          },
+          {
+            "name": "reason"
+          },
+          {
+            "name": "sqrt_approx"
+          }
+        ],
+        "imports": [
+          "os",
+          "Dict"
+        ],
+        "has_main": true,
+        "specialties": [
+          "SymbolicEngine (Engine)",
+          "ContractDecorator (Contract)"
+        ],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome11": {
+    "label": "类型/度量部",
+    "modules": 2,
+    "lines": 198,
+    "classes": 1,
+    "functions": 10,
+    "specialties": [
+      "fn:_calc_complexity (Complexity)",
+      "ComplexityAnalyzer (Complexity)",
+      "fn:_nasa_rank (Rank)"
+    ],
+    "file_details": [
+      {
+        "file": "run.py",
+        "lines": 4,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "sys"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_complexity_analyzer.py",
+        "lines": 194,
+        "classes": [
+          {
+            "name": "ComplexityAnalyzer",
+            "methods": [
+              "__init__",
+              "analyze_file",
+              "_calc_complexity",
+              "_nasa_rank",
+              "_has_docstring",
+              "_has_type_hints",
+              "_infer_type",
+              "_maintainability_index",
+              "scan_directory",
+              "score"
+            ],
+            "method_count": 10
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "analyze_file"
+          },
+          {
+            "name": "_calc_complexity"
+          },
+          {
+            "name": "_nasa_rank"
+          },
+          {
+            "name": "_has_docstring"
+          },
+          {
+            "name": "_has_type_hints"
+          },
+          {
+            "name": "_infer_type"
+          },
+          {
+            "name": "_maintainability_index"
+          },
+          {
+            "name": "scan_directory"
+          },
+          {
+            "name": "score"
+          }
+        ],
+        "imports": [
+          "os",
+          "defaultdict",
+          "Dict",
+          "tempfile"
+        ],
+        "has_main": true,
+        "specialties": [
+          "fn:_calc_complexity (Complexity)",
+          "ComplexityAnalyzer (Complexity)",
+          "fn:_nasa_rank (Rank)"
+        ],
+        "status": "OK"
+      }
+    ]
+  },
+  "chromosome12": {
+    "label": "自动测试部",
+    "modules": 2,
+    "lines": 203,
+    "classes": 4,
+    "functions": 11,
+    "specialties": [
+      "fn:test_function (Test)",
+      "V5Logger (Logger)",
+      "AutoTester (Test)",
+      "SafeRunner (Runner)"
+    ],
+    "file_details": [
+      {
+        "file": "run.py",
+        "lines": 4,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "sys"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_auto_tester.py",
+        "lines": 199,
+        "classes": [
+          {
+            "name": "V5Logger",
+            "methods": [
+              "get"
+            ],
+            "method_count": 1
+          },
+          {
+            "name": "AutoTester",
+            "methods": [
+              "__init__",
+              "_generate_value",
+              "_infer_params",
+              "test_function",
+              "report"
+            ],
+            "method_count": 5
+          },
+          {
+            "name": "SafeRunner",
+            "methods": [
+              "run"
+            ],
+            "method_count": 1
+          },
+          {
+            "name": "Result",
+            "methods": [
+              "__init__",
+              "__repr__"
+            ],
+            "method_count": 2
+          }
+        ],
+        "functions": [
+          {
+            "name": "get"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "_generate_value"
+          },
+          {
+            "name": "_infer_params"
+          },
+          {
+            "name": "test_function"
+          },
+          {
+            "name": "report"
+          },
+          {
+            "name": "run"
+          },
+          {
+            "name": "add"
+          },
+          {
+            "name": "divide"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "__repr__"
+          }
+        ],
+        "imports": [
+          "os",
+          "Dict",
+          "wraps",
+          "tempfile"
+        ],
+        "has_main": true,
+        "specialties": [
+          "SafeRunner (Runner)",
+          "V5Logger (Logger)",
+          "fn:test_function (Test)",
+          "AutoTester (Test)"
+        ],
+        "status": "OK"
+      }
+    ]
+  },
+  "_v5_root": {
+    "modules": 18,
+    "lines": 3053,
+    "classes": 4,
+    "functions": 57,
+    "file_details": [
+      {
+        "file": "v5_absorb_chromosome9.py",
+        "lines": 288,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "os",
+          "datetime",
+          "subprocess"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_absorption_plan2.py",
+        "lines": 106,
+        "classes": [],
+        "functions": [
+          {
+            "name": "scan_source"
+          }
+        ],
+        "imports": [
+          "os"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_closed_loop_pipeline.py",
+        "lines": 351,
+        "classes": [
+          {
+            "name": "IGP_Pipeline",
+            "methods": [
+              "__init__",
+              "_discover_chromosomes",
+              "_chromo_name",
+              "step1_absorb",
+              "step2_dev",
+              "step3_fission",
+              "step4_network_deploy",
+              "step5_feedback",
+              "step6_digest",
+              "step7_accept",
+              "run_full_cycle"
+            ],
+            "method_count": 11
+          }
+        ],
+        "functions": [
+          {
+            "name": "_self_check"
+          },
+          {
+            "name": "log"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "_discover_chromosomes"
+          },
+          {
+            "name": "_chromo_name"
+          },
+          {
+            "name": "step1_absorb"
+          },
+          {
+            "name": "step2_dev"
+          },
+          {
+            "name": "step3_fission"
+          },
+          {
+            "name": "step4_network_deploy"
+          },
+          {
+            "name": "step5_feedback"
+          },
+          {
+            "name": "step6_digest"
+          },
+          {
+            "name": "step7_accept"
+          },
+          {
+            "name": "run_full_cycle"
+          },
+          {
+            "name": "now_us"
+          }
+        ],
+        "imports": [
+          "os",
+          "time",
+          "Dict",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_cruise.py",
+        "lines": 77,
+        "classes": [],
+        "functions": [
+          {
+            "name": "count_dir"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_dashboard.py",
+        "lines": 67,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "subprocess"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_defect_audit.py",
+        "lines": 170,
+        "classes": [],
+        "functions": [
+          {
+            "name": "audit_v5"
+          },
+          {
+            "name": "generate_defect_report"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_engine_loop.py",
+        "lines": 164,
+        "classes": [
+          {
+            "name": "V5LoopEngine",
+            "methods": [
+              "__init__",
+              "run_step",
+              "run_full_cycle",
+              "_save_log",
+              "run_forever"
+            ],
+            "method_count": 5
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "run_step"
+          },
+          {
+            "name": "run_full_cycle"
+          },
+          {
+            "name": "_save_log"
+          },
+          {
+            "name": "run_forever"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [
+          "V5LoopEngine (Engine)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "v5_final_all.py",
+        "lines": 79,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "subprocess"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_final_verify.py",
+        "lines": 139,
+        "classes": [],
+        "functions": [
+          {
+            "name": "check_file"
+          },
+          {
+            "name": "run_mission"
+          }
+        ],
+        "imports": [
+          "datetime",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_fission_engine.py",
+        "lines": 509,
+        "classes": [
+          {
+            "name": "ChromosomeCycle",
+            "methods": [
+              "__init__",
+              "step_absorb",
+              "step_digest",
+              "step_develop",
+              "step_mutate",
+              "step_fission",
+              "step_upgrade",
+              "run_full_cycle",
+              "status"
+            ],
+            "method_count": 9
+          },
+          {
+            "name": "V5Engine",
+            "methods": [
+              "__init__",
+              "run_all_cycles",
+              "report"
+            ],
+            "method_count": 3
+          }
+        ],
+        "functions": [
+          {
+            "name": "load_cycles"
+          },
+          {
+            "name": "save_cycles"
+          },
+          {
+            "name": "get_chromosome_dir"
+          },
+          {
+            "name": "now_iso"
+          },
+          {
+            "name": "extract_sources"
+          },
+          {
+            "name": "extract_insights"
+          },
+          {
+            "name": "extract_gaps"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "step_absorb"
+          },
+          {
+            "name": "step_digest"
+          },
+          {
+            "name": "step_develop"
+          },
+          {
+            "name": "step_mutate"
+          },
+          {
+            "name": "step_fission"
+          },
+          {
+            "name": "step_upgrade"
+          },
+          {
+            "name": "run_full_cycle"
+          }
+        ],
+        "imports": [
+          "json",
+          "sys",
+          "Path",
+          "Dict",
+          "datetime",
+          "random"
+        ],
+        "has_main": true,
+        "specialties": [
+          "V5Engine (Engine)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "v5_ghost_patrol.py",
+        "lines": 138,
+        "classes": [],
+        "functions": [
+          {
+            "name": "patrol_py_file"
+          }
+        ],
+        "imports": [
+          "os"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_github_scanner.py",
+        "lines": 126,
+        "classes": [],
+        "functions": [
+          {
+            "name": "recommend_chromosome"
+          },
+          {
+            "name": "fetch_trending"
+          },
+          {
+            "name": "mock_trending"
+          },
+          {
+            "name": "main"
+          }
+        ],
+        "imports": [
+          "os"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_health_check.py",
+        "lines": 93,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "AP2Protocol",
+          "os",
+          "AgentOSKernel",
+          "AP2Wallet",
+          "AgentCommerceEngine",
+          "AP2PaymentGateway",
+          "datetime"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_oneclick.py",
+        "lines": 60,
+        "classes": [],
+        "functions": [
+          {
+            "name": "run_checkpoint"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_pk_arena.py",
+        "lines": 97,
+        "classes": [],
+        "functions": [
+          {
+            "name": "run_chromosome"
+          },
+          {
+            "name": "main"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_pk_battle.py",
+        "lines": 276,
+        "classes": [],
+        "functions": [
+          {
+            "name": "import_chromosome_module"
+          },
+          {
+            "name": "run_chromosome_test"
+          },
+          {
+            "name": "run_all_tests"
+          },
+          {
+            "name": "run_inter_chromosome_pk"
+          },
+          {
+            "name": "generate_pk_report"
+          }
+        ],
+        "imports": [
+          "json",
+          "sys",
+          "Path",
+          "importlib.util",
+          "Dict",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [
+          "fn:run_inter_chromosome_pk (PK)",
+          "fn:generate_pk_report (PK)",
+          "fn:run_all_tests (Test)",
+          "fn:run_chromosome_test (Test)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "v5_skills_registry.py",
+        "lines": 112,
+        "classes": [],
+        "functions": [
+          {
+            "name": "extract_docstring"
+          },
+          {
+            "name": "main"
+          }
+        ],
+        "imports": [
+          "os"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_verify.py",
+        "lines": 201,
+        "classes": [],
+        "functions": [
+          {
+            "name": "verify_chromosome"
+          },
+          {
+            "name": "generate_report"
+          }
+        ],
+        "imports": [
+          "Dict",
+          "datetime",
+          "json"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      }
+    ]
+  },
+  "_deploy": {
+    "modules": 4,
+    "lines": 309,
+    "classes": 4,
+    "functions": 12,
+    "file_details": [
+      {
+        "file": "a2a_deploy.py",
+        "lines": 87,
+        "classes": [
+          {
+            "name": "CodeReviewAgent",
+            "methods": [
+              "do_POST"
+            ],
+            "method_count": 1
+          },
+          {
+            "name": "TranslationAgent",
+            "methods": [
+              "do_POST"
+            ],
+            "method_count": 1
+          }
+        ],
+        "functions": [
+          {
+            "name": "send_task_to_agent_b"
+          },
+          {
+            "name": "do_POST"
+          },
+          {
+            "name": "do_POST"
+          }
+        ],
+        "imports": [
+          "threading",
+          "json",
+          "socketserver",
+          "requests",
+          "http.server",
+          "urllib.parse"
+        ],
+        "has_main": false,
+        "specialties": [
+          "TranslationAgent (Agent)",
+          "fn:send_task_to_agent_b (Agent)",
+          "CodeReviewAgent (Agent)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "api_live_check.py",
+        "lines": 68,
+        "classes": [],
+        "functions": [
+          {
+            "name": "check_github"
+          },
+          {
+            "name": "check_stripe"
+          },
+          {
+            "name": "check_ap2"
+          },
+          {
+            "name": "main"
+          }
+        ],
+        "imports": [
+          "AP2Protocol",
+          "os",
+          "AP2Wallet",
+          "AP2PaymentGateway",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "commerce_deploy.py",
+        "lines": 79,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "os",
+          "stripe",
+          "datetime",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "mcp_deploy.py",
+        "lines": 75,
+        "classes": [
+          {
+            "name": "MCPClient",
+            "methods": [
+              "__init__",
+              "call"
+            ],
+            "method_count": 2
+          },
+          {
+            "name": "MockMCPClient",
+            "methods": [
+              "call"
+            ],
+            "method_count": 1
+          }
+        ],
+        "functions": [
+          {
+            "name": "log_call"
+          },
+          {
+            "name": "get_mcp_client"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "call"
+          },
+          {
+            "name": "call"
+          }
+        ],
+        "imports": [
+          "json",
+          "urllib.request",
+          "logging",
+          "time",
+          "random"
+        ],
+        "has_main": true,
+        "specialties": [
+          "MockMCPClient (Client)",
+          "MCPClient (Client)",
+          "fn:get_mcp_client (Client)"
+        ],
+        "status": "OK"
+      }
+    ]
+  },
+  "_totals": {
+    "chromosomes": 12,
+    "modules": 47,
+    "lines": 3448,
+    "classes": 46,
+    "functions": 255,
+    "v5_scripts": [
+      {
+        "file": "v5_absorb_chromosome9.py",
+        "lines": 288,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "os",
+          "datetime",
+          "subprocess"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_absorption_plan2.py",
+        "lines": 106,
+        "classes": [],
+        "functions": [
+          {
+            "name": "scan_source"
+          }
+        ],
+        "imports": [
+          "os"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_closed_loop_pipeline.py",
+        "lines": 351,
+        "classes": [
+          {
+            "name": "IGP_Pipeline",
+            "methods": [
+              "__init__",
+              "_discover_chromosomes",
+              "_chromo_name",
+              "step1_absorb",
+              "step2_dev",
+              "step3_fission",
+              "step4_network_deploy",
+              "step5_feedback",
+              "step6_digest",
+              "step7_accept",
+              "run_full_cycle"
+            ],
+            "method_count": 11
+          }
+        ],
+        "functions": [
+          {
+            "name": "_self_check"
+          },
+          {
+            "name": "log"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "_discover_chromosomes"
+          },
+          {
+            "name": "_chromo_name"
+          },
+          {
+            "name": "step1_absorb"
+          },
+          {
+            "name": "step2_dev"
+          },
+          {
+            "name": "step3_fission"
+          },
+          {
+            "name": "step4_network_deploy"
+          },
+          {
+            "name": "step5_feedback"
+          },
+          {
+            "name": "step6_digest"
+          },
+          {
+            "name": "step7_accept"
+          },
+          {
+            "name": "run_full_cycle"
+          },
+          {
+            "name": "now_us"
+          }
+        ],
+        "imports": [
+          "os",
+          "time",
+          "Dict",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_cruise.py",
+        "lines": 77,
+        "classes": [],
+        "functions": [
+          {
+            "name": "count_dir"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_dashboard.py",
+        "lines": 67,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "subprocess"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_defect_audit.py",
+        "lines": 170,
+        "classes": [],
+        "functions": [
+          {
+            "name": "audit_v5"
+          },
+          {
+            "name": "generate_defect_report"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_engine_loop.py",
+        "lines": 164,
+        "classes": [
+          {
+            "name": "V5LoopEngine",
+            "methods": [
+              "__init__",
+              "run_step",
+              "run_full_cycle",
+              "_save_log",
+              "run_forever"
+            ],
+            "method_count": 5
+          }
+        ],
+        "functions": [
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "run_step"
+          },
+          {
+            "name": "run_full_cycle"
+          },
+          {
+            "name": "_save_log"
+          },
+          {
+            "name": "run_forever"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [
+          "V5LoopEngine (Engine)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "v5_final_all.py",
+        "lines": 79,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "subprocess"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_final_verify.py",
+        "lines": 139,
+        "classes": [],
+        "functions": [
+          {
+            "name": "check_file"
+          },
+          {
+            "name": "run_mission"
+          }
+        ],
+        "imports": [
+          "datetime",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_fission_engine.py",
+        "lines": 509,
+        "classes": [
+          {
+            "name": "ChromosomeCycle",
+            "methods": [
+              "__init__",
+              "step_absorb",
+              "step_digest",
+              "step_develop",
+              "step_mutate",
+              "step_fission",
+              "step_upgrade",
+              "run_full_cycle",
+              "status"
+            ],
+            "method_count": 9
+          },
+          {
+            "name": "V5Engine",
+            "methods": [
+              "__init__",
+              "run_all_cycles",
+              "report"
+            ],
+            "method_count": 3
+          }
+        ],
+        "functions": [
+          {
+            "name": "load_cycles"
+          },
+          {
+            "name": "save_cycles"
+          },
+          {
+            "name": "get_chromosome_dir"
+          },
+          {
+            "name": "now_iso"
+          },
+          {
+            "name": "extract_sources"
+          },
+          {
+            "name": "extract_insights"
+          },
+          {
+            "name": "extract_gaps"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "step_absorb"
+          },
+          {
+            "name": "step_digest"
+          },
+          {
+            "name": "step_develop"
+          },
+          {
+            "name": "step_mutate"
+          },
+          {
+            "name": "step_fission"
+          },
+          {
+            "name": "step_upgrade"
+          },
+          {
+            "name": "run_full_cycle"
+          }
+        ],
+        "imports": [
+          "json",
+          "sys",
+          "Path",
+          "Dict",
+          "datetime",
+          "random"
+        ],
+        "has_main": true,
+        "specialties": [
+          "V5Engine (Engine)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "v5_ghost_patrol.py",
+        "lines": 138,
+        "classes": [],
+        "functions": [
+          {
+            "name": "patrol_py_file"
+          }
+        ],
+        "imports": [
+          "os"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_github_scanner.py",
+        "lines": 126,
+        "classes": [],
+        "functions": [
+          {
+            "name": "recommend_chromosome"
+          },
+          {
+            "name": "fetch_trending"
+          },
+          {
+            "name": "mock_trending"
+          },
+          {
+            "name": "main"
+          }
+        ],
+        "imports": [
+          "os"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_health_check.py",
+        "lines": 93,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "AP2Protocol",
+          "os",
+          "AgentOSKernel",
+          "AP2Wallet",
+          "AgentCommerceEngine",
+          "AP2PaymentGateway",
+          "datetime"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_oneclick.py",
+        "lines": 60,
+        "classes": [],
+        "functions": [
+          {
+            "name": "run_checkpoint"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_pk_arena.py",
+        "lines": 97,
+        "classes": [],
+        "functions": [
+          {
+            "name": "run_chromosome"
+          },
+          {
+            "name": "main"
+          }
+        ],
+        "imports": [
+          "os",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_pk_battle.py",
+        "lines": 276,
+        "classes": [],
+        "functions": [
+          {
+            "name": "import_chromosome_module"
+          },
+          {
+            "name": "run_chromosome_test"
+          },
+          {
+            "name": "run_all_tests"
+          },
+          {
+            "name": "run_inter_chromosome_pk"
+          },
+          {
+            "name": "generate_pk_report"
+          }
+        ],
+        "imports": [
+          "json",
+          "sys",
+          "Path",
+          "importlib.util",
+          "Dict",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [
+          "fn:run_inter_chromosome_pk (PK)",
+          "fn:generate_pk_report (PK)",
+          "fn:run_all_tests (Test)",
+          "fn:run_chromosome_test (Test)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "v5_skills_registry.py",
+        "lines": 112,
+        "classes": [],
+        "functions": [
+          {
+            "name": "extract_docstring"
+          },
+          {
+            "name": "main"
+          }
+        ],
+        "imports": [
+          "os"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "v5_verify.py",
+        "lines": 201,
+        "classes": [],
+        "functions": [
+          {
+            "name": "verify_chromosome"
+          },
+          {
+            "name": "generate_report"
+          }
+        ],
+        "imports": [
+          "Dict",
+          "datetime",
+          "json"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      }
+    ],
+    "deploy_scripts": [
+      {
+        "file": "a2a_deploy.py",
+        "lines": 87,
+        "classes": [
+          {
+            "name": "CodeReviewAgent",
+            "methods": [
+              "do_POST"
+            ],
+            "method_count": 1
+          },
+          {
+            "name": "TranslationAgent",
+            "methods": [
+              "do_POST"
+            ],
+            "method_count": 1
+          }
+        ],
+        "functions": [
+          {
+            "name": "send_task_to_agent_b"
+          },
+          {
+            "name": "do_POST"
+          },
+          {
+            "name": "do_POST"
+          }
+        ],
+        "imports": [
+          "threading",
+          "json",
+          "socketserver",
+          "requests",
+          "http.server",
+          "urllib.parse"
+        ],
+        "has_main": false,
+        "specialties": [
+          "TranslationAgent (Agent)",
+          "fn:send_task_to_agent_b (Agent)",
+          "CodeReviewAgent (Agent)"
+        ],
+        "status": "OK"
+      },
+      {
+        "file": "api_live_check.py",
+        "lines": 68,
+        "classes": [],
+        "functions": [
+          {
+            "name": "check_github"
+          },
+          {
+            "name": "check_stripe"
+          },
+          {
+            "name": "check_ap2"
+          },
+          {
+            "name": "main"
+          }
+        ],
+        "imports": [
+          "AP2Protocol",
+          "os",
+          "AP2Wallet",
+          "AP2PaymentGateway",
+          "datetime"
+        ],
+        "has_main": true,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "commerce_deploy.py",
+        "lines": 79,
+        "classes": [],
+        "functions": [],
+        "imports": [
+          "os",
+          "stripe",
+          "datetime",
+          "json"
+        ],
+        "has_main": false,
+        "specialties": [],
+        "status": "OK"
+      },
+      {
+        "file": "mcp_deploy.py",
+        "lines": 75,
+        "classes": [
+          {
+            "name": "MCPClient",
+            "methods": [
+              "__init__",
+              "call"
+            ],
+            "method_count": 2
+          },
+          {
+            "name": "MockMCPClient",
+            "methods": [
+              "call"
+            ],
+            "method_count": 1
+          }
+        ],
+        "functions": [
+          {
+            "name": "log_call"
+          },
+          {
+            "name": "get_mcp_client"
+          },
+          {
+            "name": "__init__"
+          },
+          {
+            "name": "call"
+          },
+          {
+            "name": "call"
+          }
+        ],
+        "imports": [
+          "json",
+          "urllib.request",
+          "logging",
+          "time",
+          "random"
+        ],
+        "has_main": true,
+        "specialties": [
+          "MockMCPClient (Client)",
+          "MCPClient (Client)",
+          "fn:get_mcp_client (Client)"
+        ],
+        "status": "OK"
+      }
+    ],
+    "grand_total_lines": 6810
+  }
+}

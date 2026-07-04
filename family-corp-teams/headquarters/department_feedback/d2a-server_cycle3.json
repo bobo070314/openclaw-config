@@ -1,0 +1,7 @@
+{
+  "dept": "infra",
+  "project": "d2a-server",
+  "absorb": "D2A协议",
+  "task": "启动D2A Server，测试regsiter+handle全流程，看是否正常通信",
+  "status": "ok"
+}

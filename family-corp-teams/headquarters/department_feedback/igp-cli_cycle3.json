@@ -1,0 +1,7 @@
+{
+  "dept": "mobile",
+  "project": "igp-cli",
+  "absorb": "LLM分支",
+  "task": "测试CLI的所有命令：status/heal/rank",
+  "status": "ok"
+}

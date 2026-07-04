@@ -1,0 +1,18 @@
+{
+  "department": "9.growth",
+  "project": "igp-scanner",
+  "absorb_source": "DNA基因组",
+  "tool": "生态扫描+吸收推荐",
+  "files": 1,
+  "success_rate": "100% (1/1)",
+  "fail_count": 0,
+  "run_details": [
+    {
+      "file": "scanner.py",
+      "status": "ok",
+      "output": "  igp-knowledge      | 352词/106唯一 | self(14), print(14), index(12), docs(10), text(9) |   igp-mutation       | 564词/152唯一 | score(29), content(27), pa",
+      "time": 0.1
+    }
+  ],
+  "time": "2026-07-01T11:10:36"
+}

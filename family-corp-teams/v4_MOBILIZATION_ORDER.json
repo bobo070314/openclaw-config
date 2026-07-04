@@ -1,0 +1,35 @@
+{
+  "title": "IGP V4 全面战争总动员令",
+  "issued_at": "2026-06-30T23:40:00+08:00",
+  "commander": "董事会（老板）",
+  "level": "MAXIMUM_ALERT",
+  "message": "外部生态已经领先我们一个时代。42个Team全部转入作战模式。目标：在MCP协议兼容、Agent Skills生态两大P0方向实现反超。",
+  "orders": [
+    {
+      "to": "all_departments",
+      "order": "即日起，所有部门KPI考核增加'外部吸收贡献度'指标。每吸收一个外部项目到IGP体系加10分。"
+    },
+    {
+      "to": "研发团队(核心)",
+      "order": "成立V4突击队。消化吸收后直接产出v4代码。优先级：MCP兼容 > Skills系统 > Provider抽象 > Plan/Act安全模式。"
+    },
+    {
+      "to": "战略投资部",
+      "order": "启动外部猎头模式。对GitHub Top项目关键贡献者生成邀请函。目标：MCP协议核心贡献者、OpenCode架构师、Cline安全专家。"
+    },
+    {
+      "to": "AI部门",
+      "order": "评估DashScope Qwen vs 外部模型差距。给出Provider抽象层设计方案。"
+    },
+    {
+      "to": "Frontend/Backend/Infra",
+      "order": "为v4模块创建新目录upgrade-v4/。三人一组分别负责MCP Client/Server/Skills解析。"
+    }
+  ],
+  "expected_transformation": {
+    "吸收前": "IGP avg 4.0/10, 行业 avg 7.5/10, 差距-3.5",
+    "P0吸收后": "IGP avg 6.5/10, 行业 avg 7.5/10, 差距-1.0",
+    "全量吸收后": "IGP avg 8.5/10, 行业 avg 7.5/10, 反超+1.0",
+    "核心理念": "不追低处。嫁接PK/进化优势到标准生态。IGP = 会自我进化的企业架构Agent军团"
+  }
+}

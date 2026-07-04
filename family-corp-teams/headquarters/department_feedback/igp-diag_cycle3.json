@@ -1,0 +1,7 @@
+{
+  "dept": "tech-support",
+  "project": "igp-diag",
+  "absorb": "LLM引擎",
+  "task": "运行diag.py诊断所有项目健康分，输出不健康项目清单",
+  "status": "ok"
+}

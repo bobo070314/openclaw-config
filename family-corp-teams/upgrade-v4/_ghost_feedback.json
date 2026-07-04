@@ -1,0 +1,20 @@
+{
+  "upgrade": "2026-07-01 09:25→09:31",
+  "project": "IGP Ghost 幽灵哨兵",
+  "version": "v1 → v2",
+  "team": "frontend-team1 → IGP Ghost Team",
+  "zero_token": true,
+  "tech_stack": "Python 3.14 标准库, 0第三方依赖",
+  "what_changed": {
+    "v1": "仅检测: python/powershell/subagents/openclaw",
+    "v2": "检测 + 自愈(SetConsoleCP/重建目录) + 报警(ghost_alert.json/D2A消息)"
+  },
+  "bugs_fixed": [
+    "check_subagents 缺少 ok key → 修复为返回 ok=dead==0",
+    "all_ok 检测逻辑用 v.get 默认值 → 统一处理",
+    "自愈模块 try/except 捕获异常 → 添加异常描述"
+  ],
+  "alerts_integrated_with": "D2A Agent协议(projects/igp-d2a)",
+  "digested_in": "projects/igp-ghost/BEST_PRACTICE.md",
+  "next": "v3: cron定时巡逻 | v4: 自动修核心脚本 | v5: D2A自动通知"
+}

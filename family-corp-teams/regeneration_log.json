@@ -1,0 +1,255 @@
+[
+  {
+    "event_id": "REGEN-0001",
+    "date": "2026-06-30T20:01:18.603854",
+    "department": "frontend",
+    "disbanded_team": "team3(Hono)",
+    "loss_history": [
+      {
+        "team": "team3(Hono)",
+        "approach": "Hono快速重写临时前端",
+        "department": "frontend",
+        "ticket_id": "EVO-0001",
+        "score": 7.0,
+        "reason": "评分垫底 (7.0分)",
+        "eliminated_at": "2026-06-30T20:01:09.687353"
+      },
+      {
+        "team": "team3(Hono)",
+        "approach": "换Hono框架重写",
+        "department": "frontend",
+        "ticket_id": "EVO-0002",
+        "score": 5.8,
+        "reason": "评分垫底 (5.8分)",
+        "eliminated_at": "2026-06-30T20:01:18.601959"
+      }
+    ],
+    "new_tool_stack": "Solid.js / Qwik / Astro",
+    "status": "done"
+  },
+  {
+    "event_id": "REGEN-0003",
+    "date": "2026-06-30T20:14:48.792856",
+    "department": "frontend",
+    "disbanded_team": "team3(Solid.js)",
+    "loss_history": [
+      {
+        "team": "team3(Solid.js)",
+        "approach": "Solid.js重写页面",
+        "department": "frontend",
+        "ticket_id": "EVO-0010",
+        "score": 7.0,
+        "reason": "评分垫底 (7.0分)",
+        "eliminated_at": "2026-06-30T20:12:02.043170"
+      },
+      {
+        "team": "team3(Solid.js)",
+        "approach": "Solid.js重写页面",
+        "department": "frontend",
+        "ticket_id": "EVO-0012",
+        "score": 7.0,
+        "reason": "评分垫底 (7.0分)",
+        "eliminated_at": "2026-06-30T20:14:48.788642"
+      }
+    ],
+    "new_tool_stack": "Solid.js / Qwik / Astro",
+    "status": "done"
+  },
+  {
+    "event_id": "REGEN-0003",
+    "date": "2026-06-30T20:21:01.505295",
+    "department": "backend",
+    "disbanded_team": "team3(PocketBase)",
+    "loss_history": [
+      {
+        "team": "team3(PocketBase)",
+        "approach": "换PB托管数据库",
+        "department": "backend",
+        "ticket_id": "EVO-0004",
+        "score": 5.6,
+        "reason": "评分垫底 (5.6分)",
+        "eliminated_at": "2026-06-30T20:01:54.113777"
+      },
+      {
+        "team": "team3(PocketBase)",
+        "approach": "探索Bun兼容性，证据不足再评估",
+        "department": "backend",
+        "ticket_id": "EVO-0021",
+        "score": 5.2,
+        "reason": "评分垫底 (5.2分)",
+        "eliminated_at": "2026-06-30T20:21:01.500876"
+      }
+    ],
+    "new_tool_stack": "Bun / Elysia / PocketBase",
+    "status": "reorganized"
+  },
+  {
+    "event_id": "REGEN-0004",
+    "date": "2026-06-30T20:33:39.715804",
+    "department": "quality",
+    "disbanded_team": "team3(Testing Library)",
+    "loss_history": [
+      {
+        "team": "team3(Testing Library)",
+        "approach": "Testing Library单元测试+覆盖率",
+        "department": "quality",
+        "ticket_id": "EVO-0025",
+        "score": 6.0,
+        "reason": "评分垫底 (6.0分)",
+        "eliminated_at": "2026-06-30T20:33:13.754175"
+      },
+      {
+        "team": "team3(Testing Library)",
+        "approach": "Testing Library覆盖率优化",
+        "department": "quality",
+        "ticket_id": "EVO-0026",
+        "score": 5.0,
+        "reason": "评分垫底 (5.0分)",
+        "eliminated_at": "2026-06-30T20:33:39.710394"
+      }
+    ],
+    "new_tool_stack": "Vitest / Coverage / Knox",
+    "status": "reorganized"
+  },
+  {
+    "event_id": "REGEN-0005",
+    "date": "2026-07-01T01:59:30.712725",
+    "department": "backend",
+    "disbanded_team": "team3",
+    "loss_history": [
+      {
+        "round_id": "BOARD",
+        "department": "backend"
+      }
+    ],
+    "new_tool_stack": "Bun / Elysia / PocketBase",
+    "status": "reorganized"
+  },
+  {
+    "event_id": "REGEN-0006",
+    "date": "2026-07-01T01:59:30.714439",
+    "department": "infrastructure",
+    "disbanded_team": "team3",
+    "loss_history": [
+      {
+        "round_id": "BOARD",
+        "department": "infrastructure"
+      }
+    ],
+    "new_tool_stack": "Nomad / Coolify / Coolify",
+    "status": "reorganized"
+  },
+  {
+    "event_id": "REGEN-0007",
+    "date": "2026-07-01T01:59:30.716521",
+    "department": "compliance",
+    "disbanded_team": "team3",
+    "loss_history": [
+      {
+        "round_id": "BOARD",
+        "department": "compliance"
+      }
+    ],
+    "new_tool_stack": "Docuseal / Signoz / Audit",
+    "status": "reorganized"
+  },
+  {
+    "event_id": "REGEN-BOARD-backend",
+    "date": "2026-07-01T01:59:30.720913",
+    "department": "backend",
+    "disbanded_team": "all",
+    "loss_history": [
+      {
+        "round_id": "BOARD-20260701",
+        "reason": "Goal修复零产出"
+      }
+    ],
+    "new_tool_stack": "Hono / Elysia / PocketBase (新后端三剑客)",
+    "status": "reorganized"
+  },
+  {
+    "event_id": "REGEN-BOARD-infrastructure",
+    "date": "2026-07-01T01:59:30.720924",
+    "department": "infrastructure",
+    "disbanded_team": "all",
+    "loss_history": [
+      {
+        "round_id": "BOARD-20260701",
+        "reason": "Goal修复零产出"
+      }
+    ],
+    "new_tool_stack": "Coolify / Traefik / Docker Compose (轻量基础设施)",
+    "status": "reorganized"
+  },
+  {
+    "event_id": "REGEN-BOARD-compliance",
+    "date": "2026-07-01T01:59:30.720928",
+    "department": "compliance",
+    "disbanded_team": "all",
+    "loss_history": [
+      {
+        "round_id": "BOARD-20260701",
+        "reason": "Goal修复零产出"
+      }
+    ],
+    "new_tool_stack": "MCP Integrity Chain / OpenPolicyAgent (自动合规)",
+    "status": "reorganized"
+  },
+  {
+    "event_id": "REGEN-0011",
+    "date": "2026-07-01T02:07:27.059424",
+    "department": "frontend",
+    "disbanded_team": "team3(Solid.js)",
+    "blood_type": "white_blood",
+    "loss_history": [
+      {
+        "team": "team3(Solid.js)",
+        "approach": "Solid.js重写页面",
+        "department": "frontend",
+        "ticket_id": "EVO-0010",
+        "score": 7.0,
+        "reason": "评分垫底 (7.0分)",
+        "eliminated_at": "2026-06-30T20:12:02.043170"
+      },
+      {
+        "team": "team3(Solid.js)",
+        "approach": "Solid.js重写页面",
+        "department": "frontend",
+        "ticket_id": "EVO-0012",
+        "score": 7.0,
+        "reason": "评分垫底 (7.0分)",
+        "eliminated_at": "2026-06-30T20:14:48.788642"
+      },
+      {
+        "team": "team3(Solid.js)",
+        "approach": "Solid.js重写页面",
+        "department": "frontend",
+        "ticket_id": "EVO-0035",
+        "score": 7.0,
+        "reason": "评分垫底 (7.0分)",
+        "eliminated_at": "2026-07-01T02:03:57.418340"
+      },
+      {
+        "team": "team3(Solid.js)",
+        "approach": "Solid.js重写页面",
+        "department": "frontend",
+        "ticket_id": "EVO-0036",
+        "score": 7.0,
+        "reason": "评分垫底 (7.0分)",
+        "eliminated_at": "2026-07-01T02:04:56.010345"
+      },
+      {
+        "team": "team3(Solid.js)",
+        "approach": "Solid.js重写页面",
+        "department": "frontend",
+        "ticket_id": "EVO-0037",
+        "score": 7.0,
+        "reason": "评分垫底 (7.0分)",
+        "eliminated_at": "2026-07-01T02:07:27.052753"
+      }
+    ],
+    "new_tool_stack": "Solid.js / Qwik / Astro (新人三件套)",
+    "replacement_creed": "新人敢冲敢闯，允许犯错但必须主动出击",
+    "status": "reorganized"
+  }
+]

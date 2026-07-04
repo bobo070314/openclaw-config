@@ -1,0 +1,7 @@
+{
+  "dept": "frontend",
+  "project": "igp-dashboard",
+  "absorb": "金融分析",
+  "task": "运行dashboard.py看所有项目状态实时渲染",
+  "status": "ok"
+}

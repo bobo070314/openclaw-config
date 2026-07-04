@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-01",
+  "ranking": {
+    "MCP生态部": {
+      "passed": 1,
+      "total": 1,
+      "id": "1"
+    },
+    "A2A联邦部": {
+      "passed": 1,
+      "total": 1,
+      "id": "2"
+    },
+    "Skills市场部": {
+      "passed": 1,
+      "total": 1,
+      "id": "3"
+    },
+    "Provider路由部": {
+      "passed": 1,
+      "total": 1,
+      "id": "4"
+    },
+    "安全Guardian部": {
+      "passed": 1,
+      "total": 1,
+      "id": "5"
+    },
+    "商业协议部": {
+      "passed": 1,
+      "total": 1,
+      "id": "6"
+    },
+    "Agent OS层": {
+      "passed": 1,
+      "total": 1,
+      "id": "7"
+    },
+    "AP2支付协议": {
+      "passed": 1,
+      "total": 1,
+      "id": "8"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "models_found": [
+    "igp_mcp_client.py",
+    "igp_mcp_server.py"
+  ],
+  "models_missing": [],
+  "need_new_development": false,
+  "code_quality_score": 10.0
+}

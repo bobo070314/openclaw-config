@@ -1,0 +1,10 @@
+{
+  "from": "igp-global",
+  "to": "igp-china",
+  "action": "hello",
+  "payload": {
+    "from": "igp-global",
+    "version": "v1"
+  },
+  "timestamp": "2026-07-01T10:46:11.754975"
+}
