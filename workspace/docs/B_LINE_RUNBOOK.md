@@ -43,7 +43,26 @@
 
 ---
 
-## 4. 每 30 分钟上报模板
+## 4. 启动监控守护进程
+
+```powershell
+# 启动（后台运行，日志写入文件）
+python scripts/monitor_daemon.py > logs/monitor.log 2>&1
+
+# 停止
+# 找到 PID 后 Ctrl+C，或：
+# Get-Process | Where-Object { $_.CommandLine -like '*monitor_daemon*' } | Stop-Process
+```
+
+Daemon 行为：
+- 每 1800 秒（30 分钟）读取 `data/runs/evolution_status.json`
+- 输出 Runbook 模板格式报告到 stdout
+- 异常检测：repeat_rate ≥ 20%（⚠️）, ≥ 50%（🚫）, blocked=true（🚫）
+- 健康检查：evolution_status.json 超过 120 分钟未更新则标记 STALE
+
+---
+
+## 5. 每 30 分钟上报模板
 
 ```
 pass_rate: <值>
