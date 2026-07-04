@@ -117,8 +117,9 @@ def main():
     if args.notify:
         log_path = ROOT / "data" / "runs" / "notification.log"
         ts = evo.get("timestamp", datetime.now(timezone.utc).isoformat())
+        hour_min = ts[11:16] if len(ts) >= 16 else ts
         status = determine_status(evo)
-        entry = f"[NOTIFY] B-Line report ready | ts={ts} | status={status} | pass_rate={evo.get('pass_rate','?')} | repeat_rate={evo.get('repeat_rate','?')}%\n"
+        entry = f"[{hour_min}] [B-LINE] Report generated | ts={ts} | status={status} | pass_rate={evo.get('pass_rate','?')} | repeat_rate={evo.get('repeat_rate','?')}%\n"
         with open(log_path, "a", encoding="utf-8") as f:
             f.write(entry)
         print(f"[NOTIFY] Written to {log_path}")

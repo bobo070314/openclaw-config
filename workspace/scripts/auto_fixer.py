@@ -330,21 +330,34 @@ def should_rollback(pre_repair_pass_rate: float, post_repair_pass_rate: float) -
 # ──────────────────────────────────────────────────────
 
 
+_fix_stats = {"success_count": 0, "fail_count": 0, "rollback_count": 0}
+
+
 def log_fix_attempt(plan: dict, result: dict):
     """Append a fix attempt record to violations.jsonl for audit trail.
-    Each line is prefixed with [TIMESTAMP] [LEVEL] for easy grep.
+    Each line is prefixed with [TIMESTAMP] [LEVEL] for easy grep. Maintains
+    running counts: success_count, fail_count, rollback_count.
 
     Levels:
-      INFO  — analysis / planning
+      INFO  — analysis / planning / success
       WARN  — strategy selected with low confidence
       ERROR — fix failed or rollback triggered
     """
+    global _fix_stats
     violations_path = PROJECT_ROOT / "data" / "runs" / "violations.jsonl"
     violations_path.parent.mkdir(parents=True, exist_ok=True)
 
     result_str = result.get("result", "unknown")
     level = "INFO"
-    if result_str in ("failed", "rollback"):
+
+    # Track stats
+    if result_str == "applied":
+        _fix_stats["success_count"] += 1
+    elif result_str == "failed":
+        _fix_stats["fail_count"] += 1
+        level = "ERROR"
+    elif result_str == "rollback":
+        _fix_stats["rollback_count"] += 1
         level = "ERROR"
     elif result_str == "analyzed_only":
         level = "INFO"
@@ -361,6 +374,7 @@ def log_fix_attempt(plan: dict, result: dict):
         "target_files": plan.get("target_files", []),
         "result": result_str,
         "detail": result.get("detail", ""),
+        "stats": dict(_fix_stats),
     }
 
     # Prefix for grep-friendly log
