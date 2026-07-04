@@ -1,0 +1,8 @@
+{"timestamp": "2026-07-04T02:40:03.317833+00:00", "action_type": "AUTO_REPAIR", "strategy": "NONE", "target_files": [], "result": "analyzed_only", "detail": "P0: analysis only, no execution."}
+{"timestamp": "2026-07-04T02:40:16.140568+00:00", "action_type": "AUTO_REPAIR", "strategy": "S2", "target_files": ["configs/agent_chain.yaml"], "result": "success", "detail": "Repaired YAML syntax at line 12."}
+{"timestamp": "2026-07-04T02:51:02.402204+00:00", "action_type": "AUTO_REPAIR", "strategy": "S1", "target_files": ["configs/x.yaml"], "result": "ok", "detail": "test"}
+{"timestamp": "2026-07-04T02:52:47.098252+00:00", "action_type": "AUTO_REPAIR", "strategy": "NONE", "target_files": [], "result": "analyzed_only", "detail": "P0: analysis only, no execution."}
+{"timestamp": "2026-07-04T03:18:34.148737+00:00", "action_type": "AUTO_REPAIR", "strategy": "NONE", "target_files": [], "result": "analyzed_only", "detail": "P0: analysis only, no execution."}
+[2026-07-04T03:22:19.148536+00:00] [INFO] {"timestamp": "2026-07-04T03:22:19.148536+00:00", "level": "INFO", "action_type": "AUTO_REPAIR", "strategy": "NONE", "target_files": [], "result": "analyzed_only", "detail": "P0: analysis only, no execution."}
+[2026-07-04T03:22:24.894872+00:00] [ERROR] {"timestamp": "2026-07-04T03:22:24.894872+00:00", "level": "ERROR", "action_type": "AUTO_REPAIR", "strategy": "S2", "target_files": ["configs/agent_chain.yaml"], "result": "failed", "detail": "S2 template write failed: IOError"}
+[2026-07-04T03:22:24.895197+00:00] [WARN] {"timestamp": "2026-07-04T03:22:24.895197+00:00", "level": "WARN", "action_type": "AUTO_REPAIR", "strategy": "S1", "target_files": ["configs"], "result": "applied", "detail": "S1 template written"}

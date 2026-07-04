@@ -331,21 +331,43 @@ def should_rollback(pre_repair_pass_rate: float, post_repair_pass_rate: float) -
 
 
 def log_fix_attempt(plan: dict, result: dict):
-    """Append a fix attempt record to violations.jsonl for audit trail."""
+    """Append a fix attempt record to violations.jsonl for audit trail.
+    Each line is prefixed with [TIMESTAMP] [LEVEL] for easy grep.
+
+    Levels:
+      INFO  — analysis / planning
+      WARN  — strategy selected with low confidence
+      ERROR — fix failed or rollback triggered
+    """
     violations_path = PROJECT_ROOT / "data" / "runs" / "violations.jsonl"
     violations_path.parent.mkdir(parents=True, exist_ok=True)
 
+    result_str = result.get("result", "unknown")
+    level = "INFO"
+    if result_str in ("failed", "rollback"):
+        level = "ERROR"
+    elif result_str == "analyzed_only":
+        level = "INFO"
+    elif plan.get("confidence", 1.0) < 0.8:
+        level = "WARN"
+
+    now = datetime.now(timezone.utc).isoformat()
+
     record = {
-        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "timestamp": now,
+        "level": level,
         "action_type": "AUTO_REPAIR",
         "strategy": plan.get("strategy", "NONE"),
         "target_files": plan.get("target_files", []),
-        "result": result.get("result", "unknown"),
+        "result": result_str,
         "detail": result.get("detail", ""),
     }
 
+    # Prefix for grep-friendly log
+    prefix = f"[{now}] [{level}] "
+
     with open(violations_path, "a", encoding="utf-8") as f:
-        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+        f.write(prefix + json.dumps(record, ensure_ascii=False) + "\n")
 
 
 # ──────────────────────────────────────────────────────
