@@ -4,6 +4,36 @@
 
 ---
 
+## 快速命令
+
+```powershell
+# 启动网关
+cd ..
+$env:OPENCLAW_CONFIG_PATH = '../openclaw-minimal.json'
+node.exe openclaw\openclaw.mjs gateway --port 18900
+```
+
+```powershell
+# 关闭网关
+$oldPid = (Get-NetTCPConnection -LocalPort 18900 -ErrorAction SilentlyContinue).OwningProcess
+if ($oldPid) { Stop-Process -Id $oldPid -Force; Write-Host "已关闭 $oldPid" }
+```
+
+```powershell
+# 测试网关
+$headers = @{Authorization = "***"}
+$body = @{model="openclaw"; messages=@(@{role="user"; content="你好"})} | ConvertTo-Json
+Invoke-RestMethod -Uri "http://127.0.0.1:18900/v1/chat/completions" -Method Post -Headers $headers -ContentType "application/json" -Body $body
+```
+
+```python
+# 心跳检测
+python ./family-corp-teams/v5/v6/api/igp_heartbeat.py
+# 成功输出 status: ok
+```
+
+---
+
 ## Round 0: 项目背景
 
 ### 项目概况
