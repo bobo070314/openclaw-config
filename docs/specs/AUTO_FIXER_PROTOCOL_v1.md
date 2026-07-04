@@ -132,11 +132,77 @@ Protocol handles it as a non-code physical defect:
 S2 wash is queued. Gate role blocks further production until verified.
 Protocol enforces that `pass_rate_after` cannot be null on close — it forces re-inspection.
 
-### Integration Point
+### Copy-Paste HTTP Examples
 
-Hesheng Silicon's existing MES (Manufacturing Execution System) sends a JSON POST to
-`/api/v1/protocol/repair` with the above schema. The protocol validates, classifies,
-and routes to the correct strategy. No changes to factory-floor PLCs or SCADA required.
+#### Request: Anode Crack → S1 Repair
+
+```http
+POST /api/v1/protocol/repair HTTP/1.1
+Host: fixer.silicon-body.local
+Content-Type: application/json
+X-Api-Key: ${API_KEY}
+
+{
+  "run_id": "20260704-crack-001",
+  "source": "mes.heshan-silicone.com",
+  "target_substrate": "silicon",
+  "fault_type": "crack",
+  "repair_strategy": "S1",
+  "entropy_level": "NORMAL",
+  "pass_rate_before": 0.73
+}
+```
+
+**Response (202 Accepted):**
+```json
+{
+  "status": "accepted",
+  "protocol_version": "1.0",
+  "action_type": "auto_fix",
+  "run_id": "20260704-crack-001",
+  "estimated_completion": "2026-07-04T08:35:00+08:00"
+}
+```
+
+#### Request: Electrolyte Contamination → CRITICAL Escalation
+
+```http
+POST /api/v1/protocol/repair HTTP/1.1
+Host: fixer.silicon-body.local
+Content-Type: application/json
+X-Api-Key: ${API_KEY}
+
+{
+  "run_id": "20260704-contam-002",
+  "source": "mes.heshan-silicone.com",
+  "target_substrate": "electrolyte",
+  "fault_type": "contamination",
+  "repair_strategy": "S2",
+  "entropy_level": "CRITICAL",
+  "pass_rate_before": 0.42
+}
+```
+
+**Response (403 Forbidden + Violation Logged):**
+```json
+{
+  "status": "rejected",
+  "protocol_version": "1.0",
+  "reason": "CRITICAL entropy requires manual intervention",
+  "gate_notified": true,
+  "violation_id": "v-20260704-contam-002"
+}
+```
+
+### Integration Steps (for Hesheng MES Team)
+
+1. **Configure API Key** — Add `X-Api-Key` header with your provisioned key.
+2. **POST defects** — Send JSON payload to `POST /api/v1/protocol/repair`.
+3. **Handle response** — `202` = auto-fix queued, `4xx` = needs attention.
+4. **Check status** — `GET /api/v1/protocol/status/{run_id}` returns current state + pass_rate.
+5. **Close loop** — When repair completes, protocol POSTs back to MES callback URL.
+
+> No changes to factory-floor PLCs or SCADA required. MES only needs HTTP outbound.
 
 ## 6. Compatibility
 
