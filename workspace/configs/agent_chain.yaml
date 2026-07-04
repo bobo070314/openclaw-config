@@ -1,0 +1,59 @@
+# Agent Chain Configuration for OpenClaw Delivery Package
+# This file defines the pipeline stages and agent roles.
+
+pipeline:
+  name: "silicon-base-delivery"
+  version: "1.0.1"
+
+  stages:
+    - name: init
+      script: "scripts/init.ps1"
+      timeout_seconds: 30
+      required: true
+
+    - name: config_load
+      script: "scripts/orchestrator.py"
+      timeout_seconds: 60
+      required: true
+
+    - name: validate
+      script: "scripts/run_all.ps1"
+      timeout_seconds: 120
+      required: true
+
+    - name: rollback
+      script: "scripts/auto_rollback.ps1"
+      timeout_seconds: 30
+      required: false
+
+  agents:
+    coder:
+      role: "executor"
+      max_tokens: 4096
+      allowed_actions:
+        - "file_write"
+        - "file_read"
+        - "run_script"
+      forbidden_actions:
+        - "modify_rbac"
+        - "delete_violation_logs"
+
+    fixer:
+      role: "self_healer"
+      max_tokens: 2048
+      allowed_actions:
+        - "file_write"
+        - "file_read"
+      forbidden_actions:
+        - "run_script"
+
+  rbac:
+    enabled: true
+    violation_log: "data/runs/violations.jsonl"
+    roles:
+      - name: "orchestrator"
+        permissions: ["all"]
+      - name: "coder"
+        permissions: ["file_write", "file_read", "run_script"]
+      - name: "fixer"
+        permissions: ["file_write", "file_read"]
