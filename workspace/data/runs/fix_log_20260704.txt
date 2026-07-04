@@ -1,0 +1,1 @@
+[2026-07-04T04:05:11.591861+00:00] [INFO] {"timestamp": "2026-07-04T04:05:11.591861+00:00", "level": "INFO", "action_type": "AUTO_REPAIR", "strategy": "NONE", "target_files": [], "result": "analyzed_only", "detail": "P0: analysis only, no execution.", "stats": {"success_count": 0, "fail_count": 0, "rollback_count": 0}}
