@@ -10,6 +10,7 @@ Usage:
 """
 
 import json
+import subprocess
 import time
 import sys
 from datetime import datetime, timezone
@@ -18,6 +19,8 @@ from pathlib import Path
 
 STATUS_FILE = Path("data/runs/evolution_status.json")
 REPORT_INTERVAL = 1800  # 30 minutes
+REPORT_SCRIPT = Path("scripts/report_b_line.py").resolve()
+PROJECT_ROOT = REPORT_SCRIPT.parent.parent.resolve()
 
 
 def load_status() -> dict | None:
@@ -104,6 +107,7 @@ def resolve_glyph(anomaly: str | None) -> str:
 def main():
     print(f"[{datetime.now(timezone.utc).isoformat()}] monitor_daemon STARTED")
     print(f"  Reporting every {REPORT_INTERVAL}s ({REPORT_INTERVAL//60} min)")
+    print(f"  Auto-archiving via: {REPORT_SCRIPT.name}")
     print("=" * 30)
     sys.stdout.flush()
 
@@ -112,6 +116,19 @@ def main():
         while True:
             cycle += 1
             report(cycle)
+
+            # Auto-trigger report_b_line.py for archive + notify
+            try:
+                subprocess.run(
+                    [sys.executable, str(REPORT_SCRIPT), "--notify"],
+                    capture_output=True, text=True,
+                    encoding="utf-8", errors="replace",
+                )
+                print(f"  [ARCHIVE] report_b_line completed")
+            except Exception as e:
+                print(f"  [ARCHIVE] report_b_line failed: {e}")
+
+            sys.stdout.flush()
             time.sleep(REPORT_INTERVAL)
     except KeyboardInterrupt:
         print(f"\n[{datetime.now(timezone.utc).isoformat()}] monitor_daemon STOPPED (Ctrl+C)")
