@@ -61,8 +61,9 @@ def generate_report(evo: dict) -> str:
     else:
         status_line = "✅ 稳态运行，无需干预"
 
-    report = f"""## B-Line 续报
+    report = f"""# B-Line 续报
 
+- **报告版本**: 1.0
 - **时间**: {ts}
 - **pass_rate**: {pr}
 - **repeat_rate**: {rr}%
@@ -70,6 +71,7 @@ def generate_report(evo: dict) -> str:
 - **injected_count**: {ic}
 - **checks**: {cp}/{ct}
 - **last_category**: {lc}
+- **数据时间**: {ts[:19].replace('T', ' ')} UTC
 
 ## 状态
 

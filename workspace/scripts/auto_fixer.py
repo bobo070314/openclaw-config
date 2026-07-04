@@ -330,6 +330,7 @@ def should_rollback(pre_repair_pass_rate: float, post_repair_pass_rate: float) -
 # ──────────────────────────────────────────────────────
 
 
+_RUN_ID = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
 _fix_stats = {"success_count": 0, "fail_count": 0, "rollback_count": 0}
 
 
@@ -378,9 +379,15 @@ def log_fix_attempt(plan: dict, result: dict):
     }
 
     # Prefix for grep-friendly log
-    prefix = f"[{now}] [{level}] "
+    prefix = f"[{now}] [{level}] [RUN_ID: {_RUN_ID}] "
+
+    # Daily-rotated log: fix_log_YYYYMMDD.txt
+    log_date = now[:10].replace("-", "")
+    daily_log = violations_path.parent / f"fix_log_{log_date}.txt"
 
     with open(violations_path, "a", encoding="utf-8") as f:
+        f.write(prefix + json.dumps(record, ensure_ascii=False) + "\n")
+    with open(daily_log, "a", encoding="utf-8") as f:
         f.write(prefix + json.dumps(record, ensure_ascii=False) + "\n")
 
 

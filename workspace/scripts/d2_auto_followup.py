@@ -48,26 +48,32 @@ SCENARIOS = {
 }
 
 
-def classify(reply: str) -> tuple[str, str]:
-    """Classify reply into scenario, return (scenario_letter, matched_keyword)."""
+def classify(reply: str) -> tuple[str, list[str]]:
+    """Classify reply into scenario, return (scenario_letter, matched_keywords_list)."""
     reply_lower = reply.lower()
     for scenario, config in SCENARIOS.items():
+        matched_keywords = []
         for kw in config["keywords"]:
             if kw.lower() in reply_lower:
-                return scenario, kw
+                matched_keywords.append(kw)
+        if matched_keywords:
+            return scenario, matched_keywords
 
-    return "C", "no_match"
+    return "C", []
 
 
 def followup(reply: str, dry_run: bool = False) -> dict:
-    scenario, matched = classify(reply)
+    scenario, matched_kws = classify(reply)
     response_text = SCENARIOS[scenario]["response"]
+    matched_at = datetime.now(timezone.utc).isoformat()
+    primary_kw = matched_kws[0] if matched_kws else "no_match"
 
     result = {
-        "matched_at": datetime.now(timezone.utc).isoformat(),
+        "matched_at": matched_at,
         "customer_reply": reply,
         "scenario": f"Scenario {scenario}",
-        "matched_keyword": matched,
+        "matched_keyword": primary_kw,
+        "keywords_matched": matched_kws,
         "response_text": response_text,
     }
 
@@ -75,12 +81,22 @@ def followup(reply: str, dry_run: bool = False) -> dict:
         print(json.dumps(result, indent=2, ensure_ascii=False))
         print(f"\n⏸️  Dry run — response above is draft only.")
     else:
+        # Log to centralized jsonl
         log_path = ROOT / "data" / "runs" / "d2_followup_log.jsonl"
         log_path.parent.mkdir(parents=True, exist_ok=True)
         with open(log_path, "a", encoding="utf-8") as f:
             f.write(json.dumps(result, ensure_ascii=False) + "\n")
+
+        # Archive individual reply with timestamp
+        archive_dir = ROOT / "logs" / "d2_replies"
+        archive_dir.mkdir(parents=True, exist_ok=True)
+        safe_s = "".join(c if c.isalnum() or c in "-_" else "_" for c in reply[:40])
+        archive_path = archive_dir / f"{safe_s}_{matched_at[:19].replace(':', '-')}.json"
+        archive_path.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+
         print(json.dumps(result, indent=2, ensure_ascii=False))
         print(f"\n✅ Followup logged to {log_path}")
+        print(f"✅ Reply archived to {archive_path}")
 
     return result
 
