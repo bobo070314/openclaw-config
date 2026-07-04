@@ -114,10 +114,18 @@ def main():
     report = generate_report(evo)
     print(report)
 
+    # Archive to reports/history/
+    ts = evo.get("timestamp", datetime.now(timezone.utc).isoformat())
+    hour_min = ts[11:16] if len(ts) >= 16 else ts
+    safe_ts = ts[:19].replace(":", "-").replace("T", "_")
+    archive_dir = ROOT / "reports" / "history"
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    archive_path = archive_dir / f"b_line_{safe_ts}.md"
+    archive_path.write_text(report, encoding="utf-8")
+    print(f"[ARCHIVE] Saved to {archive_path}")
+
     if args.notify:
         log_path = ROOT / "data" / "runs" / "notification.log"
-        ts = evo.get("timestamp", datetime.now(timezone.utc).isoformat())
-        hour_min = ts[11:16] if len(ts) >= 16 else ts
         status = determine_status(evo)
         entry = f"[{hour_min}] [B-LINE] Report generated | ts={ts} | status={status} | pass_rate={evo.get('pass_rate','?')} | repeat_rate={evo.get('repeat_rate','?')}%\n"
         with open(log_path, "a", encoding="utf-8") as f:
