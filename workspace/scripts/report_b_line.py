@@ -94,19 +94,34 @@ def generate_report(evo: dict) -> str:
 def main():
     parser = argparse.ArgumentParser(description="B-line health report generator")
     parser.add_argument("--history", action="store_true", help="Show all historical evolution entries")
+    parser.add_argument("--notify", action="store_true", help="Write report to notification.log")
     args = parser.parse_args()
 
     evo = load_evolution()
     if evo is None:
-        print("❌ evolution_status.json not found. Has B-line been started?")
+        msg = "[NOTIFY] evolution_status.json not found. Has B-line been started?"
+        print(msg)
+        if args.notify:
+            log_path = ROOT / "data" / "runs" / "notification.log"
+            log_path.write_text(msg + "\n", encoding="utf-8")
         sys.exit(1)
 
     if args.history:
-        # Show all history if available
         for k, v in sorted(evo.items()):
             print(f"  {k}: {v}")
-    else:
-        print(generate_report(evo))
+        return
+
+    report = generate_report(evo)
+    print(report)
+
+    if args.notify:
+        log_path = ROOT / "data" / "runs" / "notification.log"
+        ts = evo.get("timestamp", datetime.now(timezone.utc).isoformat())
+        status = determine_status(evo)
+        entry = f"[NOTIFY] B-Line report ready | ts={ts} | status={status} | pass_rate={evo.get('pass_rate','?')} | repeat_rate={evo.get('repeat_rate','?')}%\n"
+        with open(log_path, "a", encoding="utf-8") as f:
+            f.write(entry)
+        print(f"[NOTIFY] Written to {log_path}")
 
 
 if __name__ == "__main__":
