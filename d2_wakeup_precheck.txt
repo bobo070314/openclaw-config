@@ -1,0 +1,30 @@
+D2 Wakeup Pre-Check
+Date: 2026-07-04 15:00 UTC+8
+Status: PRE-FLIGHT
+
+1. Cron Jobs:
+   - OpenClaw gateway required for cron list (port 18900)
+   - HEARTBEAT.md schedule: 9:00 / 13:00 / 19:00 / 23:00 (manual poll)
+   - Daemon v2 auto-polls: 15:19 + 15-min intervals
+
+2. logs/d2_replies/:
+   - Directory: empty (no D2 replies yet)
+   - Expected: populated during Phase 3 D2 execution
+
+3. HEARTBEAT.md schedule confirmed:
+   Morning (9:00): IGP全链路 + API保活 + git status
+   Midday (13:00): API保活
+   Evening (19:00): API保活 + git status
+   Night (23:00): API保活 only
+
+4. Wakeup readiness:
+   - GitHub Release: ✅ v1.0.1-delivery-hardening
+   - Protocol v1: ✅ docs/specs/AUTO_FIXER_PROTOCOL_v1.md
+   - 24h report: ✅ reports/24h_v1.0.1_final.md
+   - Auto-Fixer: awaiting cron registration after gateway restart
+
+5. Next action:
+   - 15:19 daemon auto-poll (heartbeat)
+   - 19:00 evening manual poll + git status
+   - 23:00 nightly poll
+   - 2026-07-05 10:04 D1/D2 decision point (materials ready)

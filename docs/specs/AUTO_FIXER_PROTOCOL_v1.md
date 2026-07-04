@@ -87,8 +87,60 @@ def enforce_protocol(action: dict) -> dict:
                                          Rejected → [Log Violation] → [Notify Gate]
 ```
 
-## 5. Compatibility
+## 5. Industry Integration Example — Hesheng Silicon (合盛硅业)
+
+### Scenario A: Anode Crack on Silicon Substrate
+
+A production-line vision system detects a micro-crack on a silicon negative electrode surface.
+The protocol translates this physical defect into a machine-actionable repair:
+
+```json
+{
+  "run_id": "hs-20260704-001",
+  "timestamp": "2026-07-04T08:30:00+08:00",
+  "target_substrate": "silicon",
+  "fault_type": "crack",
+  "repair_strategy": "S1",
+  "entropy_level": "NORMAL",
+  "pass_rate_before": 0.73,
+  "pass_rate_after": 0.91
+}
+```
+
+**Outcome:** S1 thermal anneal applied. Yield increased from 73% → 91%.
+Protocol logs the action. Gate role receives a notification if post-repair pass_rate < 1.0.
+
+### Scenario B: Electrolyte Contamination
+
+Batch of lithium-ion electrolyte shows trace metal contamination.
+Protocol handles it as a non-code physical defect:
+
+```json
+{
+  "run_id": "hs-20260704-002",
+  "timestamp": "2026-07-04T09:15:00+08:00",
+  "target_substrate": "electrolyte",
+  "fault_type": "contamination",
+  "repair_strategy": "S2",
+  "entropy_level": "CRITICAL",
+  "pass_rate_before": 0.42,
+  "pass_rate_after": null
+}
+```
+
+**Outcome:** `entropy_level == CRITICAL` triggers manual intervention.
+S2 wash is queued. Gate role blocks further production until verified.
+Protocol enforces that `pass_rate_after` cannot be null on close — it forces re-inspection.
+
+### Integration Point
+
+Hesheng Silicon's existing MES (Manufacturing Execution System) sends a JSON POST to
+`/api/v1/protocol/repair` with the above schema. The protocol validates, classifies,
+and routes to the correct strategy. No changes to factory-floor PLCs or SCADA required.
+
+## 6. Compatibility
 
 - **Pipeline**: `orchestrator.py` v1.0.1+
 - **RBAC**: `gate` role has `trigger_rollback` permission — rollback is a protocol-level action
 - **Reporting**: `violations.jsonl` accepted, rejected, and escalated actions
+- **MES Integration**: HTTP POST to `/api/v1/protocol/repair` with protocol JSON schema
