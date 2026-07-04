@@ -1,0 +1,15 @@
+delivery_package/
+
+This directory is the packaging staging area for customer delivery.
+
+Expected sub-structure (created by init.ps1 or manually):
+  configs/          - RBAC policies, agent chain configs
+  scripts/          - run_all.ps1, orchestrator.py, auto_rollback.ps1
+  dashboards/       - metrics.md
+  data/evals/       - test evaluation cases
+  data/runs/        - output reports (latest_eval.json, rollback_report.json)
+  .env.example      - environment template
+  README.deliver.md - this file
+
+Packaging command:
+  Compress-Archive -Path delivery_package/* -DestinationPath openclaw-delivery-v1.0.zip

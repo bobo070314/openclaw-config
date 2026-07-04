@@ -1,0 +1,51 @@
+# configs/rbac_policy.yaml
+# Role-Based Access Control Policy
+# version 1.0
+
+version: 1
+default: deny
+
+roles:
+  ceo:
+    allow:
+      - orchestrate
+      - approve_hold_release
+      - view_all_reports
+
+  fixer:
+    allow:
+      - read_cases
+      - propose_patch
+      - run_fix_tests
+
+  coder:
+    allow:
+      - read_cases
+      - write_code
+      - run_unit_tests
+
+  reviewer:
+    allow:
+      - read_all
+      - review_changes
+      - require_evidence
+
+  gate:
+    allow:
+      - evaluate_metrics
+      - enforce_thresholds
+      - trigger_rollback
+
+policies:
+  internal_hold:
+    enabled: true
+    require_role: ceo
+
+  require_evidence_for_merge:
+    enabled: true
+    require_role: reviewer
+
+  auto_rollback_on_fail:
+    enabled: true
+    threshold_pass_rate: 0.5
+    require_role: gate

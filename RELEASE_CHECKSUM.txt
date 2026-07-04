@@ -1,0 +1,33 @@
+# openclaw-delivery-v1.0.zip
+
+## SHA256 Checksum
+0A75C289A7775FE1EC813DC535393638A8AB4CBA53EBD45071158E00DBFC1576
+
+Verification (PowerShell):
+```powershell
+(Get-FileHash openclaw-delivery-v1.0.zip -Algorithm SHA256).Hash
+```
+
+## 30-Second Launch
+```powershell
+# 1. Extract
+Expand-Archive openclaw-delivery-v1.0.zip -DestinationPath .\openclaw-delivery-v1.0
+
+# 2. Initialize (expect INIT: OK)
+.\openclaw-delivery-v1.0\scripts\init.ps1
+
+# 3. Run (expect RUN: DONE)
+.\openclaw-delivery-v1.0\scripts\run_all.ps1
+```
+
+## System Requirements
+- Windows 10/11 or Windows Server 2019+
+- Python 3.10+ (tested on 3.14)
+- PowerShell 5.1+
+
+## Known Limitations
+- OpenClaw Gateway not included in this package. Requires separate gateway setup on port 18900.
+- Heartbeat check will show "unreachable" if gateway is not running — this is expected.
+
+## Build Date
+2026-07-04

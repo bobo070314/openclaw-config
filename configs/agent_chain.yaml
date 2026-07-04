@@ -1,0 +1,24 @@
+# agent_chain.yaml - Agent pipeline configuration
+version: "v1.0"
+
+chain:
+  - id: "init"
+    script: "scripts/init.ps1"
+    params: {}
+    retry: 2
+
+  - id: "orchestrator"
+    script: "scripts/orchestrator.py"
+    params: {}
+    depends_on: ["init"]
+
+  - id: "heartbeat"
+    script: "family-corp-teams/v5/v6/api/igp_heartbeat.py"
+    params: {}
+    depends_on: ["orchestrator"]
+
+rollback:
+  enabled: true
+  auto_script: "scripts/auto_rollback.ps1"
+  backup_dir: "data/runs/backup"
+  trigger_on_pass_rate_below: 0.5
