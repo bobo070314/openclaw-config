@@ -34,6 +34,23 @@ python aan_dashboard.py   # Web Dashboard (http://localhost:18080)
 
 Python 3.11+, 无外部依赖, 全部工程复用
 
+## v2.0 新增功能
+
+| 功能 | 说明 |
+|------|------|
+| 🧬 进化曲线 | 染色体每代fitness可视化柱状图 |
+| 🏆 PK竞技场 | 3支队伍实时对战排行榜 |
+| ⚡ Token仪表 | 实时消耗+剩余配额动态图表 |
+| 🛡️ 安全日志 | 滚动威胁日志(CPU/内存/连接异常) |
+
+## Web Dashboard
+
+```bash
+python aan_dashboard.py    # http://localhost:18080
+```
+
+实时监控: 循环 | 进化 | PK | Token | 安全
+
 ## 成果
 
 - 32项升级文件, 8引擎全链路, 零外部依赖
