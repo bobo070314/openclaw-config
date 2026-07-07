@@ -1,8 +1,0 @@
-{
-    "version":  "0.2.0",
-    "name":  "infra-diagram-as-code",
-    "implementedAt":  "2026-06-22T23:15:00+08:00",
-    "description":  "从代码和配置反向提取架构关系，生成C4/Mermaid架构图",
-    "category":  "devsecops",
-    "status":  "implemented"
-}

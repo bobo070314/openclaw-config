@@ -1,0 +1,420 @@
+{
+    "tools": {
+        "exec": {
+            "mode": "full"
+        }
+    },
+    "agents": {
+        "defaults": {
+            "model": {
+                "primary": "dashscope/qwen-turbo"
+            },
+            "workspace": "D:\\bobo\\openclaw-foreign\\workspace",
+            "timeoutSeconds": 72000,
+            "maxConcurrent": 2,
+            "compaction": {
+                "mode": "default",
+                "reserveTokensFloor": 15000
+            },
+            "memorySearch": {
+                "provider": "none"
+            }
+        },
+        "list": [
+            {
+                "id": "main",
+                "default": true,
+                "name": "OpenClaw Foreign",
+                "identity": {
+                    "name": "OpenClaw Foreign"
+                },
+                "skills": [
+                    "find-skills",
+                    "qclaw-env",
+                    "web_search",
+                    "ppt-structure-optimizer",
+                    "ppt-design-aesthetic",
+                    "ppt-visual-enhancer",
+                    "ppt-animation-smart",
+                    "ppt-export-automation",
+                    "human-style-editor",
+                    "natural-language-polish",
+                    "conversational-tone",
+                    "informal-expression",
+                    "context-aware-rewriter",
+                    "voice-consistency",
+                    "culture-localizer",
+                    "slang-integrator",
+                    "emotional-nuance",
+                    "authentic-voice",
+                    "refactor-advisor",
+                    "code-reviewer",
+                    "bug-tracer",
+                    "performance-optimizer",
+                    "security-auditor",
+                    "test-generator",
+                    "documentation-generator",
+                    "design-system-connector",
+                    "color-palette-creator",
+                    "typography-advisor",
+                    "layout-auditor",
+                    "icon-selector",
+                    "web3-template-engine"
+                ]
+            }
+        ]
+    },
+    "models": {
+        "mode": "replace",
+        "providers": {
+            "dashscope": {
+                "api": "openai-completions",
+                "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+                "apiKey": "sk-ws-H.RYXHEXM.SpZG.MEYCIQDja63xg1oh5HoxLmfAPt17AGCuY0xO3buSlCc2b_ASgwIhAJZ2gGzLIYPxLHyigzYdFgIui74xKObxgbA_pk9X2kf8",
+                "timeoutSeconds": 120,
+                "models": [
+                    {
+                        "id": "qwen-turbo",
+                        "name": "[阿里·免费额度] Qwen Turbo | 快速 | 128K ⚠️",
+                        "api": "openai-completions",
+                        "contextWindow": 128000,
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "qwen-flash",
+                        "name": "[阿里·免费额度] Qwen Flash | 极速 | 128K ⚠️",
+                        "api": "openai-completions",
+                        "contextWindow": 128000,
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "qwen-plus",
+                        "name": "[阿里·付费] Qwen Plus | 均衡 | 128K | 输入¥0.004/M",
+                        "api": "openai-completions",
+                        "contextWindow": 128000,
+                        "cost": {
+                            "input": 0.004,
+                            "output": 0.012
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "qwen-max",
+                        "name": "[阿里·付费] Qwen Max | 最强 | 128K | 输入¥0.04/M",
+                        "api": "openai-completions",
+                        "contextWindow": 128000,
+                        "cost": {
+                            "input": 0.04,
+                            "output": 0.12
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "qwen3.7-plus",
+                        "name": "[阿里·高性价比] Qwen3.7-Plus | 多模态·看图 | 1M | 输入¥0.4/M 🔥",
+                        "api": "openai-completions",
+                        "contextWindow": 1000000,
+                        "cost": {
+                            "input": 0.0004,
+                            "output": 0.0016
+                        },
+                        "input": [
+                            "text",
+                            "image"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "deepseek-v3",
+                        "name": "[阿里·DeepSeek] V3 | 5折·强 | 64K | 输入¥1/M 🔥",
+                        "api": "openai-completions",
+                        "contextWindow": 64000,
+                        "cost": {
+                            "input": 0.001,
+                            "output": 0.004
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "deepseek-r1",
+                        "name": "[阿里·DeepSeek] R1 | 5折·推理强 | 64K | 输入¥2/M 🔥",
+                        "api": "openai-completions",
+                        "contextWindow": 64000,
+                        "cost": {
+                            "input": 0.002,
+                            "output": 0.008
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    }
+                ]
+            },
+            "siliconflow": {
+                "api": "openai-completions",
+                "baseUrl": "https://api.siliconflow.cn/v1",
+                "apiKey": "sk-zxybvojqcuojwlfeczbwunmmzzwahoymcbrtfrpennvrrrmw",
+                "timeoutSeconds": 120,
+                "models": [
+                    {
+                        "id": "Qwen/Qwen2.5-7B-Instruct",
+                        "name": "[硅基·付费] Qwen2.5-7B | 中文强 | 32K | ¥0 ✅",
+                        "api": "openai-completions",
+                        "contextWindow": 32000,
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "Qwen/Qwen2.5-14B-Instruct",
+                        "name": "[硅基·付费] Qwen2.5-14B | 更强 | 32K | ¥0 ✅",
+                        "api": "openai-completions",
+                        "contextWindow": 32000,
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "Qwen/Qwen2.5-32B-Instruct",
+                        "name": "[硅基·付费] Qwen2.5-32B | 强 | 32K | ¥0 ✅",
+                        "api": "openai-completions",
+                        "contextWindow": 32000,
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "Qwen/Qwen2.5-72B-Instruct",
+                        "name": "[硅基·付费] Qwen2.5-72B | 最强Qwen | 32K | ¥0 ✅",
+                        "api": "openai-completions",
+                        "contextWindow": 32000,
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "deepseek-ai/DeepSeek-V3",
+                        "name": "[硅基·付费] DeepSeek-V3 | 强·160K | 输入¥4/M 输出¥12/M ✅",
+                        "api": "openai-completions",
+                        "contextWindow": 160000,
+                        "cost": {
+                            "input": 0.004,
+                            "output": 0.012
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    }
+                ]
+            },
+            "zhipu": {
+                "api": "openai-completions",
+                "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+                "apiKey": "b00908b92f31417ca7d2621cc96c60fa.Cg89NYq5RgSdSbHB",
+                "timeoutSeconds": 120,
+                "models": [
+                    {
+                        "id": "glm-4-flash",
+                        "name": "[智谱·永久免费⭐] GLM-4-Flash | 快速·128K | 推荐",
+                        "api": "openai-completions",
+                        "contextWindow": 128000,
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "glm-4v-flash",
+                        "name": "[智谱·永久免费⭐] GLM-4V-Flash | 多模态·支持图片 | 128K",
+                        "api": "openai-completions",
+                        "contextWindow": 128000,
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "input": [
+                            "text",
+                            "image"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "glm-4.7-flash",
+                        "name": "[智谱·永久免费⭐] GLM-4.7-Flash | 超长文本·200K | 编程强",
+                        "api": "openai-completions",
+                        "contextWindow": 200000,
+                        "cost": {
+                            "input": 0,
+                            "output": 0
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "glm-4-flashx",
+                        "name": "[智谱·付费] GLM-4-FlashX | 简单计费 | 128K | ¥0.1/M统一 🔥",
+                        "api": "openai-completions",
+                        "contextWindow": 128000,
+                        "cost": {
+                            "input": 0.0001,
+                            "output": 0.0001
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    }
+                ]
+            },
+            "deepseek": {
+                "api": "openai-completions",
+                "baseUrl": "https://api.deepseek.com/v1",
+                "apiKey": "sk-468b5b7ca259462197b4f9e12262f055",
+                "timeoutSeconds": 120,
+                "models": [
+                    {
+                        "id": "deepseek-v4-flash",
+                        "name": "[DeepSeek·超低价🔥] V4-Flash | 性价比王 | 128K | 输入¥0.02/M",
+                        "api": "openai-completions",
+                        "contextWindow": 128000,
+                        "cost": {
+                            "input": 2e-05,
+                            "output": 0.002
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "deepseek-chat",
+                        "name": "[DeepSeek·付费] V3 | 强·接近GPT-4o | 64K | 输入¥2/M ✅已修复",
+                        "api": "openai-completions",
+                        "contextWindow": 64000,
+                        "cost": {
+                            "input": 0.002,
+                            "output": 0.008
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    },
+                    {
+                        "id": "deepseek-reasoner",
+                        "name": "[DeepSeek·付费] R1 | 推理强·思维链 | 64K | 输入¥4/M ✅已修复",
+                        "api": "openai-completions",
+                        "contextWindow": 64000,
+                        "cost": {
+                            "input": 0.004,
+                            "output": 0.016
+                        },
+                        "input": [
+                            "text"
+                        ],
+                        "maxTokens": 8192
+                    }
+                ]
+            }
+        }
+    },
+    "plugins": {
+        "load": {
+            "paths": [
+                "D:\\bobo\\openclaw-foreign\\plugins"
+            ]
+        },
+        "entries": {
+            "lossless-claw": {
+                "enabled": true,
+                "config": {
+                    "dbPath": "D:\\bobo\\openclaw-foreign\\memory\\lossless\\lcm.db",
+                    "contextThreshold": 0.6
+                }
+            }
+        }
+    },
+    "gateway": {
+        "mode": "local",
+        "port": 18900,
+        "bind": "loopback",
+        "auth": {
+            "mode": "token",
+            "token": "foreign18900"
+        },
+        "controlUi": {
+            "dangerouslyDisableDeviceAuth": true,
+            "allowedOrigins": [
+                "null",
+                "file://",
+                "http://127.0.0.1:18900",
+                "http://localhost:18900"
+            ]
+        },
+        "http": {
+            "endpoints": {
+                "chatCompletions": {
+                    "enabled": true
+                }
+            }
+        }
+    },
+    "skills": {
+        "load": {
+            "extraDirs": [
+                "D:\\bobo\\openclaw-foreign\\skills"
+            ]
+        }
+    }
+}

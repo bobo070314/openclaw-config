@@ -1,8 +1,0 @@
-{
-    "name": "github-actions-generator",
-    "version": "0.1.0",
-    "description": "Generate GitHub Actions workflow YAML from natural language descriptions. Supports CI/CD pipelines, scheduled tasks, and deployment workflows.",
-    "category": "devops",
-    "status": "live",
-    "author": "OpenClaw Agent"
-}

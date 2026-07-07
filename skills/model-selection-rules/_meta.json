@@ -1,8 +1,0 @@
-{
-    "version":  "1.0.0",
-    "name":  "model-selection-rules",
-    "implementedAt":  "2026-06-22T23:20:00+08:00",
-    "description":  "模型选择与降级策略，自动选择最优模型组合",
-    "category":  "meta",
-    "status":  "implemented"
-}

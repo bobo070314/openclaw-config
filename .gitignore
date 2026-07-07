@@ -134,5 +134,15 @@ node_modules/
 memory/
 tmp_fix_models.cjs
 
+# === 房子结构（房间目录，不进仓库）===
+/parking/
+/garden/
+/kitchen/
+/bathroom/
+/bedroom/
+/livingroom/
+/laundry/
+/tvroom/
+
 # === 环境 ===
 .env
