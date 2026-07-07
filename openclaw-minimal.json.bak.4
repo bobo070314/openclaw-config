@@ -9,9 +9,7 @@
       "model": {
         "primary": "dashscope/qwen-turbo",
         "fallbacks": [
-          "deepseek/deepseek-v4-flash",
-          "dashscope/qwen-turbo",
-          "zhipu/glm-4-flash"
+          "deepseek/deepseek-v4-flash"
         ]
       },
       "workspace": "D:\\bobo\\openclaw-foreign\\workspace",
@@ -28,9 +26,7 @@
       "bootstrapTotalMaxChars": 150000,
       "contextInjection": "always",
       "models": {
-        "deepseek/deepseek-v4-flash": {},
-        "dashscope/qwen-turbo": {},
-        "zhipu/glm-4-flash": {}
+        "deepseek/deepseek-v4-flash": {}
       }
     },
     "list": [
@@ -196,7 +192,7 @@
         "api": "openai-completions",
         "baseUrl": "https://api.deepseek.com/v1",
         "apiKey": "sk-468b5b7ca259462197b4f9e12262f055",
-        "timeoutSeconds": 180,
+        "timeoutSeconds": 120,
         "models": [
           {
             "id": "deepseek-v4-flash",
@@ -456,15 +452,6 @@
           "dbPath": "D:\\bobo\\openclaw-foreign\\memory\\lossless\\lcm.db",
           "contextThreshold": 0.6
         }
-      },
-      "deepseek": {
-        "enabled": true
-      },
-      "qwen": {
-        "enabled": true
-      },
-      "migrate-hermes": {
-        "enabled": true
       }
     }
   },
@@ -507,13 +494,7 @@
     }
   },
   "meta": {
-    "lastTouchedVersion": "2026.7.1-beta.2",
-    "lastTouchedAt": "2026-07-07T01:40:17.799Z"
-  },
-  "wizard": {
-    "lastRunAt": "2026-07-07T01:17:15.232Z",
-    "lastRunVersion": "2026.6.11",
-    "lastRunCommand": "doctor",
-    "lastRunMode": "local"
+    "lastTouchedVersion": "2026.6.11",
+    "lastTouchedAt": "2026-07-07T01:08:05.406Z"
   }
 }

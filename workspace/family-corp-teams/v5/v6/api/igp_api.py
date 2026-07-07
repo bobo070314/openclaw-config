@@ -31,13 +31,15 @@ DEPARTMENT_REGISTRY = {
     'chromosome10': {'name': '逻辑推理部', 'files': 2, 'tests': 3},
     'chromosome11': {'name': '类型/度量部', 'files': 1, 'tests': 1},
     'chromosome12': {'name': '自动测试部', 'files': 5, 'tests': 6},
-    'chromosome13': {'name': '硅胶体记忆部 🧠', 'files': 3, 'tests': 2, 'routes': ['consolidate', 'fusion', 'hot', 'timeline']},
-    'chromosome14': {'name': '智能路由部', 'files': 0, 'tests': 0},
-    'chromosome15': {'name': '审计安全部', 'files': 0, 'tests': 0},
-    'chromosome16': {'name': 'IGP基础设施部', 'files': 6, 'tests': 0},
-    'chromosome17': {'name': 'DevOps部', 'files': 4, 'tests': 0},
-    'chromosome18': {'name': '核心引擎部', 'files': 8, 'tests': 0},
-    'chromosome19': {'name': '产品交付部', 'files': 5, 'tests': 5},
+    'chromosome13_hr': {'name': '人力部', 'files': 2, 'tests': 0},
+    'chromosome14_smart_routing': {'name': '智能路由部', 'files': 2, 'tests': 0},
+    'chromosome15_audit_security': {'name': '审计安全部', 'files': 2, 'tests': 0},
+    'chromosome16_silicon_memory': {'name': '组合记忆部', 'files': 2, 'tests': 0},
+    'chromosome17_deploy': {'name': '部署发布部', 'files': 2, 'tests': 0},
+    'chromosome18_absorb': {'name': '内部吸收部', 'files': 2, 'tests': 0},
+    'chromosome19_headquarters': {'name': '参谋部', 'files': 2, 'tests': 0},
+    'chromosome20': {'name': '外部吸收部', 'files': 3, 'tests': 0},
+    'chromosome26_htrd': {'name': '高新科研部(HTRD)', 'files': 1, 'tests': 0, 'merged_from': 'RD-007+AID-023+ITD-015+INN-019', 'divisions': 4, 'staff': 21},
     'hq_swat': {'name': 'SWAT突击队', 'desc': '紧急事件、跨部门难题'},
     'hq_audit': {'name': '审计部', 'desc': '绩效追溯、淘汰核查'},
     'hq_strategy': {'name': '战略投资部', 'desc': '外部扫描、新部门立项'},
@@ -94,6 +96,15 @@ def get_prd():
         from v6.prd.prd_queue import PRDQueue
         _prd = PRDQueue(V6_DIR)
     return _prd
+
+
+def get_a2a_registry():
+    """加载 A2A Agent 注册表"""
+    a2a_path = os.path.join(V6_DIR, '..', 'a2a_network', 'agents.json')
+    if os.path.exists(a2a_path):
+        with open(a2a_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {"agents": [], "version": "v1", "error": "registry not found"}
 
 
 class IGPAPIHandler(BaseHTTPRequestHandler):
@@ -209,6 +220,17 @@ class IGPAPIHandler(BaseHTTPRequestHandler):
                 results = mem.procedural.match(context)
                 self._send_json({"context": context, "count": len(results), "results": results})
 
+            # ======== A2A 网络 ========
+            elif path == '/api/v1/a2a/agents':
+                """GET: 查询所有注册 Agent"""
+                a2a = get_a2a_registry()
+                self._send_json(a2a)
+
+            elif path == '/api/v1/a2a/health':
+                """GET: A2A 网络健康检查"""
+                a2a = get_a2a_registry()
+                self._send_json({"status": "ok", "agents": len(a2a.get("agents", [])), "version": a2a.get("version", "")})
+
             # ======== 全部门 API ========
             elif path == '/api/v1/dept':
                 """GET: 查询所有部门注册表"""
@@ -226,45 +248,52 @@ class IGPAPIHandler(BaseHTTPRequestHandler):
                 else:
                     self._send_json({"error": f"部门 '{dept_key}' 未找到"}, 404)
 
-            # ======== 记忆融合路由 ========
+            # ======== 染色体方案列表 (GET) ========
+            elif path == '/api/v1/chromosome/plans':
+                try:
+                    from chromosome_orchestrator import get_orchestrator
+                    oc = get_orchestrator()
+                    plans = oc.list_plans()
+                    self._send_json({"plans": plans})
+                except Exception as e:
+                    self._send_json({"status": "error", "error": str(e)})
+                return
+
+            # ======== 记忆融合路由 (GET — 用 query params) ========
             elif path == '/api/v1/memory/consolidate':
-                """POST: 融合多源记忆为统一结果"""
                 mem = _reg_memory()
                 if not mem:
                     self._send_json({"error": "记忆系统未初始化"}, 503)
                     return
-                sources = body.get('sources', ['episodic', 'semantic', 'procedural'])
-                query = body.get('query', '')
+                sources = params.get('sources', ['episodic', 'semantic', 'procedural'])
+                query = params.get('query', [''])[0]
                 result = mem.consolidate(sources, query)
                 self._send_json({"consolidated": result})
 
             elif path == '/api/v1/memory/fusion':
-                """POST: 记忆融合 — 合并相似记忆去重"""
                 mem = _reg_memory()
                 if not mem:
                     self._send_json({"error": "记忆系统未初始化"}, 503)
                     return
-                threshold = float(body.get('threshold', 0.7))
+                threshold = float(params.get('threshold', [0.7])[0])
                 result = mem.fusion(threshold)
                 self._send_json({"fused_count": len(result), "merged": result})
 
             elif path == '/api/v1/memory/hot':
-                """GET: 获取热记忆 — 近期高频访问"""
                 mem = _reg_memory()
                 if not mem:
                     self._send_json({"error": "记忆系统未初始化"}, 503)
                     return
-                hours = int(body.get('hours', 24))
+                hours = int(params.get('hours', [24])[0])
                 result = mem.hot_memories(hours)
                 self._send_json({"hot_count": len(result), "memories": result})
 
             elif path == '/api/v1/memory/timeline':
-                """GET: 获取记忆时间线 — 按时间排序"""
                 mem = _reg_memory()
                 if not mem:
                     self._send_json({"error": "记忆系统未初始化"}, 503)
                     return
-                limit = int(body.get('limit', 20))
+                limit = int(params.get('limit', [20])[0])
                 result = mem.timeline(limit)
                 self._send_json({"timeline_count": len(result), "entries": result})
 
@@ -356,6 +385,74 @@ class IGPAPIHandler(BaseHTTPRequestHandler):
                     properties=body.get('properties', {}),
                 )
                 self._send_json({"status": "entity_added", "id": eid})
+
+            # ======== 染色体调度引擎 ========
+            elif path == '/api/v1/chromosome/execute':
+                """POST: 执行染色体方法"""
+                try:
+                    from chromosome_orchestrator import get_orchestrator
+                    name = body.get('name', '')
+                    if not name:
+                        # Legacy: some callers use 'chromosome' key
+                        name = body.get('chromosome', '')
+                    method = body.get('method', 'status')
+                    args = body.get('params', body.get('args', {}))
+                    oc = get_orchestrator()
+                    result = oc.router.execute(name, method, args)
+                    self._send_json(result)
+                except Exception as e:
+                    import traceback
+                    self._send_json({"status": "error", "error": str(e), "traceback": traceback.format_exc()})
+                return
+
+            elif path == '/api/v1/chromosome/plan':
+                """POST: 执行作战方案 (bug_fix / security_audit / full_inspection)"""
+                try:
+                    from chromosome_orchestrator import get_orchestrator
+                    plan_name = body.get('plan', 'full_inspection')
+                    overrides = body.get('overrides', {})
+                    oc = get_orchestrator()
+                    if plan_name == 'full_inspection':
+                        result = oc.full_inspection()
+                    else:
+                        result = oc.execute_plan(plan_name, overrides)
+                    self._send_json(result)
+                except Exception as e:
+                    import traceback
+                    self._send_json({"status": "error", "error": str(e), "traceback": traceback.format_exc()})
+                return
+
+            # ======== A2A 消息路由 ========
+            elif path == '/api/v1/a2a/message':
+                """POST: Agent 间消息转发"""
+                from_agent = body.get('from', '')
+                to_agent = body.get('to', '')
+                msg_type = body.get('type', 'text')
+                content = body.get('content', '')
+                a2a = get_a2a_registry()
+                # 查找目标 Agent
+                target = None
+                for agent in a2a.get("agents", []):
+                    if agent["name"] == to_agent:
+                        target = agent
+                        break
+                if not target:
+                    self._send_json({"error": f"Agent '{to_agent}' not found"}, 404)
+                    return
+                # 记录到记忆
+                mem = _reg_memory()
+                if mem:
+                    mem.remember('a2a_message', {
+                        'from': from_agent, 'to': to_agent,
+                        'type': msg_type, 'content': content
+                    }, [f'from:{from_agent}', f'to:{to_agent}', 'a2a'])
+                self._send_json({
+                    "status": "routed",
+                    "from": from_agent,
+                    "to": to_agent,
+                    "type": msg_type,
+                    "routed": True
+                })
 
             # ======== 跨部门消息通道 ========
             elif path == '/api/v1/notify':
@@ -453,6 +550,11 @@ if __name__ == '__main__':
             "POST /api/v1/memory/skill  (body: name, pattern, instruction)",
             "POST /api/v1/memory/entity  (body: name, type, properties)",
             "POST /api/v1/notify  (body: from_dept, to_dept, message, urgency)",
+            "",
+            "--- A2A Agent 网络 ---",
+            "GET  /api/v1/a2a/agents  (Agent注册表)",
+            "GET  /api/v1/a2a/health  (A2A网络健康)",
+            "POST /api/v1/a2a/message  (body: from, to, type, content)  — Agent间消息",
             "",
             "--- 全员部门查询 ---",
             "GET  /api/v1/dept  (所有部门列表)",

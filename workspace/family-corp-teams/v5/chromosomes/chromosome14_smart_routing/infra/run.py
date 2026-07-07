@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'
 try:
     import chromo14_main
     print(f"chromo14_main: {dir(chromo14_main)}")
-except:
+except Exception as e:
     pass
 
 # 找不到就创建简单验证

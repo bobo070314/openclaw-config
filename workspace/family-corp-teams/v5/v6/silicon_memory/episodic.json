@@ -456,5 +456,24 @@
       "final"
     ],
     "ts": "2026-07-01T19:13:19.611961"
+  },
+  {
+    "id": "b3c882ed",
+    "type": "observation",
+    "payload": {
+      "text": "a2a_message",
+      "entity": null,
+      "dept": null,
+      "from": "gateway",
+      "to": "hermes",
+      "type": "text",
+      "content": "hello"
+    },
+    "tags": [
+      "from:gateway",
+      "to:hermes",
+      "a2a"
+    ],
+    "ts": "2026-07-06T13:25:59.048433"
   }
 ]

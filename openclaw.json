@@ -87,6 +87,26 @@
           "travel-china-guide",
           "china-legal-advisor"
         ]
+      },
+      {
+        "id": "hermes",
+        "name": "Hermes Agent",
+        "identity": {
+          "name": "Hermes"
+        },
+        "runtime": {
+          "type": "acp",
+          "acp": {
+            "agent": "hermes",
+            "backend": "stdio",
+            "mode": "run",
+            "command": "hermes",
+            "args": [
+              "acp",
+              "--accept-hooks"
+            ]
+          }
+        }
       }
     ]
   },
@@ -167,6 +187,56 @@
             "input": [
               "text",
               "image"
+            ],
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "deepseek": {
+        "api": "openai-completions",
+        "baseUrl": "https://api.deepseek.com/v1",
+        "apiKey": "sk-468b5b7ca259462197b4f9e12262f055",
+        "timeoutSeconds": 180,
+        "models": [
+          {
+            "id": "deepseek-v4-flash",
+            "name": "[DeepSeek·超低价🔥] V4-Flash | 性价比王 | 128K | 输入¥0.02/M",
+            "api": "openai-completions",
+            "contextWindow": 128000,
+            "cost": {
+              "input": 2e-05,
+              "output": 0.002
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-chat",
+            "name": "[DeepSeek·付费] V3 | 强·接近GPT-4o | 64K | 输入¥2/M ✅已修复",
+            "api": "openai-completions",
+            "contextWindow": 64000,
+            "cost": {
+              "input": 0.002,
+              "output": 0.008
+            },
+            "input": [
+              "text"
+            ],
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-reasoner",
+            "name": "[DeepSeek·付费] R1 | 推理强·思维链 | 64K | 输入¥4/M ✅已修复",
+            "api": "openai-completions",
+            "contextWindow": 64000,
+            "cost": {
+              "input": 0.004,
+              "output": 0.016
+            },
+            "input": [
+              "text"
             ],
             "maxTokens": 8192
           },
@@ -342,56 +412,6 @@
             "maxTokens": 8192
           }
         ]
-      },
-      "deepseek": {
-        "api": "openai-completions",
-        "baseUrl": "https://api.deepseek.com/v1",
-        "apiKey": "sk-468b5b7ca259462197b4f9e12262f055",
-        "timeoutSeconds": 120,
-        "models": [
-          {
-            "id": "deepseek-v4-flash",
-            "name": "[DeepSeek·超低价🔥] V4-Flash | 性价比王 | 128K | 输入¥0.02/M",
-            "api": "openai-completions",
-            "contextWindow": 128000,
-            "cost": {
-              "input": 2e-05,
-              "output": 0.002
-            },
-            "input": [
-              "text"
-            ],
-            "maxTokens": 8192
-          },
-          {
-            "id": "deepseek-chat",
-            "name": "[DeepSeek·付费] V3 | 强·接近GPT-4o | 64K | 输入¥2/M ✅已修复",
-            "api": "openai-completions",
-            "contextWindow": 64000,
-            "cost": {
-              "input": 0.002,
-              "output": 0.008
-            },
-            "input": [
-              "text"
-            ],
-            "maxTokens": 8192
-          },
-          {
-            "id": "deepseek-reasoner",
-            "name": "[DeepSeek·付费] R1 | 推理强·思维链 | 64K | 输入¥4/M ✅已修复",
-            "api": "openai-completions",
-            "contextWindow": 64000,
-            "cost": {
-              "input": 0.004,
-              "output": 0.016
-            },
-            "input": [
-              "text"
-            ],
-            "maxTokens": 8192
-          }
-        ]
       }
     }
   },
@@ -402,7 +422,7 @@
       ]
     },
     "entries": {
-       "model-router": {
+      "model-router": {
         "enabled": false
       },
       "lossless-claw": {
@@ -416,17 +436,17 @@
   },
   "gateway": {
     "mode": "local",
-    "port": 18900,
+    "port": 18790,
     "bind": "loopback",
     "auth": {
       "mode": "token",
-      "token": "foreign18900"
+      "token": "bobo666backup"
     },
     "controlUi": {
       "dangerouslyDisableDeviceAuth": false,
       "allowedOrigins": [
-        "http://127.0.0.1:18900",
-        "http://localhost:18900"
+        "http://127.0.0.1:18789",
+        "http://localhost:18789"
       ]
     },
     "http": {
@@ -437,7 +457,7 @@
       }
     },
     "remote": {
-      "token": "foreign18900"
+      "token": "bobo666"
     }
   },
   "skills": {

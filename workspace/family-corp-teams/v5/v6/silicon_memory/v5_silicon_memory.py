@@ -626,8 +626,11 @@ class SiliconMemory:
                     group.append(ev2)
                     used.add(j)
             # 合并为一条
+            all_tokens = []
+            for e in group:
+                all_tokens.extend(_tokenize(str(e.get('payload', ''))))
             merged.append({
-                'payload': ' '.join(set(_tokenize(str(e.get('payload', ''))) for e in group)),
+                'payload': ' '.join(set(all_tokens)),
                 'tags': list(set(sum((e.get('tags', []) for e in group), []))),
                 'count': len(group)
             })

@@ -1,8 +1,0 @@
-{
-  "models_found": [],
-  "models_missing": [
-    "igp_agent_commerce.py"
-  ],
-  "need_new_development": true,
-  "code_quality_score": 0.0
-}

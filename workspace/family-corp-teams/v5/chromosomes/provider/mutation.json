@@ -1,9 +1,0 @@
-{
-  "mutations_applied": [
-    "外部可插拔",
-    "Token效率评分",
-    "跨染色体调用"
-  ],
-  "mutation_design": "Provider路由部突变设计:\n- 外部可插拔\n- Token效率评分\n- 跨染色体调用",
-  "mutation_at": "2026-07-01T03:41:28.735277+00:00"
-}
